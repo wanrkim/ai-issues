@@ -20,6 +20,7 @@
     --badge-hot-fg: #F04452;
     --badge-new-bg: #EDF3FE;
     --badge-new-fg: #3182F6;
+    --seg-line: #D8DFE7;
     --chip-off-bg: #EDF0F3;
     --chip-on-bg: #191F28;
     --line: #F0F2F5;
@@ -62,14 +63,17 @@
     display: flex; align-items: center; gap: 8px;
     margin: 24px 0 14px;
   }
-  .seg { display: flex; gap: 4px; }
+  .seg {
+    display: flex; gap: 3px; padding: 3px;
+    border: 1px solid var(--seg-line); border-radius: 15px;
+  }
   .seg button {
     border: 0; background: transparent; cursor: pointer;
     font: inherit; font-size: 15px; font-weight: 700;
-    color: var(--text-dim); padding: 8px 14px;
-    border-radius: 11px; corner-shape: squircle;
+    color: var(--text-dim); padding: 7px 14px;
+    border-radius: 12px; corner-shape: squircle;
   }
-  .seg button[aria-pressed="true"] { background: #E5E9EE; color: var(--text); }
+  .seg button[aria-pressed="true"] { background: var(--card); color: var(--text); }
   .updated { margin-left: auto; font-size: 13px; color: var(--text-dim); }
 
   .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -289,7 +293,7 @@ document.getElementById("list").addEventListener("click", event => {
 });
 
 // 스쿼클 모서리. CDN이 막히면 CSS의 border-radius로 그대로 보인다.
-const SQUIRCLE = [[".card", 20], [".chips button", 14], [".seg button", 12]];
+const SQUIRCLE = [[".card", 20], [".chips button", 14], [".seg button", 13]];
 const SMOOTHING = 0.7;
 let getSvgPath = null;
 let squircleObserver = null;
