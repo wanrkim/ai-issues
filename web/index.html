@@ -103,7 +103,10 @@
     transition: height .22s ease;
   }
   .pager::-webkit-scrollbar { display: none; }
-  .page { flex: 0 0 100%; scroll-snap-align: start; padding: 0 var(--gutter); }
+  .page {
+    flex: 0 0 100%; width: 100%; min-width: 0;
+    scroll-snap-align: start; padding: 0 var(--gutter);
+  }
 
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
@@ -115,10 +118,11 @@
     overflow: hidden;
   }
   .head {
-    display: grid; grid-template-columns: 28px 1fr;
+    display: grid; grid-template-columns: 28px minmax(0, 1fr);
     gap: 11px; align-items: start;
     padding: 18px 16px; cursor: pointer;
   }
+  .head > div { min-width: 0; }
   .rank {
     display: flex; flex-direction: column; align-items: center; gap: 5px;
     font-size: 17px; font-weight: 700; line-height: 1.45;
