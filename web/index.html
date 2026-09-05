@@ -333,14 +333,26 @@ function syncHeight() {
   if (page) pager.style.height = page.offsetHeight + "px";
 }
 
+let settleGuard = null;
+
 function goTo(next, smooth) {
   index = Math.max(0, Math.min(SECTIONS.length - 1, next));
   write(STORE_SECTION, SECTIONS[index][0]);
+  const target = index * pager.clientWidth;
   const behavior = smooth === false ? "auto" : "smooth";
-  pager.scrollTo({ left: index * pager.clientWidth, behavior });
+  pager.scrollTo({ left: target, behavior });
   tabAt(index).scrollIntoView({ behavior, inline: "center", block: "nearest" });
   syncHeight();
   moveInk();
+
+  // 부드러운 이동이 끝까지 가지 않는 경우가 있어서 마지막 위치를 맞춘다.
+  clearTimeout(settleGuard);
+  settleGuard = setTimeout(() => {
+    if (Math.abs(pager.scrollLeft - target) > 1) {
+      pager.scrollLeft = target;
+      moveInk();
+    }
+  }, 450);
 }
 
 let ticking = false;
