@@ -21,6 +21,7 @@
     --badge-new-bg: #EDF3FE;
     --badge-new-fg: #3182F6;
     --seg-on-bg: #E5E9EE;
+    --tab-line: #E2E7EC;
     --chip-off-bg: #EDF0F3;
     --chip-on-bg: #191F28;
     --line: #F0F2F5;
@@ -73,15 +74,24 @@
   .seg button[aria-pressed="true"] { background: var(--seg-on-bg); color: var(--text); }
   .updated { margin-left: auto; font-size: 13px; color: var(--text-dim); }
 
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
-  .chips button {
-    border: 0; cursor: pointer; font: inherit;
-    font-size: 13px; font-weight: 600; padding: 7px 13px;
-    border-radius: 14px; corner-shape: squircle;
-    background: var(--chip-off-bg); color: var(--text-dim);
-    transition: background .15s, color .15s;
+  .tabs {
+    display: flex; overflow-x: auto; margin: 0 -20px 14px; padding: 0 12px;
+    border-bottom: 1px solid var(--tab-line);
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
   }
-  .chips button[aria-pressed="true"] { background: var(--chip-on-bg); color: #fff; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs button {
+    position: relative; flex: none;
+    border: 0; background: transparent; cursor: pointer; font: inherit;
+    font-size: 16px; font-weight: 700; letter-spacing: -0.3px;
+    color: var(--text-dim); padding: 10px 12px 13px; white-space: nowrap;
+    transition: color .15s;
+  }
+  .tabs button[aria-pressed="true"] { color: var(--text); }
+  .tabs button[aria-pressed="true"]::after {
+    content: ""; position: absolute; left: 10px; right: 10px; bottom: -1px;
+    height: 2.5px; border-radius: 2px; background: var(--text);
+  }
 
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
@@ -161,7 +171,7 @@
     <span class="updated" id="updated"></span>
   </div>
 
-  <div class="chips" id="chips"></div>
+  <div class="tabs" id="tabs"></div>
   <div class="list" id="list"></div>
 </div>
 
@@ -216,10 +226,21 @@ function escape(text) {
     c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
-function renderChips() {
-  document.getElementById("chips").innerHTML = SECTIONS.map(([key, label]) =>
+function renderTabs() {
+  document.getElementById("tabs").innerHTML = SECTIONS.map(([key, label]) =>
     `<button data-section="${key}" aria-pressed="${section === key}">${label}</button>`
   ).join("");
+  const active = document.querySelector('#tabs button[aria-pressed="true"]');
+  if (active) active.scrollIntoView({ inline: "center", block: "nearest" });
+}
+
+function selectSection(key) {
+  if (key === section) return;
+  section = key;
+  write(STORE_SECTION, section);
+  renderTabs();
+  renderList();
+  applySquircle();
 }
 
 function renderList() {
@@ -278,15 +299,28 @@ document.getElementById("sort").addEventListener("click", event => {
   applySquircle();
 });
 
-document.getElementById("chips").addEventListener("click", event => {
+document.getElementById("tabs").addEventListener("click", event => {
   const button = event.target.closest("button");
-  if (!button || button.dataset.section === section) return;
-  section = button.dataset.section;
-  write(STORE_SECTION, section);
-  renderChips();
-  renderList();
-  applySquircle();
+  if (button) selectSection(button.dataset.section);
 });
+
+// 좌우로 밀면 옆 섹션으로 넘어간다.
+const SWIPE_MIN = 55;
+let swipeX = 0, swipeY = 0;
+const listEl = document.getElementById("list");
+listEl.addEventListener("touchstart", event => {
+  swipeX = event.changedTouches[0].clientX;
+  swipeY = event.changedTouches[0].clientY;
+}, { passive: true });
+listEl.addEventListener("touchend", event => {
+  const dx = event.changedTouches[0].clientX - swipeX;
+  const dy = event.changedTouches[0].clientY - swipeY;
+  if (Math.abs(dx) < SWIPE_MIN || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+  const here = SECTIONS.findIndex(([key]) => key === section);
+  const next = here + (dx < 0 ? 1 : -1);
+  if (next < 0 || next >= SECTIONS.length) return;
+  selectSection(SECTIONS[next][0]);
+}, { passive: true });
 
 document.getElementById("list").addEventListener("click", event => {
   const head = event.target.closest(".head");
@@ -294,7 +328,7 @@ document.getElementById("list").addEventListener("click", event => {
 });
 
 // 스쿼클 모서리. CDN이 막히면 CSS의 border-radius로 그대로 보인다.
-const SQUIRCLE = [[".card", 20], [".chips button", 14], [".seg button", 13]];
+const SQUIRCLE = [[".card", 20], [".seg button", 13]];
 const SMOOTHING = 0.7;
 let getSvgPath = null;
 let squircleObserver = null;
@@ -338,7 +372,7 @@ fetch("../data/issues.json", { cache: "no-store" })
     document.getElementById("updated").textContent = ago(json.generated_at);
     document.querySelectorAll("#sort button").forEach(b =>
       b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
-    renderChips();
+    renderTabs();
     renderList();
     applySquircle();
   })
