@@ -358,10 +358,9 @@ function syncHeight() {
   for (let i = 0; i < pager.children.length; i++) {
     pager.children[i].classList.toggle("active", i === index);
   }
-  requestAnimationFrame(() => {
-    const floor = Math.max(0, window.innerHeight - pager.offsetTop);
-    pager.style.height = Math.max(page.offsetHeight, floor) + "px";
-  });
+  // offsetHeight 를 읽으면 위에서 바꾼 클래스가 반영된 레이아웃을 즉시 얻는다.
+  const floor = Math.max(0, window.innerHeight - pager.offsetTop);
+  pager.style.height = Math.max(page.offsetHeight, floor) + "px";
 }
 
 let settleGuard = null;
