@@ -53,9 +53,9 @@
   .eyebrow {
     display: flex; align-items: center; gap: 6px;
     color: var(--accent); font-size: 15px; font-weight: 700;
-    margin: 28px 0 6px;
+    line-height: 1; margin: 28px 0 8px;
   }
-  .eyebrow svg { width: 17px; height: 17px; }
+  .eyebrow svg { width: 21px; height: 21px; display: block; flex: none; }
   h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
 
   .bar {
@@ -66,7 +66,8 @@
   .seg button {
     border: 0; background: transparent; cursor: pointer;
     font: inherit; font-size: 15px; font-weight: 700;
-    color: var(--text-dim); padding: 8px 14px; border-radius: 10px;
+    color: var(--text-dim); padding: 8px 14px;
+    border-radius: 11px; corner-shape: squircle;
   }
   .seg button[aria-pressed="true"] { background: #E5E9EE; color: var(--text); }
   .updated { margin-left: auto; font-size: 13px; color: var(--text-dim); }
@@ -74,7 +75,8 @@
   .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
   .chips button {
     border: 0; cursor: pointer; font: inherit;
-    font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; padding: 7px 13px;
+    border-radius: 14px; corner-shape: squircle;
     background: var(--chip-off-bg); color: var(--text-dim);
     transition: background .15s, color .15s;
   }
@@ -84,32 +86,37 @@
   .list { display: flex; flex-direction: column; gap: 10px; }
 
   .card {
-    background: var(--card); border-radius: var(--radius);
+    background: var(--card);
+    border-radius: var(--radius); corner-shape: squircle;
     box-shadow: var(--shadow); overflow: hidden;
   }
   .head {
-    display: grid; grid-template-columns: 26px 1fr 20px;
-    gap: 10px; align-items: start;
+    display: grid; grid-template-columns: 28px 1fr;
+    gap: 11px; align-items: start;
     padding: 18px 16px; cursor: pointer;
   }
-  .rank { font-size: 17px; font-weight: 700; text-align: center; line-height: 1.45; }
+  .rank {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    font-size: 17px; font-weight: 700; line-height: 1.45;
+  }
 
   .titleline { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .title { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.45; }
 
   .badge {
-    font-size: 11px; font-weight: 700; padding: 3px 7px; border-radius: 6px; white-space: nowrap;
+    font-size: 11px; font-weight: 700; padding: 3px 7px;
+    border-radius: 7px; corner-shape: squircle; white-space: nowrap;
   }
   .badge.surge { background: var(--badge-hot-bg); color: var(--badge-hot-fg); }
   .badge.new   { background: var(--badge-new-bg); color: var(--badge-new-fg); }
 
-  .subline { display: flex; align-items: baseline; gap: 5px; margin-top: 4px; }
-  .arrow { font-size: 10px; line-height: 1.6; flex: none; }
+  .subline { margin-top: 4px; }
+  .arrow { font-size: 9px; line-height: 1; }
   .arrow.up { color: var(--up); }
   .arrow.down { color: var(--down); }
   .arrow.flat { color: var(--text-dim); }
   .subtitle {
-    font-size: 15px; color: var(--text-sub); letter-spacing: -0.2px;
+    display: block; font-size: 15px; color: var(--text-sub); letter-spacing: -0.2px;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;
   }
 
@@ -119,9 +126,6 @@
     background: var(--chip-off-bg); padding: 2px 7px; border-radius: 5px;
   }
   .count { font-size: 13px; color: var(--text-dim); font-weight: 500; }
-
-  .chev { color: var(--text-dim); font-size: 15px; align-self: center; transition: transform .2s; }
-  .card.open .chev { transform: rotate(90deg); }
 
   .sources { display: none; border-top: 1px solid var(--line); padding: 6px 16px 10px; }
   .card.open .sources { display: block; }
@@ -200,7 +204,7 @@ function arrow(issue) {
   const diff = issue.prev_rank - issue.rank;
   if (diff > 0) return ['<span class="arrow up">▲</span>', diff];
   if (diff < 0) return ['<span class="arrow down">▼</span>', -diff];
-  return ['<span class="arrow flat">·</span>', ""];
+  return ["", ""];
 }
 
 function escape(text) {
@@ -238,19 +242,18 @@ function renderList() {
          <span class="name">${ago(s.published_at)}</span></a>`).join("");
     return `<div class="card" data-id="${escape(issue.id)}">
       <div class="head">
-        <div class="rank">${sort === "recent" ? index + 1 : issue.rank}</div>
+        <div class="rank">${sort === "recent" ? index + 1 : issue.rank}${mark}</div>
         <div>
           <div class="titleline">
             <span class="title">${escape(issue.title)}</span>
             ${badge ? `<span class="badge ${badge[1]}">${badge[0]}</span>` : ""}
           </div>
-          <div class="subline">${mark}<span class="subtitle">${escape(issue.subtitle)}</span></div>
+          <div class="subline"><span class="subtitle">${escape(issue.subtitle)}</span></div>
           <div class="meta">
             <span class="axis">${AXIS_NAME[issue.axis] || issue.axis}</span>
             <span class="count">${issue.source_count}개 출처 · ${ago(issue.last_seen)}</span>
           </div>
         </div>
-        <div class="chev">›</div>
       </div>
       <div class="sources">${sources}</div>
     </div>`;
