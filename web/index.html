@@ -249,7 +249,7 @@ function renderList() {
          <span class="name">${ago(s.published_at)}</span></a>`).join("");
     return `<div class="card-shell"><div class="card" data-id="${escape(issue.id)}">
       <div class="head">
-        <div class="rank">${sort === "recent" ? index + 1 : issue.rank}${mark}</div>
+        <div class="rank">${index + 1}${mark}</div>
         <div>
           <div class="titleline">
             <span class="title">${escape(issue.title)}</span>
