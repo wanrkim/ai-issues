@@ -22,7 +22,7 @@ AI 소식(모델·서비스 출시, 영상·이미지 모델, 하드웨어, 기�
 | [00-direction.md](00-direction.md) | 가치 우선순위, 제품 결정, 대상 사용자 | 작성함 |
 | [01-architecture.md](01-architecture.md) | 구성 요소, 외부 의존, 실행 주기, 비밀값, 배포, 무료 한도 | 작성함 |
 | 02-data-model.md | JSON 스키마 확정본, 필드 정의 | Phase 2에서 작성 |
-| 03-pipeline.md | 수집 출처 목록, 정규화 규칙, 묶기·판정·순위 흐름 | Phase 1에서 작성 |
+| [03-pipeline.md](03-pipeline.md) | 수집 출처 목록, 정규화 규칙, 묶기·판정·순위 흐름 | 작성함 (묶기·판정·순위는 Phase 2에서 추가) |
 | 04-prompt-engineering.md | 묶기 프롬프트, 판정 프롬프트 전문, 임팩트 기준표 | Phase 2에서 작성 |
 | 05-ranking.md | 순위 식, 가중치, 배지 기준, 이슈 수명 | Phase 2에서 작성 |
 | 06-frontend.md | 화면 구조, 상태 관리, 로컬 저장 키 | Phase 3에서 작성 |
@@ -31,4 +31,4 @@ AI 소식(모델·서비스 출시, 영상·이미지 모델, 하드웨어, 기�
 | [09-backlog.md](09-backlog.md) | 아직 시작하지 않은 작업 | 작성함 |
 | [10-worklog.md](10-worklog.md) | 완료한 작업 누적, 최신이 위 | 작성함 |
 
-`archive/decisions/`, `archive/issues/`, `archive/worklog/`는 보관이 필요해질 때 만든다.
+해결한 이슈는 `archive/issues/`에 보관한다. `archive/decisions/`와 `archive/worklog/`는 보관이 필요해질 때 만든다.

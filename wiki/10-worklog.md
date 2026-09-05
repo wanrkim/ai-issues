@@ -2,6 +2,32 @@
 
 최신 항목을 위에 적는다.
 
+## 2026-09-05 — Phase 1. 수집
+
+`scripts/collect.py`를 작성하고 출처 10종에서 항목을 가져오는 것을 확인했다. 결과를 `data/items.json`에, 조건부 요청 상태를 `data/fetch_state.json`에 저장한다.
+
+### 1회 실행 결과 (2026-09-05 18:26 KST)
+
+수집 2,846건 중 최근 48시간 항목 356건을 보관했다. 출처별 보관 건수는 Google News 309건, Hacker News 14건, SEC EDGAR 17건, Anthropic 4건, OpenAI 4건, NVIDIA Newsroom 3건, Hugging Face Hub 2건, Google DeepMind 1건, Hugging Face Blog 1건이다.
+
+### 고친 내용
+
+- **NVIDIA 피드 주소.** 착수 문서의 `nvidianews.nvidia.com/rss`는 XML이 아니라 HTML을 반환해서 0건이 나왔다. 같은 뉴스룸의 실제 피드 주소인 `releases.xml`로 바꿔서 20건을 받았다.
+- **SEC EDGAR 정렬.** 전문 검색 API의 기본값이 관련도순이라 2020년 제출이 첫 결과로 왔다. `dateRange=custom`과 `startdt`, `enddt`로 최근 3일로 좁혔다.
+- **제목 정규화.** HTML 엔티티를 되돌리고, Anthropic 페이지 제목 끝의 `\ Anthropic` 표기와 SEC 제출자 이름 끝의 `(CIK ...)` 표기를 제거했다.
+- **신규 건수 계산.** 피드가 과거 글까지 반환해서, 48시간이 지난 항목을 매 실행마다 새 항목으로 넣었다가 바로 버렸다. 저장 결과는 맞았지만 출력한 신규 건수가 실제보다 훨씬 컸다. 보관 기간 필터를 병합 앞으로 옮겼다.
+
+### 결정한 내용
+
+- **외부 라이브러리는 `requests`와 `feedparser` 2개만 쓴다.** RSS와 Atom의 형식 차이를 직접 처리하면 출처마다 깨질 수 있다.
+- **Google News 리다이렉트 주소를 따라가지 않는다.** 쿼리 6개에 각 100건이라 한 번 실행에 최대 600회의 추가 요청이 생긴다. 중복 제거는 제목 기준으로 하고, 리다이렉트 해석은 Phase 2에서 상위 이슈에 포함된 항목만 처리한다.
+- **SEC EDGAR `User-Agent`에 `ai-issues wanrkim@gmail.com`을 보낸다.** SEC 정책이 이름과 이메일을 요구한다. 이 값은 SEC 요청에만 사용한다.
+
+### 이슈 변화
+
+- I-002(Anthropic 공식 RSS 없음)를 해결하고 `archive/issues/`로 옮겼다.
+- I-004, I-005, I-006을 추가했다.
+
 ## 2026-09-05 — Phase 0. 저장소와 위키 뼈대
 
 저장소 `ai-issues`를 만들고 폴더 구조, `CLAUDE.md`, 위키 6개 페이지, Pages 배포용 최소 `index.html`을 작성했다.
