@@ -26,7 +26,7 @@
     --line: #F0F2F5;
     --radius: 16px;
     --gutter: 20px;
-    --shadow: drop-shadow(0 1px 2px rgba(0,0,0,.05)) drop-shadow(0 5px 14px rgba(17,24,39,.05));
+    --shadow: drop-shadow(0 3px 10px rgba(17,24,39,.07));
   }
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -89,19 +89,22 @@
   }
   .tabrow button[aria-current="true"] { color: var(--text); }
   .ink {
-    position: absolute; left: 0; bottom: 0; height: 2.5px; width: 0;
+    position: absolute; left: 0; bottom: 0; height: 2.5px; width: 100px;
     border-radius: 2px; background: var(--text);
-    transform: translateX(0); will-change: transform, width;
+    transform-origin: left center; transform: translateX(0) scaleX(0);
+    will-change: transform;
   }
 
   /* ---------- 페이저 ---------- */
   .pager {
     display: flex; align-items: flex-start;
-    overflow: hidden; transition: height .22s ease;
+    overflow: hidden; touch-action: pan-y;
+    transition: height .22s ease;
   }
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
     padding: 0 var(--gutter);
+    contain: layout paint;
   }
 
   /* ---------- 카드 ---------- */
@@ -307,30 +310,49 @@ function renderPages() {
 
 /* ---------- 탭 밑줄과 페이저 연동 ---------- */
 
+const INK_BASE = 100;   // 밑줄의 기준 폭. 실제 폭은 scaleX로 만든다.
+let tabGeometry = [];
+let inkNear = -1;
+
 function tabAt(i) {
   return tabrow.querySelectorAll("button")[Math.max(0, Math.min(SECTIONS.length - 1, i))];
 }
 
+/* 탭의 위치와 폭을 미리 재둔다. 끄는 동안 레이아웃을 다시 읽지 않기 위해서다. */
+function measureTabs() {
+  tabGeometry = [...tabrow.querySelectorAll("button")].map(button => ({
+    left: button.offsetLeft + 10,
+    width: Math.max(0, button.offsetWidth - 20),
+  }));
+}
+
 function moveInk() {
+  if (!tabGeometry.length) return;
   const width = pager.clientWidth || 1;
   const ratio = Math.max(0, Math.min(SECTIONS.length - 1, pager.scrollLeft / width));
   const i = Math.floor(ratio);
   const f = ratio - i;
-  const a = tabAt(i), b = tabAt(i + 1);
+  const a = tabGeometry[i];
+  const b = tabGeometry[Math.min(i + 1, tabGeometry.length - 1)];
   if (!a || !b) return;
-  const left = a.offsetLeft + (b.offsetLeft - a.offsetLeft) * f;
-  const w = a.offsetWidth + (b.offsetWidth - a.offsetWidth) * f;
-  ink.style.transform = `translateX(${left + 10}px)`;
-  ink.style.width = Math.max(0, w - 20) + "px";
+  const left = a.left + (b.left - a.left) * f;
+  const w = a.width + (b.width - a.width) * f;
+  ink.style.transform = `translateX(${left}px) scaleX(${w / INK_BASE})`;
 
   const near = Math.round(ratio);
-  tabrow.querySelectorAll("button").forEach((button, n) =>
-    button.setAttribute("aria-current", String(n === near)));
+  if (near !== inkNear) {
+    inkNear = near;
+    tabrow.querySelectorAll("button").forEach((button, n) =>
+      button.setAttribute("aria-current", String(n === near)));
+  }
 }
 
+/* 페이저가 화면 아래까지 닿게 한다. 카드가 없는 바닥에서도 스와이프가 먹혀야 한다. */
 function syncHeight() {
   const page = pager.children[index];
-  if (page) pager.style.height = page.offsetHeight + "px";
+  if (!page) return;
+  const floor = Math.max(0, window.innerHeight - pager.offsetTop);
+  pager.style.height = Math.max(page.offsetHeight, floor) + "px";
 }
 
 let settleGuard = null;
@@ -392,7 +414,10 @@ pager.addEventListener("touchmove", event => {
   const min = Math.max(0, index - 1) * width;
   const max = Math.min(SECTIONS.length - 1, index + 1) * width;
   pager.scrollLeft = Math.max(min, Math.min(max, dragFrom - dx));
-  moveInk();
+  if (!ticking) {
+    ticking = true;
+    requestAnimationFrame(() => { moveInk(); ticking = false; });
+  }
   event.preventDefault();
 }, { passive: false });
 
@@ -438,7 +463,7 @@ document.getElementById("sort").addEventListener("click", event => {
   applySquircle();
 });
 
-window.addEventListener("resize", () => goTo(index, false));
+window.addEventListener("resize", () => { measureTabs(); goTo(index, false); });
 
 /* ---------- 스쿼클 모서리 ---------- */
 
@@ -490,6 +515,7 @@ fetch("../data/issues.json", { cache: "no-store" })
     renderTabs();
     renderPages();
     requestAnimationFrame(() => {
+      measureTabs();
       goTo(index, false);
       applySquircle();
     });
