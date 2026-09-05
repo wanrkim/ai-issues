@@ -26,13 +26,13 @@
     --line: #F0F2F5;
     --radius: 16px;
     --gutter: 20px;
-    --shadow: drop-shadow(0 3px 10px rgba(17,24,39,.07));
+    --shadow: 0 3px 10px rgba(17,24,39,.07);
   }
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   body {
-    margin: 0;
+    margin: 0; position: relative;
     background: var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
@@ -42,7 +42,7 @@
   }
 
   .sky {
-    position: fixed; inset: 0 0 auto 0; height: 340px; z-index: 0;
+    position: absolute; inset: 0 0 auto 0; height: 340px; z-index: 0;
     background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 100%);
   }
 
@@ -105,12 +105,14 @@
     flex: 0 0 100%; width: 100%; min-width: 0;
     padding: 0 var(--gutter);
     contain: layout paint;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
   }
 
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
 
-  .card-shell { filter: var(--shadow); }
+  .card-shell { border-radius: var(--radius); box-shadow: var(--shadow); }
   .card {
     background: var(--card);
     border-radius: var(--radius); corner-shape: squircle;
@@ -164,7 +166,7 @@
 
   .empty, .error {
     background: var(--card); border-radius: var(--radius); padding: 40px 20px;
-    text-align: center; color: var(--text-sub); font-size: 15px; filter: var(--shadow);
+    text-align: center; color: var(--text-sub); font-size: 15px; box-shadow: var(--shadow);
   }
 </style>
 </head>
@@ -374,6 +376,7 @@ function goTo(next, smooth) {
       pager.scrollLeft = target;
       moveInk();
     }
+    syncHeight();
   }, 450);
 }
 
