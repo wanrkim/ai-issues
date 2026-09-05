@@ -103,12 +103,15 @@
   .badge.surge { background: var(--badge-hot-bg); color: var(--badge-hot-fg); }
   .badge.new   { background: var(--badge-new-bg); color: var(--badge-new-fg); }
 
-  .subline { display: flex; align-items: center; gap: 5px; margin-top: 4px; }
-  .arrow { font-size: 11px; line-height: 1; flex: none; }
+  .subline { display: flex; align-items: baseline; gap: 5px; margin-top: 4px; }
+  .arrow { font-size: 10px; line-height: 1.6; flex: none; }
   .arrow.up { color: var(--up); }
   .arrow.down { color: var(--down); }
   .arrow.flat { color: var(--text-dim); }
-  .subtitle { font-size: 15px; color: var(--text-sub); letter-spacing: -0.2px; }
+  .subtitle {
+    font-size: 15px; color: var(--text-sub); letter-spacing: -0.2px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;
+  }
 
   .meta { display: flex; align-items: center; gap: 6px; margin-top: 9px; }
   .axis {
@@ -193,11 +196,11 @@ function ago(iso) {
 }
 
 function arrow(issue) {
-  if (issue.prev_rank == null) return ['<span class="arrow flat">•</span>', ""];
+  if (issue.prev_rank == null) return ["", ""];
   const diff = issue.prev_rank - issue.rank;
   if (diff > 0) return ['<span class="arrow up">▲</span>', diff];
   if (diff < 0) return ['<span class="arrow down">▼</span>', -diff];
-  return ['<span class="arrow flat">•</span>', ""];
+  return ['<span class="arrow flat">·</span>', ""];
 }
 
 function escape(text) {
