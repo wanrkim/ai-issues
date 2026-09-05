@@ -108,6 +108,8 @@
     content-visibility: auto;
     contain-intrinsic-size: auto 600px;
   }
+  /* 보고 있는 섹션은 항상 그린다. 자리표시 높이로 재면 목록이 잘린다. */
+  .page.active { content-visibility: visible; }
 
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
@@ -353,8 +355,13 @@ function moveInk() {
 function syncHeight() {
   const page = pager.children[index];
   if (!page) return;
-  const floor = Math.max(0, window.innerHeight - pager.offsetTop);
-  pager.style.height = Math.max(page.offsetHeight, floor) + "px";
+  for (let i = 0; i < pager.children.length; i++) {
+    pager.children[i].classList.toggle("active", i === index);
+  }
+  requestAnimationFrame(() => {
+    const floor = Math.max(0, window.innerHeight - pager.offsetTop);
+    pager.style.height = Math.max(page.offsetHeight, floor) + "px";
+  });
 }
 
 let settleGuard = null;
