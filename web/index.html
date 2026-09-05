@@ -97,15 +97,11 @@
   /* ---------- 페이저 ---------- */
   .pager {
     display: flex; align-items: flex-start;
-    overflow-x: auto; overflow-y: hidden;
-    scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
-    scrollbar-width: none; -webkit-overflow-scrolling: touch;
-    transition: height .22s ease;
+    overflow: hidden; transition: height .22s ease;
   }
-  .pager::-webkit-scrollbar { display: none; }
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
-    scroll-snap-align: start; padding: 0 var(--gutter);
+    padding: 0 var(--gutter);
   }
 
   /* ---------- 카드 ---------- */
@@ -328,18 +324,23 @@ function moveInk() {
   ink.style.width = Math.max(0, w - 20) + "px";
 
   const near = Math.round(ratio);
-  if (near !== index) {
-    index = near;
-    write(STORE_SECTION, SECTIONS[index][0]);
-    tabrow.querySelectorAll("button").forEach((b2, i2) =>
-      b2.setAttribute("aria-current", String(i2 === index)));
-    tabAt(index).scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-  }
+  tabrow.querySelectorAll("button").forEach((button, n) =>
+    button.setAttribute("aria-current", String(n === near)));
 }
 
 function syncHeight() {
   const page = pager.children[index];
   if (page) pager.style.height = page.offsetHeight + "px";
+}
+
+function goTo(next, smooth) {
+  index = Math.max(0, Math.min(SECTIONS.length - 1, next));
+  write(STORE_SECTION, SECTIONS[index][0]);
+  const behavior = smooth === false ? "auto" : "smooth";
+  pager.scrollTo({ left: index * pager.clientWidth, behavior });
+  tabAt(index).scrollIntoView({ behavior, inline: "center", block: "nearest" });
+  syncHeight();
+  moveInk();
 }
 
 let ticking = false;
@@ -349,16 +350,60 @@ pager.addEventListener("scroll", () => {
   requestAnimationFrame(() => { moveInk(); ticking = false; });
 }, { passive: true });
 
-let settleTimer = null;
-pager.addEventListener("scroll", () => {
-  clearTimeout(settleTimer);
-  settleTimer = setTimeout(syncHeight, 120);
+/* 손가락을 따라 화면이 움직인다. 한 번에 한 페이지까지만 이동한다. */
+const DRAG_TRIGGER = 0.16;   // 페이지 폭 대비 이 비율을 넘기면 옆으로 넘어간다.
+const DRAG_DEADZONE = 6;
+let dragX = 0, dragY = 0, dragFrom = 0, dragging = false, axis = null;
+
+pager.addEventListener("touchstart", event => {
+  if (event.touches.length !== 1) return;
+  dragX = event.touches[0].clientX;
+  dragY = event.touches[0].clientY;
+  dragFrom = index * pager.clientWidth;
+  dragging = true;
+  axis = null;
+  pager.style.transition = "none";
+}, { passive: true });
+
+pager.addEventListener("touchmove", event => {
+  if (!dragging) return;
+  const dx = event.touches[0].clientX - dragX;
+  const dy = event.touches[0].clientY - dragY;
+
+  if (axis === null) {
+    if (Math.abs(dx) < DRAG_DEADZONE && Math.abs(dy) < DRAG_DEADZONE) return;
+    axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+    if (axis === "y") { dragging = false; pager.style.transition = ""; return; }
+  }
+
+  const width = pager.clientWidth;
+  const min = Math.max(0, index - 1) * width;
+  const max = Math.min(SECTIONS.length - 1, index + 1) * width;
+  pager.scrollLeft = Math.max(min, Math.min(max, dragFrom - dx));
+  moveInk();
+  event.preventDefault();
+}, { passive: false });
+
+pager.addEventListener("touchend", event => {
+  if (!dragging) return;
+  dragging = false;
+  pager.style.transition = "";
+  if (axis !== "x") return;
+  const dx = event.changedTouches[0].clientX - dragX;
+  const step = Math.abs(dx) > pager.clientWidth * DRAG_TRIGGER ? (dx < 0 ? 1 : -1) : 0;
+  goTo(index + step);
+}, { passive: true });
+
+pager.addEventListener("touchcancel", () => {
+  if (!dragging) return;
+  dragging = false;
+  pager.style.transition = "";
+  goTo(index);
 }, { passive: true });
 
 tabrow.addEventListener("click", event => {
   const button = event.target.closest("button");
-  if (!button) return;
-  pager.scrollTo({ left: Number(button.dataset.index) * pager.clientWidth, behavior: "smooth" });
+  if (button) goTo(Number(button.dataset.index));
 });
 
 pager.addEventListener("click", event => {
@@ -376,18 +421,12 @@ document.getElementById("sort").addEventListener("click", event => {
   write(STORE_SORT, sort);
   document.querySelectorAll("#sort button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
-  const keep = index;
   renderPages();
-  pager.scrollLeft = keep * pager.clientWidth;
+  goTo(index, false);
   applySquircle();
-  syncHeight();
 });
 
-window.addEventListener("resize", () => {
-  pager.scrollLeft = index * pager.clientWidth;
-  moveInk();
-  syncHeight();
-});
+window.addEventListener("resize", () => goTo(index, false));
 
 /* ---------- 스쿼클 모서리 ---------- */
 
@@ -439,11 +478,8 @@ fetch("../data/issues.json", { cache: "no-store" })
     renderTabs();
     renderPages();
     requestAnimationFrame(() => {
-      pager.scrollLeft = index * pager.clientWidth;
-      moveInk();
-      syncHeight();
+      goTo(index, false);
       applySquircle();
-      tabAt(index).scrollIntoView({ inline: "center", block: "nearest" });
     });
   })
   .catch(() => {
