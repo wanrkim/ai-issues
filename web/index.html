@@ -174,12 +174,14 @@ const AXES = [
 ];
 const AXIS_NAME = Object.fromEntries(AXES);
 const BADGE = { surge: ["급상승", "surge"], new: ["새로 진입", "new"] };
-const STORE_AXES = "ai-issues.excluded-axes";
+const SECTIONS = [["all", "전체"]].concat(AXES);
+const SECTION_LIMIT = 20;
+const STORE_SECTION = "ai-issues.section";
 const STORE_SORT = "ai-issues.sort";
 
 let data = { issues: [] };
 let sort = read(STORE_SORT, "popular");
-let excluded = new Set(read(STORE_AXES, []));
+let section = read(STORE_SECTION, "all");
 
 function read(key, fallback) {
   try {
@@ -215,24 +217,27 @@ function escape(text) {
 }
 
 function renderChips() {
-  document.getElementById("chips").innerHTML = AXES.map(([key, label]) =>
-    `<button data-axis="${key}" aria-pressed="${!excluded.has(key)}">${label}</button>`
+  document.getElementById("chips").innerHTML = SECTIONS.map(([key, label]) =>
+    `<button data-section="${key}" aria-pressed="${section === key}">${label}</button>`
   ).join("");
 }
 
 function renderList() {
   const list = document.getElementById("list");
-  let issues = data.issues.filter(i => !excluded.has(i.axis));
+  let issues = section === "all"
+    ? data.issues.slice()
+    : data.issues.filter(i => i.axis === section);
 
   if (sort === "recent") {
-    issues = issues.slice().sort((a, b) =>
+    issues.sort((a, b) =>
       String(b.last_seen || "").localeCompare(String(a.last_seen || "")));
   } else {
-    issues = issues.slice().sort((a, b) => a.rank - b.rank);
+    issues.sort((a, b) => a.rank - b.rank);
   }
+  issues = issues.slice(0, SECTION_LIMIT);
 
   if (!issues.length) {
-    list.innerHTML = '<div class="empty">표시할 이슈가 없다.<br>축 필터를 확인해줘.</div>';
+    list.innerHTML = '<div class="empty">이 섹션에 표시할 이슈가 없다.</div>';
     return;
   }
 
@@ -275,10 +280,9 @@ document.getElementById("sort").addEventListener("click", event => {
 
 document.getElementById("chips").addEventListener("click", event => {
   const button = event.target.closest("button");
-  if (!button) return;
-  const axis = button.dataset.axis;
-  excluded.has(axis) ? excluded.delete(axis) : excluded.add(axis);
-  write(STORE_AXES, [...excluded]);
+  if (!button || button.dataset.section === section) return;
+  section = button.dataset.section;
+  write(STORE_SECTION, section);
   renderChips();
   renderList();
   applySquircle();
