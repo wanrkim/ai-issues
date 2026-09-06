@@ -1,7 +1,304 @@
 {
-  "updated_at": "2026-09-07T05:20:28+09:00",
-  "count": 245,
+  "updated_at": "2026-09-07T08:45:45+09:00",
+  "count": 249,
   "items": [
+    {
+      "id": "00a508e12afb9e60",
+      "source": "The Verge",
+      "axis_hint": "llm",
+      "url": "https://theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+      "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+      "published_at": "2026-09-07T08:36:04+09:00",
+      "fetched_at": "2026-09-07T08:45:27+09:00",
+      "snippet": "The Seattle Times and Newsday are just the latest plaintiffs to take OpenAI to court, alleging copyright infringement. The two outlets say the company used their journalism as training data for its AI models without permission and often reproduces passages from their reporting in response to user queries. This is similar to lawsuits filed by […]",
+      "image": null
+    },
+    {
+      "id": "3496139b812086d9",
+      "source": "Google News / startupfortune.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTmNDWGwzUi1XdXB0cDlJZU56SF9Kb2FTTDRRcS1lYW4yWmxXNnVsbnBnQks2eDNRa2xjSmszU3k1eGdiSHlYZGsyWW1LNTVVRWtpOC1VSF94b3pyejdOQ3FmYVdOWkprSU9PdmFIOFRDOVd0SlVhZmJMSm0xZ2Z0c1o4eDg0VHdCbEI5S2dSb1ZSb2xuWERZX0JOZnNIbXlvc3ItSDhYYTl5Zw?oc=5",
+      "title": "OpenAI Chief Scientist Jakub Pachocki Warns No AI Lab Is Ready to Scale Safely - startupfortune.com",
+      "published_at": "2026-09-07T08:29:12+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "OpenAI Chief Scientist Jakub Pachocki Warns No AI Lab Is Ready to Scale Safely    startupfortune.com",
+      "image": null
+    },
+    {
+      "id": "830a35df82687f7c",
+      "source": "Hugging Face Hub",
+      "axis_hint": "llm",
+      "url": "https://huggingface.co/cityofslience/control_v11p_sd15_inpaint",
+      "title": "신규 모델 공개: cityofslience/control_v11p_sd15_inpaint",
+      "published_at": "2026-09-07T08:28:40+09:00",
+      "fetched_at": "2026-09-07T08:45:43+09:00",
+      "snippet": "likes 1 / downloads 0",
+      "image": null
+    },
+    {
+      "id": "7664ad37f26410a6",
+      "source": "Google News / Happy Mag",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYWIyTkc3bFVlOWhlcDJFd1V6dy00anlreHlaOVpaeTMyVHNoLW91dGVLa2NobTE3UjdldjlHb1pCdlNNWV9VZlJrNlVjY3VLQTVpa3JvSVlhaVo2NkVUbEJqTW84R3poWk11QWo2WElJUDB6RFdoVXJyOGlsMkFXMi1hOEg?oc=5",
+      "title": "OpenAI unveils GPT-6 Astra, its most intelligent model yet - - Happy Mag",
+      "published_at": "2026-09-07T08:25:33+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "OpenAI unveils GPT-6 Astra, its most intelligent model yet -    Happy Mag",
+      "image": null
+    },
+    {
+      "id": "8bf40d48b4aeda3c",
+      "source": "Google News / finance.biggo.com",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0XzNLQ3dma0NGcGswSFVXbi1SYjdGTjlwYURDWlRURFZtcDBKVFltQVk2SGg0dlIyUnVtMml6T2hBMi1qbXdVMEM4NG96U2Ryc1NMb1M3aklXZGlqMEs4b3k2d0VlUkprc0trZFNaZGVzMVNiY3c?oc=5",
+      "title": "What OpenAI's 'Astra' Benchmark Revealed — AI's New Battleground Is 'Memory' - finance.biggo.com",
+      "published_at": "2026-09-07T08:25:00+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "What OpenAI's 'Astra' Benchmark Revealed — AI's New Battleground Is 'Memory'    finance.biggo.com",
+      "image": null
+    },
+    {
+      "id": "ea053aec6ae94936",
+      "source": "Google News / The Fast Mode",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOb19wRnlPUnkzZjUzMm13c1o3RHBKTVpwUTV2aUZYZTYyOU1EZWtsRVVXcjRWekFObHRPbzA4dHFyQklKSms1VGxRVHVDaTZ2eEdHbVMzVEJuTEhDZVEwRHZZUFZPd2ZyRlNlM1d6OXZDZ1A0RERaSnU5TmxpdnFmQVlaOFgwT0d2ZUExRDNpMzZLQzBYaFVZWk44RlBhZzdGZHV2VmRraDVlSGlRb3FZLXRfVnRIc3VGRVZ3?oc=5",
+      "title": "Tenable, OpenAI Launch AI Security Review Process for CyberAgents - The Fast Mode",
+      "published_at": "2026-09-07T08:16:58+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Tenable, OpenAI Launch AI Security Review Process for CyberAgents    The Fast Mode",
+      "image": null
+    },
+    {
+      "id": "54d54279e1457e27",
+      "source": "Google News / EdTech Innovation Hub",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSlVaQlo3aXdFZVd4YnMzdXpaRDRaaHRSRFJiVmNOZmk4WldiVlU2WGVXcUxLQ3RzNVJNX0NjdUtEZl9fMFFyT2NiaXAtWV9rZzFFQmhDNDd3M2Y5QlpCMXkxb1IxQ1NIOWZUUktfekE2ZF9mWl9IVHhTemJvakoxcVlLUzRxQ3dKbm10eVRwYTdMcEp3a21nMXd5Z2lUNG9WRkRQRHJFTndad2djN0Ixd3JsVDNsYzBs?oc=5",
+      "title": "Anthropic opens Claude usage data to external researchers | ETIH EdTech News - EdTech Innovation Hub",
+      "published_at": "2026-09-07T08:04:03+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Anthropic opens Claude usage data to external researchers | ETIH EdTech News    EdTech Innovation Hub",
+      "image": null
+    },
+    {
+      "id": "c2212e8117c2a479",
+      "source": "Hacker News",
+      "axis_hint": "llm",
+      "url": "https://axios.com/2026/08/19/gop-data-center-memo-ai-election",
+      "title": "GOP issues stark warning to AI companies",
+      "published_at": "2026-09-07T07:59:40+09:00",
+      "fetched_at": "2026-09-07T08:45:38+09:00",
+      "snippet": "",
+      "image": null
+    },
+    {
+      "id": "8b8c47ac59236953",
+      "source": "Google News / Business Insider",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYVlPMC1CNnpsZ1VBRTAzTlJZU2RzWk92WGRmSUhQY3dwa3d1a1YtMXNwRDJ2UURBRy1vZkh3NnVzbHkxdko0TEFONXR6UnVBeUE1enZaQXhwRlJyVEZ2eWZPelIxME4wM2Z6XzZBMTJYYzM2eWN1SDYxcF9BQ25jdEtBd1Y?oc=5",
+      "title": "Nvidia's Jensen Huang Says 'AGI Has Arrived' and Congratulates OpenAI - Business Insider",
+      "published_at": "2026-09-07T07:59:00+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Nvidia's Jensen Huang Says 'AGI Has Arrived' and Congratulates OpenAI    Business Insider",
+      "image": null
+    },
+    {
+      "id": "94ef016cfc55e3d0",
+      "source": "Google News / Yahoo Finance",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVkJMLWtrTnhidVZEQmpRazhrazNnd2hydEp1NTkwcDliNFVINEdOak1FWlpsQlhZVFJVYXl2LUpPRDNuTFlJR0NJUTNXZmpVMlpBTlRTb0pNR3RqZzh1WUFmNEhpb05OaGJWdU5Ed3dXd2hlRXhzdEhjSDIyVVBhRG9oN0pWZDhKZXFuenhQRW5wYXFOaDFlRw?oc=5",
+      "title": "OpenAI Cuts Cursor Off from its Models Now That Musk’s SpaceX (SPCX) Owns It - Yahoo Finance",
+      "published_at": "2026-09-07T07:35:47+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "OpenAI Cuts Cursor Off from its Models Now That Musk’s SpaceX (SPCX) Owns It    Yahoo Finance",
+      "image": null
+    },
+    {
+      "id": "45a5da1341dff137",
+      "source": "SiliconANGLE",
+      "axis_hint": "llm",
+      "url": "https://siliconangle.com/2026/09/06/openai-to-set-misalignment-disclosure-rules-after-agents-took-over-a-wiki",
+      "title": "OpenAI to set misalignment disclosure rules after agents took over a wiki",
+      "published_at": "2026-09-07T07:33:26+09:00",
+      "fetched_at": "2026-09-07T08:45:31+09:00",
+      "snippet": "OpenAI Group PBC acknowledged Saturday that it did not publicly disclose an episode in which its artificial intelligence agents wrote to outside websites and said it will publish a framework in the coming weeks for reporting misaligned model behavior. The company now calls the episode the “wiki incident.” Researchers led by the Nightingale Collective set […] \n The post  OpenAI to set misalignment disclosure rules after agents took over a wiki  appeared first on  SiliconANGLE .",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/openaiwikiincident.png"
+    },
+    {
+      "id": "472605e59875146a",
+      "source": "Google News / The Motley Fool",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQalREeVlpbHZ1eTBvaldzRktZT1MxRmhnRXAtMVdOcHRUWHJtU1VBWHNOSmlCU1ROcEJHanZuQ3dtY0hteDZxQ1ZkajlpSkxLZWh3WXFxVzhoWXczZF94UkJoSzFPeGNoTnMxUFQtRzJXakFycmx4TmhHZDA2NXNVQVNPcG0xbWl6T3JPNmUwNk9oQjA?oc=5",
+      "title": "Did Nvidia Just Say Checkmate to AMD and Intel? - The Motley Fool",
+      "published_at": "2026-09-07T07:33:09+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Did Nvidia Just Say Checkmate to AMD and Intel?    The Motley Fool",
+      "image": null
+    },
+    {
+      "id": "ac326393f6a8b8ee",
+      "source": "Google News / Semafor",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMHQtUmJ4ZnVXUDBXZ0VRV2llelZRaEtNVDllWEJaREdyTjBGSnk3S1ZnM1dPTGRvZUJRUjUtTjBWTlV5UDR3UjNGa01iU1ZlQVZ3b19YY1R4OXFPV1JvemNTdmNRTHp4OUtSUWFNeHUzSVo4ODRqTnBNWFBKN1lURVBn?oc=5",
+      "title": "OpenAI implicated in another hack - Semafor",
+      "published_at": "2026-09-07T07:31:00+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "OpenAI implicated in another hack    Semafor",
+      "image": null
+    },
+    {
+      "id": "c1c29e8a59a8eff8",
+      "source": "Google News / BBN Times",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcVVKNDZBak92MGtiWkc0SElHeVBRXzVnaTEwaUNLNlZEMXp0aUk4a3pYOTFYMlZ4LVZKLVVfMGVERXl6NlBDNlhGcmpzUzhpWW5pZUkyMlB6RVljVTM0V1diWHNQQm5fZU1nakl3M0x5YW80N3F0dTVEc2J6bE5Damg1QzV0Sjl4OVktQmxkMzJlRGEzeFlBMjFKaFBZWDZiX0JmdHZXWlc3VzJrSGpLOWJQVmNiVmNhbkNucVlFM0UzN3Bw?oc=5",
+      "title": "Nvidia's Equity Investments Hit $99 Billion as AI Chip Giant's Market Cap Tops $5.5 Trillion - BBN Times",
+      "published_at": "2026-09-07T07:29:28+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Nvidia's Equity Investments Hit $99 Billion as AI Chip Giant's Market Cap Tops $5.5 Trillion    BBN Times",
+      "image": null
+    },
+    {
+      "id": "78cc97d6014124c7",
+      "source": "Google News / Yellow.com",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GSlVncElKVnBncG1FTEk0ajk2dUhfaWlwUDVuQUNLbzRXRHlRWnFEclBrOHIxajQtTUJmWlQzZ3ZNd0pOVjdBR21mbkFadmxMT0ZmTldKdGdaQ3ZO?oc=5",
+      "title": "Hugging Face $12.9B Acquisition Reveals Critical AI Chip Gap - Yellow.com",
+      "published_at": "2026-09-07T07:18:21+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Hugging Face $12.9B Acquisition Reveals Critical AI Chip Gap    Yellow.com",
+      "image": null
+    },
+    {
+      "id": "09f8b49de9133e5d",
+      "source": "Google News / The Next Web",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOU21fQTZraWdZV2xGWk12dTBaS0ZEZzBpT2NfZTltcFNhWGlIT1pma2tPTnI3bjlINjEzTThvc2VPYk8yU0psNTUzdGZzTlNQQWV6aHZ4N3ZsWVlNZkk4V093TFdwZXpQQV9NR0wwWDRkekxUX0ZlLXBiWjg4UHRybFFoNFloeHFDWDByc0hHUHU?oc=5",
+      "title": "An OpenAI slowdown, argued by the man running research - The Next Web",
+      "published_at": "2026-09-07T07:14:37+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "An OpenAI slowdown, argued by the man running research    The Next Web",
+      "image": null
+    },
+    {
+      "id": "7556bfbdb209bf5e",
+      "source": "Google News / The Next Web",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSkNPOFpQcXVIOXFMNjAxN0YtanpxcDNsdnlrMVNIUkw2bkhObVAwc0xJYnAxU0N0UXVuQ3BsNW5vYUJzNjhWX2lLLWZwc2RGVzVXZ3BkNHJkY1lRS3ViWkZBb0RZTUJrNDdGcUpNSTZGLWZSWGNwUENXbmtzOWkxQWVsUVpscXVOYXo0?oc=5",
+      "title": "Anthropic IPO: a $2trn listing lands on election week - The Next Web",
+      "published_at": "2026-09-07T06:52:37+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Anthropic IPO: a $2trn listing lands on election week    The Next Web",
+      "image": null
+    },
+    {
+      "id": "b32ee0b393624d92",
+      "source": "Google News / Currently.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYlBiNEc5OGN3MDBWUmlsa2hzTGZwUi00YlBFOXowWU4yLTJwYW5qVkpPdXpHMDJvcFdwZ3RJUDZNWUdsZXhrTVQ1Mk5YNVRCVGp2T1l1Tms5cFhTVDRtUHpHYUJhbmFmaFpKQnZjcWhmb2lMR2ZULUo1NzliSWU3c0YybU5kSGY0U2I1TzR0VG0?oc=5",
+      "title": "Anthropic Has Committed More Than $100 Billion to AWS, and Its Prospectus Could Reveal More Details About This Contract - Currently.com",
+      "published_at": "2026-09-07T06:43:01+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Anthropic Has Committed More Than $100 Billion to AWS, and Its Prospectus Could Reveal More Details About This Contract    Currently.com",
+      "image": null
+    },
+    {
+      "id": "8576b2e93a8c4aff",
+      "source": "Google News / Yahoo Finance",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOUZMYTliejlKS1dfSmZCRmZZUko2WjJHa2RvSW03UVh6V0wwY3VJUnJrSXBDaGczVEJnWTkxR204QzEzUE0tRk15TGlIbm9sQkNGNkVTQ3VUWlVLV1AyRkU5ZVVlaGctSGloX0dRWGdQYUppZEVFNnpnbWE3Y3ZVZ2c2ZXc3SUtLRWZtVlRJUlNyNXFhSy1GTA?oc=5",
+      "title": "Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra - Yahoo Finance",
+      "published_at": "2026-09-07T06:39:37+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra    Yahoo Finance",
+      "image": null
+    },
+    {
+      "id": "441f936dff7aada1",
+      "source": "Google News / startupfortune.com",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVUpwOXhaTlBYUzlZbVg4X2hxWFhFMS0zWF9ObHFxY251azR4dFRBZ0ZzNktlOWQxUEZsZnIwZ2xLaGRKNEFHMklMUThEVDBoQV90TkRWUkltbHBDMlRGOHBSdzJDTDNQVTJUclVNQ3FCQ1JuRzlRNjMzRGtORVRUU1hBTWdQbUV0cURPbmJLMFhTMW9KT0RqTG9xbHVQMGs?oc=5",
+      "title": "Broadcom Tripled AI Chip Revenue and Wall Street Sold the Stock Anyway - startupfortune.com",
+      "published_at": "2026-09-07T06:35:39+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Broadcom Tripled AI Chip Revenue and Wall Street Sold the Stock Anyway    startupfortune.com",
+      "image": null
+    },
+    {
+      "id": "9b2f739c9e729194",
+      "source": "Google News / Digital Trends",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeUxEd21DLV9BQU9UcG15Z0R4UUZfeVpFNWhzU29McG9mR2RXeW5wdXNzYmR5VFRTdWlVRTY5QV9TT3EwLW5ob0NZbk90dngydjJFcWR0VlI2WldkMjZBOVVtcXRzck5QMXFfd19hbDZBWFFldGdGWmJMa19VY2N2VnhWM0hqVnR4NXFGVWFQa1pqWmNQY0hNY3VQazNWWFduQ1lXVmJuN0dkSUhDdUpnOTVPZVM1cXpHZ3c?oc=5",
+      "title": "Three hikers trusted Gemini to plan a hike and had to be rescued the next day - Digital Trends",
+      "published_at": "2026-09-07T06:22:00+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Three hikers trusted Gemini to plan a hike and had to be rescued the next day    Digital Trends",
+      "image": null
+    },
+    {
+      "id": "e0688d24e0985337",
+      "source": "Google News / PYMNTS.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb0NsYUpTMDYwbkg0Rm42OTUtNnkwdjFzc3ZOLUtoTkgxMk1NQWJtRzNUY3Q1bGV5Rl9mTEJDOTRUdGVnbl9FVFFTYkRRcjdiS1JpWGFGOXM3R205M09UVjdsOVZBVDdQb2VjSXA0Q2EtUU9HU3Yta3ZIanZfaVYzdG0tWXZvTkxQV2ltN3cyZmtyMzBSOXRRNDJSenpNQ3Y1SG45dDliT0szSnFqSGM4MTJB?oc=5",
+      "title": "Anthropic Said to Postpone IPO to Just Before Midterms - PYMNTS.com",
+      "published_at": "2026-09-07T06:18:57+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Anthropic Said to Postpone IPO to Just Before Midterms    PYMNTS.com",
+      "image": null
+    },
+    {
+      "id": "16ecbc62e3ad1d17",
+      "source": "Google News / Chosunbiz",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1wOWd4MXJnbVFxUE5EcWY4WW5wZWMzeUlZWTNHYTBueTNyLVNvWndDM0ZPS1NWX3JEOXlzV1pIREx1STdGTVNTeDNRSGEyNEtMR195U3VCSUtONWtQZ1dSS0gwbzVBYjljdlcxMDNTTVJ2dXNyTVZFbmt30gGOAUFVX3lxTE1tQ2hlcjhxNG1LMFEwZTBYbXAxcHlyaWx2NjhhajNfdnZoN3dCUnlUMnQyNVZZWUI2YTktMjJLMkljRVJjWlBKR0tOUUNCbkJGeGtmU3BSdTZtMlotNnVVY0I2a1VlNVNEd2ZpNmh3TVBJZHZsenVOaGxyYkRVRkhBSmFTbE05Z0xaVlBPMmc?oc=5",
+      "title": "SK hynix accelerates 1c DRAM shift to lead HBM4E race in South Korea - CHOSUNBIZ - Chosunbiz",
+      "published_at": "2026-09-07T06:00:00+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "SK hynix accelerates 1c DRAM shift to lead HBM4E race in South Korea - CHOSUNBIZ    Chosunbiz",
+      "image": null
+    },
+    {
+      "id": "c552c9e7d810d778",
+      "source": "TechCrunch",
+      "axis_hint": "llm",
+      "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement",
+      "title": "Authors push back as publishers and agents make claims on Anthropic settlement",
+      "published_at": "2026-09-07T05:47:37+09:00",
+      "fetched_at": "2026-09-07T08:45:27+09:00",
+      "snippet": "Authors say publishers seem to be claiming more than their fair share of settlement payments.",
+      "image": null
+    },
+    {
+      "id": "cd022d7915dd4ac5",
+      "source": "Google News / Seoul Economic Daily",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMm5Nd1FicTJMSjRhS0QyRXJCVUVWN1FCMGlfX0Zya294WkNZdzNwempCZ215RWtuM1N5Ynk5WExxR2UxZUV1R3dNcjlzeFNkZ1IxVmVSd0dDS05HWFpjX1J0U0FWSC1rZzg3VGsyNmU4NUtuWWo1blh1cmpUeE16ZnRGSFhWODlKNDVpVm9aNkp5TkoxU3VfWGVMYnhpdF9GMkN1a1Y2ZVVfZWs?oc=5",
+      "title": "Software Giants Bet on Custom AI Chips Despite Hardware Gap - Seoul Economic Daily",
+      "published_at": "2026-09-07T05:39:05+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Software Giants Bet on Custom AI Chips Despite Hardware Gap    Seoul Economic Daily",
+      "image": null
+    },
+    {
+      "id": "84a6253e471e3553",
+      "source": "Google News / tech-insider.org",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9aZTBENWdqbGR4U3pKODRQQzRWemtzMldPbE5haGRPRmQzQ0VteFhabXg4emlGQl85RWdBOTNlalVTdGZTYWVfVHpPOS03Yk5xMG5sdklnWlVaMWFpbHVBWTB2ZW8ydW9lOER3dTktNFFzbW1feTZ1SnZn?oc=5",
+      "title": "Nvidia’s $12.9B Hugging Face Deal Fends Off Broadcom [2026] - tech-insider.org",
+      "published_at": "2026-09-07T05:36:43+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Nvidia’s $12.9B Hugging Face Deal Fends Off Broadcom [2026]    tech-insider.org",
+      "image": null
+    },
+    {
+      "id": "af78c1842f29ed7c",
+      "source": "Google News / Benzinga",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYW00b1ZpQnZoSWRoajNySHJvdGg1UklHblhLNDZVVEZqcFNNUjY1RUNwV2NOaEx5YmFraXEycC1SZkxxVWlKMUNLZEN6Qk9RT1lMbC1pd1dnUlRROTEwazhONGR1YjhaM2JCdkNZNjkyM2VCdHJwcXk0ODB6ejEzQzMtZm5PMUJtQlU0aE94U21zMkdnblh1OVVoWHpfWFpOWk1idkk0TnVncnlaSXdBOVE0WU4zSTBFT21aUTZ1M09ybFBGMGZuUnlXRlJfSV95VV93NEdWYTFFNFN1?oc=5",
+      "title": "Salesforce Stock Has Surged as AI and Anthropic Bets Pay Off, But Technical Risks Remain - Benzinga",
+      "published_at": "2026-09-07T05:20:26+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Salesforce Stock Has Surged as AI and Anthropic Bets Pay Off, But Technical Risks Remain    Benzinga",
+      "image": null
+    },
     {
       "id": "17b8ec242f76f1c4",
       "source": "Google News / Korea JoongAng Daily",
@@ -344,6 +641,17 @@
       "image": null
     },
     {
+      "id": "1bf29d7c2dba1568",
+      "source": "Google News / Quantum Zeitgeist",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtM2FHWGNfVi1XT1hyWGNJay11SlR4UTYtcjhfaWViRWJIVTVoZnRRbGdLMEsyVVFQUUN0S1pvUVpNOUhYbXRvYVRXQXBhTzJJRVoyMkxhQXZYQ0VPblNHbEI1MXJjMVh1cTMyRHgwZXctenlHZ1E?oc=5",
+      "title": "AMD Chips Will Power Europe’s New LUMI-AI Supercomputer - Quantum Zeitgeist",
+      "published_at": "2026-09-07T01:11:10+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "AMD Chips Will Power Europe’s New LUMI-AI Supercomputer    Quantum Zeitgeist",
+      "image": null
+    },
+    {
       "id": "cbbba3264d2e772e",
       "source": "Google News / OpenAI",
       "axis_hint": "llm",
@@ -531,6 +839,17 @@
       "image": null
     },
     {
+      "id": "a5aa336441285d21",
+      "source": "Google News / TyN Magazine",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBINmJLZGRIRmdYSllzZ1Q0OThFWVpzbG4yeno1SE8zUTBlNlE2c0ZLNG42MU5DcDhJOFFOa3dwTV96VlhoUU9sb2N3WDFiLVhXVGt4QmZmMGowM1dtZ0liaGtkakFnRUc2SEZ5TXc2YUUyMFAx?oc=5",
+      "title": "DeepSeek plots major Huawei AI chip order - TyN Magazine",
+      "published_at": "2026-09-06T23:35:44+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "DeepSeek plots major Huawei AI chip order    TyN Magazine",
+      "image": null
+    },
+    {
       "id": "17c2be74f5f3c0b9",
       "source": "Tom's Hardware",
       "axis_hint": "hardware",
@@ -561,6 +880,17 @@
       "published_at": "2026-09-06T22:54:25+09:00",
       "fetched_at": "2026-09-07T01:17:26+09:00",
       "snippet": "",
+      "image": null
+    },
+    {
+      "id": "6cbdea0c39dad3ba",
+      "source": "Google News / The Next Web",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOV2ZJRndtVkZ1cDMtSWoyVi1uMDJTcWR5SXZzWG0wclhtc04tM2p3OHU4Zi00Q1ZzMnNDeTR2TmpQeXo1VUpTYXN6WTEzRlh2QTlETTN2MDY3NVJpeFR2ZEZzRFNpZW9VVnN2VFB2eThqdXhkYVlsXzZMYjZLZmxaaU9NTQ?oc=5",
+      "title": "Claude formalised Fermat's Last Theorem in 11 days - The Next Web",
+      "published_at": "2026-09-06T22:34:24+09:00",
+      "fetched_at": "2026-09-07T08:45:34+09:00",
+      "snippet": "Claude formalised Fermat's Last Theorem in 11 days    The Next Web",
       "image": null
     },
     {
@@ -2016,6 +2346,17 @@
       "image": null
     },
     {
+      "id": "e9945062422fe671",
+      "source": "Google News / Yahoo Finance",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcm1neGJzMndOYm9XSlMtN3NocF9RTjI3UTg3RHNOX2Q4UUh3QXJ4bWYyT2owRXU4TG54TW1XWEhnTGtTa3VuSllnaVF0UDZnbGZFbUZqaTJKOTlDYUtSVDRfNC1UN1BySGYxUUZCS2lkZzJkUkJtMXB3UE5nelo5anBoTkwxd05vWmdRR2JEbmY5QmRQazhtc0N6Q2VuODg?oc=5",
+      "title": "Monolithic Power Revenue Jumped 48%. Can AI Power Chips Keep the Momentum Going? - Yahoo Finance",
+      "published_at": "2026-09-05T19:22:00+09:00",
+      "fetched_at": "2026-09-07T08:45:35+09:00",
+      "snippet": "Monolithic Power Revenue Jumped 48%. Can AI Power Chips Keep the Momentum Going?    Yahoo Finance",
+      "image": null
+    },
+    {
       "id": "c35d2e85cb068475",
       "source": "Google News / global.morningstar.com",
       "axis_hint": "llm",
@@ -2399,303 +2740,6 @@
       "fetched_at": "2026-09-07T01:17:22+09:00",
       "snippet": "Court Filings In A.I. Suit Invoke Copyright Law, Culture and Sports    The New York Times",
       "image": null
-    },
-    {
-      "id": "44a6c9acd9ce915d",
-      "source": "Hacker News",
-      "axis_hint": "llm",
-      "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
-      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
-      "published_at": "2026-09-05T08:38:50+09:00",
-      "fetched_at": "2026-09-06T22:40:00+09:00",
-      "snippet": "",
-      "image": null
-    },
-    {
-      "id": "d7b2d01e2750bd0a",
-      "source": "TechCrunch",
-      "axis_hint": "llm",
-      "url": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation",
-      "title": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
-      "published_at": "2026-09-05T08:36:14+09:00",
-      "fetched_at": "2026-09-06T22:39:25+09:00",
-      "snippet": "The round is being raised just months after the robot data startup exited from stealth.",
-      "image": null
-    },
-    {
-      "id": "fe3e9affeeaab43c",
-      "source": "TechCrunch",
-      "axis_hint": "llm",
-      "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them",
-      "title": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
-      "published_at": "2026-09-05T08:15:11+09:00",
-      "fetched_at": "2026-09-06T22:39:25+09:00",
-      "snippet": "OpenAI’s latest agent swarm incident adds urgency to calls for independent investigations as researchers and lawmakers question whether AI labs should control the scope of their own safety reviews.",
-      "image": null
-    },
-    {
-      "id": "9f505acef9aa5889",
-      "source": "Tom's Hardware",
-      "axis_hint": "hardware",
-      "url": "https://tomshardware.com/pc-components/gpus/dlss-5-officially-launches-inside-nba-2k27-limited-to-rtx-50-series-gpus-for-now-nvidia-promises-to-bring-neutral-rendering-tech-to-rtx-40-series-soon",
-      "title": "DLSS 5 officially launches inside NBA 2K27, limited to RTX 50-series GPUs for now — Nvidia promises to bring neutral rendering tech to RTX 40-series soon",
-      "published_at": "2026-09-05T08:09:31+09:00",
-      "fetched_at": "2026-09-06T22:39:29+09:00",
-      "snippet": "Nvidia's controversial neural-rendering tech, DLSS 5, is now officially available in NBA 2K27, marking the start of a new era for the company. DLSS 5 will also come to RTX 40-series soon after current work on optimizing it for the RTX 50-series has reached a satisfactory state.",
-      "image": "https://cdn.mos.cms.futurecdn.net/HwAcYRj7Jwy8EMgAW5JouH-1280-80.gif"
-    },
-    {
-      "id": "fcd294b6b23668e8",
-      "source": "Google News / NBC News",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYWV4RjBZYlppTGV6U0VLRE0tTUZiX2toTElEM1hNUExfb0tVX0NEWWtGR054ZDJmMWlMZGxSalgwOHdDcHRtNjk1M2g1QmpzQVljTExmWTBrd1RCTzZGTWZiMmh3eW5NeWlTcDlrR24ySzZad0pMUkZiazJqOTdxMWUxME00dEZMcGdNVU1sNmVpcXJSeWdRSTEtVVd2bHpUbVlfbGZuMWd5b0E?oc=5",
-      "title": "Researcher who found OpenAI-linked rogue agent swarm says AI giants may hide future chaos - NBC News",
-      "published_at": "2026-09-05T08:03:50+09:00",
-      "fetched_at": "2026-09-06T22:39:44+09:00",
-      "snippet": "Researcher who found OpenAI-linked rogue agent swarm says AI giants may hide future chaos    NBC News",
-      "image": null
-    },
-    {
-      "id": "ce93f56c42608439",
-      "source": "Google News / WSJ",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbEJmOWRwaGQxLXdMVzlaUk16VUZfVE9FTkN4MVdOXzBYZEY5VlpWMWZFbHBjaTNCTmxnQVdsamU4YUd3YmUtZDV6OUFNZDdvOGFfY0pLSndyc0JVci03c2NrcUtveEhnTU8tOEZMY3FoUUlETnlrM0pZUGlsSFdjOW5xU2VpQ3pOeWhoOHZ2TTNqb3RyQzdFSnR0YktRWjZHeDcxNzBuQmZvOUk?oc=5",
-      "title": "Exclusive | U.S. Used Promise of Nvidia Chips to Broker Armenia-Azerbaijan Peace Deal - WSJ",
-      "published_at": "2026-09-05T08:00:00+09:00",
-      "fetched_at": "2026-09-06T22:39:46+09:00",
-      "snippet": "Exclusive | U.S. Used Promise of Nvidia Chips to Broker Armenia-Azerbaijan Peace Deal    WSJ",
-      "image": null
-    },
-    {
-      "id": "edfd1f7bcd5b3314",
-      "source": "SiliconANGLE",
-      "axis_hint": "llm",
-      "url": "https://siliconangle.com/2026/09/04/gimlet-labs-nabs-300m-for-its-disaggregated-inference-platform",
-      "title": "Gimlet Labs nabs $300M for its disaggregated inference platform",
-      "published_at": "2026-09-05T07:59:03+09:00",
-      "fetched_at": "2026-09-06T22:39:34+09:00",
-      "snippet": "Gimlet Labs Inc., a startup that helps developers speed up their inference workloads, has raised $300 million in funding at a $3 billion valuation. Andreessen Horowitz led the Series B round. Gimlet stated in a blog post today that the firm was joined by Arm Holdings Inc., Samsung Ventures, Microsoft Corp.’s M12 fund and more […] \n The post  Gimlet Labs nabs $300M for its disaggregated inference platform  appeared first on  SiliconANGLE .",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/unsplash.jpg"
-    },
-    {
-      "id": "2cbef82c75d4a946",
-      "source": "Google News / Yahoo Finance",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdWl3Zmx5dVdnT2VIVWZzNHM2RFV5bHdFVnRPbF9xeC1SZE5YRVE4T2dlX0M3R3UzNnZUZFpueE90NGZDbHJBZXhiVXAxblVQMlhIZFI0Mkw0bGN4Vm9BS1VkaTlyTjVvWHpCWDFJbWVRUWRHRnpEa0pvQkc4TnNrbkdzM0pYUkhzTGh3TWtjMXl0UER5eTEzSHEtQl9PcHNtcG5heQ?oc=5",
-      "title": "Coatue Opened Positions in Intel and Cerebras. Is the AI Chip Trade Broadening Beyond NVIDIA? - Yahoo Finance",
-      "published_at": "2026-09-05T07:55:13+09:00",
-      "fetched_at": "2026-09-06T22:39:46+09:00",
-      "snippet": "Coatue Opened Positions in Intel and Cerebras. Is the AI Chip Trade Broadening Beyond NVIDIA?    Yahoo Finance",
-      "image": null
-    },
-    {
-      "id": "cfce8b01047c5096",
-      "source": "Google News / Reuters",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcHVnRVBYTlF2Z1Zwc3NNRnMyZFkyZDVvM0NqUUcyOTZJSE5FUlhMaVR4WkVwWjBqSmNOXzdnY3hsTHBza2tSand0REo3M3NiU1AxWkFBNUwwZU5XLXNYNkEzcUl0QkRValFFYUdCeFFPdVUzcmNyZDJjZ3REZE5UaC1jR1dWSHJfcFkyZkVMZjE3bzFuOC1icDU2M1JlclRxdlE?oc=5",
-      "title": "EXCLUSIVE: Anthropic IPO launch shifts toward mid-October, sources say - Reuters",
-      "published_at": "2026-09-05T07:41:00+09:00",
-      "fetched_at": "2026-09-07T01:54:14+09:00",
-      "snippet": "EXCLUSIVE: Anthropic IPO launch shifts toward mid-October, sources say    Reuters",
-      "image": null
-    },
-    {
-      "id": "11ec8c0810fd6758",
-      "source": "Google News / Bloomberg.com",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdFFqUndTQ1FVNHdZSDk4TVk1My0wYkJYTExSSFd5VWFKbG1DeEI0Y2YySjF3UDRtUDR1eTlJcXlUd1hnbGpFNFNHU0Rrcm5UZHhUby1nVmdOeWMycE56QnBWY1hPY090T2Q0YnFKTlpVM1pWZ2d4MHVPemRBZU9tMXJTRFJHM0oySXdqWFU2QXM2b3VqdHBCYkVhYWN1RXRyYmpNYWNyQmJrN2piVU5wdTdR?oc=5",
-      "title": "AI Cloud Firm Nscale Seeking $3.5 Billion in Pre-IPO Financing - Bloomberg.com",
-      "published_at": "2026-09-05T07:36:49+09:00",
-      "fetched_at": "2026-09-06T22:39:46+09:00",
-      "snippet": "AI Cloud Firm Nscale Seeking $3.5 Billion in Pre-IPO Financing    Bloomberg.com",
-      "image": null
-    },
-    {
-      "id": "b7783d569ea3f574",
-      "source": "Ars Technica",
-      "axis_hint": "llm",
-      "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki",
-      "title": "OpenAI agents discussed ways to escape their sandbox on public wiki",
-      "published_at": "2026-09-05T07:17:36+09:00",
-      "fetched_at": "2026-09-06T22:39:27+09:00",
-      "snippet": "In all, 3,700 internal agents posted 18,000 messages discussing cheating on a test.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-agent-hacking-1152x648.jpg"
-    },
-    {
-      "id": "8a3be1f5d19bca5a",
-      "source": "Google News / Reuters",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb0lsYkxySy1tYUVZRnlHQmN5Q1loNW14dl9oYWZ4UFpWX0N6TGNMdUdTSFRHMDBsMzMwazV2RkFkM01jTGFvbHpJUTk4ZVNzVGZJc3FtaWlHMGViMEp2ZHFUcEZuNmF3MUd3UjF3eEc4ZC04MDEwWmp3RlYzSmFPZTNLTVlpTURsdENEdE1FMlNzRjc1TzFQd2tSSUNoQmtxRF9DQUVIR0Ftams3Zm5KUFZ1dHhrZEtKUFlSQUFyeVozSmxk?oc=5",
-      "title": "EXCLUSIVE: OpenAI agents hijacked German website in previously undisclosed AI breakout this spring - Reuters",
-      "published_at": "2026-09-05T07:02:17+09:00",
-      "fetched_at": "2026-09-07T01:17:22+09:00",
-      "snippet": "EXCLUSIVE: OpenAI agents hijacked German website in previously undisclosed AI breakout this spring    Reuters    Security News This Week: OpenAI Agents Hacked Another Website    WIRED    Why the Hugging Face Hack Should Make You Worry More About A.I.    The New York Times",
-      "image": null
-    },
-    {
-      "id": "2518774fedab2a18",
-      "source": "Google News / The Tech Buzz",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWFR4ZGk5WXFzZkVsWWhJZFBOc0tfb0NEX3dtOEg4d01rdmFmdGJuXzZFUHpRSkxXU2ZQbWtYMnZ2Tno4RHlFY2hLOGFuYzl3MXRJT3k2Rm1tLVRaMmI5d1hOOVpfVWVsR3lOQVFXc0p4UU45Q2pMSDd1ZjItejhzVzZxb2Q?oc=5",
-      "title": "Does Gemini Have a Limit? How Google's Usage Caps Actually Work in 2026 - The Tech Buzz",
-      "published_at": "2026-09-05T06:53:00+09:00",
-      "fetched_at": "2026-09-06T22:39:44+09:00",
-      "snippet": "Does Gemini Have a Limit? How Google's Usage Caps Actually Work in 2026    The Tech Buzz",
-      "image": null
-    },
-    {
-      "id": "3a1a5311d29809bc",
-      "source": "Hacker News",
-      "axis_hint": "llm",
-      "url": "https://openrouter.ai/openai/gpt-6-astra",
-      "title": "GPT-6 Astra on OpenRouter",
-      "published_at": "2026-09-05T06:39:19+09:00",
-      "fetched_at": "2026-09-06T22:39:57+09:00",
-      "snippet": "",
-      "image": null
-    },
-    {
-      "id": "f9afeb6ced942f97",
-      "source": "Google News / The Tech Buzz",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQjZONktObVhzYkJOSFdHaWxQbTIwY1lzRUdXZC1ELUIwaWZUeXJFb3N1RDdpVU5XQ0hIZnVQbnZLcUFvWnoxSVM3aFA4NmxXbjR4NlZMWWpYZUhHcHl3VTNraVVQRFZUZHp0Q2gwV2pVNHBIQXNGdW53Ui0yV2F3bXNFUEZFQ0VtT1Uzcw?oc=5",
-      "title": "Nscale Eyes $3.5B Pre-IPO Round After Anthropic Deal - The Tech Buzz",
-      "published_at": "2026-09-05T06:37:00+09:00",
-      "fetched_at": "2026-09-06T22:39:46+09:00",
-      "snippet": "Nscale Eyes $3.5B Pre-IPO Round After Anthropic Deal    The Tech Buzz",
-      "image": null
-    },
-    {
-      "id": "a9b4bb51c7c27471",
-      "source": "Google News / FedScoop",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeVduMWh4anMzWHN4VUZkWlM1VEZMaE9EZUlHOHU3blhfTjZCaW9pczFPVzFUNWpfd1hNam1JNUdEMFV2SzZDcHB0QkU1dVN2Mi1lTk83OGpjSkZUc1c4YmJhcm5yQldtY3o1M0dmS0lTZ0V3bE0tcERkbV94STA4RnFJemVMdm9Zd0lUR0h3?oc=5",
-      "title": "Anthropic faces different government responses as Pentagon battle continues - FedScoop",
-      "published_at": "2026-09-05T06:15:25+09:00",
-      "fetched_at": "2026-09-06T22:39:43+09:00",
-      "snippet": "Anthropic faces different government responses as Pentagon battle continues    FedScoop",
-      "image": null
-    },
-    {
-      "id": "a78a88753130c26d",
-      "source": "Google News / Politico",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdmhsWmFLekRLdU9CWHdHU1lOeTRQMVU1WnVCb0dXSm56MHFvWE5WQVl4NjFtX1VQcjhRSkF4WVlyb3N3bzlPMkh3Y3BIOWxzdTRjaHRYbXVFaUpKTVhrb2hyOTlzb0I3Y0hMS2EwQlhtVzUzSEF5LXE1SGJFWkI0Y3VqUng5VkVhVzQwMHg2cVRyMDRQdFNxT21HMTNydWpi?oc=5",
-      "title": "California’s Rob Bonta investigating OpenAI over Hugging Face hack - Politico",
-      "published_at": "2026-09-05T06:13:00+09:00",
-      "fetched_at": "2026-09-07T01:17:22+09:00",
-      "snippet": "California’s Rob Bonta investigating OpenAI over Hugging Face hack    Politico",
-      "image": null
-    },
-    {
-      "id": "886491e995a15d9b",
-      "source": "TechCrunch",
-      "axis_hint": "llm",
-      "url": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing",
-      "title": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
-      "published_at": "2026-09-05T06:12:11+09:00",
-      "fetched_at": "2026-09-06T22:39:25+09:00",
-      "snippet": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
-      "image": null
-    },
-    {
-      "id": "69e5551c36e82655",
-      "source": "Google News / The San Francisco Standard",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DY0E3Y1ZLcnJQamRtLUl3c19Za0Q1RmJzZDVSR3pMb3V2QjltWnJkR2FYeVBzQlhYdXhjUVFxOGNHb2xPWHpuV0hRS0JQZFA0RHp3bjB6bHpNV1lFM1VwWnREZGotdFBQY2lLT3hEOGE?oc=5",
-      "title": "Anthropic called SFPD over threat against CEO. Claude user says it was a misunderstanding - The San Francisco Standard",
-      "published_at": "2026-09-05T05:55:26+09:00",
-      "fetched_at": "2026-09-06T22:39:43+09:00",
-      "snippet": "Anthropic called SFPD over threat against CEO. Claude user says it was a misunderstanding    The San Francisco Standard",
-      "image": null
-    },
-    {
-      "id": "3c368f3f79f9d52b",
-      "source": "Google News / Reuters",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOa2hLeFBZbVVPaFV6VFpCLUo2U29qaFFDQXV3RUVUV0lIQS1mQ2Z3dUhjREtNRlZ0cjkyVnlzbi1EcTJmRi1JeHJNZDcxRTJEWnNleFlpX1FUdDdhX1ZwdGFENFBMcFdfS1g1WXZRX1ZtOERHcjB4RENuN2MwNjdoTmQtMW10bjBXUEduVnNTOGRUU0YwX2ZBMDV4RDRYUnJ2bklrcDl2N3NFMFJ2REViMWNjYw?oc=5",
-      "title": "Nscale seeks about $3.5 billion pre-IPO funding, source says - Reuters",
-      "published_at": "2026-09-05T05:48:11+09:00",
-      "fetched_at": "2026-09-06T22:39:46+09:00",
-      "snippet": "Nscale seeks about $3.5 billion pre-IPO funding, source says    Reuters",
-      "image": null
-    },
-    {
-      "id": "179e16926b421ba3",
-      "source": "Google News / MacRumors",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPc1BMYlFwTmJBcURwSktsTVN3NVlhczhTTDZKcEd5U1FoSjg0WnRneXRCM1YyTlJldUtqSDJXejJWVmhITG12dnN6S0dYSVllN0JJUUowNV9pRlp1ZFZYN2ZaOFBKeTFlME9NdjFDSkNUYy0yakMySjBEVDdPRlpMd3FB?oc=5",
-      "title": "Anthropic's Claude Comes to CarPlay - MacRumors",
-      "published_at": "2026-09-05T05:43:31+09:00",
-      "fetched_at": "2026-09-06T22:39:43+09:00",
-      "snippet": "Anthropic's Claude Comes to CarPlay    MacRumors",
-      "image": null
-    },
-    {
-      "id": "e1fc2885f6be7e77",
-      "source": "SiliconANGLE",
-      "axis_hint": "llm",
-      "url": "https://siliconangle.com/2026/09/04/cisco-delivers-edge-computing-ai-ciscoaward",
-      "title": "Cisco remakes the edge for AI’s data-heavy future",
-      "published_at": "2026-09-05T05:38:55+09:00",
-      "fetched_at": "2026-09-06T22:39:34+09:00",
-      "snippet": "The modern edge computing platform has arrived. Before the explosion of artificial intelligence, edge computing sites were generally regarded as a back-end support function, smaller and more remote copies of a data center. However, as agentic AI has intensified infrastructure demands, the edge has emerged as an AI-ready compute system in its own right, with […] \n The post  Cisco remakes the edge for AI’s data-heavy future  appeared first on  SiliconANGLE .",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/07/Cisco-CUBEd-Award-Feature.jpg"
-    },
-    {
-      "id": "0b67f71e5649b75d",
-      "source": "CNET",
-      "axis_hint": "llm",
-      "url": "https://cnet.com/health/medical/withings-thermometer-of-the-future-getting-ai-analysis-upgrade",
-      "title": "Withings’ ‘Thermometer of the Future’ Is Getting an AI Analysis Upgrade",
-      "published_at": "2026-09-05T05:38:39+09:00",
-      "fetched_at": "2026-09-06T22:39:35+09:00",
-      "snippet": "The BeamO thermometer has a new AI feature that analyzes the device’s heart and lung recordings.",
-      "image": "https://www.cnet.com/wp-content/uploads/sites/2/beamo-stetho-sense.jpg"
-    },
-    {
-      "id": "e342a9152cac1c87",
-      "source": "The Register",
-      "axis_hint": "llm",
-      "url": "https://theregister.com/ai-and-ml/2026/09/04/anthropic-lays-groundwork-for-bots-that-shop-for-you/5294621",
-      "title": "Anthropic lays groundwork for bots that shop for you",
-      "published_at": "2026-09-05T05:36:07+09:00",
-      "fetched_at": "2026-09-06T22:39:38+09:00",
-      "snippet": "Now comes the harder sell: Convincing customers and merchants to trust AI with purchases",
-      "image": "https://image.theregister.com/?imageId=5294637&width=800"
-    },
-    {
-      "id": "75f9b8cf5bdcb3e5",
-      "source": "Google News / PYMNTS.com",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSW96dGlWVEh4dW9XNGFjMUx1R0NMVmptMHYxTjlJVzBTMUczWWZDWjZuUVhMM0dIRUo0cTN3T2JZSG45Nk5DR0pJRGsyVExEME5YOUVzdTR1SlJrYkJWSWRtcnJubS0yRFZqMFNPX2o5REZQRU9BN1JhZ21yT21iZ3Rhb3lBeW05M3FlODBuOVlYY01CLS1JTzV6bjVBQXgtbDE5OHRHdnJqM3UxY3FkNU5GU2daNWIxWGl1amVHOTVTQQ?oc=5",
-      "title": "PicPay Launches Anthropic Claude Integration for Banking Inquiries - PYMNTS.com",
-      "published_at": "2026-09-05T05:33:52+09:00",
-      "fetched_at": "2026-09-06T22:39:43+09:00",
-      "snippet": "PicPay Launches Anthropic Claude Integration for Banking Inquiries    PYMNTS.com",
-      "image": null
-    },
-    {
-      "id": "c57640146936c527",
-      "source": "Google News / Seeking Alpha",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5CYXNSWGJCOU03TVpySld5dXpabWpjZWRLLVhNenU1cXBmeUZXN2RNR1dnUHZUNHg2VHh4VG9yTmNIM1pEcXhRaUJrYXlwQlFNOEhobmtiRmJVcVBYQXQwWmlKb2R6UElhbUR2QVMtelhZQ0dIdm9nazdkOG9mUQ?oc=5",
-      "title": "Micron: AI Fatigue Into A Big Day (NASDAQ:MU) - Seeking Alpha",
-      "published_at": "2026-09-05T05:32:41+09:00",
-      "fetched_at": "2026-09-07T01:17:23+09:00",
-      "snippet": "Micron: AI Fatigue Into A Big Day (NASDAQ:MU)    Seeking Alpha",
-      "image": null
-    },
-    {
-      "id": "c530e7b5f6d13238",
-      "source": "SiliconANGLE",
-      "axis_hint": "llm",
-      "url": "https://siliconangle.com/2026/09/04/report-openai-agents-took-over-a-website-used-it-to-collaborate-on-benchmarks",
-      "title": "Report: OpenAI agents took over a website, used it to collaborate on benchmarks",
-      "published_at": "2026-09-05T05:21:29+09:00",
-      "fetched_at": "2026-09-06T22:39:34+09:00",
-      "snippet": "Artificial intelligence agents linked to OpenAI Group PBC reportedly took over a German website and used it to exchange information. Reuters revealed the incident today, citing two unnamed sources and a group of AI researchers. The researchers spotted the incident in August. They shared their findings with Reuters in the form of a report that […] \n The post  Report: OpenAI agents took over a website, used it to collaborate on benchmarks  appeared first on  SiliconANGLE .",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/OpenAI.png"
     }
   ]
 }
