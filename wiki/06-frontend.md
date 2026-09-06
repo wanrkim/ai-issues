@@ -49,7 +49,12 @@ app
 | `image`가 없고 `company_domain`이 있다 | 기업 로고를 40px로 가운데 놓는다(`object-fit: contain`). 윤곽선을 두지 않는다 |
 | 둘 다 없다 | 자리를 비운다 |
 
-로고는 `https://www.google.com/s2/favicons?domain=<도메인>&sz=128`에서 가져온다. 대부분 128px 정사각형 PNG이고 배경이 투명하다. 키가 필요 없다.
+로고는 두 곳을 차례로 시도한다.
+
+1. **Simple Icons** (`https://cdn.simpleicons.org/<슬러그>`) — 브랜드 색을 입힌 SVG 라서 어떤 크기에서도 선명하다. 슬러그는 도메인의 첫 마디를 쓴다(`anthropic.com` -> `anthropic`). 상표 정책상 빠진 브랜드가 있다.
+2. **구글 파비콘** (`https://www.google.com/s2/favicons?domain=<도메인>&sz=256`) — 거의 모든 도메인에 있지만 원본이 작으면 흐리다.
+
+두 곳은 서로 빠진 곳을 메운다. 엔비디아(파비콘 48px)와 AMD(16px)는 Simple Icons 가 선명하게 채우고, 오픈AI와 마이크론, 마이크로소프트는 Simple Icons 에 없지만 파비콘이 괜찮다. 첫 번째가 실패하면 `onerror` 로 두 번째를 시도하고, 그것도 실패하면 요소를 지운다. 둘 다 키가 필요 없다.
 
 이미지는 모두 다른 서버에서 그대로 불러온다. `referrerpolicy="no-referrer"`를 붙이고, 불러오지 못하면 `onerror`로 요소를 지운다. 대체 이미지를 넣지 않는다.
 
