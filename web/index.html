@@ -78,6 +78,8 @@
 
   /* ---------- 탭 ---------- */
   .tabs {
+    position: sticky; top: 0; z-index: 2;
+    background: var(--bg-top);
     overflow-x: auto; margin-bottom: 14px;
     border-bottom: 1px solid var(--tab-line);
     scrollbar-width: none; -webkit-overflow-scrolling: touch;
@@ -377,10 +379,15 @@ function syncHeight() {
 }
 
 function goTo(next, smooth) {
+  const moved = index !== Math.max(0, Math.min(SECTIONS.length - 1, next));
   index = Math.max(0, Math.min(SECTIONS.length - 1, next));
   write(STORE_SECTION, SECTIONS[index][0]);
   setOffset(index * pager.clientWidth, smooth !== false);
   centerTab(smooth !== false);
+
+  // 섹션마다 높이가 달라서, 짧은 섹션으로 옮기면 문서가 짧아지고 브라우저가
+  // 스크롤 위치를 임의로 당긴다. 목록 맨 위로 맞춰서 그 튐을 없앤다.
+  if (moved && window.scrollY > tabs.offsetTop) window.scrollTo(0, tabs.offsetTop);
   syncHeight();
 }
 
