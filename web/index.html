@@ -405,7 +405,11 @@ function moveInk() {
 
   spanHeight(ratio);
 
-  const now = Math.round(ratio);
+  setActive(Math.round(ratio));
+}
+
+/* 현재 섹션을 바꾼다. 밑줄 갱신과 이동 종료 처리 양쪽에서 부른다. */
+function setActive(now) {
   if (now === near) return;
   near = now;
   index = now;
@@ -418,6 +422,10 @@ function moveInk() {
 /* 가로 이동이 멈춘 뒤에 높이를 맞춘다. 이동 중에 레이아웃을 바꾸면
    진행 중인 스크롤이 밀려서 목록이 좌우로 튕긴다. */
 function afterSlide() {
+  // 스크롤 위치에서 직접 구한다. 밑줄 갱신이 늦어도 높이는 맞아야 한다.
+  const width = pager.clientWidth || 1;
+  setActive(Math.max(0, Math.min(SECTIONS.length - 1, Math.round(pager.scrollLeft / width))));
+
   const top = pager.offsetTop - topbar.offsetHeight;
   const before = pager.offsetHeight;
   syncHeight();
