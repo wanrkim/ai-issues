@@ -34,11 +34,13 @@
 
   /* 문서가 스크롤된다. 사파리는 문서가 스크롤될 때만 하단 도구 막대를
      반투명 알약으로 접고, 그때 목록이 그 뒤로 비친다. */
-  /* 문서 뿌리 색이 상태 표시줄 색이 된다. 본문은 목록이 놓이는 회색이다. */
+  /* 사파리는 첫 화면에서 body 의 배경색을 상태 표시줄 색으로 쓰고,
+     스크롤한 뒤에는 화면에 그려진 색을 다시 읽는다. 두 경우가 같으려면
+     body 도 위쪽 색이어야 한다. 목록이 놓이는 회색은 페이저가 직접 갖는다. */
   html { background: var(--bg-top); }
 
   body {
-    margin: 0; background: var(--bg);
+    margin: 0; background: var(--bg-top);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
                  "Malgun Gothic", system-ui, sans-serif;
@@ -121,6 +123,7 @@
      가로 이동은 브라우저의 스크롤 스냅에 맡긴다.
      세로 스크롤은 문서가 담당하므로 페이지는 자기 높이를 그대로 쓴다. */
   .pager {
+    background: var(--bg);
     display: flex; align-items: flex-start;
     overflow-x: auto; overflow-y: hidden;
     scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
