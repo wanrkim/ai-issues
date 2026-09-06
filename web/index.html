@@ -21,7 +21,6 @@
     --badge-hot-fg: #F04452;
     --badge-new-bg: #EDF3FE;
     --badge-new-fg: #3182F6;
-    --seg-on-bg: #E5E9EE;
     --tab-line: #E2E7EC;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
@@ -72,7 +71,10 @@
   }
   .eyebrow svg { width: 21px; height: 21px; display: block; flex: none; }
 
-  .titlebar { display: flex; align-items: center; gap: 10px; }
+  .titlebar {
+    display: flex; align-items: center; gap: 10px; padding-bottom: 14px;
+    transition: padding-bottom .24s cubic-bezier(.22,.61,.36,1);
+  }
   h1 {
     margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px;
     transform-origin: left center; will-change: transform;
@@ -80,23 +82,12 @@
   }
   .actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
 
-  .bar {
-    display: flex; align-items: center; gap: 8px; margin: 18px 0 12px;
-    transition: margin .24s cubic-bezier(.22,.61,.36,1);
-  }
 
   .compact .eyebrow { height: 0; margin: 12px 0 0; opacity: 0; transform: translateY(-8px); }
   .compact h1 { transform: scale(.7); }
-  .compact .bar { margin: 8px 0 6px; }
+  .compact .titlebar { padding-bottom: 10px; }
 
-  .seg { display: flex; gap: 4px; }
-  .seg button {
-    border: 0; background: transparent; cursor: pointer;
-    font: inherit; font-size: 15px; font-weight: 700;
-    color: var(--text-dim); padding: 8px 14px; border-radius: 13px;
-  }
-  .seg button[aria-pressed="true"] { background: var(--seg-on-bg); color: var(--text); }
-  .updated { margin-left: auto; font-size: 13px; color: var(--text-dim); }
+  .updated { font-size: 13px; color: var(--text-dim); white-space: nowrap; }
 
   /* ---------- 탭 ---------- */
   .tabs {
@@ -205,15 +196,9 @@
       </div>
       <div class="titlebar">
         <h1>지금 많이 언급되는 이슈</h1>
-        <div class="actions" id="actions"></div>
-      </div>
-
-      <div class="bar">
-        <div class="seg" id="sort">
-          <button data-sort="recent" aria-pressed="true">최신순</button>
-          <button data-sort="popular" aria-pressed="false">인기순</button>
+        <div class="actions" id="actions">
+          <span class="updated" id="updated"></span>
         </div>
-        <span class="updated" id="updated"></span>
       </div>
     </div>
 
@@ -239,7 +224,6 @@ const SECTION_LIMIT = 20;
 const INK_BASE = 100;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
-const STORE_SORT = "ai-issues.sort";
 
 const app = document.getElementById("app");
 const topbar = document.getElementById("topbar");
@@ -249,7 +233,6 @@ const ink = document.getElementById("ink");
 const pager = document.getElementById("pager");
 
 let data = { issues: [] };
-let sort = read(STORE_SORT, "recent");
 let index = Math.max(0, SECTIONS.findIndex(([k]) => k === read(STORE_SECTION, "all")));
 let geometry = [];
 let near = -1;
@@ -293,11 +276,8 @@ function issuesFor(key) {
   const list = key === "all"
     ? data.issues.slice()
     : data.issues.filter(i => i.axis === key);
-  if (sort === "recent") {
-    list.sort((a, b) => String(b.last_seen || "").localeCompare(String(a.last_seen || "")));
-  } else {
-    list.sort((a, b) => a.rank - b.rank);
-  }
+  // 정렬은 최신순 하나로 고정한다. 화면에서 고르는 자리를 없앴다.
+  list.sort((a, b) => String(b.last_seen || "").localeCompare(String(a.last_seen || "")));
   return list.slice(0, SECTION_LIMIT);
 }
 
@@ -470,20 +450,6 @@ pager.addEventListener("click", event => {
   syncHeight();
 });
 
-document.getElementById("sort").addEventListener("click", event => {
-  const button = event.target.closest("button");
-  if (!button || button.dataset.sort === sort) return;
-  sort = button.dataset.sort;
-  write(STORE_SORT, sort);
-  document.querySelectorAll("#sort button").forEach(b =>
-    b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
-  const keep = index;
-  renderPages();
-  pager.scrollLeft = keep * pager.clientWidth;
-  syncHeight();
-  moveInk();
-});
-
 /* 가로 폭이 바뀔 때만 다시 잡는다. iOS 는 주소 표시줄이 접히고 펴질 때마다
    resize 를 보내는데, 그때마다 위치를 다시 잡으면 화면이 튄다. */
 let lastWidth = window.innerWidth;
@@ -503,8 +469,6 @@ fetch("../data/issues.json", { cache: "no-store" })
   .then(json => {
     data = json;
     document.getElementById("updated").textContent = ago(json.generated_at);
-    document.querySelectorAll("#sort button").forEach(b =>
-      b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
     renderTabs();
     renderPages();
     pager.scrollLeft = index * pager.clientWidth;
