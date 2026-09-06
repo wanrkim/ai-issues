@@ -35,7 +35,7 @@
      주소 표시줄이 접히고 펴지지 않아서 화면이 튀지 않는다. */
   html, body {
     height: 100%; margin: 0; overflow: hidden;
-    background: var(--bg-top);
+    background: var(--bg);
   }
 
   body {
@@ -49,7 +49,9 @@
      높이를 100vh 로 두면 하단 도구 막대 뒤까지 이어진다. */
   .app {
     position: fixed; top: 0; left: 0; right: 0; margin: 0 auto;
-    max-width: 560px; height: 100vh;
+    max-width: 560px;
+    height: 100vh;
+    height: 100lvh;
     display: flex; flex-direction: column;
     padding-top: env(safe-area-inset-top);
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
