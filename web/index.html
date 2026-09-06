@@ -8,7 +8,6 @@
 <style>
   :root {
     --bg-top: #E8F0FD;
-    --bg-mid: #EDF2FA;
     --bg: #F4F6F9;
     --card: #FFFFFF;
     --text: #191F28;
@@ -21,7 +20,6 @@
     --badge-hot-fg: #F04452;
     --badge-new-bg: #EDF3FE;
     --badge-new-fg: #3182F6;
-    --tab-line: #E2E7EC;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
     --gutter: 20px;
@@ -49,8 +47,7 @@
   .topbar {
     position: sticky; top: 0; z-index: 5;
     padding-top: env(safe-area-inset-top);
-    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg-mid) 100%);
-    border-bottom: 1px solid var(--tab-line);
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--card) 100%);
   }
 
   .eyebrow {
@@ -63,7 +60,6 @@
                 opacity .16s linear;
   }
   .eyebrow svg { width: 20px; height: 20px; display: block; flex: none; }
-  .updated { margin-left: auto; font-size: 13px; color: var(--text-dim); font-weight: 500; }
 
   .titlebar {
     display: flex; align-items: center; gap: 8px; padding-bottom: 16px;
@@ -76,15 +72,20 @@
     transition: transform .24s cubic-bezier(.22,.61,.36,1);
   }
 
-  /* 분류 선택. 기본 선택 요소를 쓰면 기기 고유의 선택 화면이 그대로 나온다. */
+  /* 분류 선택. 기본 선택 요소는 가장 긴 항목의 폭에 맞춰지므로 짧은 이름을
+     고르면 글자와 화살표 사이가 벌어진다. 보이는 부분을 직접 그리고
+     선택 요소를 그 위에 투명하게 겹쳐서 기기 고유의 선택 화면은 그대로 쓴다. */
   .picker {
-    margin-left: auto; flex: none;
-    appearance: none; -webkit-appearance: none;
-    border: 0; border-radius: 8px; background-color: var(--chip-bg);
-    color: var(--text); font: inherit; font-size: 14px; font-weight: 700;
-    padding: 8px 24px 8px 8px; cursor: pointer;
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' stroke='%238B95A1' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: right 8px center;
+    position: relative; margin-left: auto; flex: none;
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 14px; font-weight: 700; color: var(--text);
+    padding: 4px 0; cursor: pointer;
+  }
+  .picker svg { width: 12px; height: 8px; display: block; flex: none; }
+  .picker select {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    opacity: 0; appearance: none; -webkit-appearance: none;
+    border: 0; font: inherit; cursor: pointer;
   }
 
   .compact .eyebrow { height: 0; margin: 12px 0 0; opacity: 0; transform: translateY(-8px); }
@@ -162,11 +163,14 @@
       <div class="eyebrow">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.1L20.5 10l-6.3 1.9L12 18l-2.2-6.1L3.5 10l6.3-1.9L12 2z"/></svg>
         AI 소식을 모아서
-        <span class="updated" id="updated"></span>
       </div>
       <div class="titlebar">
         <h1>지금 많이 언급되는 이슈</h1>
-        <select class="picker" id="picker" aria-label="분류 선택"></select>
+        <div class="picker">
+          <span id="pickerLabel"></span>
+          <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" stroke="#8B95A1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <select id="picker" aria-label="분류 선택"></select>
+        </div>
       </div>
     </div>
   </div>
@@ -196,6 +200,7 @@ const STORE_SECTION = "ai-issues.section";
 const app = document.getElementById("app");
 const topbar = document.getElementById("topbar");
 const picker = document.getElementById("picker");
+const pickerLabel = document.getElementById("pickerLabel");
 const listEl = document.getElementById("list");
 
 let data = { issues: [] };
@@ -274,6 +279,7 @@ function rowHtml(issue, position) {
 function renderPicker() {
   picker.innerHTML = SECTIONS.map(([key]) =>
     `<option value="${key}"${key === section ? " selected" : ""}>${SHORT_NAME[key]}</option>`).join("");
+  pickerLabel.textContent = SHORT_NAME[section];
 }
 
 function renderList() {
@@ -292,6 +298,7 @@ function renderList() {
 
 picker.addEventListener("change", () => {
   section = picker.value;
+  pickerLabel.textContent = SHORT_NAME[section];
   write(STORE_SECTION, section);
   renderList();
   window.scrollTo(0, 0);
@@ -319,7 +326,6 @@ fetch("../data/issues.json", { cache: "no-store" })
   .then(response => response.json())
   .then(json => {
     data = json;
-    document.getElementById("updated").textContent = ago(json.generated_at);
     renderPicker();
     renderList();
   })
