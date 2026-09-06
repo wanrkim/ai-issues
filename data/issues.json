@@ -1,166 +1,12 @@
 {
-  "generated_at": "2026-09-07T01:54:29+09:00",
-  "model": "gemini-3.8-flash",
-  "next_id": 63,
+  "generated_at": "2026-09-07T05:22:02+09:00",
+  "model": "gemini-3.7-flash",
+  "next_id": 65,
   "issues": [
     {
-      "id": "iss_000001",
-      "rank": 1,
-      "prev_rank": 3,
-      "badge": null,
-      "axis": "capital",
-      "title": "앤스로픽 IPO 10월 추진",
-      "subtitle": "2조 달러 기업가치 목표로 상장 일정 조율",
-      "summary": "",
-      "company_domain": "anthropic.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 5,
-      "score": 24.644,
-      "source_count": 22,
-      "first_seen": "2026-09-05T04:46:21+09:00",
-      "last_seen": "2026-09-07T00:49:00+09:00",
-      "item_ids": [
-        "7449e890b60518b0",
-        "42913d3b5369bfb2",
-        "06b145f6e28a7e8c",
-        "4d0bf659dba2db69",
-        "c1638f9b7e45df5f",
-        "9d342ea8b5cebd8c",
-        "ac4291aafc1bb248",
-        "b5b04a2d01d42674",
-        "2d7b3b29ea31b231",
-        "ea602437300db2af",
-        "6160f03db108d615",
-        "f80abf0363021db8",
-        "cbef11fa50194082",
-        "21f91ff869cdc9b2",
-        "3b665922c580a4bc",
-        "448e2f9297d45ad9",
-        "74f830ced2e50386",
-        "c35d2e85cb068475",
-        "5edd6ff38488174e",
-        "ced158842caf6be3",
-        "cfce8b01047c5096",
-        "0f715452228fc931"
-      ],
-      "sources": [
-        {
-          "name": "Google News / financialsamurai.com",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9kQ1J3eE9tc0pMc2lwTC1HaS1OMTRWUlBBZ3pELUJpejlJM3ozQXM1TVkzLUtpQklpcHVHZnE1ZjlWYnRySjNUTzBOUURsU052MFFub25YNm5MZGRVRG1F?oc=5",
-          "published_at": "2026-09-07T00:49:00+09:00"
-        },
-        {
-          "name": "Google News / ETF Trends",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSjI1UDlNRFV5Rld3S19YbXM4Mi1sYjNmVjhEcGdPazVpN2RjWkVlem5iTjRiUmYtTEZJcDB2cl9ua1JiNHN6NTFvNVUzNHg0Zkhzbl9BVmQyZlFEV2RKbEZHNWlIWEVNOUJVaWtjZU1RdDVOSWFjV2JOUXJzbTVJZl9RVEFxdWFnWHJfQVFwTlFDckJwZjN1dzFLRDNzZGFHWnI5V01qb2ZqaVHSAbABQVVfeXFMUDhxTWw3SXRUd0pVdnR6T2RtbmVEX2FmMjhsTnMxYWlDVlQ5RzN2cFRNMkNhNm1kXzIyd1ZHTU1peWM0VHBQVVozT3hSNWhSVFZ0UHVvUDhTalNlQmQtZXRnekxubFN4cGVsVzhKUGp0NW4xY3UzUFdqZUpoWG1rQXkyVDhjS1dVbGx0V1RMcXRtdENoelkzMi1ZakRwcjdkX1loYl9BU3c0bWpMZHVjX2U?oc=5",
-          "published_at": "2026-09-06T21:16:42+09:00"
-        },
-        {
-          "name": "Google News / Brave New Coin",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN3N6TVl5cV91Mk1TVUJ4Y21Ma1pZX0RvOGJRcW03WnhSckUybjdHREJ3N01BbkZ3bXQtYTRfczAtbnVNaW1nVHp1Tk5lcWR6cGFrbVJSX1VlTm1wYmdlY1VTQUpna0ZrMmNqYXYxR211cW1iaWZaUURLYUlsX05mMHNzcjZ5YkxmVEZDMzRia1l0aklVU0tISkVuZzdPNGIzMDJUd1ZRcjNaaEdhcEdFb2d3cnl3UQ?oc=5",
-          "published_at": "2026-09-06T18:03:24+09:00"
-        },
-        {
-          "name": "Google News / TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQM3p5cEdNTlNseENLbUVHVjFOcWRtVzZrUTRGazIwSWlBbk9lNm9hNVpsS3J2NVptamtsTzh0Q3VkYnktQTdlb0wzWkJNYXNnRzF2Yk1mNFVwVTQ5eExuVVEtUldCc1VoanpUNW1KX0VsMGlYNHRFZTF4LWM1WVFhVTl4eTRSc0czdG1melc5Njh1T044TU5Ga21mSWpuZWZFVnlaUTFXbFlXanpPQ2R1d09fYVpGUXo5ck45MzRlbmRWTVVGRmtMb1ZR?oc=5",
-          "published_at": "2026-09-06T16:56:23+09:00"
-        },
-        {
-          "name": "Google News / Dealroom",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMXB6QkpKTzlPSHpRWGlCU0tMa2NhX29ZRjhpYXhwRW5QUGktLWs0RUNLaUhkMEl3NGtLRFRkUXFRcWVLa0hPc2o5WWFGaGR3Sm9OSVlMMW9qM2RPZUJlek5rUnBxSEhrQ3dJZFVLOHRvT183WDhKbHpBLXFYdU9zM1FFSFhtaThXUWNNOUlNYzQ0bjNU?oc=5",
-          "published_at": "2026-09-06T09:07:12+09:00"
-        },
-        {
-          "name": "Google News / The Motley Fool",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcEpxQW10OUd2LTR6UkZ2aTU4TlZlUVlrLUY4cnZmb1MtNmZId2RTbko1Um5vSXNpNlI3aVlIMlk1czlFNGRKY3F2SG00RGhmdk5VSUJjZ2I5NWgxaWhvRDVnRW0yczFmUVJoVXBRMl83R2plbFhtQ3ZsOHM4VWhYck9BdEMyNHdLel9EeUx3VHprM0lCeWJmaDIyX0tZVXQ0dUpBZjNGeUJvN2ViVlN5amxIWHhZdmJqWWFua0M5MGJVcEotZElJSGhIRzNRRnFnbTRUV0stT3pHSmc?oc=5",
-          "published_at": "2026-09-06T07:43:00+09:00"
-        },
-        {
-          "name": "Google News / benzinga.com",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPLVdhLUJuSDR4MnpZUHJTLTJDeWN0ZWRZMklDSDhXbzlDcHREZEpWUU0tU0V2VTZXZGxFOXZ1a2o4M0RGal9DWmNXaW42V3ZXZFN5emJzNjhlaWdrbm1tVTF1blRKWkQ5cFZjTDlOaTkybUpKSjVRdXRlVjd2WEVvSzM1ZkMtczF0aEh1V041T01jUUhyZGdIcWotUmNpUGxoUkhWY2xaZ2dXWDZLU3ZEdVd6aVF5ME5rVkdJMFpTb2VGU1U?oc=5",
-          "published_at": "2026-09-06T06:33:13+09:00"
-        },
-        {
-          "name": "Google News / calcalistech.com",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00dTRBYnJjWl84cHMzbC1QZWVlb0ZUd0JKMnVVX1kyQ191NlR2UXFDLUdWVGt2WW9TS1JkODNKVW5hSVFfNU0xYVZDcWxLUTMxRXFwalpoMGZua09KYmhXZkxVR21JXzA?oc=5",
-          "published_at": "2026-09-06T02:19:00+09:00"
-        },
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOV9PVXRnLWdIN0tGUHZGcmJHeVJNYkJmekMzZzJQZFNUSWJIbnZzdlU1RUg0NXh4REp3ZURGdEZtaXZVQ0tMYW1xUWp3a1RuUFU2Qk9rUUx0Zlp4Y3VFNkZBR1hFZjJ6Z3Q3VGMtWnFQOFBCM0FBUDZRaHptbGZNLUoyaWtkNzFDZVdXWDdXdFBrRjhBeVhuXw?oc=5",
-          "published_at": "2026-09-06T02:05:00+09:00"
-        },
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUxHU2RTNGpyTlhnWmUtdDlJZFFqbDFXcUdrMVRDRndZNjFGVW9VTnN2Y2h2Z2VfWnZJQnUwcVUtQ0NVSlBFWlhZZDhRMUM3aW1EQ2pmQkJLZEdJZ3Q5bWpTY2VPYUZRSjFidHJiLXEtZ2Jnd05QYkZncDdFWS1KRzhBdldMVGtmS3U1cnFEYjJ3MnB5MWtoMjBtMmNkaWlTRHFIUlRn?oc=5",
-          "published_at": "2026-09-06T01:12:00+09:00"
-        },
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWHZOdV9tdXRibVdTUFUwRmVmUkczdHRLckdwSjZZSkRKTGdPT0RyWXp2ZkM3OTl3V0RSUWlKemw0R09paGdCaC1nc2JoZmJSMDQyTXR1TjVVUnVZQW9JTVJFVmtsc29UWmxRRFBiZnRhMkZTUDR5dUZES29GZFY0ZGJfcVRSby16aC1obG1ObVlvRnZtcU5IYzNn?oc=5",
-          "published_at": "2026-09-05T23:20:01+09:00"
-        },
-        {
-          "name": "Google News / Stocktwits",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPc2NrNkVFckVHTTZ6cWR2UjRpZml5ajF2dENDWWJMbG1LZXBiM0hFTXZXZXgxbFdaMHRBYldDTGJPV0U1SUtpUV8xWGpCdlZscWo4cDFYc1FFT0NOOXNIT0l5eVNCUzFjS3JkSjUtdG9vdXdsREtOWEVnaDM5Z2NQN0VCNC1NUXZiVmg3S1haV2E0MTVyS0VvekVlQmlvZmlDSjJ2NTlfWHkwdGMtOWpXaTlIb2N2R21JbGJSRE5qUlRHajBQamxFdjA4MWxYTXMwbjJYelpCRlNiVXBOTC1KR05mVlpBbm1DblpxMElB?oc=5",
-          "published_at": "2026-09-05T19:24:52+09:00"
-        },
-        {
-          "name": "Google News / global.morningstar.com",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMlRJY3NPczkwRUlGR1lXSnZoLTBob2xUQkw3YVdPaEVrNjV6clpweEZJXzVybHA5U0J2NEhXVUtDVVVnUy0wU195cnFqaHV4N1lZa20wbTVIOGwxWHZkcG01SWJmbWpkTENGajc5NVBBYlBlbGFHNnJSa1pLTWprQVlpSGpTMW94QVd1ci15eUZmRkZDVXN4bUprTEhvb3N0bnIzQlcycExuMVhua1NXbWNhZnJXVWZidGpBcklCNno?oc=5",
-          "published_at": "2026-09-05T19:17:38+09:00"
-        },
-        {
-          "name": "Google News / finance.biggo.com",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fSTRqRzBjVnA2NUVvTk5mX0NZTU9UUlRqa2NudENseW9tSlVVYkdwc0VvdkRzdUJJakllNXdVRExKMUJJTVBUQnI5eFBUaTcyMXZIbHpjb3ZQajQ1RXdsTXRpOUhmSExRUFAwbkVoZjJHUlp0Tmc?oc=5",
-          "published_at": "2026-09-05T18:35:00+09:00"
-        },
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcUxMWUo5ZlVGbTdXdVI4d3VVcXh6U3RVbFlucW9Qc1Z1d0RxYV9tSmwwRERCRmp3cUU2N1c3UV9fdmpOT2dpX3RzTjdFaF9Ic2pkNER0WFVlbFlUZGtaZzVmLXk1cDdkX2ZacDA5RzNrYXM2MWtINUM2MjUxUWFaZWgwQk5sZkpNUkdSQ2pfMFNMN0d1U2xpRHdxYVZrNXRac211Q2lR?oc=5",
-          "published_at": "2026-09-05T14:56:00+09:00"
-        },
-        {
-          "name": "Google News / simplywall.st",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORm56Nkh6c1h5TUtQYUlwUEhKWExuTHRCWk42OVM0X1hxM3I1SDFQRm5vR3UtenpPZkUwQkU1by1MVlVfcXpKVEptTldNNkc0cGFqYzRJaEk5RGFjQnBHNVM0MWpSSnhpVllGTnJQbllHM0ZMRHRXRHZSeVIxbHJsZ3VNeUR3dk9XaGdMSVRYZkI3QlVNSmFmWmxmZ0dHREZHTEdHRG9oRUYxWHpyYzc5QnU4bE5rLV90SDZ5QmZoSG5hYndGdVczUTgwV2FNbXI4S0tpQmd1SEhfYmpsaVHSAd4BQVVfeXFMTkZuejZIenNYeU1LUGFJcFBISlhMbkx0QlpONjlTNF9YcTNyNUgxUEZub0d1LXp6T2ZFMEJFNW8tTFZVX3F6SlRKbU5XTTZHNHBhamM0SWhJOURhY0JwRzVTNDFqUkp4aVZZRk5yUG5ZRzNGTER0V0R2UnlSMWxybGd1TXlEd3ZPV2hnTElUWGZCN0JVTUphZlpsZmdHR0RGR0xHR0RvaEVGMVh6cmM3OUJ1OGxOay1fdEg2eUJmaEhuYWJ3RnVXM1E4MFdhTW1yOEtLaUJndUhIX2JqbGlR?oc=5",
-          "published_at": "2026-09-05T12:35:49+09:00"
-        },
-        {
-          "name": "Google News / Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcHVnRVBYTlF2Z1Zwc3NNRnMyZFkyZDVvM0NqUUcyOTZJSE5FUlhMaVR4WkVwWjBqSmNOXzdnY3hsTHBza2tSand0REo3M3NiU1AxWkFBNUwwZU5XLXNYNkEzcUl0QkRValFFYUdCeFFPdVUzcmNyZDJjZ3REZE5UaC1jR1dWSHJfcFkyZkVMZjE3bzFuOC1icDU2M1JlclRxdlE?oc=5",
-          "published_at": "2026-09-05T07:41:00+09:00"
-        },
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT2hoSjhWUWx6M1FGcEU4ZUF6aFJreXN1d1Y0ZldsOE1WTkVoM0x2V0lZRHJpR1c4MnBZT0Qza25vQm9CS1FTLTNfb0oyZjhZRmlNQ1Q3eHpsZ2ZZWG9Fa0J5TTFoTkNncFJyRzZ2dDJMT3dyakFESEdLWTNSX01SY3RjZUhmOUJhdVZSRlpJVEZHZVVtQ2U4?oc=5",
-          "published_at": "2026-09-05T05:20:00+09:00"
-        },
-        {
-          "name": "Google News / Financial Times",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaWxaRF9ValREekRRNE00M0JmTWVkZE9hN0hyLXlhVTktdFVtdjBqaENTcTBJZUdmbHJ6UEtHVTB4Z3JqcTBRWjhoYWkxYWgtbGNhTkRxclJJT0hLUHJYTDRUV1NINERTal82WVZjRVJYekIwZ0stYjFYdk9YSEx3eUNSRkw?oc=5",
-          "published_at": "2026-09-05T04:46:21+09:00"
-        },
-        {
-          "name": "Google News / Barron's",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOalpVcmJtMmhscG5hdC14S3NiNHMtV25VMTJxZk4yUG5oM3RlX2RRTUZPNFUwS0VEa2c1Mm1LNk5kRGpuZTRjMGtNRURUWGdQV1pEdTNqdm9rQk92YXl0anVXcU92RklkZG9QR09GVUdsdXZXcTZxTGdZRFZaaGRlRw?oc=5",
-          "published_at": "2026-09-05T04:26:00+09:00"
-        },
-        {
-          "name": "Google News / StartupHub.ai",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNd25ZbUhuRmhmYk42dzU2VHFpTnR4LWhkYWxIQWNrYVBjdkZpTzZPVVZDaHV6aG9nQ0NCbjR4RTVYeWhSNk9hODdaYThpSUdwMTdWalotNU03RGxLY0FfM3BFOXYtTVZBZnAzckE1dTNNMDBqZFNocURJR3YxNG9zUlFNaEJNdHliaFZlUjhvdjA4ZVhFMHBXemNxa2ZWSF9I?oc=5",
-          "published_at": "2026-09-05T04:11:59+09:00"
-        },
-        {
-          "name": "Google News / StartupHub.ai",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOb29mR3Z5c3NIV1JOcE83QjRjd3ZJdnZncmtnd2h0VmExbDhGeGFVRmFaMTdxVDNoRmQxOHROUVhaT1dNaVNlM0JqcFZ4b0VWYXJ4enBqc1p2SVozdzJoZ2lubGVxdFUtVV9TZ1Z3TXRLTTMySnVRLWlnX0J3aGY1SXdRQWhfTllVTHlFOXgxZWFuTG5zTzQ4OGZnWExxQQ?oc=5",
-          "published_at": "2026-09-05T04:07:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_000003",
-      "rank": 2,
-      "prev_rank": 1,
+      "rank": 1,
+      "prev_rank": 2,
       "badge": null,
       "axis": "llm",
       "title": "오픈AI 에이전트 탈출 논란",
@@ -170,10 +16,10 @@
       "image": "https://media.wired.com/photos/6a9b056f355eb442715c734d/master/pass/Security_OpenAIAgentsTriedtoHackAnotherWebsite_v1-ezgif.com-video-to-gif-converter.gif",
       "image_tried": [],
       "impact": 4,
-      "score": 19.434,
-      "source_count": 28,
+      "score": 20.766,
+      "source_count": 31,
       "first_seen": "2026-09-05T04:44:40+09:00",
-      "last_seen": "2026-09-07T01:00:00+09:00",
+      "last_seen": "2026-09-07T03:56:41+09:00",
       "item_ids": [
         "1142fec32991e4d0",
         "885ccafa71c551ca",
@@ -202,9 +48,27 @@
         "17c2be74f5f3c0b9",
         "8a3be1f5d19bca5a",
         "a78a88753130c26d",
-        "5a7ff1b57762f9b1"
+        "5a7ff1b57762f9b1",
+        "82e98b874778e0b7",
+        "9c7a712ef1149fd5",
+        "bc62ce7597cc8dff"
       ],
       "sources": [
+        {
+          "name": "Google News / Seeking Alpha",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOXzF6UWFjNWZOdjIwU3Jqd2JIeWoyVmcyaHVqS1M5M3QzVGtiV0lndE5JTlNqcUFpOVRZWUVha205YWRzMEF2ZWE2dTV5UzFmeFh4bTVXLUZkRVYtejBjTU9WYkxVeWltbkc4bGVFQ0Y0WFpzNnZpRllIQVV5dVVyQ3BxTG9BaVVyTVkxdERSY2V0UGRjQkdZMGY2dkk1Z09OeHloWWlDMW9OZw?oc=5",
+          "published_at": "2026-09-07T03:56:41+09:00"
+        },
+        {
+          "name": "Google News / The Neuron",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13ZWpfMHFOcS1mMjl1Uk9IbHQ5TmFXcFc0bHRoZm1xdFl5UVNHZlpEUVhEZnl0alhIbDJxQUdwVC10V0o4aGF4VGNoNWlIeE1aUVZGN0NkWGxxbnRnT0twekxQUnFRdDZ5NS1uVFFsXzl2UWNIaXhKc29vMDRIcHM?oc=5",
+          "published_at": "2026-09-07T03:02:49+09:00"
+        },
+        {
+          "name": "Google News / chosun.com",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMkdMZ2kwX3JmMDN1aGZndy1Ncm9lOGpsS3VWUTFGOFJ2N0pkOVlFUmVFdWxrTzNSb0ZnTnhleVAtWjNHN29NRXJPV1FWU0hnZTh2X2pLckFsVS0tLVlyVi1RVkRMTEJhbVJfdDlrMDhfejZqbkhlTjdHOGRkei1sMlI2YWE5REs2?oc=5",
+          "published_at": "2026-09-07T02:58:55+09:00"
+        },
         {
           "name": "Google News / Taipei Times",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SZGxMdGU5dzJ3RHpxRkpyMUZEdGxkMks0WTMyRDhtOTVIUk9ld2x0TjNabFVLRV9OS19ybC12RmdUN0VuUmdpS0hjNDFPczQwVFlqSmgzcVpsb0h0b2lPNndlOVpmQ2hfZV9uOF8tajRrNGRsS3c?oc=5",
@@ -349,8 +213,8 @@
     },
     {
       "id": "iss_000002",
-      "rank": 3,
-      "prev_rank": 2,
+      "rank": 2,
+      "prev_rank": 3,
       "badge": null,
       "axis": "llm",
       "title": "오픈AI GPT-6 아스트라 출시",
@@ -362,10 +226,10 @@
         "https://openrouter.ai/openai/gpt-6-astra"
       ],
       "impact": 5,
-      "score": 17.394,
-      "source_count": 11,
+      "score": 20.544,
+      "source_count": 12,
       "first_seen": "2026-09-05T05:55:19+09:00",
-      "last_seen": "2026-09-07T01:07:40+09:00",
+      "last_seen": "2026-09-07T04:04:59+09:00",
       "item_ids": [
         "3a1a5311d29809bc",
         "ae0c2e3335c6768e",
@@ -375,11 +239,22 @@
         "a36cf18aa6eaf0ec",
         "4beb9b26648e9cf5",
         "e2d719d60d77e6e7",
-        "c0e742fe6e2f393a",
         "ebc8071eeba5840d",
-        "c41cb080682f06e3"
+        "c41cb080682f06e3",
+        "5193ce0ba1fd0276",
+        "c9eb38e69a6a94fa"
       ],
       "sources": [
+        {
+          "name": "Google News / StartupHub.ai",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbFpwRERXRXptOGtOX1M3cjEyRlRnVUtQMGRzdXRRNXJGZVVTNGRlUTBscldaWlFOcF9Za1FKRlBXc3dUNWZPTzhid3RwWDBxQlhIVnBXVXE1d1F3cWFUamdTaUllTU9NWmJtMnpORDJBYnVrS1E4NnpCemhzRVJBZ0c5VExjVjlHMEtDUGRxX3Nsa3RqYzJXTlFmSUM5ZVZxN2c?oc=5",
+          "published_at": "2026-09-07T04:04:59+09:00"
+        },
+        {
+          "name": "Google News / Decrypt",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ObmdXZF9sT1B4U1hxbUp4M0FFMU8wLU0ybWVMdjlHVF90dWFnMGJCZnQzaW5qVXpaanIxejNBME1qZjluZnZ5bzhIZS1KVzlrNmROa3FoWVpPeVFFRnllRDljSzYxeEpDTW50TU90YUt5ajdpeHfSAX5BVV95cUxNeFZHdDlZNXhFeXRxZmY0SnV5YktTd3ZNMWVfUUwzZnh2ZG9ZT1A4Vkk0bE51R1BabktvWkJuc3RfdEF5ejhnRzZlSER3YWRuMFUyWi1peDFrMThrc2dSQWw2eW9pMDVfSVo0N3RYb3Y4MzdKbzNoS0JuZUJYS1E?oc=5",
+          "published_at": "2026-09-07T02:01:04+09:00"
+        },
         {
           "name": "Google News / OpenAI",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11QUxBUVJLdC1jSmtJbmcxQzg4Qm9yUlNPS3JEMEVBanIyY1FRT2k2R0hBTlNnX2VqcWpTSDJUMDV0TjBJN1VGamlrZzVPZw?oc=5",
@@ -429,17 +304,256 @@
           "name": "Hacker News",
           "url": "https://openrouter.ai/openai/gpt-6-astra",
           "published_at": "2026-09-05T06:39:19+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000063",
+      "rank": 3,
+      "prev_rank": null,
+      "badge": "new",
+      "axis": "llm",
+      "title": "오픈AI 자동 연구 인턴 달성",
+      "subtitle": "2028년까지 완전 자동화 연구원 목표",
+      "summary": "오픈AI가 AI 연구를 보조하는 '자동화된 연구 인턴' 구축 목표를 달성했다고 발표했다. 내부 코딩 에이전트를 통해 연구 속도와 실험 복잡성을 크게 개선하고 있다. 회사는 오는 2028년 3월까지 보다 고도화된 완전 자동화 AI 연구원을 구현할 계획이다.",
+      "company_domain": "openai.com",
+      "image": "https://www.engadget.com/img/gallery/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/l-intro-1788721751.jpg",
+      "image_tried": [],
+      "impact": 4,
+      "score": 17.929,
+      "source_count": 4,
+      "first_seen": "2026-09-06T17:00:00+09:00",
+      "last_seen": "2026-09-07T04:26:52+09:00",
+      "item_ids": [
+        "75f22b65d91ca047",
+        "d71892f74621ebf8",
+        "7983e6a8cc2542d5",
+        "19672c4832d4c9bc"
+      ],
+      "sources": [
+        {
+          "name": "Engadget",
+          "url": "https://engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern",
+          "published_at": "2026-09-07T04:26:52+09:00"
         },
         {
-          "name": "AI Business",
-          "url": "https://aibusiness.com/generative-ai/openai-touts-gpt-6-astra-safest-model-still-dangerous",
-          "published_at": "2026-09-05T01:58:32+09:00"
+          "name": "Google News / Unite.AI",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcjZDemhiQ2lNNHYwVUdoMldfTVR2WmhuV1dJVFBLVFRTbmhmbXB6RHhNbWdHaVVVbDdHazRWSXEtbU9sNUN2QmJnNGNQMFZNbzhGeDh4Y05Mcy13SEFpYUhlLW1HcTVDSnZkdlVNd3ZlMnZoSWdKUHg4a1JUc0hNaUVUaXJ1dw?oc=5",
+          "published_at": "2026-09-07T04:11:01+09:00"
+        },
+        {
+          "name": "Google News / StartupHub.ai",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUFpfQXk4ODdnbEJ6Z19uQXhNczE1TXNNcW1rc1paRzRYRG9taG1JUXBHay1PRWFkRExwZXRRcGxRaEVRYUJqRUpNdG5BMm1oOFdYdUs3ZVd3aHpWZWpjOUpGMGxIZW1NOERBekNWZnkyQ19xWlFVZloteXRObGpnVHl3M04xc09tcE1SNVhyOHNBV3Y1NmU1UWFxQ2dWWUU?oc=5",
+          "published_at": "2026-09-07T02:06:28+09:00"
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "published_at": "2026-09-06T17:00:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000001",
+      "rank": 4,
+      "prev_rank": 1,
+      "badge": null,
+      "axis": "capital",
+      "title": "앤스로픽 IPO 10월 추진",
+      "subtitle": "2조 달러 기업가치 목표로 상장 일정 조율",
+      "summary": "",
+      "company_domain": "anthropic.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 5,
+      "score": 17.498,
+      "source_count": 17,
+      "first_seen": "2026-09-05T04:46:21+09:00",
+      "last_seen": "2026-09-07T00:49:00+09:00",
+      "item_ids": [
+        "7449e890b60518b0",
+        "42913d3b5369bfb2",
+        "c1638f9b7e45df5f",
+        "9d342ea8b5cebd8c",
+        "ac4291aafc1bb248",
+        "b5b04a2d01d42674",
+        "2d7b3b29ea31b231",
+        "ea602437300db2af",
+        "6160f03db108d615",
+        "f80abf0363021db8",
+        "cbef11fa50194082",
+        "21f91ff869cdc9b2",
+        "448e2f9297d45ad9",
+        "74f830ced2e50386",
+        "c35d2e85cb068475",
+        "ced158842caf6be3",
+        "cfce8b01047c5096"
+      ],
+      "sources": [
+        {
+          "name": "Google News / financialsamurai.com",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9kQ1J3eE9tc0pMc2lwTC1HaS1OMTRWUlBBZ3pELUJpejlJM3ozQXM1TVkzLUtpQklpcHVHZnE1ZjlWYnRySjNUTzBOUURsU052MFFub25YNm5MZGRVRG1F?oc=5",
+          "published_at": "2026-09-07T00:49:00+09:00"
+        },
+        {
+          "name": "Google News / ETF Trends",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSjI1UDlNRFV5Rld3S19YbXM4Mi1sYjNmVjhEcGdPazVpN2RjWkVlem5iTjRiUmYtTEZJcDB2cl9ua1JiNHN6NTFvNVUzNHg0Zkhzbl9BVmQyZlFEV2RKbEZHNWlIWEVNOUJVaWtjZU1RdDVOSWFjV2JOUXJzbTVJZl9RVEFxdWFnWHJfQVFwTlFDckJwZjN1dzFLRDNzZGFHWnI5V01qb2ZqaVHSAbABQVVfeXFMUDhxTWw3SXRUd0pVdnR6T2RtbmVEX2FmMjhsTnMxYWlDVlQ5RzN2cFRNMkNhNm1kXzIyd1ZHTU1peWM0VHBQVVozT3hSNWhSVFZ0UHVvUDhTalNlQmQtZXRnekxubFN4cGVsVzhKUGp0NW4xY3UzUFdqZUpoWG1rQXkyVDhjS1dVbGx0V1RMcXRtdENoelkzMi1ZakRwcjdkX1loYl9BU3c0bWpMZHVjX2U?oc=5",
+          "published_at": "2026-09-06T21:16:42+09:00"
+        },
+        {
+          "name": "Google News / Brave New Coin",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN3N6TVl5cV91Mk1TVUJ4Y21Ma1pZX0RvOGJRcW03WnhSckUybjdHREJ3N01BbkZ3bXQtYTRfczAtbnVNaW1nVHp1Tk5lcWR6cGFrbVJSX1VlTm1wYmdlY1VTQUpna0ZrMmNqYXYxR211cW1iaWZaUURLYUlsX05mMHNzcjZ5YkxmVEZDMzRia1l0aklVU0tISkVuZzdPNGIzMDJUd1ZRcjNaaEdhcEdFb2d3cnl3UQ?oc=5",
+          "published_at": "2026-09-06T18:03:24+09:00"
+        },
+        {
+          "name": "Google News / TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQM3p5cEdNTlNseENLbUVHVjFOcWRtVzZrUTRGazIwSWlBbk9lNm9hNVpsS3J2NVptamtsTzh0Q3VkYnktQTdlb0wzWkJNYXNnRzF2Yk1mNFVwVTQ5eExuVVEtUldCc1VoanpUNW1KX0VsMGlYNHRFZTF4LWM1WVFhVTl4eTRSc0czdG1melc5Njh1T044TU5Ga21mSWpuZWZFVnlaUTFXbFlXanpPQ2R1d09fYVpGUXo5ck45MzRlbmRWTVVGRmtMb1ZR?oc=5",
+          "published_at": "2026-09-06T16:56:23+09:00"
+        },
+        {
+          "name": "Google News / Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMXB6QkpKTzlPSHpRWGlCU0tMa2NhX29ZRjhpYXhwRW5QUGktLWs0RUNLaUhkMEl3NGtLRFRkUXFRcWVLa0hPc2o5WWFGaGR3Sm9OSVlMMW9qM2RPZUJlek5rUnBxSEhrQ3dJZFVLOHRvT183WDhKbHpBLXFYdU9zM1FFSFhtaThXUWNNOUlNYzQ0bjNU?oc=5",
+          "published_at": "2026-09-06T09:07:12+09:00"
+        },
+        {
+          "name": "Google News / The Motley Fool",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcEpxQW10OUd2LTR6UkZ2aTU4TlZlUVlrLUY4cnZmb1MtNmZId2RTbko1Um5vSXNpNlI3aVlIMlk1czlFNGRKY3F2SG00RGhmdk5VSUJjZ2I5NWgxaWhvRDVnRW0yczFmUVJoVXBRMl83R2plbFhtQ3ZsOHM4VWhYck9BdEMyNHdLel9EeUx3VHprM0lCeWJmaDIyX0tZVXQ0dUpBZjNGeUJvN2ViVlN5amxIWHhZdmJqWWFua0M5MGJVcEotZElJSGhIRzNRRnFnbTRUV0stT3pHSmc?oc=5",
+          "published_at": "2026-09-06T07:43:00+09:00"
+        },
+        {
+          "name": "Google News / benzinga.com",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPLVdhLUJuSDR4MnpZUHJTLTJDeWN0ZWRZMklDSDhXbzlDcHREZEpWUU0tU0V2VTZXZGxFOXZ1a2o4M0RGal9DWmNXaW42V3ZXZFN5emJzNjhlaWdrbm1tVTF1blRKWkQ5cFZjTDlOaTkybUpKSjVRdXRlVjd2WEVvSzM1ZkMtczF0aEh1V041T01jUUhyZGdIcWotUmNpUGxoUkhWY2xaZ2dXWDZLU3ZEdVd6aVF5ME5rVkdJMFpTb2VGU1U?oc=5",
+          "published_at": "2026-09-06T06:33:13+09:00"
+        },
+        {
+          "name": "Google News / calcalistech.com",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00dTRBYnJjWl84cHMzbC1QZWVlb0ZUd0JKMnVVX1kyQ191NlR2UXFDLUdWVGt2WW9TS1JkODNKVW5hSVFfNU0xYVZDcWxLUTMxRXFwalpoMGZua09KYmhXZkxVR21JXzA?oc=5",
+          "published_at": "2026-09-06T02:19:00+09:00"
+        },
+        {
+          "name": "Google News / Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOV9PVXRnLWdIN0tGUHZGcmJHeVJNYkJmekMzZzJQZFNUSWJIbnZzdlU1RUg0NXh4REp3ZURGdEZtaXZVQ0tMYW1xUWp3a1RuUFU2Qk9rUUx0Zlp4Y3VFNkZBR1hFZjJ6Z3Q3VGMtWnFQOFBCM0FBUDZRaHptbGZNLUoyaWtkNzFDZVdXWDdXdFBrRjhBeVhuXw?oc=5",
+          "published_at": "2026-09-06T02:05:00+09:00"
+        },
+        {
+          "name": "Google News / Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUxHU2RTNGpyTlhnWmUtdDlJZFFqbDFXcUdrMVRDRndZNjFGVW9VTnN2Y2h2Z2VfWnZJQnUwcVUtQ0NVSlBFWlhZZDhRMUM3aW1EQ2pmQkJLZEdJZ3Q5bWpTY2VPYUZRSjFidHJiLXEtZ2Jnd05QYkZncDdFWS1KRzhBdldMVGtmS3U1cnFEYjJ3MnB5MWtoMjBtMmNkaWlTRHFIUlRn?oc=5",
+          "published_at": "2026-09-06T01:12:00+09:00"
+        },
+        {
+          "name": "Google News / Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWHZOdV9tdXRibVdTUFUwRmVmUkczdHRLckdwSjZZSkRKTGdPT0RyWXp2ZkM3OTl3V0RSUWlKemw0R09paGdCaC1nc2JoZmJSMDQyTXR1TjVVUnVZQW9JTVJFVmtsc29UWmxRRFBiZnRhMkZTUDR5dUZES29GZFY0ZGJfcVRSby16aC1obG1ObVlvRnZtcU5IYzNn?oc=5",
+          "published_at": "2026-09-05T23:20:01+09:00"
+        },
+        {
+          "name": "Google News / Stocktwits",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPc2NrNkVFckVHTTZ6cWR2UjRpZml5ajF2dENDWWJMbG1LZXBiM0hFTXZXZXgxbFdaMHRBYldDTGJPV0U1SUtpUV8xWGpCdlZscWo4cDFYc1FFT0NOOXNIT0l5eVNCUzFjS3JkSjUtdG9vdXdsREtOWEVnaDM5Z2NQN0VCNC1NUXZiVmg3S1haV2E0MTVyS0VvekVlQmlvZmlDSjJ2NTlfWHkwdGMtOWpXaTlIb2N2R21JbGJSRE5qUlRHajBQamxFdjA4MWxYTXMwbjJYelpCRlNiVXBOTC1KR05mVlpBbm1DblpxMElB?oc=5",
+          "published_at": "2026-09-05T19:24:52+09:00"
+        },
+        {
+          "name": "Google News / global.morningstar.com",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMlRJY3NPczkwRUlGR1lXSnZoLTBob2xUQkw3YVdPaEVrNjV6clpweEZJXzVybHA5U0J2NEhXVUtDVVVnUy0wU195cnFqaHV4N1lZa20wbTVIOGwxWHZkcG01SWJmbWpkTENGajc5NVBBYlBlbGFHNnJSa1pLTWprQVlpSGpTMW94QVd1ci15eUZmRkZDVXN4bUprTEhvb3N0bnIzQlcycExuMVhua1NXbWNhZnJXVWZidGpBcklCNno?oc=5",
+          "published_at": "2026-09-05T19:17:38+09:00"
+        },
+        {
+          "name": "Google News / finance.biggo.com",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1fSTRqRzBjVnA2NUVvTk5mX0NZTU9UUlRqa2NudENseW9tSlVVYkdwc0VvdkRzdUJJakllNXdVRExKMUJJTVBUQnI5eFBUaTcyMXZIbHpjb3ZQajQ1RXdsTXRpOUhmSExRUFAwbkVoZjJHUlp0Tmc?oc=5",
+          "published_at": "2026-09-05T18:35:00+09:00"
+        },
+        {
+          "name": "Google News / Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcUxMWUo5ZlVGbTdXdVI4d3VVcXh6U3RVbFlucW9Qc1Z1d0RxYV9tSmwwRERCRmp3cUU2N1c3UV9fdmpOT2dpX3RzTjdFaF9Ic2pkNER0WFVlbFlUZGtaZzVmLXk1cDdkX2ZacDA5RzNrYXM2MWtINUM2MjUxUWFaZWgwQk5sZkpNUkdSQ2pfMFNMN0d1U2xpRHdxYVZrNXRac211Q2lR?oc=5",
+          "published_at": "2026-09-05T14:56:00+09:00"
+        },
+        {
+          "name": "Google News / simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORm56Nkh6c1h5TUtQYUlwUEhKWExuTHRCWk42OVM0X1hxM3I1SDFQRm5vR3UtenpPZkUwQkU1by1MVlVfcXpKVEptTldNNkc0cGFqYzRJaEk5RGFjQnBHNVM0MWpSSnhpVllGTnJQbllHM0ZMRHRXRHZSeVIxbHJsZ3VNeUR3dk9XaGdMSVRYZkI3QlVNSmFmWmxmZ0dHREZHTEdHRG9oRUYxWHpyYzc5QnU4bE5rLV90SDZ5QmZoSG5hYndGdVczUTgwV2FNbXI4S0tpQmd1SEhfYmpsaVHSAd4BQVVfeXFMTkZuejZIenNYeU1LUGFJcFBISlhMbkx0QlpONjlTNF9YcTNyNUgxUEZub0d1LXp6T2ZFMEJFNW8tTFZVX3F6SlRKbU5XTTZHNHBhamM0SWhJOURhY0JwRzVTNDFqUkp4aVZZRk5yUG5ZRzNGTER0V0R2UnlSMWxybGd1TXlEd3ZPV2hnTElUWGZCN0JVTUphZlpsZmdHR0RGR0xHR0RvaEVGMVh6cmM3OUJ1OGxOay1fdEg2eUJmaEhuYWJ3RnVXM1E4MFdhTW1yOEtLaUJndUhIX2JqbGlR?oc=5",
+          "published_at": "2026-09-05T12:35:49+09:00"
+        },
+        {
+          "name": "Google News / Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcHVnRVBYTlF2Z1Zwc3NNRnMyZFkyZDVvM0NqUUcyOTZJSE5FUlhMaVR4WkVwWjBqSmNOXzdnY3hsTHBza2tSand0REo3M3NiU1AxWkFBNUwwZU5XLXNYNkEzcUl0QkRValFFYUdCeFFPdVUzcmNyZDJjZ3REZE5UaC1jR1dWSHJfcFkyZkVMZjE3bzFuOC1icDU2M1JlclRxdlE?oc=5",
+          "published_at": "2026-09-05T07:41:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000055",
+      "rank": 5,
+      "prev_rank": 26,
+      "badge": "surge",
+      "axis": "capital",
+      "title": "미·일 5500억 달러 투자 협정",
+      "subtitle": "AI 및 반도체 분야 전략적 공급망 협력",
+      "summary": "미국과 일본이 AI 및 첨단 반도체 부문을 중심으로 5,500억 달러 규모의 대규모 투자 협정을 진전시키고 있다. 양국은 글로벌 칩 공급망 안정을 위해 공동 투자를 확대하고 협상 진전을 확인했다. 이를 통해 차세대 AI 컴퓨팅 및 반도체 생태계에서 양국의 전략적 결속이 강화될 전망이다.",
+      "company_domain": null,
+      "image": null,
+      "image_tried": [],
+      "impact": 4,
+      "score": 9.412,
+      "source_count": 3,
+      "first_seen": "2026-09-05T13:04:21+09:00",
+      "last_seen": "2026-09-07T02:07:00+09:00",
+      "item_ids": [
+        "7a30232affd6c82b",
+        "959482c1327f5cec",
+        "b44d527b27369940"
+      ],
+      "sources": [
+        {
+          "name": "Google News / thestreet.com",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOWkwTUVLWk1QdmMtMlRJTmZYLWp0WldQZ01hQUFlX091NUk2UTlQNkU2TGFZdHlOUDdQaXVHZW1tY3p4b20ya1R4Y0pjbVpjZGJLNU4zOW1QcUtyR2YtQS1mTjIxY2lQdlZXRkNIeW1MYllBRTZiMzA2c0J6SXF4WjRXTnIycjE3LTQ3SFptLThnUTI1QUE?oc=5",
+          "published_at": "2026-09-07T02:07:00+09:00"
+        },
+        {
+          "name": "Google News / The Next Web",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTG8tX0psQ1pXRjFmY0l6WU45aVZYRFh5aUoyYmJLems5MmJPMGg1Vzg1aFNnQk42XzhlYjhReW0zMF9yRGxSaHp2SWQ3Y2JNUnJtZU5NX1JjRnNFUXRSRWl1YkdNMWozWWUwSWo1Z3AxV29YeWJqdmx5aE1CQjZnUEs3RVptalFNemFLVzhvYml3MTFIa3pWbnhERHJjdHdSbk5jMXNWZDNYZjdMam10RUR1OWxMaWhKVU5CZmpKbzJFdVYwYXRGV1BXS29kZUpyMVRsUUFHNkpDcHVIMW1COHJ2Yw?oc=5",
+          "published_at": "2026-09-05T20:36:31+09:00"
+        },
+        {
+          "name": "Google News / Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZXJqNjVkeUtGUjZCcGQyM2ZySkF2TmNZWkg5cXQwZjBOVjZlbFlhX0IyOURyazFkX2Nwckk5WXhPdHdkdjVFNDNBMl8xdF8teWR0SzRDU1ZoQjZXQUFWNnVUNk5CLTB2N0dXTGoyOG05Z1BucVVRRzdNeldpdklxbGkwMWxUOEN2eTNOcFJWX3dPMUM3Sno5eTVyeGVhejl0ZFd0MjZPM1RMSjEyUllCUFVBZzRuRnZ3aGpZ?oc=5",
+          "published_at": "2026-09-05T13:04:21+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000064",
+      "rank": 6,
+      "prev_rank": null,
+      "badge": "new",
+      "axis": "llm",
+      "title": "오픈AI 최고과학자 속도조절론",
+      "subtitle": "지능 급상승 따른 통제 불능 경고",
+      "summary": "야쿠프 파초츠키 오픈AI 수석 과학자가 급격한 기계 지능 발전에 대해 극도의 주의를 당부했다. 그는 AI 연구소들이 개발 속도를 늦춰야 할 수도 있으며 발생할 결과에 누구도 준비되지 않았다고 경고했다. 프론티어 AI의 위험성과 통제 가능성에 대한 논의가 다시 부각되고 있다.",
+      "company_domain": "openai.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 9.175,
+      "source_count": 2,
+      "first_seen": "2026-09-07T04:13:28+09:00",
+      "last_seen": "2026-09-07T04:26:12+09:00",
+      "item_ids": [
+        "b6b70e0ea901a7e5",
+        "6f8262bfb6a541ac"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Business Insider",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcE5ZbFRhcWxwSG1FMUN1VnFPalBuTkRBOUVfdWxiSl96eHlXb2ExY28tWW0wbXk2Vk8zb2toM1ZQNk9qbG8zbmZwdlNnWFpTcWFFLVpPVGFvOUlBQ2RNMnhBTnczVWpMTkx3STlNcXJsSGczcTlTOHdDV3hiLUIwVEl4NzNYT0d2SUtIWkxFbHE2RHpEUGVXWThSaUVmUjJianp1QW9Yc2ZEem1PMHJhb2Nn?oc=5",
+          "published_at": "2026-09-07T04:26:12+09:00"
+        },
+        {
+          "name": "Google News / Firstpost",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNXY3Tm54QUNZa1RrQlFLSHQ1VTE1Zjk1WExfWFFJVWZ3VjNCeXNRM2dJV3FXTERTOFB2VGR1WXRuQ0Y4VnlabWdZZUZVSF9ya1RXSDdxNTh6N0tlQWluaHNHQW1ZdW94NThqU3pSS0pWSnRldDQ4Q2dhR00tRHFCN0FkNDY4RExSSHpGcFk2SHE4dTAwRk5FbWZaUERTYWpJMjdLb05pcFFORG9DMkJBQjkwSjN0QmFReEwxUkM5cGxvend6cUVaYno2ajc5UVk0Vk1palV2OE5URGRj0gHiAUFVX3lxTE52SVZqcjBPM28zazlyc21zV0xpYUVXak5rNkF0amxFdkNlUVd4VUNyTjNKRjhjZmpOZVBZTGZjS2pJcE55SlhWbnZja25ILThwNnlscW42RDQyc3JoT3hwU0hEWERyaFQ5eFJkcElZMUE5Zm5haHhYVDRPQ08yNmp4czg0OGV2XzY1N1NoYU1DMll6NXBieC1EelZWN1JiaTAzSzhRUWlndmpXSkM3Tm5UdGlfdzM5Q05ZQVNMM2RzT1VmT0Q1UXhxYzZiTGRGZFFyT01PSmo1QXljREhpQUdMNnc?oc=5",
+          "published_at": "2026-09-07T04:13:28+09:00"
         }
       ]
     },
     {
       "id": "iss_000004",
-      "rank": 4,
+      "rank": 7,
       "prev_rank": 4,
       "badge": null,
       "axis": "capital",
@@ -452,7 +566,7 @@
         "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft"
       ],
       "impact": 3,
-      "score": 10.811,
+      "score": 8.517,
       "source_count": 9,
       "first_seen": "2026-09-05T09:02:25+09:00",
       "last_seen": "2026-09-07T01:17:12+09:00",
@@ -516,144 +630,6 @@
       ]
     },
     {
-      "id": "iss_000016",
-      "rank": 5,
-      "prev_rank": 7,
-      "badge": null,
-      "axis": "capital",
-      "title": "엔비디아 HF 인수",
-      "subtitle": "오픈소스 AI 플랫폼 인수로 생태계 주도권 확보",
-      "summary": "",
-      "company_domain": "nvidia.com",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt608a706e822d73ea/6a9ad800bd62f25ed0e9d227/JHuang.jpg?width=720&quality=80&disable=upscale",
-      "image_tried": [],
-      "impact": 5,
-      "score": 8.352,
-      "source_count": 3,
-      "first_seen": "2026-09-03T20:59:49+09:00",
-      "last_seen": "2026-09-06T21:13:49+09:00",
-      "item_ids": [
-        "9aea6e241569e25e",
-        "afee1eeff885124d",
-        "a69bbbeccc2212e5"
-      ],
-      "sources": [
-        {
-          "name": "CNBC Tech",
-          "url": "https://cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
-          "published_at": "2026-09-06T21:13:49+09:00"
-        },
-        {
-          "name": "Google News / Barron's",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ndF9FbDFvTW84WDROWUtmRnVDbF9YSkZxSzVUYmNQUHZMUmJySGJhYmdoY2tuOEMyWmUzWW9uUFdJQ0Vrc3haNU9RQldWRUJ6SDFYUEJuVGpHMnFxeHREeFVabUMwWEhYQ0FvRkFtRHYzTkxpM3hHMUVNaw?oc=5",
-          "published_at": "2026-09-05T03:21:00+09:00"
-        },
-        {
-          "name": "Google News / Barron's",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pTWN0Wkc3RTBDNWNCdU5vMERZenNSbkFIejZfR244VG9DWDV4S2FLM0tkQTJSSUktQXlIMDNjVTVRUzc4dlFpQ1pPelZxcDY5SFlKWFNTZUE4a21mM3hwRXlXNURJMldpYUlKZU1Zd2ZuR0VYRmU0WU1B?oc=5",
-          "published_at": "2026-09-05T02:55:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000006",
-      "rank": 6,
-      "prev_rank": 5,
-      "badge": null,
-      "axis": "media",
-      "title": "구글, 제미나이에 리리아 3.5 도입",
-      "subtitle": "최신 음악 생성 모델을 제미나이 앱에 통합",
-      "summary": "",
-      "company_domain": "google.com",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/08/gemini_logo.png",
-      "image_tried": [],
-      "impact": 3,
-      "score": 8.083,
-      "source_count": 8,
-      "first_seen": "2026-09-05T10:58:04+09:00",
-      "last_seen": "2026-09-06T21:41:17+09:00",
-      "item_ids": [
-        "3bab38ace099b740",
-        "386fee1da20811b3",
-        "b07435e9b6c2f9ad",
-        "c7873c2b8962d065",
-        "c1775abf32dd54c1",
-        "c7b81c01db9d500c",
-        "b947036467853a25",
-        "7a9eea6943da935d"
-      ],
-      "sources": [
-        {
-          "name": "Google News / jordannews.jo",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaUo3S045dE1WNDdiY1ZRb09ZZF9xdHJObnpjdFY1WkdPRFQ3ZmgwdDF3S3dNdGhWWGVSajRlaVhILTFZUmZscXQxSm16WjJHck5SMS1sUDY5QXgzaTVVZVAxU0Y1MDRwTDBFRGU5RXdVWjQ2a0ItVmFDNmdHZERQbVpFdWJISUdITVEtR0VWWVNoRmEt?oc=5",
-          "published_at": "2026-09-06T21:41:17+09:00"
-        },
-        {
-          "name": "Google News / the-decoder.com",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb2Z0TnFtZUpfcVlkSXhZVWxIaVVuNTR4TXhXbEhPS3QxZjdQZF82STFocU1EeEc2VzVjbXpDbGpxYVBBdEV5WWUzUVE1cmRidV9pLUpnOUlWZ2xaSExFNlBxTnFMT0NySFRkckVadkdwRzJ6RlNVZjlTbks5bktzSG5ISnR0LXR2cGI4QVNxNzRuOHdSNm1xLUtPRWVSNkdMdEt3N3JaV3UxTTJlbDVNMUFSNlp4cGM?oc=5",
-          "published_at": "2026-09-06T19:01:39+09:00"
-        },
-        {
-          "name": "The Decoder",
-          "url": "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
-          "published_at": "2026-09-06T18:56:24+09:00"
-        },
-        {
-          "name": "Google News / PPC Land",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNN1FQZnZYekNnY2xfRjA1V3E5WDAtdE1kLTdocENWUF81T2ktNnVIelA0elI1aUF1QmowVXdJLTl4YWQ5c3FtTmFiQ1RRN21JbTR1R1FxVlhhVkYwZFQ0amVDelBVN3lSdjBfZGY5X1Y5MFc3N3dpazljVmVaUW5SX0pYczVBTmxZU1E4?oc=5",
-          "published_at": "2026-09-06T16:31:16+09:00"
-        },
-        {
-          "name": "Google News / We Rave You",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zc0dsVWl0SWwzdGtUZHU2OUFCM0MyOUZxR0xfUHJTS3J1Q3FlMS1EVEZxWmZTVnR4ZWM5Z3ZiSGs2WjJfdFNsdk5PWWVTVUpuXy1hRlRYbXdxelQ3YjFMVmpQQ1hfc3ZseHJwNWRqMXQyWklMWmdzWXlabjNTVlU?oc=5",
-          "published_at": "2026-09-06T15:18:14+09:00"
-        },
-        {
-          "name": "Google News / Dealroom",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWjVjWC1nTndrc2tVeTJIbF96VlE3MjlwTmZ3b3VINFZVa0tWR1UzUk1PVXkwU0Z5U2w3UzJNRzdmaVR6Q0hDdmJQcDdidm5WUU93R2FNeExucHNXQWs0VGpiejNmSHFnVFNtRDU4Tk1GOVFFeWRGTjYtSnBYN2dBQjZsWFRMTkVQNEZGS3NR?oc=5",
-          "published_at": "2026-09-05T19:52:28+09:00"
-        },
-        {
-          "name": "Google News / digitaltrends.com",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLWNpczBtRkR1aVFndGZySGk4V01Ubm4yRUczdXZrbzJkR1Vmc2NVMmRZTWJCeFFIdE9KeTlfQ0NqaFd2elJqY1dJdjQxWGJicVMzdlg5SkZuMlBqSTEwLU5ieVJ4aDNoSXNhbzd5NWRsdG5UOUFjS3ZsLVNkeWJoUGMwNW10LXBHR3p3YTc1TWlxakFBRUozYXlhcUVkSm91aWVNamRFNmJBQQ?oc=5",
-          "published_at": "2026-09-05T10:58:04+09:00"
-        },
-        {
-          "name": "Google News / Android Authority",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRjNfZnVhTWRqWTQycnRXZlpHYkw3djN2Xzd5RlYxVEN4dzh3QmhQQnBNRXZaY0xFeGtScXlkTlNyTWxPX0U4c0oxaG5HMGJpczlfaHR6NGoyYlBsRzBCNVZvZ09oeTF4NXJoMEpTTFlFNnlWa3BIcFo4RWNzMzhLZlVFUk02eU0?oc=5",
-          "published_at": "2026-09-05T03:21:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000059",
-      "rank": 7,
-      "prev_rank": null,
-      "badge": "new",
-      "axis": "capital",
-      "title": "앤스로픽, 대규모 연산 계약",
-      "subtitle": "11개월 만에 5170억 달러 확보",
-      "summary": "앤스로픽이 지난 11개월 동안 5170억 달러 규모의 컴퓨팅 자원 확보 계약을 체결했다. 폭발적으로 늘어나는 거대언어모델 학습과 추론 수요에 대응하기 위한 선제적 조치다. 이를 발판 삼아 차세대 모델 개발 속도를 한층 끌어올릴 계획이다.",
-      "company_domain": "anthropic.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 4,
-      "score": 7.433,
-      "source_count": 1,
-      "first_seen": "2026-09-07T00:00:00+09:00",
-      "last_seen": "2026-09-07T00:00:00+09:00",
-      "item_ids": [
-        "750e5cd670a6813a"
-      ],
-      "sources": [
-        {
-          "name": "Google News / The Information",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXRPY1Z1di1Kbks0MzNxSkpJdi1DTkRoQzZxUDJHVW90Q2pCalNYaDVIZ2Y0MENIS2laWE1MdEYtRGZFNFhaRDJKcEVsRHBsY2p2X0pUT3REVEc1VzhHN1JQQ0NmR0IybE5USmFQd1pfSFBBWVAyQzAwME43eEZCd0lCX0pycjIyWU9TT0VBczZyZk9sWnRmNGNn?oc=5",
-          "published_at": "2026-09-07T00:00:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_000005",
       "rank": 8,
       "prev_rank": 8,
@@ -668,25 +644,35 @@
         "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning"
       ],
       "impact": 2,
-      "score": 6.373,
+      "score": 7.756,
       "source_count": 12,
       "first_seen": "2026-09-05T04:40:06+09:00",
-      "last_seen": "2026-09-06T22:01:30+09:00",
+      "last_seen": "2026-09-07T02:34:51+09:00",
       "item_ids": [
         "10ec077112aabc6f",
         "ce7c44e9de28c3f2",
         "7c4265520956dd9b",
-        "4644d92a508e1f39",
         "33f52e4894373253",
         "f53b157cebb43ab1",
         "b892cba3e14467f1",
         "05bd8b42afb55b73",
         "468412f084ce1bbe",
         "05d8db6c17072c89",
-        "b55b7e20b62688e4",
-        "ad4ffdb549008c87"
+        "ad4ffdb549008c87",
+        "33652547b72a7a29",
+        "38e488b61010591b"
       ],
       "sources": [
+        {
+          "name": "Google News / Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVHdHdU5aa0pzLVRQT2dOdVYtTmQ0dlA2d1hfd3BMdDdJVllPdEx3ZGQtUE0yNUJDSDA3NFpWMEpKcDRVeWJlbGM2aHRUYlM3NFVoNkVVLXhlUnROTE9KTXpFejY2VDJWM3lCbVZYV0ExaGNBNVFSbjhpT1ZQTmFweXkzSUdmUi1hUjc0SGdKRnBpZElwYW12aDBRZ3hKdTNoVUE?oc=5",
+          "published_at": "2026-09-07T02:34:51+09:00"
+        },
+        {
+          "name": "Google News / eGamers.io",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcUllaE55UVNTUEZZQTlPY2t3M2FYMk5oOU00SmNZUzkybkpJOFRXWXZGRldZTEU5amY1TEEzSE9jSGpmTnNBdXRSSk5QOGEyWE9kOUY2RnNadks4OXY5b0FfZFBuWnFMVnFvaEt1ekxOU1BheW12YjBfMzFZOGlmdGJPS1YwQmlS?oc=5",
+          "published_at": "2026-09-07T02:29:21+09:00"
+        },
         {
           "name": "Google News / KXAN Austin",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUm1RbnY3dWthZDl4elV6UlVhTUxLXzR4Z0pyYWFHdXNhYjJWSXpBUDdrY0ZUdmpHeWNYUmJsV0VCQ0lGendmeXR5bFZBc2VieDIxUVFsNXo2YzFreHZYSzJ3SnRRdTRRd1pGSXN4R2hxRTR0NWxmZ2x3OW4yZlBJTHQtanF1aDRqUHJDNzBEZzZjZzRwdEJIZUt0a2dfQXhZRFo3cFJoc3JvNFlFQ1Aw?oc=5",
@@ -736,93 +722,117 @@
           "name": "Google News / NZ Herald",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcVoyRFNzeGxsN2xlUU1jM0NwQXJ0dU1NaTZoRkFEQmQwdkhRSDlTSUZaSXBjMWlqTDlCRFdJbFpxbVJaWlZ2dTZmenctd0E5cExHZ2FnTFB2SERUcHZtTjFFVmJkZlR4czBCNkdoQlA4aWtodzUwN2pYNldjN192cUlyVTY5QmNPczZTcjlUaUNCSTl2dmUxVHdjZmx3aGp1aEJvcUtNcU55N3ZQR0J1TjEzcVY0dEp3U2JSVWxxZlpYT3I0bUZhMURjZE5jUQ?oc=5",
           "published_at": "2026-09-05T11:47:58+09:00"
-        },
-        {
-          "name": "Google News / KTVU",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc004LXp2YmlRY1RvN3E0eXptV2pmQlVtUWNrcjY0eTRYeHU5TU9SNm9sQm1xeGVlWGYwUEJZYm5Qa1FJSnNfYWdnR09Va2RsbFBfa2lwNGtHdFZaQzE5TjhpZmp1ZXJrMk5Ybjl2aEJDandWWWtkbkF3Mzdwa2NHRXpmdTZlaVJINjlWUThfdzFRWThacUlSV0tuNG93ZE45X19oYUxR?oc=5",
-          "published_at": "2026-09-05T04:40:06+09:00"
-        },
-        {
-          "name": "Google News / inc.com",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQURKcE5vUUtLWURsZEpTQzAyU3poZjQ3TWdKd2d3MmIzbFhCX1dDeGVSOTR5NDljVlBJTUc2SFFOZ3pjVTZlZmlVN2s1cW5GUDFIZUJlZlBCZUJrcWlnYkt3YUEydHJfTi1QRGZ0UmRTc1BxTXpBZzRTZDM1bW9hUm5fZzEwd2Myb3h3ZVZVX04wVS1vTFpHU0F2T3hZLUZjbE9XQ1Q2RHNfQ2h3aXc?oc=5",
-          "published_at": "2026-09-05T02:15:17+09:00"
         }
       ]
     },
     {
-      "id": "iss_000058",
+      "id": "iss_000028",
       "rank": 9,
-      "prev_rank": null,
-      "badge": "new",
+      "prev_rank": 16,
+      "badge": "surge",
       "axis": "capital",
-      "title": "트래비스 캘러닉, 로보택시 진출",
-      "subtitle": "스타트업 아톰스로 모빌리티 복귀",
-      "summary": "우버 창업자 트래비스 캘러닉의 스타트업 아톰스가 로보택시 사업 진출을 준비 중인 것으로 알려졌다. 캘러닉은 아톰스를 통해 우버 시절 끝내지 못한 사업을 완수하겠다는 의지를 밝혔다. 자율주행 시장 경쟁이 다시 한번 격화될 조짐이다.",
-      "company_domain": null,
-      "image": "https://techcrunch.com/wp-content/uploads/2026/08/travis-kalanick-fii.jpg?resize=1200,800",
-      "image_tried": [
-        "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business"
-      ],
-      "impact": 3,
-      "score": 5.964,
-      "source_count": 1,
-      "first_seen": "2026-09-07T01:45:00+09:00",
-      "last_seen": "2026-09-07T01:45:00+09:00",
-      "item_ids": [
-        "102c9d67ffb9589f"
-      ],
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business",
-          "published_at": "2026-09-07T01:45:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000029",
-      "rank": 10,
-      "prev_rank": 10,
-      "badge": null,
-      "axis": "llm",
-      "title": "클로드 5.1 모델군 출시",
-      "subtitle": "코딩·사이버보안·과학연구 특화 Fable 및 Mythos 공개",
+      "title": "미국, GPU 외교적 활용",
+      "subtitle": "아르메니아-아제르바이잔 평화 협상 등 외교적 지렛대로 공급 약속",
       "summary": "",
-      "company_domain": "anthropic.com",
+      "company_domain": null,
       "image": null,
       "image_tried": [],
-      "impact": 4,
-      "score": 4.375,
+      "impact": 3,
+      "score": 6.704,
       "source_count": 3,
-      "first_seen": "2026-09-05T21:00:07+09:00",
-      "last_seen": "2026-09-06T10:14:08+09:00",
+      "first_seen": "2026-09-05T08:00:00+09:00",
+      "last_seen": "2026-09-07T00:46:34+09:00",
       "item_ids": [
-        "960f88dc416119a1",
-        "54d2665322cf8a4f",
-        "733f680fe555a74b"
+        "8473c8a225b96e81",
+        "ce93f56c42608439",
+        "4376b91299857fe4"
       ],
       "sources": [
         {
-          "name": "Google News / therundown.ai",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOLTAyZkhPRFY2aEVJWVd0dFhlNm93eG9OSTNJRkVKR0tLVl9GQkFJVjRWcGIyUlJndzdEaVdUUjNCeFVBNUZHaXRlX0FBSGJnb1JtaDRFRWpLTFRPa0U3SzVxX2JZZUtvMnJrekM5Q1g4MnlIVXZLNnpYcGNQZHlQMEMxdWxSSS1u?oc=5",
-          "published_at": "2026-09-06T10:14:08+09:00"
+          "name": "Google News / The Next Web",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMmNXQlU1b2NRY0hzTEZmVUE5aV90MWNDMXRyUE5lbDlkS3Zzbnl2cW9oZmZwbUs0RzJSU0lpT2p4ZHRRNGVTSVpaemdRa25nbk80czJnT25DV3ZvV1ZJUXk5eFBjREJkYzlpREg0TnB4dDJiRW1nY0d0MVJFd2FTV0NQZWdkOS1DUEtxT2RITVBfdw?oc=5",
+          "published_at": "2026-09-07T00:46:34+09:00"
         },
         {
-          "name": "Google News / LinkedIn",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOczZLQWhJUjZVdEs0cnFXVmktX2JTaDFVVEFVX3hQLU8zcmtTQjJzd1Y1cHZVVmNsenBIWDRIOW4zbndpZGZMaEJWVlJQN1FBeWNMck9ObDlEQW5GSmVBSU4zRTIyRWdDSUhiMDV3aGUxd1BGcXRRajJLUldMOWlJOUtEUDBzTjBQRko2MEFyVjNKcDA?oc=5",
-          "published_at": "2026-09-05T21:00:07+09:00"
+          "name": "Google News / 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaksyZ296YnRlMFBNN2VERmtrNWhpU2xqVGY2MndvRDdzRk9ET0R1dy1iMnN4MldTMk9rT0VuOXp3NmdBRDVyeldjZkVvMzd3M3pua1BoLXZDU0gyWGV2QVFHdlB3ekp1b2Vhbm1RNnlEb1RDbm9iUkh4Z185MnFiWXJHNHVwTnJa?oc=5",
+          "published_at": "2026-09-06T14:48:18+09:00"
         },
         {
-          "name": "Google News / SingularityHub",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUXU2M0tNU2N6SFdMQkhGQnhVUUxFUXl2eTl4WWlKX1dsTGdNVWc4alVxQV9nQ1RkSkI2dG0wZzg1MkpyQnlGWkRGcEcxaWtiTkd1ejd6VGRVMWxfbVhvR0h2Vjh1NmlOdl9JcWVyOGdBMnJVellhUnFLMncwUC1ZR0NTVTkxMzR1NFZwam51Qms4X0ZGOE9OUWdBYkpPRjcwSmpEa0xXbDdxamlHNGpmSmg3YXgxS3RNOUthWg?oc=5",
-          "published_at": "2026-09-05T04:08:33+09:00"
+          "name": "Google News / WSJ",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbEJmOWRwaGQxLXdMVzlaUk16VUZfVE9FTkN4MVdOXzBYZEY5VlpWMWZFbHBjaTNCTmxnQVdsamU4YUd3YmUtZDV6OUFNZDdvOGFfY0pLSndyc0JVci03c2NrcUtveEhnTU8tOEZMY3FoUUlETnlrM0pZUGlsSFdjOW5xU2VpQ3pOeWhoOHZ2TTNqb3RyQzdFSnR0YktRWjZHeDcxNzBuQmZvOUk?oc=5",
+          "published_at": "2026-09-05T08:00:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000006",
+      "rank": 10,
+      "prev_rank": 6,
+      "badge": null,
+      "axis": "media",
+      "title": "구글, 제미나이에 리리아 3.5 도입",
+      "subtitle": "최신 음악 생성 모델을 제미나이 앱에 통합",
+      "summary": "",
+      "company_domain": "google.com",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/08/gemini_logo.png",
+      "image_tried": [],
+      "impact": 3,
+      "score": 6.696,
+      "source_count": 7,
+      "first_seen": "2026-09-05T10:58:04+09:00",
+      "last_seen": "2026-09-06T21:41:17+09:00",
+      "item_ids": [
+        "3bab38ace099b740",
+        "386fee1da20811b3",
+        "b07435e9b6c2f9ad",
+        "c7873c2b8962d065",
+        "c1775abf32dd54c1",
+        "c7b81c01db9d500c",
+        "7a9eea6943da935d"
+      ],
+      "sources": [
+        {
+          "name": "Google News / jordannews.jo",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaUo3S045dE1WNDdiY1ZRb09ZZF9xdHJObnpjdFY1WkdPRFQ3ZmgwdDF3S3dNdGhWWGVSajRlaVhILTFZUmZscXQxSm16WjJHck5SMS1sUDY5QXgzaTVVZVAxU0Y1MDRwTDBFRGU5RXdVWjQ2a0ItVmFDNmdHZERQbVpFdWJISUdITVEtR0VWWVNoRmEt?oc=5",
+          "published_at": "2026-09-06T21:41:17+09:00"
+        },
+        {
+          "name": "Google News / the-decoder.com",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb2Z0TnFtZUpfcVlkSXhZVWxIaVVuNTR4TXhXbEhPS3QxZjdQZF82STFocU1EeEc2VzVjbXpDbGpxYVBBdEV5WWUzUVE1cmRidV9pLUpnOUlWZ2xaSExFNlBxTnFMT0NySFRkckVadkdwRzJ6RlNVZjlTbks5bktzSG5ISnR0LXR2cGI4QVNxNzRuOHdSNm1xLUtPRWVSNkdMdEt3N3JaV3UxTTJlbDVNMUFSNlp4cGM?oc=5",
+          "published_at": "2026-09-06T19:01:39+09:00"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
+          "published_at": "2026-09-06T18:56:24+09:00"
+        },
+        {
+          "name": "Google News / PPC Land",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNN1FQZnZYekNnY2xfRjA1V3E5WDAtdE1kLTdocENWUF81T2ktNnVIelA0elI1aUF1QmowVXdJLTl4YWQ5c3FtTmFiQ1RRN21JbTR1R1FxVlhhVkYwZFQ0amVDelBVN3lSdjBfZGY5X1Y5MFc3N3dpazljVmVaUW5SX0pYczVBTmxZU1E4?oc=5",
+          "published_at": "2026-09-06T16:31:16+09:00"
+        },
+        {
+          "name": "Google News / We Rave You",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zc0dsVWl0SWwzdGtUZHU2OUFCM0MyOUZxR0xfUHJTS3J1Q3FlMS1EVEZxWmZTVnR4ZWM5Z3ZiSGs2WjJfdFNsdk5PWWVTVUpuXy1hRlRYbXdxelQ3YjFMVmpQQ1hfc3ZseHJwNWRqMXQyWklMWmdzWXlabjNTVlU?oc=5",
+          "published_at": "2026-09-06T15:18:14+09:00"
+        },
+        {
+          "name": "Google News / Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWjVjWC1nTndrc2tVeTJIbF96VlE3MjlwTmZ3b3VINFZVa0tWR1UzUk1PVXkwU0Z5U2w3UzJNRzdmaVR6Q0hDdmJQcDdidm5WUU93R2FNeExucHNXQWs0VGpiejNmSHFnVFNtRDU4Tk1GOVFFeWRGTjYtSnBYN2dBQjZsWFRMTkVQNEZGS3NR?oc=5",
+          "published_at": "2026-09-05T19:52:28+09:00"
+        },
+        {
+          "name": "Google News / digitaltrends.com",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLWNpczBtRkR1aVFndGZySGk4V01Ubm4yRUczdXZrbzJkR1Vmc2NVMmRZTWJCeFFIdE9KeTlfQ0NqaFd2elJqY1dJdjQxWGJicVMzdlg5SkZuMlBqSTEwLU5ieVJ4aDNoSXNhbzd5NWRsdG5UOUFjS3ZsLVNkeWJoUGMwNW10LXBHR3p3YTc1TWlxakFBRUozYXlhcUVkSm91aWVNamRFNmJBQQ?oc=5",
+          "published_at": "2026-09-05T10:58:04+09:00"
         }
       ]
     },
     {
       "id": "iss_000054",
       "rank": 11,
-      "prev_rank": 6,
+      "prev_rank": 11,
       "badge": null,
       "axis": "llm",
       "title": "제미나이 3.8 플래시 공개",
@@ -832,7 +842,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 4.251,
+      "score": 3.721,
       "source_count": 2,
       "first_seen": "2026-09-06T10:16:06+09:00",
       "last_seen": "2026-09-06T23:00:02+09:00",
@@ -856,7 +866,7 @@
     {
       "id": "iss_000012",
       "rank": 12,
-      "prev_rank": 9,
+      "prev_rank": 12,
       "badge": null,
       "axis": "capital",
       "title": "앤스로픽-작가진 합의금 갈등",
@@ -866,7 +876,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 4.183,
+      "score": 3.661,
       "source_count": 3,
       "first_seen": "2026-09-05T18:03:10+09:00",
       "last_seen": "2026-09-06T16:32:29+09:00",
@@ -894,8 +904,64 @@
       ]
     },
     {
-      "id": "iss_000026",
+      "id": "iss_000016",
       "rank": 13,
+      "prev_rank": 5,
+      "badge": null,
+      "axis": "capital",
+      "title": "엔비디아 HF 인수",
+      "subtitle": "오픈소스 AI 플랫폼 인수로 생태계 주도권 확보",
+      "summary": "",
+      "company_domain": "nvidia.com",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt608a706e822d73ea/6a9ad800bd62f25ed0e9d227/JHuang.jpg?width=720&quality=80&disable=upscale",
+      "image_tried": [],
+      "impact": 5,
+      "score": 3.655,
+      "source_count": 1,
+      "first_seen": "2026-09-03T20:59:49+09:00",
+      "last_seen": "2026-09-06T21:13:49+09:00",
+      "item_ids": [
+        "afee1eeff885124d"
+      ],
+      "sources": [
+        {
+          "name": "CNBC Tech",
+          "url": "https://cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+          "published_at": "2026-09-06T21:13:49+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000059",
+      "rank": 14,
+      "prev_rank": 7,
+      "badge": null,
+      "axis": "capital",
+      "title": "앤스로픽, 대규모 연산 계약",
+      "subtitle": "11개월 만에 5170억 달러 확보",
+      "summary": "앤스로픽이 지난 11개월 동안 5170억 달러 규모의 컴퓨팅 자원 확보 계약을 체결했다. 폭발적으로 늘어나는 거대언어모델 학습과 추론 수요에 대응하기 위한 선제적 조치다. 이를 발판 삼아 차세대 모델 개발 속도를 한층 끌어올릴 계획이다.",
+      "company_domain": "anthropic.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 4,
+      "score": 3.253,
+      "source_count": 1,
+      "first_seen": "2026-09-07T00:00:00+09:00",
+      "last_seen": "2026-09-07T00:00:00+09:00",
+      "item_ids": [
+        "750e5cd670a6813a"
+      ],
+      "sources": [
+        {
+          "name": "Google News / The Information",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXRPY1Z1di1Kbks0MzNxSkpJdi1DTkRoQzZxUDJHVW90Q2pCalNYaDVIZ2Y0MENIS2laWE1MdEYtRGZFNFhaRDJKcEVsRHBsY2p2X0pUT3REVEc1VzhHN1JQQ0NmR0IybE5USmFQd1pfSFBBWVAyQzAwME43eEZCd0lCX0pycjIyWU9TT0VBczZyZk9sWnRmNGNn?oc=5",
+          "published_at": "2026-09-07T00:00:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000026",
+      "rank": 15,
       "prev_rank": 13,
       "badge": null,
       "axis": "llm",
@@ -908,7 +974,7 @@
         "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library"
       ],
       "impact": 3,
-      "score": 3.708,
+      "score": 3.246,
       "source_count": 2,
       "first_seen": "2026-09-04T19:31:00+09:00",
       "last_seen": "2026-09-06T19:27:07+09:00",
@@ -931,7 +997,7 @@
     },
     {
       "id": "iss_000040",
-      "rank": 14,
+      "rank": 16,
       "prev_rank": 14,
       "badge": null,
       "axis": "capital",
@@ -942,7 +1008,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 3.509,
+      "score": 3.071,
       "source_count": 2,
       "first_seen": "2026-09-06T09:00:00+09:00",
       "last_seen": "2026-09-06T18:00:58+09:00",
@@ -964,8 +1030,72 @@
       ]
     },
     {
+      "id": "iss_000029",
+      "rank": 17,
+      "prev_rank": 10,
+      "badge": null,
+      "axis": "llm",
+      "title": "클로드 5.1 모델군 출시",
+      "subtitle": "코딩·사이버보안·과학연구 특화 Fable 및 Mythos 공개",
+      "summary": "",
+      "company_domain": "anthropic.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 4,
+      "score": 3.035,
+      "source_count": 2,
+      "first_seen": "2026-09-05T21:00:07+09:00",
+      "last_seen": "2026-09-06T10:14:08+09:00",
+      "item_ids": [
+        "960f88dc416119a1",
+        "54d2665322cf8a4f"
+      ],
+      "sources": [
+        {
+          "name": "Google News / therundown.ai",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOLTAyZkhPRFY2aEVJWVd0dFhlNm93eG9OSTNJRkVKR0tLVl9GQkFJVjRWcGIyUlJndzdEaVdUUjNCeFVBNUZHaXRlX0FBSGJnb1JtaDRFRWpLTFRPa0U3SzVxX2JZZUtvMnJrekM5Q1g4MnlIVXZLNnpYcGNQZHlQMEMxdWxSSS1u?oc=5",
+          "published_at": "2026-09-06T10:14:08+09:00"
+        },
+        {
+          "name": "Google News / LinkedIn",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOczZLQWhJUjZVdEs0cnFXVmktX2JTaDFVVEFVX3hQLU8zcmtTQjJzd1Y1cHZVVmNsenBIWDRIOW4zbndpZGZMaEJWVlJQN1FBeWNMck9ObDlEQW5GSmVBSU4zRTIyRWdDSUhiMDV3aGUxd1BGcXRRajJLUldMOWlJOUtEUDBzTjBQRko2MEFyVjNKcDA?oc=5",
+          "published_at": "2026-09-05T21:00:07+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000058",
+      "rank": 18,
+      "prev_rank": 9,
+      "badge": null,
+      "axis": "capital",
+      "title": "트래비스 캘러닉, 로보택시 진출",
+      "subtitle": "스타트업 아톰스로 모빌리티 복귀",
+      "summary": "우버 창업자 트래비스 캘러닉의 스타트업 아톰스가 로보택시 사업 진출을 준비 중인 것으로 알려졌다. 캘러닉은 아톰스를 통해 우버 시절 끝내지 못한 사업을 완수하겠다는 의지를 밝혔다. 자율주행 시장 경쟁이 다시 한번 격화될 조짐이다.",
+      "company_domain": null,
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/travis-kalanick-fii.jpg?resize=1200,800",
+      "image_tried": [
+        "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business"
+      ],
+      "impact": 3,
+      "score": 2.61,
+      "source_count": 1,
+      "first_seen": "2026-09-07T01:45:00+09:00",
+      "last_seen": "2026-09-07T01:45:00+09:00",
+      "item_ids": [
+        "102c9d67ffb9589f"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business",
+          "published_at": "2026-09-07T01:45:00+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_000011",
-      "rank": 15,
+      "rank": 19,
       "prev_rank": 15,
       "badge": null,
       "axis": "hardware",
@@ -976,12 +1106,11 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 3.252,
-      "source_count": 3,
+      "score": 2.256,
+      "source_count": 2,
       "first_seen": "2026-09-05T05:15:00+09:00",
       "last_seen": "2026-09-06T10:00:08+09:00",
       "item_ids": [
-        "69b26d6fb37a2bb8",
         "aab2a19754f5e8d2",
         "9c2f70458aed9e76"
       ],
@@ -995,167 +1124,6 @@
           "name": "Google News / GameGPU",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc0t2QWR0aFNadDVEZHJkMkoyOE5TNHRmVFVraDdrTzFkb205MTVON0FFUzJFRklwZEdlVkFLNUk0YXd3MWdVeTVGT2VDd2RjMGdnZEJBaGRTaFBrbXNtMTNQaTl2cktua3JzOWhMeVlOUVNWb18yOUw0dnE2OE04YkVOZUJyX09vTW1YZEo3UmtKNFZpQjZSVkY0Mzl1NzFNTmtubnR3VFRyQQ?oc=5",
           "published_at": "2026-09-06T05:21:54+09:00"
-        },
-        {
-          "name": "Google News / TechRadar",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQW84R3hqMjFmT1lTaFNMZkQyWTQ5X0NvbTBMaVhWcUs3a0VFa0ZiTmJfbnBXdkctbXJMclZfSklFQ1NxNUpwMFVuUFBtRlViVXh0alBnb0JaMlA0Q3lMbVJrcXpMRVJ5RmI5aHBrbWlTZmhZTjRybGJSZ1p2aWIycGlHeXIydXREMXB1VWRoSGxNQUpZaDEzZzFfWTk3MlFPaGJyN2pvYVZrNzN0LVVmSlZmbzJrMGpubDJqc2NmR1dwUml3YkJEMXQ5anlPTC12d0g5TW9NODliWkpBUzdnd3FyMTl3RnBjWU1pNg?oc=5",
-          "published_at": "2026-09-05T05:15:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000028",
-      "rank": 16,
-      "prev_rank": 16,
-      "badge": null,
-      "axis": "capital",
-      "title": "미국, GPU 외교적 활용",
-      "subtitle": "아르메니아-아제르바이잔 평화 협상 등 외교적 지렛대로 공급 약속",
-      "summary": "",
-      "company_domain": null,
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 3.101,
-      "source_count": 2,
-      "first_seen": "2026-09-05T08:00:00+09:00",
-      "last_seen": "2026-09-06T14:48:18+09:00",
-      "item_ids": [
-        "8473c8a225b96e81",
-        "ce93f56c42608439"
-      ],
-      "sources": [
-        {
-          "name": "Google News / 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaksyZ296YnRlMFBNN2VERmtrNWhpU2xqVGY2MndvRDdzRk9ET0R1dy1iMnN4MldTMk9rT0VuOXp3NmdBRDVyeldjZkVvMzd3M3pua1BoLXZDU0gyWGV2QVFHdlB3ekp1b2Vhbm1RNnlEb1RDbm9iUkh4Z185MnFiWXJHNHVwTnJa?oc=5",
-          "published_at": "2026-09-06T14:48:18+09:00"
-        },
-        {
-          "name": "Google News / WSJ",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbEJmOWRwaGQxLXdMVzlaUk16VUZfVE9FTkN4MVdOXzBYZEY5VlpWMWZFbHBjaTNCTmxnQVdsamU4YUd3YmUtZDV6OUFNZDdvOGFfY0pLSndyc0JVci03c2NrcUtveEhnTU8tOEZMY3FoUUlETnlrM0pZUGlsSFdjOW5xU2VpQ3pOeWhoOHZ2TTNqb3RyQzdFSnR0YktRWjZHeDcxNzBuQmZvOUk?oc=5",
-          "published_at": "2026-09-05T08:00:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000019",
-      "rank": 17,
-      "prev_rank": 17,
-      "badge": null,
-      "axis": "llm",
-      "title": "클로드 수학 정리 증명",
-      "subtitle": "앤스로픽, 페르마의 마지막 정리 공식 형식화 성공",
-      "summary": "",
-      "company_domain": "anthropic.com",
-      "image": "https://cdn.sanity.io/images/4zrzovbb/website/578f91575c42231f0994e341014614255149af80-1200x630.jpg",
-      "image_tried": [
-        "https://anthropic.com/research/formalizing-fermats-last-theorem"
-      ],
-      "impact": 3,
-      "score": 3.029,
-      "source_count": 3,
-      "first_seen": "2026-09-05T03:21:03+09:00",
-      "last_seen": "2026-09-06T08:09:30+09:00",
-      "item_ids": [
-        "e02c4d154a97202a",
-        "be369f0f9c76c41a",
-        "5b14e7591d5caad0"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Startup Fortune",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNY3pTemdEQnd5U010bU5YVGVkcXdVOTItOS02STNZUE8zOTNJNkdPcERYRXRLNFBzLWw3UDlLUUczOENUMVc1NDNKY3hQU3EwUGM5a1VES0RFMTZnZERLYV95OTZpdHpYakNJQmZKMUs5Tl9CaDhlekN1VEVzME9YNi1kb3hyaDh2TUVnSDYxS3FmelBUcG5xUExwVQ?oc=5",
-          "published_at": "2026-09-06T08:09:30+09:00"
-        },
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/09/04/anthropic-uses-claude-to-formalize-proof-of-fermats-last-theorem",
-          "published_at": "2026-09-05T09:41:41+09:00"
-        },
-        {
-          "name": "Anthropic",
-          "url": "https://anthropic.com/research/formalizing-fermats-last-theorem",
-          "published_at": "2026-09-05T03:21:03+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000021",
-      "rank": 18,
-      "prev_rank": 12,
-      "badge": null,
-      "axis": "hardware",
-      "title": "브로드컴 AI 칩 급성장",
-      "subtitle": "맞춤형 AI 반도체 매출 폭증 및 장기 성과 전망 발표",
-      "summary": "",
-      "company_domain": "broadcom.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 3.006,
-      "source_count": 4,
-      "first_seen": "2026-09-03T19:46:28+09:00",
-      "last_seen": "2026-09-06T04:05:00+09:00",
-      "item_ids": [
-        "c5ab1e6f0f060b8b",
-        "bc14567f3ef4f41a",
-        "bf041e81b956792a",
-        "54a8c09f54f97e97"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOckhlRVlIMXdsWFNaYWpURmVFdDFtWkp6eTR1LUtraXN0a0FvWm13cmxyMjA3aDZEWm1tVzBkWlRIWTh1WEktMng4czNwRHl5VGQwbUhZRFRBQzBGbUZRSFJhY0NYSDFWLUIxZ19SaGk2YktGcklmamhzQTF0dlZ1bXhNUnEzeTQ1ZFV1dDM2cEE2ejdHUXVRaQ?oc=5",
-          "published_at": "2026-09-06T04:05:00+09:00"
-        },
-        {
-          "name": "Google News / The Globe and Mail",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQV3MyU0FBbE5EX1hxY0lpMGdXZkVyZTFQY01oYlByc3ZzS2JtNUtxTktHcW1aYmNGb0d1TEJ0ZlBySl9wNVBic1FDZVlXa2QxQnpPUHFrcENlMy1EX0ZDc3NTNkFwRWJod3B0MlVWRC1jZkxvWE80MGJZTGxvV3ZMenpJSVp6MnRhQmx4WWpHMzZ5OWpTQnRhYUxxeUNwcXJtQnd5YV9nZ1dreTc1T0luaXc5X3B1bTZ4RjF1bHh4VTlmMjNmajV3VV91Vms1MXFWOGJZVDEtLWwzeGNDOUZQc0xrYWVzeVFSeGRlTmRSNUpyc3Jpbzl3Y08tQU9KdTVKZ2xVdjkxcGpPaHNDRVBsTnU1Yw?oc=5",
-          "published_at": "2026-09-06T03:08:45+09:00"
-        },
-        {
-          "name": "Google News / fierce-network.com",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZU5adGJhTEhpMkt6RVdkX2JSWUNLamhkallaUGgxOG1WQ19lR3pVYk9HQkppUW1YQ2RGVk5HVHEwTFZhMzFVMDlPLVp2d28xRXdfZlpxa2Nady1JYjk4dmFBTXJJOWx3UXpWZGVlUDdnUldIZ0ZwekdvTmdiS0ZJVGNCcFg2SkJSWHltZ3BMRQ?oc=5",
-          "published_at": "2026-09-05T02:40:50+09:00"
-        },
-        {
-          "name": "Google News / fiercewireless.com",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZmRDM24ya0xaalF1VE91aGlsN0RJc3VqazAwR2RrR0N1X2lHSjVONVc1bEltWmRPYm5iNExFUzV5RGtyRWVlUHRBdlRWWWN4WFUtTmFHdmdOSnVxM3QwLWRqUXd6VWNMQVZ3d3hBM1ZDcUlTQ1N4UmgwaG0tTlR6SXpQS1VrVDRpQ3pKT3Bhaw?oc=5",
-          "published_at": "2026-09-05T02:40:50+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000008",
-      "rank": 19,
-      "prev_rank": 18,
-      "badge": null,
-      "axis": "hardware",
-      "title": "마이크론, HBM 생산 2배 확대",
-      "subtitle": "AI 칩 수요 급증에 맞춰 고대역폭 메모리 증산",
-      "summary": "",
-      "company_domain": "micron.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 2.892,
-      "source_count": 2,
-      "first_seen": "2026-09-05T05:12:00+09:00",
-      "last_seen": "2026-09-06T13:00:00+09:00",
-      "item_ids": [
-        "7dca0f4d989ccf53",
-        "1f8a3ec4e39150e8"
-      ],
-      "sources": [
-        {
-          "name": "Google News / igor´sLAB",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcnB5dFEzMGc0ejR6Y1ZfemxRVFhXcHRFdzNUZkNBX2NEbkp0SjdfeU8tY0RReG1xel81SWdRQ0puMnlLdmEzTTJiVEw3ZlVtcVFVWW4yQ1A5M3dVV0pCT01jS29LRzRmS2x6Zm1tLTUycHlUZ0VjV2JBV0ZQOXFrZnltNWpaV1lGcWRmbG45c3JCN2ZQdnMxV0d3?oc=5",
-          "published_at": "2026-09-06T13:00:00+09:00"
-        },
-        {
-          "name": "Google News / marketwatch.com",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORmRMZGlCdVBRbTJfSUc0dUlXLTM4WlNlTll3NmNVSVA0Ylo1b1FKVWItRjYzYWVZVTFPMnpHSm44YVdGdVpwNVlBMHR1ZmUyLUplQnpnVHh4UUJDdU5LLWtRanZyVkZrSHlUSDlmYU10aE8zQk5uMDYxMkpqSGlnR3ZMOGtzSXdiY3IzWnI0eUVONjFYSHJVQnpmbWV2UnVpZVYySFVRQzZPb3FRblN0UlY5Z0xqVFBpTkZUOGJ1WHN2Rjg1N0E?oc=5",
-          "published_at": "2026-09-05T05:12:00+09:00"
         }
       ]
     },
@@ -1172,7 +1140,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/09/ai_hypnosis_syco.png",
       "image_tried": [],
       "impact": 3,
-      "score": 2.479,
+      "score": 2.17,
       "source_count": 1,
       "first_seen": "2026-09-06T20:57:12+09:00",
       "last_seen": "2026-09-06T20:57:12+09:00",
@@ -1188,8 +1156,72 @@
       ]
     },
     {
-      "id": "iss_000007",
+      "id": "iss_000019",
       "rank": 21,
+      "prev_rank": 17,
+      "badge": null,
+      "axis": "llm",
+      "title": "클로드 수학 정리 증명",
+      "subtitle": "앤스로픽, 페르마의 마지막 정리 공식 형식화 성공",
+      "summary": "",
+      "company_domain": "anthropic.com",
+      "image": "https://cdn.sanity.io/images/4zrzovbb/website/578f91575c42231f0994e341014614255149af80-1200x630.jpg",
+      "image_tried": [
+        "https://anthropic.com/research/formalizing-fermats-last-theorem"
+      ],
+      "impact": 3,
+      "score": 2.101,
+      "source_count": 2,
+      "first_seen": "2026-09-05T03:21:03+09:00",
+      "last_seen": "2026-09-06T08:09:30+09:00",
+      "item_ids": [
+        "be369f0f9c76c41a",
+        "5b14e7591d5caad0"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Startup Fortune",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNY3pTemdEQnd5U010bU5YVGVkcXdVOTItOS02STNZUE8zOTNJNkdPcERYRXRLNFBzLWw3UDlLUUczOENUMVc1NDNKY3hQU3EwUGM5a1VES0RFMTZnZERLYV95OTZpdHpYakNJQmZKMUs5Tl9CaDhlekN1VEVzME9YNi1kb3hyaDh2TUVnSDYxS3FmelBUcG5xUExwVQ?oc=5",
+          "published_at": "2026-09-06T08:09:30+09:00"
+        },
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/09/04/anthropic-uses-claude-to-formalize-proof-of-fermats-last-theorem",
+          "published_at": "2026-09-05T09:41:41+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000049",
+      "rank": 22,
+      "prev_rank": 23,
+      "badge": null,
+      "axis": "llm",
+      "title": "구글, 웨더넥스트 3 공개",
+      "subtitle": "위성 데이터 학습 기반 5km 해상도 예보",
+      "summary": "구글 리서치와 딥마인드가 물리 시뮬레이션을 건너뛰고 실시간 위성 데이터를 직접 학습하는 기상 모델 웨더넥스트 3을 공개했다. 기존 모델 대비 5배 정밀한 5킬로미터 해상도의 시간별 예보를 생성한다. 아프리카와 중남미 등 관측 인프라가 취약한 지역의 기상 예측 지원에 기여할 전망이다.",
+      "company_domain": "google.com",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/09/weathernext-3-01-hero.webp",
+      "image_tried": [],
+      "impact": 3,
+      "score": 2.06,
+      "source_count": 1,
+      "first_seen": "2026-09-06T19:36:35+09:00",
+      "last_seen": "2026-09-06T19:36:35+09:00",
+      "item_ids": [
+        "cd5a15547d765f71"
+      ],
+      "sources": [
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data",
+          "published_at": "2026-09-06T19:36:35+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000007",
+      "rank": 23,
       "prev_rank": 21,
       "badge": null,
       "axis": "capital",
@@ -1202,14 +1234,13 @@
         "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing"
       ],
       "impact": 3,
-      "score": 2.478,
-      "source_count": 7,
+      "score": 2.03,
+      "source_count": 6,
       "first_seen": "2026-09-05T04:48:48+09:00",
       "last_seen": "2026-09-05T16:24:53+09:00",
       "item_ids": [
         "ccdbbac995ab0e69",
         "f9afeb6ced942f97",
-        "da52a1986914250a",
         "d58df7cb1b37ca20",
         "11ec8c0810fd6758",
         "886491e995a15d9b",
@@ -1245,74 +1276,13 @@
           "name": "Google News / Reuters",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOa2hLeFBZbVVPaFV6VFpCLUo2U29qaFFDQXV3RUVUV0lIQS1mQ2Z3dUhjREtNRlZ0cjkyVnlzbi1EcTJmRi1JeHJNZDcxRTJEWnNleFlpX1FUdDdhX1ZwdGFENFBMcFdfS1g1WXZRX1ZtOERHcjB4RENuN2MwNjdoTmQtMW10bjBXUEduVnNTOGRUU0YwX2ZBMDV4RDRYUnJ2bklrcDl2N3NFMFJ2REViMWNjYw?oc=5",
           "published_at": "2026-09-05T05:48:11+09:00"
-        },
-        {
-          "name": "Google News / The Next Web",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNHUwWnRCOFlLdHMzckhxM2ZNZ3ZBdkYwdjdvUUtGMUw2dUNLeWthbXhNQ01wZS1aak5JY1docW5xUF9qcXM4UncyTkRCVG05emgxSl9mOUphdm83TTlRN3BRZ01tOXo2aWxMTkRxWm1WeGg1U1Nicm92MzZYWGJSOG1hZG5yTXpvZVFOTC1ENmhuY0JZeWJwOTZWUU53M3JnU2NJaXB3ZmVJeWtPRGYzZHR5djRKbFVhcDlUOUNfb2E4SVpHRkhzVlF3?oc=5",
-          "published_at": "2026-09-05T04:20:30+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000060",
-      "rank": 22,
-      "prev_rank": null,
-      "badge": "new",
-      "axis": "llm",
-      "title": "클로드 밀레니엄 난제 루머",
-      "subtitle": "타오 교수 해명으로 사실무근 확인",
-      "summary": "앤스로픽의 클로드가 수학계 7대 난제인 나비에-스토크스 방정식을 해결했다는 소문이 온라인상에 확산됐다. 이에 대해 저명 수학자 테렌스 타오 교수가 나서 해당 루머는 사실이 아니라고 직접 해명했다. AI의 수학적 추론 능력에 대한 과열된 기대가 빚어낸 해프닝으로 풀이된다.",
-      "company_domain": "anthropic.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 2.458,
-      "source_count": 1,
-      "first_seen": "2026-09-06T13:16:02+09:00",
-      "last_seen": "2026-09-06T13:16:02+09:00",
-      "item_ids": [
-        "c0ffb178081ee928"
-      ],
-      "sources": [
-        {
-          "name": "Google News / KuCoin",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcUUtR1FZZkJkOU5feHpMd2VnT3hqd2JEOVZYZ1hKNGpMM1RQYWFTbkFRckFTdkV3cmJ1M01MTTBlZXAzZTZVWWpiS240NWhMZm5CdEpHTjc3bHpCRlJvRzRfX2VzTXEzS2xPWUplellyTm9XQ0dfWGF4MjV1QUFjLXdWZ0dIY1F3ZmI1WklmNksyUkZLNVhXZ3hCNDh3Mlh3WEQ1VWk4STBtRTA4dGlaUnpSOUM1LTVGRFhITEZWTXdGUQ?oc=5",
-          "published_at": "2026-09-06T13:16:02+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000049",
-      "rank": 23,
-      "prev_rank": 22,
-      "badge": null,
-      "axis": "llm",
-      "title": "구글, 웨더넥스트 3 공개",
-      "subtitle": "위성 데이터 학습 기반 5km 해상도 예보",
-      "summary": "구글 리서치와 딥마인드가 물리 시뮬레이션을 건너뛰고 실시간 위성 데이터를 직접 학습하는 기상 모델 웨더넥스트 3을 공개했다. 기존 모델 대비 5배 정밀한 5킬로미터 해상도의 시간별 예보를 생성한다. 아프리카와 중남미 등 관측 인프라가 취약한 지역의 기상 예측 지원에 기여할 전망이다.",
-      "company_domain": "google.com",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/09/weathernext-3-01-hero.webp",
-      "image_tried": [],
-      "impact": 3,
-      "score": 2.354,
-      "source_count": 1,
-      "first_seen": "2026-09-06T19:36:35+09:00",
-      "last_seen": "2026-09-06T19:36:35+09:00",
-      "item_ids": [
-        "cd5a15547d765f71"
-      ],
-      "sources": [
-        {
-          "name": "The Decoder",
-          "url": "https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data",
-          "published_at": "2026-09-06T19:36:35+09:00"
         }
       ]
     },
     {
       "id": "iss_000050",
       "rank": 24,
-      "prev_rank": 23,
+      "prev_rank": 24,
       "badge": null,
       "axis": "llm",
       "title": "메타, 음성 인식 모델 출시",
@@ -1322,7 +1292,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/06/meta_logo.png",
       "image_tried": [],
       "impact": 3,
-      "score": 2.278,
+      "score": 1.994,
       "source_count": 1,
       "first_seen": "2026-09-06T18:45:18+09:00",
       "last_seen": "2026-09-06T18:45:18+09:00",
@@ -1340,7 +1310,7 @@
     {
       "id": "iss_000041",
       "rank": 25,
-      "prev_rank": 24,
+      "prev_rank": 25,
       "badge": null,
       "axis": "llm",
       "title": "AI 안전장치 제거 서비스",
@@ -1350,7 +1320,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/09/abliteration-ai.png",
       "image_tried": [],
       "impact": 3,
-      "score": 2.207,
+      "score": 1.931,
       "source_count": 1,
       "first_seen": "2026-09-06T17:55:56+09:00",
       "last_seen": "2026-09-06T17:55:56+09:00",
@@ -1366,71 +1336,43 @@
       ]
     },
     {
-      "id": "iss_000055",
+      "id": "iss_000021",
       "rank": 26,
-      "prev_rank": 11,
+      "prev_rank": 18,
       "badge": null,
-      "axis": "capital",
-      "title": "미·일 5500억 달러 투자 협정",
-      "subtitle": "AI 및 반도체 분야 전략적 공급망 협력",
-      "summary": "미국과 일본이 AI 및 첨단 반도체 부문을 중심으로 5,500억 달러 규모의 대규모 투자 협정을 진전시키고 있다. 양국은 글로벌 칩 공급망 안정을 위해 공동 투자를 확대하고 협상 진전을 확인했다. 이를 통해 차세대 AI 컴퓨팅 및 반도체 생태계에서 양국의 전략적 결속이 강화될 전망이다.",
-      "company_domain": null,
-      "image": null,
-      "image_tried": [],
-      "impact": 4,
-      "score": 2.052,
-      "source_count": 2,
-      "first_seen": "2026-09-05T13:04:21+09:00",
-      "last_seen": "2026-09-05T20:36:31+09:00",
-      "item_ids": [
-        "7a30232affd6c82b",
-        "959482c1327f5cec"
-      ],
-      "sources": [
-        {
-          "name": "Google News / The Next Web",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTG8tX0psQ1pXRjFmY0l6WU45aVZYRFh5aUoyYmJLems5MmJPMGg1Vzg1aFNnQk42XzhlYjhReW0zMF9yRGxSaHp2SWQ3Y2JNUnJtZU5NX1JjRnNFUXRSRWl1YkdNMWozWWUwSWo1Z3AxV29YeWJqdmx5aE1CQjZnUEs3RVptalFNemFLVzhvYml3MTFIa3pWbnhERHJjdHdSbk5jMXNWZDNYZjdMam10RUR1OWxMaWhKVU5CZmpKbzJFdVYwYXRGV1BXS29kZUpyMVRsUUFHNkpDcHVIMW1COHJ2Yw?oc=5",
-          "published_at": "2026-09-05T20:36:31+09:00"
-        },
-        {
-          "name": "Google News / Investing.com",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZXJqNjVkeUtGUjZCcGQyM2ZySkF2TmNZWkg5cXQwZjBOVjZlbFlhX0IyOURyazFkX2Nwckk5WXhPdHdkdjVFNDNBMl8xdF8teWR0SzRDU1ZoQjZXQUFWNnVUNk5CLTB2N0dXTGoyOG05Z1BucVVRRzdNeldpdklxbGkwMWxUOEN2eTNOcFJWX3dPMUM3Sno5eTVyeGVhejl0ZFd0MjZPM1RMSjEyUllCUFVBZzRuRnZ3aGpZ?oc=5",
-          "published_at": "2026-09-05T13:04:21+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000061",
-      "rank": 27,
-      "prev_rank": null,
-      "badge": "new",
-      "axis": "llm",
-      "title": "제미나이 4 프로 체크포인트 유출",
-      "subtitle": "10월 출시 및 플래시 라이트 계획",
-      "summary": "구글의 차세대 AI 모델인 제미나이 4 프로의 첫 체크포인트와 출시 일정이 유출됐다. 유출 정보에 따르면 제미나이 4 프로는 10월 출시를 목표로 하고 있으며 9월 중 플래시 라이트 모델이 먼저 공개될 예정이다. 구글은 경량 모델과 플래그십 모델을 잇달아 투입해 점유율 확대를 꾀한다.",
-      "company_domain": "google.com",
+      "axis": "hardware",
+      "title": "브로드컴 AI 칩 급성장",
+      "subtitle": "맞춤형 AI 반도체 매출 폭증 및 장기 성과 전망 발표",
+      "summary": "",
+      "company_domain": "broadcom.com",
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 2.042,
-      "source_count": 1,
-      "first_seen": "2026-09-05T21:55:20+09:00",
-      "last_seen": "2026-09-05T21:55:20+09:00",
+      "score": 1.796,
+      "source_count": 2,
+      "first_seen": "2026-09-03T19:46:28+09:00",
+      "last_seen": "2026-09-06T04:05:00+09:00",
       "item_ids": [
-        "09ae2910906c0fa8"
+        "bc14567f3ef4f41a",
+        "bf041e81b956792a"
       ],
       "sources": [
         {
-          "name": "Google News / nokiapoweruser.com",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONGF4eEk5M00zWkJmM2RrdHdiWlNoV2cyN3h0UXBFTHBCckM0R3oxVm5QWXFYQXhZWkt5QWVTN080ME9xVkgwc1ctcFRoSmctNFFLamIwcFhkb2l5aHhFR0kwV3dOTkdrTVItY3QwQ0pBcEhKSkJTaHVTbW1ZQzhUV0hodlNibGU3ZFBsMVhYWQ?oc=5",
-          "published_at": "2026-09-05T21:55:20+09:00"
+          "name": "Google News / Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOckhlRVlIMXdsWFNaYWpURmVFdDFtWkp6eTR1LUtraXN0a0FvWm13cmxyMjA3aDZEWm1tVzBkWlRIWTh1WEktMng4czNwRHl5VGQwbUhZRFRBQzBGbUZRSFJhY0NYSDFWLUIxZ19SaGk2YktGcklmamhzQTF0dlZ1bXhNUnEzeTQ1ZFV1dDM2cEE2ejdHUXVRaQ?oc=5",
+          "published_at": "2026-09-06T04:05:00+09:00"
+        },
+        {
+          "name": "Google News / The Globe and Mail",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQV3MyU0FBbE5EX1hxY0lpMGdXZkVyZTFQY01oYlByc3ZzS2JtNUtxTktHcW1aYmNGb0d1TEJ0ZlBySl9wNVBic1FDZVlXa2QxQnpPUHFrcENlMy1EX0ZDc3NTNkFwRWJod3B0MlVWRC1jZkxvWE80MGJZTGxvV3ZMenpJSVp6MnRhQmx4WWpHMzZ5OWpTQnRhYUxxeUNwcXJtQnd5YV9nZ1dreTc1T0luaXc5X3B1bTZ4RjF1bHh4VTlmMjNmajV3VV91Vms1MXFWOGJZVDEtLWwzeGNDOUZQc0xrYWVzeVFSeGRlTmRSNUpyc3Jpbzl3Y08tQU9KdTVKZ2xVdjkxcGpPaHNDRVBsTnU1Yw?oc=5",
+          "published_at": "2026-09-06T03:08:45+09:00"
         }
       ]
     },
     {
       "id": "iss_000036",
-      "rank": 28,
-      "prev_rank": 25,
+      "rank": 27,
+      "prev_rank": 28,
       "badge": null,
       "axis": "hardware",
       "title": "엔비디아 DLSS 5 공식 출시",
@@ -1440,7 +1382,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/A5B8BfAZTyVWEpy5TRr3UY-1280-80.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 1.971,
+      "score": 1.725,
       "source_count": 3,
       "first_seen": "2026-09-05T08:09:31+09:00",
       "last_seen": "2026-09-05T21:00:00+09:00",
@@ -1468,43 +1410,37 @@
       ]
     },
     {
-      "id": "iss_000022",
-      "rank": 29,
+      "id": "iss_000008",
+      "rank": 28,
       "prev_rank": 19,
       "badge": null,
       "axis": "hardware",
-      "title": "딥시크 화웨이 칩 도입",
-      "subtitle": "내몽골 AI 데이터센터 구축 위해 화웨이 AI 칩 대량 주문",
+      "title": "마이크론, HBM 생산 2배 확대",
+      "subtitle": "AI 칩 수요 급증에 맞춰 고대역폭 메모리 증산",
       "summary": "",
-      "company_domain": "deepseek.com",
+      "company_domain": "micron.com",
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 1.693,
-      "source_count": 2,
-      "first_seen": "2026-09-04T09:00:00+09:00",
-      "last_seen": "2026-09-05T23:05:38+09:00",
+      "score": 1.597,
+      "source_count": 1,
+      "first_seen": "2026-09-05T05:12:00+09:00",
+      "last_seen": "2026-09-06T13:00:00+09:00",
       "item_ids": [
-        "e2fa68851a7e8105",
-        "d271df53eed5f52e"
+        "1f8a3ec4e39150e8"
       ],
       "sources": [
         {
-          "name": "Google News / Tech Times",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNmtpbFBmOWl2NkpQOVYyMEUyV0NvNWVKLTJrQ2FBNTZVRUlUbUhUdHFNV2g2bU5yUUdnNjQtUXRWXzFaUTcxSW5HR1JKWWR6Q3ZhTXBaVGJYdTdiRTBfUGVQaVhEY3BvSkRTYW9Za3ZINTRNc2lFRTBEbWM5bjNXN01ySmoyV2ZkRHJDUk5kajNyRFdIUGVkTllVREFLU0czWldRX0pzRVp3SnAzZTk5Q0lvSEs3bkFVSUZfVGVpMUo?oc=5",
-          "published_at": "2026-09-05T23:05:38+09:00"
-        },
-        {
-          "name": "Google News / Briefs Finance",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdm40cWtyaEUwS3B4d1o4dzFCWVBqa2dCaFprdXRxUjgxV1o2X3QzaXZnMXNQWF9lYm41N1UxaFFoek9nWUQzUFJEb1VJc3k0WWFrVDZmaE15amN4ZjF6OC05RncxMHdQVlFMX3lReTJqOUhzUjZCMmswa2xOQnR0alpEeDhNUk85TlpEckhpZ1FMUQ?oc=5",
-          "published_at": "2026-09-05T03:14:21+09:00"
+          "name": "Google News / igor´sLAB",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcnB5dFEzMGc0ejR6Y1ZfemxRVFhXcHRFdzNUZkNBX2NEbkp0SjdfeU8tY0RReG1xel81SWdRQ0puMnlLdmEzTTJiVEw3ZlVtcVFVWW4yQ1A5M3dVV0pCT01jS29LRzRmS2x6Zm1tLTUycHlUZ0VjV2JBV0ZQOXFrZnltNWpaV1lGcWRmbG45c3JCN2ZQdnMxV0d3?oc=5",
+          "published_at": "2026-09-06T13:00:00+09:00"
         }
       ]
     },
     {
       "id": "iss_000034",
-      "rank": 30,
-      "prev_rank": 26,
+      "rank": 29,
+      "prev_rank": 30,
       "badge": null,
       "axis": "hardware",
       "title": "세레브라스 수주 잔고 254억 달러",
@@ -1514,7 +1450,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 1.579,
+      "score": 1.382,
       "source_count": 1,
       "first_seen": "2026-09-06T09:14:00+09:00",
       "last_seen": "2026-09-06T09:14:00+09:00",
@@ -1531,8 +1467,8 @@
     },
     {
       "id": "iss_000043",
-      "rank": 31,
-      "prev_rank": 27,
+      "rank": 30,
+      "prev_rank": 31,
       "badge": null,
       "axis": "llm",
       "title": "제미나이 MAU 10억 돌파",
@@ -1542,7 +1478,7 @@
       "image": null,
       "image_tried": [],
       "impact": 4,
-      "score": 1.518,
+      "score": 1.329,
       "source_count": 1,
       "first_seen": "2026-09-06T00:45:00+09:00",
       "last_seen": "2026-09-06T00:45:00+09:00",
@@ -1558,49 +1494,9 @@
       ]
     },
     {
-      "id": "iss_000020",
-      "rank": 32,
-      "prev_rank": 28,
-      "badge": null,
-      "axis": "capital",
-      "title": "G42 미 지분 매각 검토",
-      "subtitle": "아부다비 AI 기업, 엔비디아 칩 수급 위해 미국 지분 확대 논의",
-      "summary": "",
-      "company_domain": "g42.ai",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 1.471,
-      "source_count": 3,
-      "first_seen": "2026-09-04T22:11:49+09:00",
-      "last_seen": "2026-09-05T13:24:25+09:00",
-      "item_ids": [
-        "9baf86da94d0a0f1",
-        "72f49e5adc5e5e62",
-        "c8963a725e4c9094"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Investing.com",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOTctTGZVNkpPRzhFRkRIeXFzM3A0a3prNm5XckkzSG5iYmlqeHY2YTBVallZN1pRaUNiZUcyeEZob2tYUHZNYk9qUEtXSzJWeHFMdFFCdmpZdFBOM01CQ2NDNG9QYllXQk03YWRUWEJSNFpZa2FjUWhpMnkxOHFuVHFtRkItbE0td3ZTV0lyRWoxOUNjMkVVN1hhV2pRRHNsX19tMWRDUGFyRkVUTHhFd1k4dS1ubU5GZmQ0U1Rvb3k?oc=5",
-          "published_at": "2026-09-05T13:24:25+09:00"
-        },
-        {
-          "name": "Google News / Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV1E0QlBrYkFOTTdEdEdsblM3RGZJNjJZR00zZFVCcDJtYzdMMkJnS29YWWdzM09ic3A4cXo5cW5OWkt0WEhROHVzQlVSLWUzUXNQYWxvUWRqRUZ1MllocHFVWmRLN04wZXV5em80eTdtT3BoaVRQdVZxM1haWHRwaU8ycUhLSEhZX19PbGpsdHhkelVoRFRmSEF6TU5MMWZBS0xxMjhtNVJvSHFicWNIcXp5R1g?oc=5",
-          "published_at": "2026-09-05T12:39:00+09:00"
-        },
-        {
-          "name": "Google News / The Information",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTkNYT3VUYzVvZUdmM0NsS2J5a2otV0xtd09oNkltRzV3WXdtZ2k2Wm9UdGtBc1M5M3Zwb0VOSWctYWNtOW45aUc4akNHSDVsVVJ1S3c3bGttT3NyQUJpLVZlNDZyVmFhOXJITmNVQW9PWDc0X2FhZlp1NjY1Mll3UTZHaEdwTzlsUHQ0YVhQcm5XZElKZVpuUFRkMnZsbGNiWmc?oc=5",
-          "published_at": "2026-09-05T02:15:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_000042",
-      "rank": 33,
-      "prev_rank": 29,
+      "rank": 31,
+      "prev_rank": 33,
       "badge": null,
       "axis": "llm",
       "title": "AA 벤치마크 지수 개편",
@@ -1610,7 +1506,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/09/openai_dark_gpt6_stars.png",
       "image_tried": [],
       "impact": 3,
-      "score": 1.259,
+      "score": 1.102,
       "source_count": 1,
       "first_seen": "2026-09-06T03:21:02+09:00",
       "last_seen": "2026-09-06T03:21:02+09:00",
@@ -1626,9 +1522,37 @@
       ]
     },
     {
+      "id": "iss_000060",
+      "rank": 32,
+      "prev_rank": 22,
+      "badge": null,
+      "axis": "llm",
+      "title": "클로드 밀레니엄 난제 루머",
+      "subtitle": "타오 교수 해명으로 사실무근 확인",
+      "summary": "앤스로픽의 클로드가 수학계 7대 난제인 나비에-스토크스 방정식을 해결했다는 소문이 온라인상에 확산됐다. 이에 대해 저명 수학자 테렌스 타오 교수가 나서 해당 루머는 사실이 아니라고 직접 해명했다. AI의 수학적 추론 능력에 대한 과열된 기대가 빚어낸 해프닝으로 풀이된다.",
+      "company_domain": "anthropic.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 2,
+      "score": 1.076,
+      "source_count": 1,
+      "first_seen": "2026-09-06T13:16:02+09:00",
+      "last_seen": "2026-09-06T13:16:02+09:00",
+      "item_ids": [
+        "c0ffb178081ee928"
+      ],
+      "sources": [
+        {
+          "name": "Google News / KuCoin",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcUUtR1FZZkJkOU5feHpMd2VnT3hqd2JEOVZYZ1hKNGpMM1RQYWFTbkFRckFTdkV3cmJ1M01MTTBlZXAzZTZVWWpiS240NWhMZm5CdEpHTjc3bHpCRlJvRzRfX2VzTXEzS2xPWUplellyTm9XQ0dfWGF4MjV1QUFjLXdWZ0dIY1F3ZmI1WklmNksyUkZLNVhXZ3hCNDh3Mlh3WEQ1VWk4STBtRTA4dGlaUnpSOUM1LTVGRFhITEZWTXdGUQ?oc=5",
+          "published_at": "2026-09-06T13:16:02+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_000051",
-      "rank": 34,
-      "prev_rank": 30,
+      "rank": 33,
+      "prev_rank": 34,
       "badge": null,
       "axis": "hardware",
       "title": "AMD-MS, AI 윈도우 공개",
@@ -1638,7 +1562,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/gouCtmSHKJJLP8CP9BpbQ3-1280-80.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 1.209,
+      "score": 1.059,
       "source_count": 1,
       "first_seen": "2026-09-06T02:18:57+09:00",
       "last_seen": "2026-09-06T02:18:57+09:00",
@@ -1654,9 +1578,99 @@
       ]
     },
     {
-      "id": "iss_000045",
+      "id": "iss_000020",
+      "rank": 34,
+      "prev_rank": 32,
+      "badge": null,
+      "axis": "capital",
+      "title": "G42 미 지분 매각 검토",
+      "subtitle": "아부다비 AI 기업, 엔비디아 칩 수급 위해 미국 지분 확대 논의",
+      "summary": "",
+      "company_domain": "g42.ai",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 1.021,
+      "source_count": 2,
+      "first_seen": "2026-09-04T22:11:49+09:00",
+      "last_seen": "2026-09-05T13:24:25+09:00",
+      "item_ids": [
+        "9baf86da94d0a0f1",
+        "c8963a725e4c9094"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOTctTGZVNkpPRzhFRkRIeXFzM3A0a3prNm5XckkzSG5iYmlqeHY2YTBVallZN1pRaUNiZUcyeEZob2tYUHZNYk9qUEtXSzJWeHFMdFFCdmpZdFBOM01CQ2NDNG9QYllXQk03YWRUWEJSNFpZa2FjUWhpMnkxOHFuVHFtRkItbE0td3ZTV0lyRWoxOUNjMkVVN1hhV2pRRHNsX19tMWRDUGFyRkVUTHhFd1k4dS1ubU5GZmQ0U1Rvb3k?oc=5",
+          "published_at": "2026-09-05T13:24:25+09:00"
+        },
+        {
+          "name": "Google News / Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV1E0QlBrYkFOTTdEdEdsblM3RGZJNjJZR00zZFVCcDJtYzdMMkJnS29YWWdzM09ic3A4cXo5cW5OWkt0WEhROHVzQlVSLWUzUXNQYWxvUWRqRUZ1MllocHFVWmRLN04wZXV5em80eTdtT3BoaVRQdVZxM1haWHRwaU8ycUhLSEhZX19PbGpsdHhkelVoRFRmSEF6TU5MMWZBS0xxMjhtNVJvSHFicWNIcXp5R1g?oc=5",
+          "published_at": "2026-09-05T12:39:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000022",
       "rank": 35,
-      "prev_rank": 33,
+      "prev_rank": 29,
+      "badge": null,
+      "axis": "hardware",
+      "title": "딥시크 화웨이 칩 도입",
+      "subtitle": "내몽골 AI 데이터센터 구축 위해 화웨이 AI 칩 대량 주문",
+      "summary": "",
+      "company_domain": "deepseek.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.935,
+      "source_count": 1,
+      "first_seen": "2026-09-04T09:00:00+09:00",
+      "last_seen": "2026-09-05T23:05:38+09:00",
+      "item_ids": [
+        "e2fa68851a7e8105"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Tech Times",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNmtpbFBmOWl2NkpQOVYyMEUyV0NvNWVKLTJrQ2FBNTZVRUlUbUhUdHFNV2g2bU5yUUdnNjQtUXRWXzFaUTcxSW5HR1JKWWR6Q3ZhTXBaVGJYdTdiRTBfUGVQaVhEY3BvSkRTYW9Za3ZINTRNc2lFRTBEbWM5bjNXN01ySmoyV2ZkRHJDUk5kajNyRFdIUGVkTllVREFLU0czWldRX0pzRVp3SnAzZTk5Q0lvSEs3bkFVSUZfVGVpMUo?oc=5",
+          "published_at": "2026-09-05T23:05:38+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000061",
+      "rank": 36,
+      "prev_rank": 27,
+      "badge": null,
+      "axis": "llm",
+      "title": "제미나이 4 프로 체크포인트 유출",
+      "subtitle": "10월 출시 및 플래시 라이트 계획",
+      "summary": "구글의 차세대 AI 모델인 제미나이 4 프로의 첫 체크포인트와 출시 일정이 유출됐다. 유출 정보에 따르면 제미나이 4 프로는 10월 출시를 목표로 하고 있으며 9월 중 플래시 라이트 모델이 먼저 공개될 예정이다. 구글은 경량 모델과 플래그십 모델을 잇달아 투입해 점유율 확대를 꾀한다.",
+      "company_domain": "google.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.894,
+      "source_count": 1,
+      "first_seen": "2026-09-05T21:55:20+09:00",
+      "last_seen": "2026-09-05T21:55:20+09:00",
+      "item_ids": [
+        "09ae2910906c0fa8"
+      ],
+      "sources": [
+        {
+          "name": "Google News / nokiapoweruser.com",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONGF4eEk5M00zWkJmM2RrdHdiWlNoV2cyN3h0UXBFTHBCckM0R3oxVm5QWXFYQXhZWkt5QWVTN080ME9xVkgwc1ctcFRoSmctNFFLamIwcFhkb2l5aHhFR0kwV3dOTkdrTVItY3QwQ0pBcEhKSkJTaHVTbW1ZQzhUV0hodlNibGU3ZFBsMVhYWQ?oc=5",
+          "published_at": "2026-09-05T21:55:20+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_000045",
+      "rank": 37,
+      "prev_rank": 35,
       "badge": null,
       "axis": "hardware",
       "title": "AI발 메모리 숏티지 우려",
@@ -1666,7 +1680,7 @@
       "image": null,
       "image_tried": [],
       "impact": 4,
-      "score": 0.966,
+      "score": 0.846,
       "source_count": 1,
       "first_seen": "2026-09-05T13:00:38+09:00",
       "last_seen": "2026-09-05T13:00:38+09:00",
@@ -1682,43 +1696,9 @@
       ]
     },
     {
-      "id": "iss_000023",
-      "rank": 36,
-      "prev_rank": 34,
-      "badge": null,
-      "axis": "capital",
-      "title": "앤스로픽 자체 결제 추진",
-      "subtitle": "수수료 절감과 인프라 독립을 위한 결제 시스템 개발",
-      "summary": "",
-      "company_domain": "anthropic.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.918,
-      "source_count": 2,
-      "first_seen": "2026-09-05T00:30:00+09:00",
-      "last_seen": "2026-09-05T17:44:16+09:00",
-      "item_ids": [
-        "73d603b3c8029b5b",
-        "90de71b078d87674"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Stocktwits",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQOVd3NExwN0psVlVkZENMYTFtZHk5bmktREVOSjc0X2V3QW9SaDVzN3FUX2hXUWxzZkZyR0ZsbEJLdFFnU2pGbjFmZGtLODVYVE02UmFGUmktREJkNzk2akdTZTlfMHcxMFc0VHM3dW03T09GYTNlM251WGtheWxMWmJ2V0QzZm1JOWFXSmlZYWRJOUtMclBJTWZobVF2MjFsS0llUldaU01fVWVKQ1NVd0kzY3dfbWFBTll5QWpXQ0FaWFdUbzE2UGpIZlRzeE5sTzljcmluNkRXeGdjNTdsSGV4Mko1TU14S09TVg?oc=5",
-          "published_at": "2026-09-05T17:44:16+09:00"
-        },
-        {
-          "name": "Google News / citybiz",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSmV0b2tYVkpycUlUNHAwQWxYYXFrNEtvNmJCSUUzbV9RLUh1a0hVb3RXX2pGY3ZKRmRSSExNa0NCX2dkbjhlLUR5RDRqZFhVMkdWVlBGOHM1RWhoNmJGc2tHbXNXb2dzejI4eF81aEJOV0UyUjZHOWM5bHMtbE1KMFltRXRwcHZxZDJCUVNPQTF2dXU0YTgxNFpIY2pWTWNYOEtKQ0RlVEFuZw?oc=5",
-          "published_at": "2026-09-05T03:52:51+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_000027",
-      "rank": 37,
-      "prev_rank": 35,
+      "rank": 38,
+      "prev_rank": 37,
       "badge": null,
       "axis": "capital",
       "title": "애플-오픈AI 법적 분쟁",
@@ -1728,7 +1708,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.879,
+      "score": 0.769,
       "source_count": 1,
       "first_seen": "2026-09-05T18:01:21+09:00",
       "last_seen": "2026-09-05T18:01:00+09:00",
@@ -1745,8 +1725,8 @@
     },
     {
       "id": "iss_000044",
-      "rank": 38,
-      "prev_rank": 36,
+      "rank": 39,
+      "prev_rank": 38,
       "badge": null,
       "axis": "capital",
       "title": "샌더스 AI CEO 처벌 법안",
@@ -1756,7 +1736,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.878,
+      "score": 0.768,
       "source_count": 1,
       "first_seen": "2026-09-05T17:59:43+09:00",
       "last_seen": "2026-09-05T17:59:43+09:00",
@@ -1773,8 +1753,8 @@
     },
     {
       "id": "iss_000046",
-      "rank": 39,
-      "prev_rank": 37,
+      "rank": 40,
+      "prev_rank": 39,
       "badge": null,
       "axis": "capital",
       "title": "Gimlet 3억 달러 투자 유치",
@@ -1784,7 +1764,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/unsplash.jpg",
       "image_tried": [],
       "impact": 4,
-      "score": 0.796,
+      "score": 0.697,
       "source_count": 1,
       "first_seen": "2026-09-05T07:59:03+09:00",
       "last_seen": "2026-09-05T07:59:03+09:00",
@@ -1801,8 +1781,8 @@
     },
     {
       "id": "iss_000031",
-      "rank": 40,
-      "prev_rank": 38,
+      "rank": 41,
+      "prev_rank": 40,
       "badge": null,
       "axis": "capital",
       "title": "미 국방부 앤스로픽 제재 유지",
@@ -1812,7 +1792,7 @@
       "image": null,
       "image_tried": [],
       "impact": 4,
-      "score": 0.745,
+      "score": 0.652,
       "source_count": 1,
       "first_seen": "2026-09-04T23:59:02+09:00",
       "last_seen": "2026-09-05T06:15:25+09:00",
@@ -1828,37 +1808,9 @@
       ]
     },
     {
-      "id": "iss_000062",
-      "rank": 41,
-      "prev_rank": null,
-      "badge": "new",
-      "axis": "capital",
-      "title": "앤스로픽 CEO 협박 신고 해프닝",
-      "subtitle": "경찰 출동했으나 오해로 종결",
-      "summary": "앤스로픽이 CEO에 대한 위협 발언을 접수하고 샌프란시스코 경찰에 신고하는 소동이 벌어졌다. 조사 결과 클로드 사용자와의 대화 맥락에서 발생한 단순 오해였던 것으로 확인됐다. 주요 AI 기업 경영진을 향한 보안 및 안전 우려가 민감해진 단면을 보여준다.",
-      "company_domain": "anthropic.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.735,
-      "source_count": 1,
-      "first_seen": "2026-09-05T05:55:26+09:00",
-      "last_seen": "2026-09-05T05:55:26+09:00",
-      "item_ids": [
-        "69e5551c36e82655"
-      ],
-      "sources": [
-        {
-          "name": "Google News / The San Francisco Standard",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DY0E3Y1ZLcnJQamRtLUl3c19Za0Q1RmJzZDVSR3pMb3V2QjltWnJkR2FYeVBzQlhYdXhjUVFxOGNHb2xPWHpuV0hRS0JQZFA0RHp3bjB6bHpNV1lFM1VwWnREZGotdFBQY2lLT3hEOGE?oc=5",
-          "published_at": "2026-09-05T05:55:26+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_000030",
       "rank": 42,
-      "prev_rank": 39,
+      "prev_rank": 42,
       "badge": null,
       "axis": "capital",
       "title": "오픈AI 소비자 소송 직면",
@@ -1868,7 +1820,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.718,
+      "score": 0.629,
       "source_count": 1,
       "first_seen": "2026-09-05T01:52:26+09:00",
       "last_seen": "2026-09-05T12:47:04+09:00",
@@ -1886,7 +1838,7 @@
     {
       "id": "iss_000037",
       "rank": 43,
-      "prev_rank": 40,
+      "prev_rank": 43,
       "badge": null,
       "axis": "capital",
       "title": "로봇 데이터 기업 XDOF 투자 유치",
@@ -1898,7 +1850,7 @@
         "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation"
       ],
       "impact": 3,
-      "score": 0.611,
+      "score": 0.535,
       "source_count": 1,
       "first_seen": "2026-09-05T08:36:14+09:00",
       "last_seen": "2026-09-05T08:36:14+09:00",
@@ -1914,43 +1866,37 @@
       ]
     },
     {
-      "id": "iss_000057",
+      "id": "iss_000023",
       "rank": 44,
-      "prev_rank": 31,
+      "prev_rank": 36,
       "badge": null,
-      "axis": "llm",
-      "title": "ASCII 스머글링 공격 확산",
-      "subtitle": "비가시 유니코드 악용 스팸 및 보안 위협",
-      "summary": "과거 AI 탈옥 및 조작 공격에 주로 활용되던 ASCII 스머글링 기법이 일반 피싱과 스패머들 사이에서 급속도로 확산되고 있다. 육안으로는 보이지 않는 유니코드 태그 문자를 삽입해 탐지 엔진을 우회하는 방식이다. 보안 업계는 새로운 형태의 텍스트 은닉 공격에 대한 대응책 마련에 나서고 있다.",
-      "company_domain": null,
-      "image": "https://image.theregister.com/?imageId=258480&width=800",
+      "axis": "capital",
+      "title": "앤스로픽 자체 결제 추진",
+      "subtitle": "수수료 절감과 인프라 독립을 위한 결제 시스템 개발",
+      "summary": "",
+      "company_domain": "anthropic.com",
+      "image": null,
       "image_tried": [],
       "impact": 2,
-      "score": 0.549,
-      "source_count": 2,
-      "first_seen": "2026-09-05T02:18:12+09:00",
-      "last_seen": "2026-09-05T04:23:25+09:00",
+      "score": 0.507,
+      "source_count": 1,
+      "first_seen": "2026-09-05T00:30:00+09:00",
+      "last_seen": "2026-09-05T17:44:16+09:00",
       "item_ids": [
-        "d7afce71bf05aa09",
-        "dd6fb7a794ea43e5"
+        "73d603b3c8029b5b"
       ],
       "sources": [
         {
-          "name": "The Register",
-          "url": "https://theregister.com/security/2026/09/04/ascii-smuggling-isnt-just-an-ai-security-risk/5294595",
-          "published_at": "2026-09-05T04:23:25+09:00"
-        },
-        {
-          "name": "Ars Technica",
-          "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers",
-          "published_at": "2026-09-05T02:18:12+09:00"
+          "name": "Google News / Stocktwits",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQOVd3NExwN0psVlVkZENMYTFtZHk5bmktREVOSjc0X2V3QW9SaDVzN3FUX2hXUWxzZkZyR0ZsbEJLdFFnU2pGbjFmZGtLODVYVE02UmFGUmktREJkNzk2akdTZTlfMHcxMFc0VHM3dW03T09GYTNlM251WGtheWxMWmJ2V0QzZm1JOWFXSmlZYWRJOUtMclBJTWZobVF2MjFsS0llUldaU01fVWVKQ1NVd0kzY3dfbWFBTll5QWpXQ0FaWFdUbzE2UGpIZlRzeE5sTzljcmluNkRXeGdjNTdsSGV4Mko1TU14S09TVg?oc=5",
+          "published_at": "2026-09-05T17:44:16+09:00"
         }
       ]
     },
     {
       "id": "iss_000010",
       "rank": 45,
-      "prev_rank": 41,
+      "prev_rank": 45,
       "badge": null,
       "axis": "llm",
       "title": "앤스로픽 클로드, 카플레이 지원",
@@ -1960,7 +1906,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.547,
+      "score": 0.479,
       "source_count": 1,
       "first_seen": "2026-09-05T05:43:31+09:00",
       "last_seen": "2026-09-05T05:43:31+09:00",
@@ -1978,7 +1924,7 @@
     {
       "id": "iss_000056",
       "rank": 46,
-      "prev_rank": 32,
+      "prev_rank": 46,
       "badge": null,
       "axis": "llm",
       "title": "앤스로픽 자동 쇼핑 기능 준비",
@@ -1988,7 +1934,7 @@
       "image": "https://image.theregister.com/?imageId=5294637&width=800",
       "image_tried": [],
       "impact": 3,
-      "score": 0.545,
+      "score": 0.477,
       "source_count": 1,
       "first_seen": "2026-09-05T05:36:07+09:00",
       "last_seen": "2026-09-05T05:36:07+09:00",
@@ -2004,116 +1950,30 @@
       ]
     },
     {
-      "id": "iss_000052",
+      "id": "iss_000062",
       "rank": 47,
-      "prev_rank": 42,
-      "badge": null,
-      "axis": "hardware",
-      "title": "AMD, 576GB HBM 워크스테이션",
-      "subtitle": "스레드리퍼 헤일로 로컬 AI 워크스테이션",
-      "summary": "AMD가 연구자를 겨냥한 고성능 로컬 AI 워크스테이션 스레드리퍼 헤일로를 발표했다. 최대 576GB 용량의 HBM3e 메모리와 초당 16TB의 메모리 대역폭을 데스크톱 환경에서 제공한다. 연구자들이 외부 클라우드 없이도 데스크톱에서 대규모 AI 모델을 직접 구동할 수 있다.",
-      "company_domain": "amd.com",
-      "image": "https://image.theregister.com/?imageId=5294624&width=800",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.536,
-      "source_count": 1,
-      "first_seen": "2026-09-05T05:12:11+09:00",
-      "last_seen": "2026-09-05T05:12:11+09:00",
-      "item_ids": [
-        "b548c89b70b8ed74"
-      ],
-      "sources": [
-        {
-          "name": "The Register",
-          "url": "https://theregister.com/on-prem/2026/09/04/amds-threadripper-halo-is-a-local-ai-workstation-for-researchers-with-deep-pockets/5294616",
-          "published_at": "2026-09-05T05:12:11+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000053",
-      "rank": 48,
-      "prev_rank": 43,
+      "prev_rank": 41,
       "badge": null,
       "axis": "capital",
-      "title": "코튜-MatX, 칩 파이낸싱 추진",
-      "subtitle": "수십억 달러 규모 신규 반도체 벤처 논의",
-      "summary": "투자사 코튜와 스타트업 MatX가 수십억 달러 규모의 반도체 금융 벤처 조성을 논의 중이다. 대규모 자금을 조달해 차세대 AI 하드웨어 생태계와 인프라 구축을 지원하는 목적이다. AI 칩 시장 주도권 경쟁이 지속되면서 사모 펀드와 칩 스타트업의 협업이 가속화되고 있다.",
-      "company_domain": "coatue.com",
+      "title": "앤스로픽 CEO 협박 신고 해프닝",
+      "subtitle": "경찰 출동했으나 오해로 종결",
+      "summary": "앤스로픽이 CEO에 대한 위협 발언을 접수하고 샌프란시스코 경찰에 신고하는 소동이 벌어졌다. 조사 결과 클로드 사용자와의 대화 맥락에서 발생한 단순 오해였던 것으로 확인됐다. 주요 AI 기업 경영진을 향한 보안 및 안전 우려가 민감해진 단면을 보여준다.",
+      "company_domain": "anthropic.com",
       "image": null,
       "image_tried": [],
-      "impact": 3,
-      "score": 0.479,
-      "source_count": 1,
-      "first_seen": "2026-09-05T02:16:00+09:00",
-      "last_seen": "2026-09-05T02:16:00+09:00",
-      "item_ids": [
-        "ebcbb8467137a5bc"
-      ],
-      "sources": [
-        {
-          "name": "Google News / The Information",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUEpXZV92bGNqeld3RjNxbHhUQVZRMmsyVVMxbHlZVkNtWmFZUExiUGY0VHJ1TVZ5ZVVLR2NwRzlla3MxS0xlaUUwSDRhdElmMktpTXJTYU9wZU01VHRzcEtrUlBLUUh0QmZmOU5ELXpkQVY1ZUcxNUowd2JqX1Y3NkN4OUZWSFF2ZTRxd1BPU3NaMG83WElOTTJjVDM3dw?oc=5",
-          "published_at": "2026-09-05T02:16:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000047",
-      "rank": 49,
-      "prev_rank": 44,
-      "badge": null,
-      "axis": "capital",
-      "title": "AI 상위 1% 고객 매출 쏠림",
-      "subtitle": "오픈AI·앤스로픽 매출 80% 소수 기업 발생",
-      "summary": "오픈AI와 앤스로픽 전체 매출의 80%가 전체 이용자의 1%에 해당하는 소수 기업 고객에게서 나오는 것으로 밝혀졌다. 이는 일반 소비자 대상 구독 서비스보다 B2B 엔터프라이즈 계약이 생성형 AI 매출을 주도하고 있음을 보여준다. 이에 따라 주요 AI 랩들의 기업 고객 유치 경쟁이 격화될 전망이다.",
-      "company_domain": "openai.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.477,
-      "source_count": 1,
-      "first_seen": "2026-09-05T02:08:52+09:00",
-      "last_seen": "2026-09-05T02:08:52+09:00",
-      "item_ids": [
-        "a0dacef75542370e"
-      ],
-      "sources": [
-        {
-          "name": "Google News / PYMNTS.com",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPY2V6ZnQ2WXF4UUJrR3VWWGpfX3psX0x4d1dPZjY3eWc1VlBoVlF1cnQ2V0p1dktTendPTW5palpMZVpIRDZjNXVGVVlqdm1qY3NYQzlLd0poLUtVWng3dnRIRXhYdW5xMEhYQ1JJQVdyWTJlMEhkaGY2R1QxY1BOaUJTajBCYUhlR2NhSEtQZ2VSOWdkZXJnYU1hRGt4TklPRzgyNkJJR3BUY2I0cUM2amozbmlOZVZCdXJ2eEVxb3cyUjlpSGxHb3dB?oc=5",
-          "published_at": "2026-09-05T02:08:52+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_000038",
-      "rank": 50,
-      "prev_rank": 45,
-      "badge": null,
-      "axis": "media",
-      "title": "롤랜드, 생성형 음악 도구 출시",
-      "subtitle": "멜로디 플립 플러그인으로 AI 음악 시장 진출",
-      "summary": "악기 제조사 롤랜드가 생성형 AI 음악 도구인 멜로디 플립을 출시하며 시장에 진출했다. 디지털 오디오 워크스테이션용 플러그인 형태로 제공되며 장르별 약 250개의 음악 아이디어 팔레트를 지원한다. 기존 완전 자동 생성 도구와 달리 작곡가의 작업을 보조하는 데 중점을 둔다.",
-      "company_domain": "roland.com",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Melody_Flip_Palettes-Fav.png?quality=90&strip=all&crop=0%2C10.595205290714%2C100%2C78.809589418573&w=1200",
-      "image_tried": [
-        "https://theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip"
-      ],
       "impact": 2,
-      "score": 0.327,
+      "score": 0.322,
       "source_count": 1,
-      "first_seen": "2026-09-05T02:51:35+09:00",
-      "last_seen": "2026-09-05T02:51:35+09:00",
+      "first_seen": "2026-09-05T05:55:26+09:00",
+      "last_seen": "2026-09-05T05:55:26+09:00",
       "item_ids": [
-        "fc75f575fc539669"
+        "69e5551c36e82655"
       ],
       "sources": [
         {
-          "name": "The Verge",
-          "url": "https://theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
-          "published_at": "2026-09-05T02:51:35+09:00"
+          "name": "Google News / The San Francisco Standard",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DY0E3Y1ZLcnJQamRtLUl3c19Za0Q1RmJzZDVSR3pMb3V2QjltWnJkR2FYeVBzQlhYdXhjUVFxOGNHb2xPWHpuV0hRS0JQZFA0RHp3bjB6bHpNV1lFM1VwWnREZGotdFBQY2lLT3hEOGE?oc=5",
+          "published_at": "2026-09-05T05:55:26+09:00"
         }
       ]
     }
