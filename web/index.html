@@ -31,8 +31,11 @@
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
+  html { background: var(--bg-top); }
+
   body {
     margin: 0; position: relative;
+    overscroll-behavior-y: contain;
     background: var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
@@ -114,11 +117,10 @@
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
 
-  .card-shell { border-radius: var(--radius); box-shadow: var(--shadow); }
   .card {
     background: var(--card);
     border-radius: var(--radius); corner-shape: squircle;
-    overflow: hidden;
+    box-shadow: var(--shadow); overflow: hidden;
   }
   .head {
     display: grid; grid-template-columns: 28px minmax(0, 1fr);
@@ -184,8 +186,8 @@
 
     <div class="bar">
       <div class="seg" id="sort">
-        <button data-sort="recent" aria-pressed="false">최신순</button>
-        <button data-sort="popular" aria-pressed="true">인기순</button>
+        <button data-sort="recent" aria-pressed="true">최신순</button>
+        <button data-sort="popular" aria-pressed="false">인기순</button>
       </div>
       <span class="updated" id="updated"></span>
     </div>
@@ -217,7 +219,7 @@ const ink = document.getElementById("ink");
 const pager = document.getElementById("pager");
 
 let data = { issues: [] };
-let sort = read(STORE_SORT, "popular");
+let sort = read(STORE_SORT, "recent");
 let index = Math.max(0, SECTIONS.findIndex(([k]) => k === read(STORE_SECTION, "all")));
 
 function read(key, fallback) {
@@ -330,6 +332,15 @@ function measureTabs() {
   }));
 }
 
+/* 탭 막대만 옮긴다. scrollIntoView 는 문서까지 함께 스크롤해서 화면이 튄다. */
+function centerTab(behavior) {
+  const button = tabAt(index);
+  if (!button) return;
+  const want = button.offsetLeft + button.offsetWidth / 2 - tabs.clientWidth / 2;
+  const max = Math.max(0, tabs.scrollWidth - tabs.clientWidth);
+  tabs.scrollTo({ left: Math.max(0, Math.min(max, want)), behavior: behavior || "smooth" });
+}
+
 function moveInk() {
   if (!tabGeometry.length) return;
   const width = pager.clientWidth || 1;
@@ -371,7 +382,7 @@ function goTo(next, smooth) {
   const target = index * pager.clientWidth;
   const behavior = smooth === false ? "auto" : "smooth";
   pager.scrollTo({ left: target, behavior });
-  tabAt(index).scrollIntoView({ behavior, inline: "center", block: "nearest" });
+  centerTab(behavior);
   syncHeight();
   moveInk();
 
@@ -394,15 +405,18 @@ pager.addEventListener("scroll", () => {
 }, { passive: true });
 
 /* 손가락을 따라 화면이 움직인다. 한 번에 한 페이지까지만 이동한다. */
-const DRAG_TRIGGER = 0.16;   // 페이지 폭 대비 이 비율을 넘기면 옆으로 넘어간다.
+const DRAG_TRIGGER = 0.07;   // 페이지 폭 대비 이 비율을 넘기면 옆으로 넘어간다.
+const DRAG_FLICK = 0.25;     // px/ms. 짧게 튕겨도 이 속도를 넘으면 넘어간다.
+const DRAG_MIN = 12;
 const DRAG_DEADZONE = 6;
-let dragX = 0, dragY = 0, dragFrom = 0, dragging = false, axis = null;
+let dragX = 0, dragY = 0, dragFrom = 0, dragAt = 0, dragging = false, axis = null;
 
 pager.addEventListener("touchstart", event => {
   if (event.touches.length !== 1) return;
   dragX = event.touches[0].clientX;
   dragY = event.touches[0].clientY;
   dragFrom = index * pager.clientWidth;
+  dragAt = Date.now();
   dragging = true;
   axis = null;
   pager.style.transition = "none";
@@ -427,8 +441,7 @@ pager.addEventListener("touchmove", event => {
     ticking = true;
     requestAnimationFrame(() => { moveInk(); ticking = false; });
   }
-  event.preventDefault();
-}, { passive: false });
+}, { passive: true });
 
 pager.addEventListener("touchend", event => {
   if (!dragging) return;
@@ -436,7 +449,9 @@ pager.addEventListener("touchend", event => {
   pager.style.transition = "";
   if (axis !== "x") return;
   const dx = event.changedTouches[0].clientX - dragX;
-  const step = Math.abs(dx) > pager.clientWidth * DRAG_TRIGGER ? (dx < 0 ? 1 : -1) : 0;
+  const speed = Math.abs(dx) / Math.max(1, Date.now() - dragAt);
+  const enough = Math.abs(dx) > pager.clientWidth * DRAG_TRIGGER || speed > DRAG_FLICK;
+  const step = enough && Math.abs(dx) > DRAG_MIN ? (dx < 0 ? 1 : -1) : 0;
   goTo(index + step);
 }, { passive: true });
 
