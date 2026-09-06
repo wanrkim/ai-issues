@@ -31,37 +31,40 @@
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-  /* 문서 자체는 스크롤하지 않는다. 섹션마다 자기 영역을 스크롤한다.
-     주소 표시줄이 접히고 펴지지 않아서 화면이 튀지 않는다. */
-  /* 문서 뿌리 배경이 iOS 상태 표시줄 색과 화면 아래 남는 부분을 함께 결정한다.
-     앱 영역과 같은 그라데이션을 깔아서 위는 파랑, 아래는 목록 배경색으로 잇는다. */
+  /* 문서가 스크롤된다. 사파리는 문서가 스크롤될 때만 하단 도구 막대를
+     반투명 알약으로 접고, 그때 목록이 그 뒤로 비친다. */
   html {
-    height: 100%;
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
                 var(--bg);
   }
 
   body {
-    height: 100%; margin: 0; overflow: hidden;
+    margin: 0; background: transparent;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
                  "Malgun Gothic", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* 뷰포트 단위는 브라우저마다 도구 막대를 포함하는 기준이 달라서 쓰지 않는다.
-     body 높이에 그대로 맞추면 body 가 덮는 영역을 똑같이 덮는다. */
-  .app {
-    height: 100%; max-width: 560px; margin: 0 auto;
-    display: flex; flex-direction: column;
-    padding-top: env(safe-area-inset-top);
-    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
-                var(--bg);
-  }
+  .app { max-width: 560px; margin: 0 auto; padding-top: env(safe-area-inset-top); }
+  .pad { padding: 0 var(--gutter); }
 
-  /* ---------- 헤더 ----------
-     목록을 올리면 눈썹 문구가 사라지고 제목이 한 줄로 줄어든다. */
-  .head-area { flex: none; padding: 0 var(--gutter); }
+  /* ---------- 위쪽 고정 영역 ----------
+     스크롤하면 눈썹 문구가 사라지고 제목이 한 줄로 줄어든다.
+     배경은 뒤를 흐리게 비추는 방식이라 아래 그라데이션과 경계가 생기지 않는다. */
+  .topbar {
+    position: sticky; top: 0; z-index: 5;
+    background: rgba(255,255,255,0);
+    transition: background .2s ease, backdrop-filter .2s ease;
+  }
+  .topbar.stuck {
+    background: rgba(255,255,255,.4);
+    backdrop-filter: saturate(180%) blur(18px);
+    -webkit-backdrop-filter: saturate(180%) blur(18px);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .topbar.stuck { background: var(--bg); }
+  }
 
   .eyebrow {
     display: flex; align-items: center; gap: 6px; overflow: hidden;
@@ -88,9 +91,10 @@
     transition: margin .24s cubic-bezier(.22,.61,.36,1);
   }
 
-  .compact .eyebrow { height: 0; margin: 14px 0 0; opacity: 0; transform: translateY(-8px); }
+  .compact .eyebrow { height: 0; margin: 12px 0 0; opacity: 0; transform: translateY(-8px); }
   .compact h1 { transform: scale(.7); }
-  .compact .bar { margin: 10px 0 8px; }
+  .compact .bar { margin: 8px 0 6px; }
+
   .seg { display: flex; gap: 4px; }
   .seg button {
     border: 0; background: transparent; cursor: pointer;
@@ -102,8 +106,7 @@
 
   /* ---------- 탭 ---------- */
   .tabs {
-    flex: none; overflow-x: auto;
-    border-bottom: 1px solid var(--tab-line);
+    overflow-x: auto; border-bottom: 1px solid var(--tab-line);
     scrollbar-width: none; -webkit-overflow-scrolling: touch;
   }
   .tabs::-webkit-scrollbar { display: none; }
@@ -123,24 +126,21 @@
   }
 
   /* ---------- 페이저 ----------
-     가로 이동은 브라우저의 스크롤 스냅에 맡긴다. scroll-snap-stop: always 가
-     한 번에 한 페이지씩만 넘어가게 한다. 세로는 페이지가 각자 스크롤한다. */
+     가로 이동은 브라우저의 스크롤 스냅에 맡긴다.
+     세로 스크롤은 문서가 담당하므로 페이지는 자기 높이를 그대로 쓴다. */
   .pager {
-    flex: 1; min-height: 0;
-    display: flex; overflow-x: auto; overflow-y: hidden;
-    scroll-snap-type: x mandatory; overscroll-behavior: contain;
+    display: flex; align-items: flex-start;
+    overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
     scrollbar-width: none; -webkit-overflow-scrolling: touch;
   }
   .pager::-webkit-scrollbar { display: none; }
 
   .page {
-    flex: 0 0 100%; width: 100%; min-width: 0; height: 100%;
+    flex: 0 0 100%; width: 100%; min-width: 0;
     scroll-snap-align: start; scroll-snap-stop: always;
-    overflow-y: auto; overscroll-behavior-y: contain;
-    -webkit-overflow-scrolling: touch;
-    padding: 14px var(--gutter) calc(110px + env(safe-area-inset-bottom));
+    padding: 14px var(--gutter) calc(40px + env(safe-area-inset-bottom));
   }
-  .page::-webkit-scrollbar { display: none; }
 
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
@@ -203,27 +203,29 @@
 </head>
 <body>
 <div class="app" id="app">
-  <div class="head-area">
-    <div class="eyebrow">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.1L20.5 10l-6.3 1.9L12 18l-2.2-6.1L3.5 10l6.3-1.9L12 2z"/></svg>
-      AI 소식을 모아서
-    </div>
-    <div class="titlebar">
-      <h1>지금 많이 언급되는 이슈</h1>
-      <div class="actions" id="actions"></div>
-    </div>
-
-    <div class="bar">
-      <div class="seg" id="sort">
-        <button data-sort="recent" aria-pressed="true">최신순</button>
-        <button data-sort="popular" aria-pressed="false">인기순</button>
+  <div class="topbar" id="topbar">
+    <div class="pad">
+      <div class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.1L20.5 10l-6.3 1.9L12 18l-2.2-6.1L3.5 10l6.3-1.9L12 2z"/></svg>
+        AI 소식을 모아서
       </div>
-      <span class="updated" id="updated"></span>
-    </div>
-  </div>
+      <div class="titlebar">
+        <h1>지금 많이 언급되는 이슈</h1>
+        <div class="actions" id="actions"></div>
+      </div>
 
-  <div class="tabs" id="tabs">
-    <div class="tabrow" id="tabrow"><span class="ink" id="ink"></span></div>
+      <div class="bar">
+        <div class="seg" id="sort">
+          <button data-sort="recent" aria-pressed="true">최신순</button>
+          <button data-sort="popular" aria-pressed="false">인기순</button>
+        </div>
+        <span class="updated" id="updated"></span>
+      </div>
+    </div>
+
+    <div class="tabs" id="tabs">
+      <div class="tabrow" id="tabrow"><span class="ink" id="ink"></span></div>
+    </div>
   </div>
 
   <div class="pager" id="pager"></div>
@@ -241,14 +243,16 @@ const BADGE = { surge: ["급상승", "surge"], new: ["새로 진입", "new"] };
 const SECTIONS = [["all", "전체"]].concat(AXES);
 const SECTION_LIMIT = 20;
 const INK_BASE = 100;
+const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
 const STORE_SORT = "ai-issues.sort";
 
+const app = document.getElementById("app");
+const topbar = document.getElementById("topbar");
 const tabs = document.getElementById("tabs");
 const tabrow = document.getElementById("tabrow");
 const ink = document.getElementById("ink");
 const pager = document.getElementById("pager");
-const app = document.getElementById("app");
 
 let data = { issues: [] };
 let sort = read(STORE_SORT, "recent");
@@ -350,20 +354,16 @@ function renderPages() {
       : '<div class="empty">이 섹션에 표시할 이슈가 없다.</div>';
     return `<div class="page"><div class="list">${body}</div></div>`;
   }).join("");
-  [...pager.children].forEach(page =>
-    page.addEventListener("scroll", () => syncHeader(page), { passive: true }));
 }
 
-/* 목록을 올리면 헤더를 접고, 맨 위로 돌아오면 편다. */
-const COMPACT_AT = 8;
-function syncHeader(page) {
-  if (page !== pager.children[index]) return;
-  app.classList.toggle("compact", page.scrollTop > COMPACT_AT);
+/* 섹션마다 카드 수가 달라서, 페이저 높이를 현재 섹션에 맞춘다.
+   높이를 그대로 두면 짧은 섹션 아래에 빈 공간이 크게 남는다. */
+function syncHeight() {
+  const page = pager.children[index];
+  if (page) pager.style.height = page.offsetHeight + "px";
 }
 
-/* ---------- 탭 밑줄 ----------
-   페이저의 스크롤 위치를 두 탭 사이에서 보간해 밑줄을 옮긴다.
-   가로 이동은 브라우저가 처리하므로 여기서는 위치만 읽는다. */
+/* ---------- 탭 밑줄 ---------- */
 
 function moveInk() {
   if (!geometry.length) return;
@@ -379,15 +379,18 @@ function moveInk() {
   ink.style.transform = `translateX(${left}px) scaleX(${w / INK_BASE})`;
 
   const now = Math.round(ratio);
-  if (now !== near) {
-    near = now;
-    index = now;
-    write(STORE_SECTION, SECTIONS[index][0]);
-    tabrow.querySelectorAll("button").forEach((button, n) =>
-      button.setAttribute("aria-current", String(n === now)));
-    centerTab();
-    syncHeader(pager.children[index]);
-  }
+  if (now === near) return;
+  near = now;
+  index = now;
+  write(STORE_SECTION, SECTIONS[index][0]);
+  tabrow.querySelectorAll("button").forEach((button, n) =>
+    button.setAttribute("aria-current", String(n === now)));
+  centerTab();
+
+  // 높이가 줄면 브라우저가 스크롤 위치를 임의로 당긴다. 목록 맨 위로 맞춘다.
+  const top = pager.offsetTop - topbar.offsetHeight;
+  syncHeight();
+  if (window.scrollY > top) window.scrollTo(0, top);
 }
 
 function centerTab() {
@@ -398,11 +401,24 @@ function centerTab() {
   tabs.scrollTo({ left: Math.max(0, Math.min(max, want)), behavior: "smooth" });
 }
 
-let ticking = false;
+let inkTick = false;
 pager.addEventListener("scroll", () => {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(() => { moveInk(); ticking = false; });
+  if (inkTick) return;
+  inkTick = true;
+  requestAnimationFrame(() => { moveInk(); inkTick = false; });
+}, { passive: true });
+
+/* 문서를 내리면 헤더를 접는다. */
+let headTick = false;
+window.addEventListener("scroll", () => {
+  if (headTick) return;
+  headTick = true;
+  requestAnimationFrame(() => {
+    const on = window.scrollY > COMPACT_AT;
+    topbar.classList.toggle("stuck", on);
+    app.classList.toggle("compact", on);
+    headTick = false;
+  });
 }, { passive: true });
 
 tabrow.addEventListener("click", event => {
@@ -413,7 +429,9 @@ tabrow.addEventListener("click", event => {
 
 pager.addEventListener("click", event => {
   const head = event.target.closest(".head");
-  if (head) head.parentElement.classList.toggle("open");
+  if (!head) return;
+  head.parentElement.classList.toggle("open");
+  syncHeight();
 });
 
 document.getElementById("sort").addEventListener("click", event => {
@@ -426,6 +444,19 @@ document.getElementById("sort").addEventListener("click", event => {
   const keep = index;
   renderPages();
   pager.scrollLeft = keep * pager.clientWidth;
+  syncHeight();
+  moveInk();
+});
+
+/* 가로 폭이 바뀔 때만 다시 잡는다. iOS 는 주소 표시줄이 접히고 펴질 때마다
+   resize 를 보내는데, 그때마다 위치를 다시 잡으면 화면이 튄다. */
+let lastWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+  if (window.innerWidth === lastWidth) return;
+  lastWidth = window.innerWidth;
+  renderTabs();
+  pager.scrollLeft = index * pager.clientWidth;
+  syncHeight();
   moveInk();
 });
 
@@ -442,6 +473,7 @@ fetch("../data/issues.json", { cache: "no-store" })
     renderPages();
     pager.scrollLeft = index * pager.clientWidth;
     near = index;
+    syncHeight();
     moveInk();
     centerTab();
   })
