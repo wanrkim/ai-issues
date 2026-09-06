@@ -46,6 +46,17 @@ SNIPPET_CHARS = 320
 
 AXES = {"llm", "media", "hardware", "capital"}
 
+# 판정이 돌려준 기업 도메인을 검증한다. 이 형태가 아니면 버린다.
+DOMAIN_PATTERN = re.compile(r"^[a-z0-9][a-z0-9.\-]{1,60}\.[a-z]{2,12}$")
+
+
+def clean_domain(value):
+    text = (value or "").strip().lower()
+    text = re.sub(r"^https?://", "", text)
+    text = re.sub(r"^www\.", "", text)
+    text = text.split("/")[0]
+    return text if DOMAIN_PATTERN.match(text) else None
+
 # 이슈 섬네일. 피드가 이미지를 주면 그대로 쓰고, 없으면 원문에서 og:image 를 읽는다.
 # Google News 링크는 자바스크립트로 이동하는 구조라 원문에 닿지 못하므로 건너뛴다.
 OG_FETCH_LIMIT = 25   # 실행당 원문 페이지를 여는 최대 횟수
@@ -71,6 +82,8 @@ PROMPT = """너는 AI 소식을 다루는 큐레이터다. 아래 "새 글" 목�
 4. AI와 관계없는 글은 assignments에도 new_issues에도 넣지 않고 버린다. 검색어가 우연히 일치했을 뿐인 일반 소비재 기사, 단순 주가 시황, 광고성 글이 여기에 해당한다.
 5. 글 하나는 최대 한 곳에만 넣는다.
 6. 모든 문구는 한국어로 쓴다.
+7. "현재 이슈" 목록에서 끝에 [도메인 없음] 이라고 표시된 이슈는 domains 에 그 이슈 id 와
+   company_domain 을 넣는다. 제목과 부제만 보고 판단한다.
 
 [새 이슈의 필드]
 - title: 무엇이 일어났는지 한국어 한 줄로 쓴다. 12자 안팎으로 짧게 쓴다. 예: "클로드 6.0 출시"
@@ -79,6 +92,10 @@ PROMPT = """너는 AI 소식을 다루는 큐레이터다. 아래 "새 글" 목�
   읽는 사람이 원문 기사를 열지 않아도 사건을 이해할 수 있어야 한다.
   주어진 글에 없는 사실을 지어내지 않는다. 숫자와 회사 이름은 글에 있는 그대로 쓴다.
   "~한다" 형태의 평서문으로 쓴다.
+- company_domain: 이 소식의 중심에 있는 기업이나 기관의 대표 웹사이트 도메인을 쓴다.
+  회사 이름이 아니라 도메인만 쓴다. 예: openai.com, anthropic.com, nvidia.com, google.com, micron.com
+  앞에 www 나 https 를 붙이지 않는다. 경로도 붙이지 않는다.
+  기업 한 곳으로 좁혀지지 않으면 빈 문자열을 쓴다.
 - axis: 다음 넷 중 하나를 고른다.
     llm      언어모델과 AI 서비스, 코딩 도구의 출시와 업데이트
     media    영상 생성 모델과 이미지 생성 모델
@@ -121,15 +138,29 @@ RESPONSE_SCHEMA = {
                     "title": {"type": "STRING"},
                     "subtitle": {"type": "STRING"},
                     "summary": {"type": "STRING"},
+                    "company_domain": {"type": "STRING"},
                     "axis": {"type": "STRING"},
                     "impact": {"type": "INTEGER"},
                 },
-                "required": ["items", "title", "subtitle", "summary", "axis", "impact"],
+                "required": ["items", "title", "subtitle", "summary",
+                             "company_domain", "axis", "impact"],
             },
         },
     },
     "required": ["assignments", "new_issues"],
 }
+RESPONSE_SCHEMA["properties"]["domains"] = {
+    "type": "ARRAY",
+    "items": {
+        "type": "OBJECT",
+        "properties": {
+            "issue_id": {"type": "STRING"},
+            "company_domain": {"type": "STRING"},
+        },
+        "required": ["issue_id", "company_domain"],
+    },
+}
+RESPONSE_SCHEMA["required"].append("domains")
 
 
 # ---------------------------------------------------------------- 공통 유틸
@@ -224,7 +255,14 @@ def call_gemini(api_key, prompt):
 def build_prompt(live_issues, new_items):
     if live_issues:
         live_text = "\n".join(
-            "%s | %s | %s | %s" % (i["id"], i["title"], i["subtitle"], i["axis"])
+            "%s | %s | %s | %s%s"
+            % (
+                i["id"],
+                i["title"],
+                i["subtitle"],
+                i["axis"],
+                "" if i.get("company_domain") else " [도메인 없음]",
+            )
             for i in live_issues
         )
     else:
@@ -392,6 +430,16 @@ def main() -> int:
             issue["new_sources"] += 1
             merged += 1
 
+        filled = 0
+        for entry in result.get("domains", []):
+            issue = issue_index.get(entry.get("issue_id"))
+            if issue is None or issue.get("company_domain"):
+                continue
+            domain = clean_domain(entry.get("company_domain"))
+            if domain:
+                issue["company_domain"] = domain
+                filled += 1
+
         created = 0
         for group in result.get("new_issues", []):
             picked = [
@@ -413,6 +461,7 @@ def main() -> int:
                     "title": (group.get("title") or "").strip(),
                     "subtitle": (group.get("subtitle") or "").strip(),
                     "summary": (group.get("summary") or "").strip(),
+                    "company_domain": clean_domain(group.get("company_domain")),
                     "impact": max(1, min(5, impact)),
                     "item_ids": [p["id"] for p in picked],
                     "new_sources": len(picked),
@@ -426,6 +475,7 @@ def main() -> int:
             len(g.get("items", [])) for g in result.get("new_issues", [])
         )
         print("기존 이슈에 합침 %d건 / 새 이슈 %d개 / 관계없어 버림 %d건" % (merged, created, dropped))
+        print("기업 도메인 %d개 채움" % filled)
 
     # 이슈마다 출처 수와 마지막 시각을 다시 계산한다.
     for issue in issues:
@@ -464,6 +514,7 @@ def main() -> int:
                 "title": i["title"],
                 "subtitle": i["subtitle"],
                 "summary": i.get("summary", ""),
+                "company_domain": i.get("company_domain"),
                 "image": i.get("image"),
                 "image_tried": i.get("image_tried", []),
                 "impact": i["impact"],

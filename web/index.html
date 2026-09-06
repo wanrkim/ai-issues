@@ -112,17 +112,17 @@
     padding: 16px 0; cursor: pointer;
   }
   /* 섬네일. 흰 배경 이미지가 바탕과 붙어 보이지 않도록 옅은 윤곽선을 두른다.
-     clip-path 로 잘라내면 테두리가 함께 잘리므로 감싸는 요소에 그린다. */
+     사진은 상자를 꽉 채우고, 기업 로고는 여백을 두고 원본 비율로 넣는다. */
   .thumb-box {
     position: relative; width: 56px; height: 56px; flex: none;
+    border-radius: 14px; overflow: hidden;
+    box-shadow: inset 0 0 0 1px var(--thumb-line);
+    background: var(--card);
   }
-  .thumb-box::after {
-    content: ""; position: absolute; inset: 0; pointer-events: none;
-    border-radius: 16px; box-shadow: inset 0 0 0 1px var(--thumb-line);
-  }
-  .thumb {
-    width: 100%; height: 100%; display: block;
-    object-fit: cover; border-radius: 16px; background: var(--chip-bg);
+  .thumb { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .thumb.logo {
+    width: 32px; height: 32px; object-fit: contain;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   }
   .head > div { min-width: 0; }
   .rank {
@@ -215,6 +215,8 @@ const SECTION_LIMIT = 20;
 const SOURCE_LIMIT = 3;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
+// 기업 로고. 대부분 128px 정사각형 PNG 이고 배경이 투명하다.
+const LOGO_URL = "https://www.google.com/s2/favicons?domain=%s&sz=128";
 
 const app = document.getElementById("app");
 const topbar = document.getElementById("topbar");
@@ -261,6 +263,21 @@ function escape(text) {
 
 /* ---------- 그리기 ---------- */
 
+/* 사진이 있으면 사진을, 없으면 기업 로고를 보여준다. 둘 다 없으면 자리를 비운다. */
+function thumbHtml(issue) {
+  const fallback = 'onerror="this.parentElement.remove()"';
+  if (issue.image) {
+    return `<div class="thumb-box"><img class="thumb" src="${escape(issue.image)}" alt=""
+      loading="lazy" referrerpolicy="no-referrer" ${fallback}></div>`;
+  }
+  if (issue.company_domain) {
+    const url = LOGO_URL.replace("%s", encodeURIComponent(issue.company_domain));
+    return `<div class="thumb-box"><img class="thumb logo" src="${url}" alt=""
+      loading="lazy" referrerpolicy="no-referrer" ${fallback}></div>`;
+  }
+  return "";
+}
+
 function rowHtml(issue, position) {
   const badge = BADGE[issue.badge];
   const all = issue.sources || [];
@@ -286,9 +303,7 @@ function rowHtml(issue, position) {
           <span class="count">${issue.source_count}개 출처 · ${ago(issue.last_seen)}</span>
         </div>
       </div>
-      ${issue.image ? `<div class="thumb-box"><img class="thumb" src="${escape(issue.image)}" alt=""
-           loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentElement.remove()"></div>` : ""}
+      ${thumbHtml(issue)}
     </div>
     <div class="sources">
       <p class="detail">${escape(detail)}</p>
@@ -314,7 +329,6 @@ function renderList() {
   listEl.innerHTML = issues.length
     ? issues.map((issue, i) => rowHtml(issue, i + 1)).join("")
     : '<div class="empty">이 분류에 표시할 이슈가 없다.</div>';
-  shapeThumbs();
 }
 
 /* ---------- 동작 ---------- */
@@ -342,29 +356,6 @@ window.addEventListener("scroll", () => {
     ticking = false;
   });
 }, { passive: true });
-
-/* ---------- 스쿼클 모서리 ----------
-   섬네일에만 적용한다. 불러오지 못하면 CSS 의 둥근 모서리로 보인다. */
-
-const SQUIRCLE_RADIUS = 18;
-const SQUIRCLE_SMOOTHING = 0.7;
-let getSvgPath = null;
-
-import("https://cdn.jsdelivr.net/npm/figma-squircle@1.1.0/+esm")
-  .then(module => { getSvgPath = module.getSvgPath; shapeThumbs(); })
-  .catch(() => {});
-
-function shapeThumbs() {
-  if (!getSvgPath) return;
-  document.querySelectorAll(".thumb-box").forEach(el => {
-    const box = el.getBoundingClientRect();
-    if (!box.width || !box.height) return;
-    el.style.clipPath = `path('${getSvgPath({
-      width: box.width, height: box.height,
-      cornerRadius: SQUIRCLE_RADIUS, cornerSmoothing: SQUIRCLE_SMOOTHING,
-    })}')`;
-  });
-}
 
 /* ---------- 시작 ---------- */
 
