@@ -217,12 +217,11 @@ const SECTION_LIMIT = 20;
 const SOURCE_LIMIT = 3;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
-/* 기업 로고.
-   icon.horse 는 사이트가 제공하는 아이콘을 배경 없이 그대로 준다.
-   구글 파비콘은 오픈AI, 앤스로픽, 메타처럼 흰 배경을 덧칠해서 목록 위쪽
-   그라데이션 구간에서 흰 사각형이 드러난다. 대신 크기가 크므로 예비로 둔다. */
-const LOGO_URL = "https://icon.horse/icon/%s";
+/* 기업 로고. 자주 나오는 기업은 배경 없는 로고를 저장소에 두고 그것을 쓴다.
+   외부 서비스는 흰 배경을 덧칠하거나 화질이 들쭉날쭉해서 믿을 수 없다.
+   목록에 없는 기업만 구글 파비콘으로 가져온다. */
 const LOGO_BACKUP = "https://www.google.com/s2/favicons?domain=%s&sz=256";
+let logoMap = {};
 
 const app = document.getElementById("app");
 const topbar = document.getElementById("topbar");
@@ -271,12 +270,14 @@ function escape(text) {
 
 /* 제목 앞에 놓을 기업 표식. 도메인이 없으면 아무것도 넣지 않는다. */
 function markHtml(issue) {
-  if (!issue.company_domain) return "";
-  const domain = encodeURIComponent(issue.company_domain);
-  const url = LOGO_URL.replace("%s", domain);
-  const backup = LOGO_BACKUP.replace("%s", domain);
-  return `<img class="mark" src="${url}" alt="" loading="lazy"
-    referrerpolicy="no-referrer" data-next="${backup}"
+  const domain = issue.company_domain;
+  if (!domain) return "";
+  const own = logoMap[domain];
+  const backup = LOGO_BACKUP.replace("%s", encodeURIComponent(domain));
+  const src = own ? "logos/" + own : backup;
+  const next = own ? ` data-next="${backup}"` : "";
+  return `<img class="mark" src="${src}" alt="" loading="lazy"
+    referrerpolicy="no-referrer"${next}
     onerror="if(this.dataset.next){this.src=this.dataset.next;delete this.dataset.next;}else{this.remove();}">`;
 }
 
@@ -363,10 +364,13 @@ window.addEventListener("scroll", () => {
 
 /* ---------- 시작 ---------- */
 
-fetch("../data/issues.json", { cache: "no-store" })
-  .then(response => response.json())
-  .then(json => {
+Promise.all([
+  fetch("../data/issues.json", { cache: "no-store" }).then(r => r.json()),
+  fetch("logos/index.json").then(r => r.json()).catch(() => ({})),
+])
+  .then(([json, logos]) => {
     data = json;
+    logoMap = logos;
     renderPicker();
     renderList();
   })
