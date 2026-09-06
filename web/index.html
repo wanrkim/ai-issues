@@ -35,7 +35,7 @@
      반투명 알약으로 접고, 그때 목록이 그 뒤로 비친다. */
   html {
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
-                var(--bg);
+                var(--bg-top);
   }
 
   body {
@@ -386,11 +386,15 @@ function moveInk() {
   tabrow.querySelectorAll("button").forEach((button, n) =>
     button.setAttribute("aria-current", String(n === now)));
   centerTab();
+}
 
-  // 높이가 줄면 브라우저가 스크롤 위치를 임의로 당긴다. 목록 맨 위로 맞춘다.
+/* 가로 이동이 멈춘 뒤에 높이를 맞춘다. 이동 중에 레이아웃을 바꾸면
+   진행 중인 스크롤이 밀려서 목록이 좌우로 튕긴다. */
+function afterSlide() {
   const top = pager.offsetTop - topbar.offsetHeight;
+  const before = pager.offsetHeight;
   syncHeight();
-  if (window.scrollY > top) window.scrollTo(0, top);
+  if (pager.offsetHeight !== before && window.scrollY > top) window.scrollTo(0, top);
 }
 
 function centerTab() {
@@ -402,10 +406,14 @@ function centerTab() {
 }
 
 let inkTick = false;
+let slideTimer = null;
 pager.addEventListener("scroll", () => {
-  if (inkTick) return;
-  inkTick = true;
-  requestAnimationFrame(() => { moveInk(); inkTick = false; });
+  if (!inkTick) {
+    inkTick = true;
+    requestAnimationFrame(() => { moveInk(); inkTick = false; });
+  }
+  clearTimeout(slideTimer);
+  slideTimer = setTimeout(afterSlide, 150);
 }, { passive: true });
 
 /* 문서를 내리면 헤더를 접는다. */
