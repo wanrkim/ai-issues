@@ -4,19 +4,22 @@
 <style>
   body { font: 13px -apple-system, system-ui, sans-serif; background: #fff; margin: 16px; color: #191F28; }
   table { border-collapse: collapse; }
-  th, td { padding: 8px 10px; border-bottom: 1px solid #eee; text-align: center; }
-  th { font-size: 12px; color: #8B95A1; font-weight: 600; }
+  th, td { padding: 6px 8px; border-bottom: 1px solid #eee; text-align: center; }
+  th { font-size: 11px; color: #8B95A1; font-weight: 600; }
   td.d { text-align: left; font-weight: 700; font-size: 12px; }
-  img { width: 28px; height: 28px; object-fit: contain; display: block; margin: 0 auto; }
-  .cell { position: relative; }
+  /* 색 바탕에 올려서 흰 배경이 붙어 있는지 드러낸다. */
+  .pad { background: #FFE08C; padding: 4px; display: inline-block; line-height: 0; }
+  img { width: 26px; height: 26px; object-fit: contain; display: block; }
   .miss { color: #F04452; font-size: 11px; }
 </style>
+<p style="font-size:12px;color:#8B95A1">노란 바탕이 비치면 배경 없는 로고이고, 흰 사각형이 보이면 배경이 붙어 있는 것이다.</p>
 <table id="t">
   <tr><th>도메인</th><th>Simple Icons</th><th>unavatar</th><th>icon.horse</th><th>구글 파비콘</th></tr>
 </table>
 <script>
 const DOMAINS = ["openai.com","anthropic.com","google.com","nvidia.com","meta.com",
-  "microsoft.com","amd.com","micron.com","apple.com","huggingface.co","mistral.ai","x.ai","cerebras.net"];
+  "microsoft.com","amd.com","micron.com","apple.com","huggingface.co","mistral.ai",
+  "x.ai","cerebras.net","samsung.com","intel.com"];
 const SERVICES = [
   d => "https://cdn.simpleicons.org/" + d.split(".")[0].replace(/[^a-z0-9]/g,""),
   d => "https://unavatar.io/" + d,
@@ -27,8 +30,8 @@ const t = document.getElementById("t");
 for (const d of DOMAINS) {
   const tr = document.createElement("tr");
   tr.innerHTML = `<td class="d">${d}</td>` + SERVICES.map(f =>
-    `<td class="cell"><img src="${f(d)}" referrerpolicy="no-referrer"
-      onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'miss',textContent:'없음'}))"></td>`
+    `<td><span class="pad"><img src="${f(d)}" referrerpolicy="no-referrer"
+      onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'miss',textContent:'없음'}))"></span></td>`
   ).join("");
   t.appendChild(tr);
 }
