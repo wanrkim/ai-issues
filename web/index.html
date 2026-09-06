@@ -217,18 +217,10 @@ const SECTION_LIMIT = 20;
 const SOURCE_LIMIT = 3;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
-/* 기업 로고. 두 곳을 차례로 시도한다.
-   1. Simple Icons — 브랜드 색을 입힌 SVG 라 어떤 크기에서도 선명하다.
-      다만 상표 정책상 빠진 브랜드가 있다.
-   2. 구글 파비콘 — 거의 모든 도메인에 있지만 원본이 작으면 흐리다.
-   둘은 서로 빠진 곳을 메운다. */
-const LOGO_VECTOR = "https://cdn.simpleicons.org/%s";
-const LOGO_FAVICON = "https://www.google.com/s2/favicons?domain=%s&sz=256";
-
-/* 도메인에서 Simple Icons 슬러그를 만든다. anthropic.com -> anthropic */
-function logoSlug(domain) {
-  return domain.split(".")[0].replace(/[^a-z0-9]/g, "");
-}
+/* 기업 로고. 구글 파비콘 서비스를 쓴다. 브랜드 색이 그대로 나오고
+   대부분 배경이 투명하다. Simple Icons 는 단색이라 구글 로고가 파란 G 하나로
+   나오고 오픈AI, 마이크로소프트, 마이크론, 미스트랄은 아예 없어서 쓰지 않는다. */
+const LOGO_URL = "https://www.google.com/s2/favicons?domain=%s&sz=256";
 
 const app = document.getElementById("app");
 const topbar = document.getElementById("topbar");
@@ -278,11 +270,9 @@ function escape(text) {
 /* 제목 앞에 놓을 기업 표식. 도메인이 없으면 아무것도 넣지 않는다. */
 function markHtml(issue) {
   if (!issue.company_domain) return "";
-  const vector = LOGO_VECTOR.replace("%s", logoSlug(issue.company_domain));
-  const favicon = LOGO_FAVICON.replace("%s", encodeURIComponent(issue.company_domain));
-  return `<img class="mark" src="${vector}" alt="" loading="lazy"
-    referrerpolicy="no-referrer" data-next="${favicon}"
-    onerror="if(this.dataset.next){this.src=this.dataset.next;delete this.dataset.next;}else{this.remove();}">`;
+  const url = LOGO_URL.replace("%s", encodeURIComponent(issue.company_domain));
+  return `<img class="mark" src="${url}" alt="" loading="lazy"
+    referrerpolicy="no-referrer" onerror="this.remove()">`;
 }
 
 function rowHtml(issue, position) {
