@@ -217,10 +217,12 @@ const SECTION_LIMIT = 20;
 const SOURCE_LIMIT = 3;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
-/* 기업 로고. 구글 파비콘 서비스를 쓴다. 브랜드 색이 그대로 나오고
-   대부분 배경이 투명하다. Simple Icons 는 단색이라 구글 로고가 파란 G 하나로
-   나오고 오픈AI, 마이크로소프트, 마이크론, 미스트랄은 아예 없어서 쓰지 않는다. */
-const LOGO_URL = "https://www.google.com/s2/favicons?domain=%s&sz=256";
+/* 기업 로고.
+   icon.horse 는 사이트가 제공하는 아이콘을 배경 없이 그대로 준다.
+   구글 파비콘은 오픈AI, 앤스로픽, 메타처럼 흰 배경을 덧칠해서 목록 위쪽
+   그라데이션 구간에서 흰 사각형이 드러난다. 대신 크기가 크므로 예비로 둔다. */
+const LOGO_URL = "https://icon.horse/icon/%s";
+const LOGO_BACKUP = "https://www.google.com/s2/favicons?domain=%s&sz=256";
 
 const app = document.getElementById("app");
 const topbar = document.getElementById("topbar");
@@ -270,9 +272,12 @@ function escape(text) {
 /* 제목 앞에 놓을 기업 표식. 도메인이 없으면 아무것도 넣지 않는다. */
 function markHtml(issue) {
   if (!issue.company_domain) return "";
-  const url = LOGO_URL.replace("%s", encodeURIComponent(issue.company_domain));
+  const domain = encodeURIComponent(issue.company_domain);
+  const url = LOGO_URL.replace("%s", domain);
+  const backup = LOGO_BACKUP.replace("%s", domain);
   return `<img class="mark" src="${url}" alt="" loading="lazy"
-    referrerpolicy="no-referrer" onerror="this.remove()">`;
+    referrerpolicy="no-referrer" data-next="${backup}"
+    onerror="if(this.dataset.next){this.src=this.dataset.next;delete this.dataset.next;}else{this.remove();}">`;
 }
 
 function rowHtml(issue, position) {
