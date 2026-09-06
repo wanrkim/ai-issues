@@ -36,8 +36,8 @@ ISSUES_PATH = DATA_DIR / "issues.json"
 MODELS = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash"]
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 API_TIMEOUT = 180
-RETRY_PER_MODEL = 2
-RETRY_WAIT = 5
+RETRY_PER_MODEL = 3
+RETRY_WAIT = 12
 
 ISSUE_TTL_HOURS = 48
 SURGE_THRESHOLD = 3  # 직전 실행보다 이만큼 순위가 오르면 급상승으로 본다.
@@ -416,11 +416,17 @@ def main() -> int:
             return 1
         prompt = build_prompt(issues, unassigned)
         print("프롬프트 %d자" % len(prompt))
-        result, used_model = call_gemini(api_key, prompt)
+        try:
+            result, used_model = call_gemini(api_key, prompt)
+        except RuntimeError as exc:
+            # 모델이 모두 응답하지 않아도 파이프라인을 멈추지 않는다.
+            # 묶기와 판정만 건너뛰고 남은 이슈로 순위를 다시 계산한다.
+            print("LLM 호출 실패, 묶기와 판정을 건너뛴다: %s" % exc)
+            result = None
 
-        issue_index = {i["id"]: i for i in issues}
+        issue_index = {i["id"]: i for i in issues} if result else {}
         merged = 0
-        for entry in result.get("assignments", []):
+        for entry in (result or {}).get("assignments", []):
             issue = issue_index.get(entry.get("issue_id"))
             n = entry.get("n")
             if issue is None or not isinstance(n, int) or not 0 <= n < len(unassigned):
@@ -433,7 +439,7 @@ def main() -> int:
             merged += 1
 
         filled = 0
-        for entry in result.get("domains", []):
+        for entry in (result or {}).get("domains", []):
             issue = issue_index.get(entry.get("issue_id"))
             if issue is None or issue.get("company_domain"):
                 continue
@@ -443,7 +449,7 @@ def main() -> int:
                 filled += 1
 
         created = 0
-        for group in result.get("new_issues", []):
+        for group in (result or {}).get("new_issues", []):
             picked = [
                 unassigned[n]
                 for n in group.get("items", [])
@@ -474,7 +480,7 @@ def main() -> int:
             created += 1
 
         dropped = len(unassigned) - merged - sum(
-            len(g.get("items", [])) for g in result.get("new_issues", [])
+            len(g.get("items", [])) for g in (result or {}).get("new_issues", [])
         )
         print("기존 이슈에 합침 %d건 / 새 이슈 %d개 / 관계없어 버림 %d건" % (merged, created, dropped))
         print("기업 도메인 %d개 채움" % filled)
