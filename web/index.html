@@ -8,6 +8,7 @@
 <style>
   :root {
     --bg-top: #E8F0FD;
+    --bg-soft: #F2F6FC;
     --bg: #F4F6F9;
     --card: #FFFFFF;
     --text: #191F28;
@@ -47,7 +48,7 @@
   .topbar {
     position: sticky; top: 0; z-index: 5;
     padding-top: env(safe-area-inset-top);
-    background: linear-gradient(180deg, var(--bg-top) 0, var(--card) 100%);
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg-soft) 100%);
   }
 
   .eyebrow {
@@ -77,7 +78,7 @@
      선택 요소를 그 위에 투명하게 겹쳐서 기기 고유의 선택 화면은 그대로 쓴다. */
   .picker {
     position: relative; margin-left: auto; flex: none;
-    display: inline-flex; align-items: center; gap: 4px;
+    display: inline-flex; align-items: center; gap: 8px;
     font-size: 14px; font-weight: 700; color: var(--text);
     padding: 4px 0; cursor: pointer;
   }
@@ -95,7 +96,11 @@
   /* ---------- 목록 ----------
      흰 바탕 위에 항목을 두고 구분선으로 나눈다. 최소 높이를 화면 높이로
      두어 항목이 적을 때도 아래가 흰색으로 이어지고 문서가 스크롤된다. */
-  .sheet { background: var(--card); min-height: 100vh; }
+  .sheet {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--bg-soft) 0, var(--card) 160px) no-repeat,
+                var(--card);
+  }
   .list { padding: 4px var(--gutter) calc(88px + env(safe-area-inset-bottom)); }
 
   .row { border-bottom: 1px solid var(--line); }
