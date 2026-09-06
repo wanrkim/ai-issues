@@ -46,25 +46,40 @@
   }
 
   .app {
-    height: 100dvh; max-width: 560px; margin: 0 auto;
+    height: 100vh; max-width: 560px; margin: 0 auto;
     display: flex; flex-direction: column;
     padding-top: env(safe-area-inset-top);
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
                 var(--bg);
   }
 
-  /* ---------- 헤더 ---------- */
+  /* ---------- 헤더 ----------
+     목록을 올리면 눈썹 문구가 사라지고 제목이 한 줄로 줄어든다. */
   .head-area { flex: none; padding: 0 var(--gutter); }
 
   .eyebrow {
-    display: flex; align-items: center; gap: 6px;
+    display: flex; align-items: center; gap: 6px; overflow: hidden;
     color: var(--accent); font-size: 15px; font-weight: 700;
-    line-height: 1; margin: 24px 0 8px;
+    line-height: 1; height: 21px; margin: 22px 0 8px; opacity: 1;
+    transition: height .22s ease, margin .22s ease, opacity .16s ease;
   }
   .eyebrow svg { width: 21px; height: 21px; display: block; flex: none; }
-  h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
 
-  .bar { display: flex; align-items: center; gap: 8px; margin: 20px 0 12px; }
+  .titlebar { display: flex; align-items: center; gap: 10px; }
+  h1 {
+    margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px;
+    transition: font-size .22s ease;
+  }
+  .actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+
+  .bar {
+    display: flex; align-items: center; gap: 8px; margin: 18px 0 12px;
+    transition: margin .22s ease;
+  }
+
+  .compact .eyebrow { height: 0; margin: 14px 0 0; opacity: 0; }
+  .compact h1 { font-size: 18px; }
+  .compact .bar { margin: 10px 0 8px; }
   .seg { display: flex; gap: 4px; }
   .seg button {
     border: 0; background: transparent; cursor: pointer;
@@ -112,7 +127,7 @@
     scroll-snap-align: start; scroll-snap-stop: always;
     overflow-y: auto; overscroll-behavior-y: contain;
     -webkit-overflow-scrolling: touch;
-    padding: 14px var(--gutter) calc(40px + env(safe-area-inset-bottom));
+    padding: 14px var(--gutter) calc(110px + env(safe-area-inset-bottom));
   }
   .page::-webkit-scrollbar { display: none; }
 
@@ -176,13 +191,16 @@
 </style>
 </head>
 <body>
-<div class="app">
+<div class="app" id="app">
   <div class="head-area">
     <div class="eyebrow">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.1L20.5 10l-6.3 1.9L12 18l-2.2-6.1L3.5 10l6.3-1.9L12 2z"/></svg>
       AI 소식을 모아서
     </div>
-    <h1>지금 많이 언급되는 이슈</h1>
+    <div class="titlebar">
+      <h1>지금 많이 언급되는 이슈</h1>
+      <div class="actions" id="actions"></div>
+    </div>
 
     <div class="bar">
       <div class="seg" id="sort">
@@ -219,6 +237,7 @@ const tabs = document.getElementById("tabs");
 const tabrow = document.getElementById("tabrow");
 const ink = document.getElementById("ink");
 const pager = document.getElementById("pager");
+const app = document.getElementById("app");
 
 let data = { issues: [] };
 let sort = read(STORE_SORT, "recent");
@@ -320,6 +339,15 @@ function renderPages() {
       : '<div class="empty">이 섹션에 표시할 이슈가 없다.</div>';
     return `<div class="page"><div class="list">${body}</div></div>`;
   }).join("");
+  [...pager.children].forEach(page =>
+    page.addEventListener("scroll", () => syncHeader(page), { passive: true }));
+}
+
+/* 목록을 올리면 헤더를 접고, 맨 위로 돌아오면 편다. */
+const COMPACT_AT = 8;
+function syncHeader(page) {
+  if (page !== pager.children[index]) return;
+  app.classList.toggle("compact", page.scrollTop > COMPACT_AT);
 }
 
 /* ---------- 탭 밑줄 ----------
@@ -347,6 +375,7 @@ function moveInk() {
     tabrow.querySelectorAll("button").forEach((button, n) =>
       button.setAttribute("aria-current", String(n === now)));
     centerTab();
+    syncHeader(pager.children[index]);
   }
 }
 
