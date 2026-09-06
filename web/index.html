@@ -23,6 +23,7 @@
     --badge-new-fg: #3182F6;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
+    --thumb-line: rgba(17,24,39,.08);
     --gutter: 20px;
   }
 
@@ -110,10 +111,18 @@
     gap: 12px; align-items: start;
     padding: 16px 0; cursor: pointer;
   }
+  /* 섬네일. 흰 배경 이미지가 바탕과 붙어 보이지 않도록 옅은 윤곽선을 두른다.
+     clip-path 로 잘라내면 테두리가 함께 잘리므로 감싸는 요소에 그린다. */
+  .thumb-box {
+    position: relative; width: 56px; height: 56px; flex: none;
+  }
+  .thumb-box::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    border-radius: 16px; box-shadow: inset 0 0 0 1px var(--thumb-line);
+  }
   .thumb {
-    width: 56px; height: 56px; flex: none;
-    object-fit: cover; display: block;
-    border-radius: 16px; background: var(--chip-bg);
+    width: 100%; height: 100%; display: block;
+    object-fit: cover; border-radius: 16px; background: var(--chip-bg);
   }
   .head > div { min-width: 0; }
   .rank {
@@ -277,9 +286,9 @@ function rowHtml(issue, position) {
           <span class="count">${issue.source_count}개 출처 · ${ago(issue.last_seen)}</span>
         </div>
       </div>
-      ${issue.image ? `<img class="thumb" src="${escape(issue.image)}" alt=""
+      ${issue.image ? `<div class="thumb-box"><img class="thumb" src="${escape(issue.image)}" alt=""
            loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.remove()">` : ""}
+           onerror="this.parentElement.remove()"></div>` : ""}
     </div>
     <div class="sources">
       <p class="detail">${escape(detail)}</p>
@@ -347,7 +356,7 @@ import("https://cdn.jsdelivr.net/npm/figma-squircle@1.1.0/+esm")
 
 function shapeThumbs() {
   if (!getSvgPath) return;
-  document.querySelectorAll(".thumb").forEach(el => {
+  document.querySelectorAll(".thumb-box").forEach(el => {
     const box = el.getBoundingClientRect();
     if (!box.width || !box.height) return;
     el.style.clipPath = `path('${getSvgPath({
