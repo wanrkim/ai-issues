@@ -97,12 +97,15 @@
     transform-origin: left center; transform: translateX(0) scaleX(0);
     will-change: transform;
   }
+  .ink.glide { transition: transform .3s cubic-bezier(.22,.61,.36,1); }
 
   /* ---------- 페이저 ---------- */
-  .pager {
+  .pager { overflow: hidden; touch-action: pan-y; }
+  .track {
     display: flex; align-items: flex-start;
-    overflow: hidden; touch-action: pan-y;
+    will-change: transform; transform: translate3d(0, 0, 0);
   }
+  .track.glide { transition: transform .3s cubic-bezier(.22,.61,.36,1); }
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
     padding: 0 var(--gutter);
@@ -190,7 +193,7 @@
   <div class="tabs" id="tabs">
     <div class="tabrow" id="tabrow"><span class="ink" id="ink"></span></div>
   </div>
-  <div class="pager" id="pager"></div>
+  <div class="pager" id="pager"><div class="track" id="track"></div></div>
 </div>
 
 <script>
@@ -211,6 +214,7 @@ const tabs = document.getElementById("tabs");
 const tabrow = document.getElementById("tabrow");
 const ink = document.getElementById("ink");
 const pager = document.getElementById("pager");
+const track = document.getElementById("track");
 
 let data = { issues: [] };
 let sort = read(STORE_SORT, "recent");
@@ -299,7 +303,7 @@ function renderTabs() {
 }
 
 function renderPages() {
-  pager.innerHTML = SECTIONS.map(([key]) => {
+  track.innerHTML = SECTIONS.map(([key]) => {
     const list = issuesFor(key);
     const body = list.length
       ? list.map((issue, i) => cardHtml(issue, i + 1)).join("")
@@ -313,6 +317,7 @@ function renderPages() {
 const INK_BASE = 100;   // 밑줄의 기준 폭. 실제 폭은 scaleX로 만든다.
 let tabGeometry = [];
 let inkNear = -1;
+let offset = 0;         // 트랙을 왼쪽으로 밀어낸 거리(px)
 
 function tabAt(i) {
   return tabrow.querySelectorAll("button")[Math.max(0, Math.min(SECTIONS.length - 1, i))];
@@ -327,18 +332,16 @@ function measureTabs() {
 }
 
 /* 탭 막대만 옮긴다. scrollIntoView 는 문서까지 함께 스크롤해서 화면이 튄다. */
-function centerTab(behavior) {
+function centerTab(smooth) {
   const button = tabAt(index);
   if (!button) return;
   const want = button.offsetLeft + button.offsetWidth / 2 - tabs.clientWidth / 2;
   const max = Math.max(0, tabs.scrollWidth - tabs.clientWidth);
-  tabs.scrollTo({ left: Math.max(0, Math.min(max, want)), behavior: behavior || "smooth" });
+  tabs.scrollTo({ left: Math.max(0, Math.min(max, want)), behavior: smooth ? "smooth" : "auto" });
 }
 
-function moveInk() {
+function inkFor(ratio) {
   if (!tabGeometry.length) return;
-  const width = pager.clientWidth || 1;
-  const ratio = Math.max(0, Math.min(SECTIONS.length - 1, pager.scrollLeft / width));
   const i = Math.floor(ratio);
   const f = ratio - i;
   const a = tabGeometry[i];
@@ -356,43 +359,30 @@ function moveInk() {
   }
 }
 
+/* 트랙을 옮긴다. transform 은 합성 단계에서 처리돼서 다시 그리지 않는다. */
+function setOffset(px, glide) {
+  offset = px;
+  track.classList.toggle("glide", !!glide);
+  ink.classList.toggle("glide", !!glide);
+  track.style.transform = `translate3d(${-px}px, 0, 0)`;
+  inkFor(Math.max(0, Math.min(SECTIONS.length - 1, px / (pager.clientWidth || 1))));
+}
+
 /* 페이저가 화면 아래까지 닿게 한다. 카드가 없는 바닥에서도 스와이프가 먹혀야 한다. */
 function syncHeight() {
-  const page = pager.children[index];
+  const page = track.children[index];
   if (!page) return;
   const floor = Math.max(0, window.innerHeight - pager.offsetTop);
   pager.style.height = Math.max(page.offsetHeight, floor) + "px";
 }
 
-let settleGuard = null;
-
 function goTo(next, smooth) {
   index = Math.max(0, Math.min(SECTIONS.length - 1, next));
   write(STORE_SECTION, SECTIONS[index][0]);
-  const target = index * pager.clientWidth;
-  const behavior = smooth === false ? "auto" : "smooth";
-  pager.scrollTo({ left: target, behavior });
-  centerTab(behavior);
+  setOffset(index * pager.clientWidth, smooth !== false);
+  centerTab(smooth !== false);
   syncHeight();
-  moveInk();
-
-  // 부드러운 이동이 끝까지 가지 않는 경우가 있어서 마지막 위치를 맞춘다.
-  clearTimeout(settleGuard);
-  settleGuard = setTimeout(() => {
-    if (Math.abs(pager.scrollLeft - target) > 1) {
-      pager.scrollLeft = target;
-      moveInk();
-    }
-    syncHeight();
-  }, 450);
 }
-
-let ticking = false;
-pager.addEventListener("scroll", () => {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(() => { moveInk(); ticking = false; });
-}, { passive: true });
 
 /* 손가락을 따라 화면이 움직인다. 한 번에 한 페이지까지만 이동한다. */
 const DRAG_TRIGGER = 0.07;   // 페이지 폭 대비 이 비율을 넘기면 옆으로 넘어간다.
@@ -400,6 +390,7 @@ const DRAG_FLICK = 0.25;     // px/ms. 짧게 튕겨도 이 속도를 넘으면 
 const DRAG_MIN = 12;
 const DRAG_DEADZONE = 6;
 let dragX = 0, dragY = 0, dragFrom = 0, dragAt = 0, dragging = false, axis = null;
+let pending = 0, queued = false;
 
 pager.addEventListener("touchstart", event => {
   if (event.touches.length !== 1) return;
@@ -425,10 +416,10 @@ pager.addEventListener("touchmove", event => {
   const width = pager.clientWidth;
   const min = Math.max(0, index - 1) * width;
   const max = Math.min(SECTIONS.length - 1, index + 1) * width;
-  pager.scrollLeft = Math.max(min, Math.min(max, dragFrom - dx));
-  if (!ticking) {
-    ticking = true;
-    requestAnimationFrame(() => { moveInk(); ticking = false; });
+  pending = Math.max(min, Math.min(max, dragFrom - dx));
+  if (!queued) {
+    queued = true;
+    requestAnimationFrame(() => { setOffset(pending, false); queued = false; });
   }
 }, { passive: true });
 
@@ -526,14 +517,12 @@ fetch("../data/issues.json", { cache: "no-store" })
       b.setAttribute("aria-pressed", String(b.dataset.sort === sort)));
     renderTabs();
     renderPages();
-    requestAnimationFrame(() => {
-      measureTabs();
-      goTo(index, false);
-      applySquircle();
-    });
+    measureTabs();
+    goTo(index, false);
+    applySquircle();
   })
   .catch(() => {
-    pager.innerHTML = '<div class="page"><div class="error">데이터를 불러오지 못했다.</div></div>';
+    track.innerHTML = '<div class="page"><div class="error">데이터를 불러오지 못했다.</div></div>';
   });
 </script>
 </body>
