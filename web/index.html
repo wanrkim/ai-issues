@@ -111,17 +111,23 @@
     gap: 12px; align-items: start;
     padding: 16px 0; cursor: pointer;
   }
-  /* 섬네일. 흰 배경 이미지가 바탕과 붙어 보이지 않도록 옅은 윤곽선을 두른다.
-     사진은 상자를 꽉 채우고, 기업 로고는 여백을 두고 원본 비율로 넣는다. */
+  /* 섬네일 자리. 사진과 로고가 같은 크기를 차지한다. */
   .thumb-box {
     position: relative; width: 56px; height: 56px; flex: none;
-    border-radius: 14px; overflow: hidden;
+  }
+
+  /* 기사 사진. 상자를 꽉 채우고 옅은 윤곽선을 두른다.
+     흰 배경 사진이 흰 바탕과 붙어 보이는 것을 막는다. */
+  .thumb-box.photo {
+    border-radius: 10px; overflow: hidden;
     box-shadow: inset 0 0 0 1px var(--thumb-line);
     background: var(--card);
   }
   .thumb { width: 100%; height: 100%; display: block; object-fit: cover; }
+
+  /* 기업 로고. 배경이 투명한 로고 그대로 보여준다. 테두리와 배경을 두지 않는다. */
   .thumb.logo {
-    width: 32px; height: 32px; object-fit: contain;
+    width: 40px; height: 40px; object-fit: contain;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   }
   .head > div { min-width: 0; }
@@ -267,7 +273,7 @@ function escape(text) {
 function thumbHtml(issue) {
   const fallback = 'onerror="this.parentElement.remove()"';
   if (issue.image) {
-    return `<div class="thumb-box"><img class="thumb" src="${escape(issue.image)}" alt=""
+    return `<div class="thumb-box photo"><img class="thumb" src="${escape(issue.image)}" alt=""
       loading="lazy" referrerpolicy="no-referrer" ${fallback}></div>`;
   }
   if (issue.company_domain) {
