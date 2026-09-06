@@ -184,8 +184,8 @@
 
     <div class="bar">
       <div class="seg" id="sort">
-        <button data-sort="popular" aria-pressed="true">인기순</button>
         <button data-sort="recent" aria-pressed="false">최신순</button>
+        <button data-sort="popular" aria-pressed="true">인기순</button>
       </div>
       <span class="updated" id="updated"></span>
     </div>
@@ -476,12 +476,13 @@ window.addEventListener("resize", () => { measureTabs(); goTo(index, false); });
 
 /* ---------- 스쿼클 모서리 ---------- */
 
+const SQUIRCLE_ON = false;   // 끊김 원인 확인을 위해 잠시 끈다.
 const SQUIRCLE = [[".card", 20], [".seg button", 13]];
 const SMOOTHING = 0.7;
 let getSvgPath = null;
 let squircleObserver = null;
 
-import("https://cdn.jsdelivr.net/npm/figma-squircle@1.1.0/+esm")
+if (SQUIRCLE_ON) import("https://cdn.jsdelivr.net/npm/figma-squircle@1.1.0/+esm")
   .then(module => {
     getSvgPath = module.getSvgPath;
     squircleObserver = new ResizeObserver(entries => {
