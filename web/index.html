@@ -36,7 +36,8 @@
   body {
     margin: 0; position: relative;
     overscroll-behavior-y: contain;
-    background: var(--bg);
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
+                var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
                  "Malgun Gothic", system-ui, sans-serif;
@@ -44,13 +45,8 @@
     overflow-x: hidden;
   }
 
-  .sky {
-    position: fixed; inset: 0 0 auto 0; height: 340px; z-index: 0;
-    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 100%);
-  }
-
   .wrap {
-    position: relative; z-index: 1;
+    position: relative;
     max-width: 560px; margin: 0 auto;
     padding: max(20px, env(safe-area-inset-top)) 0 calc(48px + env(safe-area-inset-bottom));
   }
@@ -78,8 +74,6 @@
 
   /* ---------- 탭 ---------- */
   .tabs {
-    position: sticky; top: 0; z-index: 2;
-    background: var(--bg-top);
     overflow-x: auto; margin-bottom: 14px;
     border-bottom: 1px solid var(--tab-line);
     scrollbar-width: none; -webkit-overflow-scrolling: touch;
@@ -174,7 +168,6 @@
 </style>
 </head>
 <body>
-<div class="sky"></div>
 <div class="wrap">
   <div class="pad">
     <div class="eyebrow">
@@ -472,7 +465,13 @@ document.getElementById("sort").addEventListener("click", event => {
   applySquircle();
 });
 
-window.addEventListener("resize", () => { measureTabs(); goTo(index, false); });
+let lastWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+  if (window.innerWidth === lastWidth) { syncHeight(); return; }
+  lastWidth = window.innerWidth;
+  measureTabs();
+  goTo(index, false);
+});
 
 /* ---------- 스쿼클 모서리 ---------- */
 
