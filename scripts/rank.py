@@ -492,8 +492,12 @@ def main() -> int:
         issue["source_count"] = len(members)
         stamps = [parse_dt(m.get("published_at")) or now_kst() for m in members]
         issue["last_seen"] = iso(max(stamps)) if stamps else issue.get("last_seen")
-        if not issue.get("first_seen") and stamps:
-            issue["first_seen"] = iso(min(stamps))
+        # 최초 시각은 앞으로 밀리지 않는다. 가장 이른 글이 보관 기간을 넘겨
+        # 사라져도 이슈가 처음 제기된 시각은 그대로여야 한다.
+        if stamps:
+            earliest = iso(min(stamps))
+            known = issue.get("first_seen")
+            issue["first_seen"] = min(known, earliest) if known else earliest
         issue["sources"] = [
             {"name": m["source"], "url": m["url"], "published_at": m.get("published_at")}
             for m in sorted(members, key=lambda m: m.get("published_at") or "", reverse=True)

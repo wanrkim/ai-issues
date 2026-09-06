@@ -301,7 +301,7 @@ function rowHtml(issue, position) {
           ${markHtml(issue)}
           <span class="title">${escape(issue.title)}</span>
           ${badge ? `<span class="badge ${badge[1]}">${badge[0]}</span>` : ""}
-          <span class="when">${ago(issue.last_seen)}</span>
+          <span class="when">${ago(issue.first_seen)}</span>
         </div>
         <span class="desc">${escape(issue.subtitle)}</span>
       </div>
@@ -328,7 +328,7 @@ function renderList() {
   const issues = (section === "all"
     ? data.issues.slice()
     : data.issues.filter(i => i.axis === section))
-    .sort((a, b) => String(b.last_seen || "").localeCompare(String(a.last_seen || "")))
+    .sort((a, b) => String(b.first_seen || "").localeCompare(String(a.first_seen || "")))
     .slice(0, SECTION_LIMIT);
 
   listEl.innerHTML = issues.length
