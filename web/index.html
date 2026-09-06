@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EEF3FB">
+<meta name="theme-color" content="#E8F0FD">
 <title>AI 실시간 이슈</title>
 <style>
   :root {
@@ -26,7 +26,7 @@
     --line: #F0F2F5;
     --radius: 16px;
     --gutter: 20px;
-    --shadow: 0 3px 10px rgba(17,24,39,.07);
+    --shadow: 0 2px 6px rgba(17,24,39,.05), 0 8px 20px rgba(17,24,39,.05);
   }
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -45,7 +45,7 @@
   }
 
   .sky {
-    position: absolute; inset: 0 0 auto 0; height: 340px; z-index: 0;
+    position: fixed; inset: 0 0 auto 0; height: 340px; z-index: 0;
     background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 100%);
   }
 
@@ -102,17 +102,11 @@
   .pager {
     display: flex; align-items: flex-start;
     overflow: hidden; touch-action: pan-y;
-    transition: height .22s ease;
   }
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
     padding: 0 var(--gutter);
-    contain: layout paint;
-    content-visibility: auto;
-    contain-intrinsic-size: auto 600px;
   }
-  /* 보고 있는 섹션은 항상 그린다. 자리표시 높이로 재면 목록이 잘린다. */
-  .page.active { content-visibility: visible; }
 
   /* ---------- 카드 ---------- */
   .list { display: flex; flex-direction: column; gap: 10px; }
@@ -366,10 +360,6 @@ function moveInk() {
 function syncHeight() {
   const page = pager.children[index];
   if (!page) return;
-  for (let i = 0; i < pager.children.length; i++) {
-    pager.children[i].classList.toggle("active", i === index);
-  }
-  // offsetHeight 를 읽으면 위에서 바꾼 클래스가 반영된 레이아웃을 즉시 얻는다.
   const floor = Math.max(0, window.innerHeight - pager.offsetTop);
   pager.style.height = Math.max(page.offsetHeight, floor) + "px";
 }
@@ -419,7 +409,6 @@ pager.addEventListener("touchstart", event => {
   dragAt = Date.now();
   dragging = true;
   axis = null;
-  pager.style.transition = "none";
 }, { passive: true });
 
 pager.addEventListener("touchmove", event => {
@@ -430,7 +419,7 @@ pager.addEventListener("touchmove", event => {
   if (axis === null) {
     if (Math.abs(dx) < DRAG_DEADZONE && Math.abs(dy) < DRAG_DEADZONE) return;
     axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
-    if (axis === "y") { dragging = false; pager.style.transition = ""; return; }
+    if (axis === "y") { dragging = false; return; }
   }
 
   const width = pager.clientWidth;
@@ -446,7 +435,6 @@ pager.addEventListener("touchmove", event => {
 pager.addEventListener("touchend", event => {
   if (!dragging) return;
   dragging = false;
-  pager.style.transition = "";
   if (axis !== "x") return;
   const dx = event.changedTouches[0].clientX - dragX;
   const speed = Math.abs(dx) / Math.max(1, Date.now() - dragAt);
@@ -458,7 +446,6 @@ pager.addEventListener("touchend", event => {
 pager.addEventListener("touchcancel", () => {
   if (!dragging) return;
   dragging = false;
-  pager.style.transition = "";
   goTo(index);
 }, { passive: true });
 
