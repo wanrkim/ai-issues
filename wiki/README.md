@@ -21,12 +21,12 @@ AI 소식(모델·서비스 출시, 영상·이미지 모델, 하드웨어, 기�
 |---|---|---|
 | [00-direction.md](00-direction.md) | 가치 우선순위, 제품 결정, 대상 사용자 | 작성함 |
 | [01-architecture.md](01-architecture.md) | 구성 요소, 외부 의존, 실행 주기, 비밀값, 배포, 무료 한도 | 작성함 |
-| 02-data-model.md | JSON 스키마 확정본, 필드 정의 | Phase 2에서 작성 |
-| [03-pipeline.md](03-pipeline.md) | 수집 출처 목록, 정규화 규칙, 묶기·판정·순위 흐름 | 작성함 (묶기·판정·순위는 Phase 2에서 추가) |
-| 04-prompt-engineering.md | 묶기 프롬프트, 판정 프롬프트 전문, 임팩트 기준표 | Phase 2에서 작성 |
-| 05-ranking.md | 순위 식, 가중치, 배지 기준, 이슈 수명 | Phase 2에서 작성 |
-| 06-frontend.md | 화면 구조, 상태 관리, 로컬 저장 키 | Phase 3에서 작성 |
-| 07-design-guidelines.md | 색·폰트·라운드·간격 토큰, 안티패턴 | Phase 3에서 작성 |
+| [02-data-model.md](02-data-model.md) | JSON 스키마 확정본, 필드 정의 | 작성함 |
+| [03-pipeline.md](03-pipeline.md) | 수집 출처 목록, 정규화 규칙 | 작성함 |
+| [04-prompt-engineering.md](04-prompt-engineering.md) | 묶기·판정 프롬프트 전문, 임팩트 기준표 | 작성함 |
+| [05-ranking.md](05-ranking.md) | 순위 식, 가중치, 배지 기준, 이슈 수명 | 작성함 |
+| [06-frontend.md](06-frontend.md) | 화면 구조, 상태 관리, 로컬 저장 키 | 작성함 |
+| [07-design-guidelines.md](07-design-guidelines.md) | 색·폰트·라운드·간격 토큰, 안티패턴 | 작성함 |
 | [08-issues.md](08-issues.md) | 아직 해결하지 않은 이슈 | 작성함 |
 | [09-backlog.md](09-backlog.md) | 아직 시작하지 않은 작업 | 작성함 |
 | [10-worklog.md](10-worklog.md) | 완료한 작업 누적, 최신이 위 | 작성함 |
