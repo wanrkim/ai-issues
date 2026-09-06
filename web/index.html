@@ -58,19 +58,19 @@
   }
 
   .eyebrow {
-    display: flex; align-items: center; gap: 6px; overflow: hidden;
+    display: flex; align-items: center; gap: 8px; overflow: hidden;
     color: var(--accent); font-size: 15px; font-weight: 700;
-    line-height: 1; height: 21px; margin: 22px 0 8px; opacity: 1;
+    line-height: 1; height: 20px; margin: 24px 0 8px; opacity: 1;
     transform-origin: left center; will-change: transform, opacity;
     transition: height .24s cubic-bezier(.22,.61,.36,1),
                 margin .24s cubic-bezier(.22,.61,.36,1),
                 transform .24s cubic-bezier(.22,.61,.36,1),
                 opacity .16s linear;
   }
-  .eyebrow svg { width: 21px; height: 21px; display: block; flex: none; }
+  .eyebrow svg { width: 20px; height: 20px; display: block; flex: none; }
 
   .titlebar {
-    display: flex; align-items: center; gap: 10px; padding-bottom: 14px;
+    display: flex; align-items: center; gap: 8px; padding-bottom: 16px;
     transition: padding-bottom .24s cubic-bezier(.22,.61,.36,1);
   }
   h1 {
@@ -78,12 +78,12 @@
     transform-origin: left center; will-change: transform;
     transition: transform .24s cubic-bezier(.22,.61,.36,1);
   }
-  .actions { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+  .actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 
 
   .compact .eyebrow { height: 0; margin: 12px 0 0; opacity: 0; transform: translateY(-8px); }
   .compact h1 { transform: scale(.7); }
-  .compact .titlebar { padding-bottom: 10px; }
+  .compact .titlebar { padding-bottom: 8px; }
 
   .updated { font-size: 13px; color: var(--text-dim); white-space: nowrap; }
 
@@ -97,12 +97,12 @@
   .tabrow button {
     flex: none; border: 0; background: transparent; cursor: pointer; font: inherit;
     font-size: 16px; font-weight: 700; letter-spacing: -0.3px;
-    color: var(--text-dim); padding: 10px 12px 13px; white-space: nowrap;
+    color: var(--text-dim); padding: 12px 12px 12px; white-space: nowrap;
     transition: color .18s;
   }
   .tabrow button[aria-current="true"] { color: var(--text); }
   .ink {
-    position: absolute; left: 0; bottom: 0; height: 2.5px; width: 100px;
+    position: absolute; left: 0; bottom: 0; height: 3px; width: 100px;
     border-radius: 2px; background: var(--text);
     transform-origin: left center; transform: translateX(0) scaleX(0);
     will-change: transform;
@@ -123,7 +123,7 @@
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
     scroll-snap-align: start; scroll-snap-stop: always;
-    padding: 0 var(--gutter) calc(90px + env(safe-area-inset-bottom));
+    padding: 0 var(--gutter) calc(88px + env(safe-area-inset-bottom));
   }
 
   /* ---------- 카드 ---------- */
@@ -133,21 +133,21 @@
   .row:last-child { border-bottom: 0; }
   .head {
     display: grid; grid-template-columns: 28px minmax(0, 1fr);
-    gap: 11px; align-items: start;
-    padding: 17px 0; cursor: pointer;
+    gap: 12px; align-items: start;
+    padding: 16px 0; cursor: pointer;
   }
   .head > div { min-width: 0; }
   .rank {
-    display: flex; flex-direction: column; align-items: center; gap: 5px;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
     font-size: 17px; font-weight: 700; line-height: 1.45;
   }
 
-  .titleline { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .titleline { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .title { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.45; }
 
   .badge {
-    font-size: 11px; font-weight: 700; padding: 3px 7px;
-    border-radius: 7px; white-space: nowrap;
+    font-size: 11px; font-weight: 700; padding: 4px 8px;
+    border-radius: 8px; white-space: nowrap;
   }
   .badge.surge { background: var(--badge-hot-bg); color: var(--badge-hot-fg); }
   .badge.new   { background: var(--badge-new-bg); color: var(--badge-new-fg); }
@@ -160,21 +160,21 @@
     letter-spacing: -0.2px; line-height: 1.5;
   }
 
-  .meta { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+  .meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
   .axis {
     font-size: 11px; font-weight: 600; color: var(--text-dim);
-    background: var(--chip-bg); padding: 2px 7px; border-radius: 5px;
+    background: var(--chip-bg); padding: 4px 8px; border-radius: 4px;
   }
   .count { font-size: 13px; color: var(--text-dim); font-weight: 500; }
 
-  .sources { display: none; padding: 0 0 12px 39px; }
+  .sources { display: none; padding: 0 0 12px 40px; }
   .row.open .sources { display: block; }
   .sources a {
-    display: block; padding: 11px 0; text-decoration: none; color: var(--text);
+    display: block; padding: 12px 0; text-decoration: none; color: var(--text);
     border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.5;
   }
   .sources a:last-child { border-bottom: 0; }
-  .sources .when { color: var(--text-dim); font-size: 12px; display: block; margin-top: 3px; }
+  .sources .when { color: var(--text-dim); font-size: 12px; display: block; margin-top: 4px; }
 
   .empty, .error {
     padding: 48px 20px; text-align: center;
