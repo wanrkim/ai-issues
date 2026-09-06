@@ -8,6 +8,7 @@
 <style>
   :root {
     --bg-top: #E8F0FD;
+    --bg-mid: #EDF2FA;
     --bg: #F4F6F9;
     --card: #FFFFFF;
     --text: #191F28;
@@ -33,13 +34,11 @@
 
   /* 문서가 스크롤된다. 사파리는 문서가 스크롤될 때만 하단 도구 막대를
      반투명 알약으로 접고, 그때 목록이 그 뒤로 비친다. */
-  html {
-    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
-                var(--bg-top);
-  }
+  /* 문서 뿌리 색이 상태 표시줄 색이 된다. 본문은 목록이 놓이는 회색이다. */
+  html { background: var(--bg-top); }
 
   body {
-    margin: 0; background: transparent;
+    margin: 0; background: var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
                  "Malgun Gothic", system-ui, sans-serif;
@@ -51,20 +50,12 @@
 
   /* ---------- 위쪽 고정 영역 ----------
      스크롤하면 눈썹 문구가 사라지고 제목이 한 줄로 줄어든다.
-     배경은 뒤를 흐리게 비추는 방식이라 아래 그라데이션과 경계가 생기지 않는다. */
+     그라데이션을 이 영역이 직접 가지므로 스크롤 위치와 무관하게 항상 같다.
+     상태 표시줄부터 탭 구분선까지가 이 영역이고, 그 아래는 목록 배경색이다. */
   .topbar {
     position: sticky; top: 0; z-index: 5;
     padding-top: env(safe-area-inset-top);
-    background: rgba(255,255,255,0);
-    transition: background .2s ease, backdrop-filter .2s ease;
-  }
-  .topbar.stuck {
-    background: rgba(255,255,255,.4);
-    backdrop-filter: saturate(180%) blur(18px);
-    -webkit-backdrop-filter: saturate(180%) blur(18px);
-  }
-  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-    .topbar.stuck { background: var(--bg); }
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg-mid) 100%);
   }
 
   .eyebrow {
@@ -457,9 +448,7 @@ window.addEventListener("scroll", () => {
   if (headTick) return;
   headTick = true;
   requestAnimationFrame(() => {
-    const on = window.scrollY > COMPACT_AT;
-    topbar.classList.toggle("stuck", on);
-    app.classList.toggle("compact", on);
+    app.classList.toggle("compact", window.scrollY > COMPACT_AT);
     headTick = false;
   });
 }, { passive: true });
