@@ -23,7 +23,6 @@
     --badge-new-fg: #3182F6;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
-    --thumb-line: rgba(17,24,39,.08);
     --gutter: 20px;
   }
 
@@ -107,33 +106,12 @@
   .row { border-bottom: 1px solid var(--line); }
   .row:last-child { border-bottom: 0; }
   .head {
-    display: grid; grid-template-columns: 28px minmax(0, 1fr) auto;
+    display: grid; grid-template-columns: 28px minmax(0, 1fr);
     gap: 12px; align-items: start;
     padding: 16px 0; cursor: pointer;
   }
-  /* 섬네일 자리. 사진과 로고가 같은 크기를 차지한다. */
-  .thumb-box {
-    position: relative; width: 56px; height: 56px; flex: none;
-  }
-
-  /* 기사 사진. 상자를 꽉 채우고 옅은 윤곽선을 두른다.
-     흰 배경 사진이 흰 바탕과 붙어 보이는 것을 막는다. */
-  .thumb-box.photo {
-    border-radius: 6px; overflow: hidden; background: var(--card);
-  }
-  /* 윤곽선은 이미지 위에 그려야 보인다. 상자에 안쪽 그림자를 주면
-     그 위에 이미지가 덮여서 가려진다. */
-  .thumb-box.photo::after {
-    content: ""; position: absolute; inset: 0; pointer-events: none;
-    border-radius: 6px; box-shadow: inset 0 0 0 1px var(--thumb-line);
-  }
-  .thumb { width: 100%; height: 100%; display: block; object-fit: cover; }
-
-  /* 기업 로고. 배경이 투명한 로고 그대로 보여준다. 테두리와 배경을 두지 않는다. */
-  .thumb.logo {
-    width: 40px; height: 40px; object-fit: contain;
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  }
+  /* 제목 앞의 기업 표식. 배경과 테두리 없이 로고만 보여준다. */
+  .mark { width: 18px; height: 18px; flex: none; object-fit: contain; display: block; }
   .head > div { min-width: 0; }
   .rank {
     display: flex; flex-direction: column; align-items: center; gap: 4px;
@@ -143,8 +121,11 @@
   .arrow.up { color: var(--up); }
   .arrow.down { color: var(--down); }
 
-  .titleline { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .title { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.45; }
+  .titleline { display: flex; align-items: center; gap: 8px; }
+  .title {
+    font-size: 17px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.45;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
 
   .badge {
     font-size: 11px; font-weight: 700; padding: 4px 8px;
@@ -153,14 +134,15 @@
   .badge.surge { background: var(--badge-hot-bg); color: var(--badge-hot-fg); }
   .badge.new   { background: var(--badge-new-bg); color: var(--badge-new-fg); }
 
-  /* 제목이 말하지 못한 핵심 한 줄과 경과 시각. 줄바꿈하지 않는다. */
-  .meta { display: flex; align-items: baseline; gap: 8px; margin-top: 4px; }
+  /* 제목이 말하지 못한 핵심 한 줄. 줄바꿈하지 않는다. */
   .desc {
-    flex: 1; min-width: 0; font-size: 14px; color: var(--text-sub);
+    display: block; margin-top: 4px;
+    font-size: 14px; line-height: 1.45; color: var(--text-sub);
     letter-spacing: -0.2px;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
-  .when { flex: none; font-size: 13px; color: var(--text-dim); }
+  /* 경과 시각은 제목 줄 오른쪽 끝에 둔다. */
+  .when { margin-left: auto; flex: none; font-size: 13px; color: var(--text-dim); }
 
   /* 펼친 화면의 분류와 출처 수 */
   .facts { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; }
@@ -293,22 +275,14 @@ function escape(text) {
 
 /* ---------- 그리기 ---------- */
 
-/* 사진이 있으면 사진을, 없으면 기업 로고를 보여준다. 둘 다 없으면 자리를 비운다. */
-function thumbHtml(issue) {
-  const fallback = 'onerror="this.parentElement.remove()"';
-  if (issue.image) {
-    return `<div class="thumb-box photo"><img class="thumb" src="${escape(issue.image)}" alt=""
-      loading="lazy" referrerpolicy="no-referrer" ${fallback}></div>`;
-  }
-  if (issue.company_domain) {
-    const domain = encodeURIComponent(issue.company_domain);
-    const vector = LOGO_VECTOR.replace("%s", logoSlug(issue.company_domain));
-    const favicon = LOGO_FAVICON.replace("%s", domain);
-    return `<div class="thumb-box"><img class="thumb logo" src="${vector}" alt=""
-      loading="lazy" referrerpolicy="no-referrer" data-next="${favicon}"
-      onerror="if(this.dataset.next){this.src=this.dataset.next;delete this.dataset.next;}else{this.parentElement.remove();}"></div>`;
-  }
-  return "";
+/* 제목 앞에 놓을 기업 표식. 도메인이 없으면 아무것도 넣지 않는다. */
+function markHtml(issue) {
+  if (!issue.company_domain) return "";
+  const vector = LOGO_VECTOR.replace("%s", logoSlug(issue.company_domain));
+  const favicon = LOGO_FAVICON.replace("%s", encodeURIComponent(issue.company_domain));
+  return `<img class="mark" src="${vector}" alt="" loading="lazy"
+    referrerpolicy="no-referrer" data-next="${favicon}"
+    onerror="if(this.dataset.next){this.src=this.dataset.next;delete this.dataset.next;}else{this.remove();}">`;
 }
 
 function rowHtml(issue, position) {
@@ -328,15 +302,13 @@ function rowHtml(issue, position) {
       <div class="rank">${position}${arrow(issue)}</div>
       <div>
         <div class="titleline">
+          ${markHtml(issue)}
           <span class="title">${escape(issue.title)}</span>
           ${badge ? `<span class="badge ${badge[1]}">${badge[0]}</span>` : ""}
-        </div>
-        <div class="meta">
-          <span class="desc">${escape(issue.subtitle)}</span>
           <span class="when">${ago(issue.last_seen)}</span>
         </div>
+        <span class="desc">${escape(issue.subtitle)}</span>
       </div>
-      ${thumbHtml(issue)}
     </div>
     <div class="sources">
       <div class="facts">
