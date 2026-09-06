@@ -19,6 +19,12 @@
 | Google DeepMind | Atom | `https://deepmind.google/blog/feed/basic/` | llm |
 | Hugging Face Blog | Atom | `https://huggingface.co/blog/feed.xml` | llm |
 | NVIDIA Newsroom | RSS | `https://nvidianews.nvidia.com/releases.xml` | hardware |
+| TechCrunch | RSS | `https://techcrunch.com/category/artificial-intelligence/feed/` | llm |
+| The Verge | Atom | `https://www.theverge.com/rss/ai-artificial-intelligence/index.xml` | llm |
+| Wired | RSS | `https://www.wired.com/feed/tag/ai/latest/rss` | llm |
+| MIT Technology Review | RSS | `https://www.technologyreview.com/feed/` | llm |
+| Ars Technica | RSS | `https://feeds.arstechnica.com/arstechnica/technology-lab` | llm |
+| Tom's Hardware | RSS | `https://www.tomshardware.com/feeds/all` | hardware |
 | Anthropic | sitemap 폴링 | `https://www.anthropic.com/sitemap.xml` | llm |
 | Google News | 쿼리별 RSS | `https://news.google.com/rss/search?q=<쿼리>&hl=en-US&gl=US&ceid=US:en` | 쿼리마다 지정 |
 | Hacker News | Firebase API | `https://hacker-news.firebaseio.com/v0/topstories.json` | llm |
@@ -26,6 +32,18 @@
 | SEC EDGAR | 전문 검색 API | `https://efts.sec.gov/LATEST/search-index` | capital |
 
 축 힌트는 수집 시점에 붙이는 임시값이다. 최종 축은 Phase 2의 판정 단계에서 결정한다.
+
+### 언론사 피드
+
+TechCrunch, The Verge, Wired, MIT Technology Review, Ars Technica, Tom's Hardware는 언론사 피드를 직접 받는다. Google News 검색과 달리 원문 주소를 그대로 주고, 일부는 이미지도 함께 준다.
+
+기술 전반을 다루는 피드(MIT Technology Review, Ars Technica, Tom's Hardware)는 제목과 요약 앞부분에 AI 관련 키워드가 있는 항목만 남긴다. AI 전용 피드는 거르지 않는다.
+
+### 섬네일
+
+항목마다 `image` 필드에 대표 이미지 주소를 담는다. 피드 항목의 `media:content`, `media:thumbnail`, `enclosure`, 요약 안의 첫 `<img>` 순서로 찾는다. 추가 요청이 없다.
+
+피드가 주지 않으면 [05-ranking.md](05-ranking.md)의 순위 단계에서 원문 페이지를 열어 `og:image`를 읽는다.
 
 ### 출처별 규칙
 

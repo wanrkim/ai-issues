@@ -14,9 +14,11 @@ data/items.json을 읽어 data/issues.json을 만든다.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import math
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -43,6 +45,22 @@ FRESHNESS_HALFLIFE_HOURS = 18
 SNIPPET_CHARS = 320
 
 AXES = {"llm", "media", "hardware", "capital"}
+
+# 이슈 섬네일. 피드가 이미지를 주면 그대로 쓰고, 없으면 원문에서 og:image 를 읽는다.
+# Google News 링크는 자바스크립트로 이동하는 구조라 원문에 닿지 못하므로 건너뛴다.
+OG_FETCH_LIMIT = 25   # 실행당 원문 페이지를 여는 최대 횟수
+OG_PER_ISSUE = 2      # 이슈 하나에서 시도할 기사 수
+OG_TIMEOUT = 15
+BROWSER_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/131.0 Safari/537.36"
+)
+_Q = "[\"']"
+OG_PATTERNS = [
+    "<meta[^>]+property=" + _Q + "og:image" + _Q + "[^>]+content=" + _Q + "([^\"']+)",
+    "<meta[^>]+content=" + _Q + "([^\"']+)" + _Q + "[^>]+property=" + _Q + "og:image",
+    "<meta[^>]+name=" + _Q + "twitter:image" + _Q + "[^>]+content=" + _Q + "([^\"']+)",
+]
 
 PROMPT = """너는 AI 소식을 다루는 큐레이터다. 아래 "새 글" 목록을 사건 단위로 묶어라.
 
@@ -219,6 +237,64 @@ def build_prompt(live_issues, new_items):
     return PROMPT.format(live_issues=live_text, new_items=item_text)
 
 
+# ---------------------------------------------------------------- 섬네일
+
+
+def og_image(session, url):
+    """원문 페이지에서 대표 이미지 주소를 읽는다. 없으면 None을 돌려준다."""
+    try:
+        response = session.get(url, headers={"User-Agent": BROWSER_UA}, timeout=OG_TIMEOUT)
+        response.raise_for_status()
+        head = response.text[:200000]
+    except (requests.RequestException, ValueError):
+        return None
+    for pattern in OG_PATTERNS:
+        match = re.search(pattern, head, re.IGNORECASE)
+        if match:
+            found = html.unescape(match.group(1)).strip()
+            if found.startswith("http"):
+                return found
+    return None
+
+
+def fill_images(session, issues, by_id):
+    """이슈마다 섬네일 주소를 채운다. 이미 있으면 건너뛴다."""
+    budget = OG_FETCH_LIMIT
+    fetched = 0
+    for issue in issues:
+        if issue.get("image"):
+            continue
+
+        # 피드가 직접 준 이미지를 먼저 쓴다. 추가 요청이 없다.
+        for item_id in issue.get("item_ids", []):
+            item = by_id.get(item_id)
+            if item and item.get("image"):
+                issue["image"] = item["image"]
+                break
+        if issue.get("image"):
+            continue
+
+        tried = set(issue.get("image_tried") or [])
+        attempts = 0
+        for item_id in issue.get("item_ids", []):
+            if budget <= 0 or attempts >= OG_PER_ISSUE:
+                break
+            item = by_id.get(item_id)
+            if not item or "news.google.com" in item["url"] or item["url"] in tried:
+                continue
+            tried.add(item["url"])
+            attempts += 1
+            budget -= 1
+            fetched += 1
+            found = og_image(session, item["url"])
+            if found:
+                issue["image"] = found
+                break
+        if tried:
+            issue["image_tried"] = sorted(tried)[:20]
+    return fetched
+
+
 # ------------------------------------------------------------------ 순위
 
 
@@ -268,6 +344,7 @@ def main() -> int:
         return 1
 
     previous = load_json(ISSUES_PATH, {})
+    session = requests.Session()
     issues = previous.get("issues", [])
     next_id = previous.get("next_id", 1)
     previous_ranks = {i["id"]: i.get("rank") for i in issues}
@@ -366,6 +443,11 @@ def main() -> int:
 
     # 글이 모두 만료된 이슈는 버린다.
     issues = [i for i in issues if i["source_count"] > 0]
+
+    fetched = fill_images(session, issues, by_id)
+    with_image = sum(1 for i in issues if i.get("image"))
+    print("섬네일 %d/%d개 (원문 %d건 열어봄)" % (with_image, len(issues), fetched))
+
     issues = rank_issues(issues, previous_ranks)
 
     output = {
@@ -382,6 +464,8 @@ def main() -> int:
                 "title": i["title"],
                 "subtitle": i["subtitle"],
                 "summary": i.get("summary", ""),
+                "image": i.get("image"),
+                "image_tried": i.get("image_tried", []),
                 "impact": i["impact"],
                 "score": i["score"],
                 "source_count": i["source_count"],

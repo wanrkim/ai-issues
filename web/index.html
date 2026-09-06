@@ -106,9 +106,14 @@
   .row { border-bottom: 1px solid var(--line); }
   .row:last-child { border-bottom: 0; }
   .head {
-    display: grid; grid-template-columns: 28px minmax(0, 1fr);
+    display: grid; grid-template-columns: 28px minmax(0, 1fr) auto;
     gap: 12px; align-items: start;
     padding: 16px 0; cursor: pointer;
+  }
+  .thumb {
+    width: 56px; height: 56px; flex: none;
+    object-fit: cover; display: block;
+    border-radius: 16px; background: var(--chip-bg);
   }
   .head > div { min-width: 0; }
   .rank {
@@ -272,6 +277,9 @@ function rowHtml(issue, position) {
           <span class="count">${issue.source_count}개 출처 · ${ago(issue.last_seen)}</span>
         </div>
       </div>
+      ${issue.image ? `<img class="thumb" src="${escape(issue.image)}" alt=""
+           loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.remove()">` : ""}
     </div>
     <div class="sources">
       <p class="detail">${escape(detail)}</p>
@@ -297,6 +305,7 @@ function renderList() {
   listEl.innerHTML = issues.length
     ? issues.map((issue, i) => rowHtml(issue, i + 1)).join("")
     : '<div class="empty">이 분류에 표시할 이슈가 없다.</div>';
+  shapeThumbs();
 }
 
 /* ---------- 동작 ---------- */
@@ -324,6 +333,29 @@ window.addEventListener("scroll", () => {
     ticking = false;
   });
 }, { passive: true });
+
+/* ---------- 스쿼클 모서리 ----------
+   섬네일에만 적용한다. 불러오지 못하면 CSS 의 둥근 모서리로 보인다. */
+
+const SQUIRCLE_RADIUS = 18;
+const SQUIRCLE_SMOOTHING = 0.7;
+let getSvgPath = null;
+
+import("https://cdn.jsdelivr.net/npm/figma-squircle@1.1.0/+esm")
+  .then(module => { getSvgPath = module.getSvgPath; shapeThumbs(); })
+  .catch(() => {});
+
+function shapeThumbs() {
+  if (!getSvgPath) return;
+  document.querySelectorAll(".thumb").forEach(el => {
+    const box = el.getBoundingClientRect();
+    if (!box.width || !box.height) return;
+    el.style.clipPath = `path('${getSvgPath({
+      width: box.width, height: box.height,
+      cornerRadius: SQUIRCLE_RADIUS, cornerSmoothing: SQUIRCLE_SMOOTHING,
+    })}')`;
+  });
+}
 
 /* ---------- 시작 ---------- */
 

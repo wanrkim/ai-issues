@@ -35,13 +35,21 @@ USER_AGENT = "ai-issues/0.1 (+https://github.com/wanrkim/ai-issues)"
 SEC_USER_AGENT = "ai-issues wanrkim@gmail.com"
 
 # 축 키는 wiki/00-direction.md의 표와 같다. 여기서 붙이는 값은 힌트이며
-# 최종 축은 Phase 2의 판정 단계에서 결정한다.
+# 최종 축은 판정 단계에서 결정한다.
+# 마지막 값은 AI 키워드로 걸러낼지 여부이다. 기술 전반을 다루는 피드만 거른다.
 FEEDS = [
-    ("OpenAI", "llm", "https://openai.com/news/rss.xml"),
-    ("Google DeepMind", "llm", "https://deepmind.google/blog/feed/basic/"),
-    ("Hugging Face Blog", "llm", "https://huggingface.co/blog/feed.xml"),
+    ("OpenAI", "llm", "https://openai.com/news/rss.xml", False),
+    ("Google DeepMind", "llm", "https://deepmind.google/blog/feed/basic/", False),
+    ("Hugging Face Blog", "llm", "https://huggingface.co/blog/feed.xml", False),
     # /rss 는 HTML을 반환한다. 뉴스룸의 실제 피드는 releases.xml 이다.
-    ("NVIDIA Newsroom", "hardware", "https://nvidianews.nvidia.com/releases.xml"),
+    ("NVIDIA Newsroom", "hardware", "https://nvidianews.nvidia.com/releases.xml", False),
+    # 언론사 피드는 원문 주소를 직접 준다. Google News 와 달리 이미지도 얻을 수 있다.
+    ("TechCrunch", "llm", "https://techcrunch.com/category/artificial-intelligence/feed/", False),
+    ("The Verge", "llm", "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", False),
+    ("Wired", "llm", "https://www.wired.com/feed/tag/ai/latest/rss", False),
+    ("MIT Technology Review", "llm", "https://www.technologyreview.com/feed/", True),
+    ("Ars Technica", "llm", "https://feeds.arstechnica.com/arstechnica/technology-lab", True),
+    ("Tom's Hardware", "hardware", "https://www.tomshardware.com/feeds/all", True),
 ]
 
 GOOGLE_NEWS_QUERIES = [
@@ -125,7 +133,20 @@ def title_key(title: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def make_item(source, axis, url, title, published_at, snippet=""):
+def entry_image(entry):
+    """피드 항목이 이미지를 직접 담고 있으면 그 주소를 돌려준다."""
+    for key in ("media_content", "media_thumbnail"):
+        for value in entry.get(key) or []:
+            if value.get("url"):
+                return value["url"]
+    for enclosure in entry.get("enclosures") or []:
+        if str(enclosure.get("type", "")).startswith("image") and enclosure.get("href"):
+            return enclosure["href"]
+    match = re.search(r"<img[^>]+src=[\"']([^\"']+)", entry.get("summary") or "", re.IGNORECASE)
+    return match.group(1) if match else None
+
+
+def make_item(source, axis, url, title, published_at, snippet="", image=None):
     if not url or not title:
         return None
     norm = normalize_url(url)
@@ -138,6 +159,7 @@ def make_item(source, axis, url, title, published_at, snippet=""):
         "published_at": published_at,
         "fetched_at": iso(now_kst()),
         "snippet": html.unescape(re.sub(r"<[^>]+>", " ", snippet or "")).strip()[:500],
+        "image": image,
     }
 
 
@@ -187,13 +209,16 @@ def http_get(session, url, state_key=None, **kwargs):
 # ------------------------------------------------------------- 출처별 수집
 
 
-def collect_feed(session, source, axis, url):
+def collect_feed(session, source, axis, url, filter_ai=False):
     response = http_get(session, url, state_key="feed:" + url)
     if response is None:
         return []
     parsed = feedparser.parse(response.content)
     items = []
     for entry in parsed.entries:
+        title = entry.get("title", "")
+        if filter_ai and not AI_PATTERN.search(title + " " + (entry.get("summary") or "")[:300]):
+            continue
         published = struct_to_iso(
             entry.get("published_parsed") or entry.get("updated_parsed")
         )
@@ -201,9 +226,10 @@ def collect_feed(session, source, axis, url):
             source,
             axis,
             entry.get("link"),
-            entry.get("title", ""),
+            title,
             published,
             entry.get("summary", ""),
+            entry_image(entry),
         )
         if item:
             items.append(item)
@@ -445,8 +471,8 @@ def main() -> int:
     collected = []
 
     print("수집 시작", iso(now_kst()))
-    for source, axis, url in FEEDS:
-        collected += run_source(source, collect_feed, session, source, axis, url)
+    for source, axis, url, filter_ai in FEEDS:
+        collected += run_source(source, collect_feed, session, source, axis, url, filter_ai)
     collected += run_source("Anthropic (sitemap)", collect_anthropic, session)
     for query, axis in GOOGLE_NEWS_QUERIES:
         collected += run_source(
