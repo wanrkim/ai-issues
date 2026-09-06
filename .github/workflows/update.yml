@@ -1,0 +1,52 @@
+name: 이슈 갱신
+
+# 2시간 주기. 무료 등급의 일일 요청 한도가 모델당 20회여서 하루 12회로 둔다.
+# 자세한 근거는 wiki/01-architecture.md 에 기록한다. 시각은 UTC 기준이다.
+on:
+  schedule:
+    - cron: "5 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 앞선 실행이 끝나기 전에 다음 실행이 겹치지 않게 한다.
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 수집
+        run: python scripts/collect.py
+
+      - name: 묶기·판정·순위
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/rank.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "ai-issues bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "바뀐 데이터가 없다. 커밋하지 않는다."
+            exit 0
+          fi
+          git commit -m "데이터 갱신: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
