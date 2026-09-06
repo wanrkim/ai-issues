@@ -24,9 +24,7 @@
     --tab-line: #E2E7EC;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
-    --radius: 16px;
     --gutter: 20px;
-    --shadow: 0 2px 6px rgba(17,24,39,.05), 0 8px 20px rgba(17,24,39,.05);
   }
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -114,7 +112,7 @@
      가로 이동은 브라우저의 스크롤 스냅에 맡긴다.
      세로 스크롤은 문서가 담당하므로 페이지는 자기 높이를 그대로 쓴다. */
   .pager {
-    background: var(--bg);
+    background: var(--card);
     display: flex; align-items: flex-start;
     overflow-x: auto; overflow-y: hidden;
     scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
@@ -125,20 +123,18 @@
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
     scroll-snap-align: start; scroll-snap-stop: always;
-    padding: 14px var(--gutter) calc(90px + env(safe-area-inset-bottom));
+    padding: 0 var(--gutter) calc(90px + env(safe-area-inset-bottom));
   }
 
   /* ---------- 카드 ---------- */
-  .list { display: flex; flex-direction: column; gap: 8px; }
+  .list { display: flex; flex-direction: column; padding-top: 4px; }
 
-  .card {
-    background: var(--card); border-radius: var(--radius);
-    box-shadow: var(--shadow); overflow: hidden;
-  }
+  .row { border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
   .head {
     display: grid; grid-template-columns: 28px minmax(0, 1fr);
     gap: 11px; align-items: start;
-    padding: 14px 16px; cursor: pointer;
+    padding: 13px 0; cursor: pointer;
   }
   .head > div { min-width: 0; }
   .rank {
@@ -160,7 +156,7 @@
   .arrow.up { color: var(--up); }
   .arrow.down { color: var(--down); }
   .detail {
-    margin: 10px 0 4px; font-size: 15px; color: var(--text-sub);
+    margin: 0 0 4px; font-size: 15px; color: var(--text-sub);
     letter-spacing: -0.2px; line-height: 1.5;
   }
 
@@ -171,8 +167,8 @@
   }
   .count { font-size: 13px; color: var(--text-dim); font-weight: 500; }
 
-  .sources { display: none; border-top: 1px solid var(--line); padding: 6px 16px 10px; }
-  .card.open .sources { display: block; }
+  .sources { display: none; padding: 0 0 12px 39px; }
+  .row.open .sources { display: block; }
   .sources a {
     display: block; padding: 11px 0; text-decoration: none; color: var(--text);
     border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.5;
@@ -181,8 +177,8 @@
   .sources .when { color: var(--text-dim); font-size: 12px; display: block; margin-top: 3px; }
 
   .empty, .error {
-    background: var(--card); border-radius: var(--radius); padding: 40px 20px;
-    text-align: center; color: var(--text-sub); font-size: 15px; box-shadow: var(--shadow);
+    padding: 48px 20px; text-align: center;
+    color: var(--text-sub); font-size: 15px;
   }
 </style>
 </head>
@@ -286,7 +282,7 @@ function cardHtml(issue, position) {
   const sources = (issue.sources || []).map(s =>
     `<a href="${escape(s.url)}" target="_blank" rel="noopener">${escape(s.name)}
        <span class="when">${ago(s.published_at)}</span></a>`).join("");
-  return `<div class="card">
+  return `<div class="row">
     <div class="head">
       <div class="rank">${position}${arrow(issue)}</div>
       <div>
