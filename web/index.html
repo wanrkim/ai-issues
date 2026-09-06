@@ -33,25 +33,26 @@
 
   /* 문서 자체는 스크롤하지 않는다. 섹션마다 자기 영역을 스크롤한다.
      주소 표시줄이 접히고 펴지지 않아서 화면이 튀지 않는다. */
-  html, body {
-    height: 100%; margin: 0; overflow: hidden;
-    background: var(--bg);
+  /* 문서 뿌리 배경이 iOS 상태 표시줄 색과 화면 아래 남는 부분을 함께 결정한다.
+     앱 영역과 같은 그라데이션을 깔아서 위는 파랑, 아래는 목록 배경색으로 잇는다. */
+  html {
+    height: 100%;
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
+                var(--bg);
   }
 
   body {
+    height: 100%; margin: 0; overflow: hidden;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard,
                  "Malgun Gothic", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* 고정 배치라서 body 의 overflow: hidden 에 잘리지 않는다.
-     높이를 100vh 로 두면 하단 도구 막대 뒤까지 이어진다. */
+  /* 뷰포트 단위는 브라우저마다 도구 막대를 포함하는 기준이 달라서 쓰지 않는다.
+     body 높이에 그대로 맞추면 body 가 덮는 영역을 똑같이 덮는다. */
   .app {
-    position: fixed; top: 0; left: 0; right: 0; margin: 0 auto;
-    max-width: 560px;
-    height: 100vh;
-    height: 100lvh;
+    height: 100%; max-width: 560px; margin: 0 auto;
     display: flex; flex-direction: column;
     padding-top: env(safe-area-inset-top);
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat,
