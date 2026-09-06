@@ -46,7 +46,7 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  .app { max-width: 560px; margin: 0 auto; padding-top: env(safe-area-inset-top); }
+  .app { max-width: 560px; margin: 0 auto; }
   .pad { padding: 0 var(--gutter); }
 
   /* ---------- 위쪽 고정 영역 ----------
@@ -54,6 +54,7 @@
      배경은 뒤를 흐리게 비추는 방식이라 아래 그라데이션과 경계가 생기지 않는다. */
   .topbar {
     position: sticky; top: 0; z-index: 5;
+    padding-top: env(safe-area-inset-top);
     background: rgba(255,255,255,0);
     transition: background .2s ease, backdrop-filter .2s ease;
   }
@@ -139,7 +140,7 @@
   .page {
     flex: 0 0 100%; width: 100%; min-width: 0;
     scroll-snap-align: start; scroll-snap-stop: always;
-    padding: 14px var(--gutter) calc(40px + env(safe-area-inset-bottom));
+    padding: 14px var(--gutter) calc(90px + env(safe-area-inset-bottom));
   }
 
   /* ---------- 카드 ---------- */
@@ -356,11 +357,35 @@ function renderPages() {
   }).join("");
 }
 
-/* 섹션마다 카드 수가 달라서, 페이저 높이를 현재 섹션에 맞춘다.
-   높이를 그대로 두면 짧은 섹션 아래에 빈 공간이 크게 남는다. */
+/* 섹션마다 카드 수가 다르다. 페이저 높이를 현재 섹션에 맞추되 최소한
+   화면 끝까지는 채운다. 카드가 없는 아래쪽에서도 스와이프가 먹어야 한다. */
+let pageHeights = [];
+
+function measurePages() {
+  pageHeights = [...pager.children].map(page => page.offsetHeight);
+}
+
+function floorHeight() {
+  return Math.max(240, window.innerHeight - topbar.offsetHeight);
+}
+
+function setPagerHeight(px) {
+  const next = Math.round(px) + "px";
+  if (pager.style.height !== next) pager.style.height = next;
+}
+
 function syncHeight() {
-  const page = pager.children[index];
-  if (page) pager.style.height = page.offsetHeight + "px";
+  measurePages();
+  setPagerHeight(Math.max(floorHeight(), pageHeights[index] || 0));
+}
+
+/* 이동 중에는 지나가는 두 섹션 중 큰 쪽에 맞춘다. 짧은 섹션 높이에
+   묶여 있으면 다음 섹션이 잘려 보인다. 줄이지는 않는다. */
+function spanHeight(ratio) {
+  const lo = Math.floor(ratio);
+  const hi = Math.min(lo + 1, pageHeights.length - 1);
+  const want = Math.max(floorHeight(), pageHeights[lo] || 0, pageHeights[hi] || 0);
+  if (want > pager.offsetHeight) setPagerHeight(want);
 }
 
 /* ---------- 탭 밑줄 ---------- */
@@ -377,6 +402,8 @@ function moveInk() {
   const left = a.left + (b.left - a.left) * f;
   const w = a.width + (b.width - a.width) * f;
   ink.style.transform = `translateX(${left}px) scaleX(${w / INK_BASE})`;
+
+  spanHeight(ratio);
 
   const now = Math.round(ratio);
   if (now === near) return;
