@@ -40,7 +40,7 @@ RETRY_WAIT = 5
 ISSUE_TTL_HOURS = 48
 SURGE_THRESHOLD = 3  # 직전 실행보다 이만큼 순위가 오르면 급상승으로 본다.
 FRESHNESS_HALFLIFE_HOURS = 18
-SNIPPET_CHARS = 160
+SNIPPET_CHARS = 320
 
 AXES = {"llm", "media", "hardware", "capital"}
 
@@ -57,6 +57,10 @@ PROMPT = """너는 AI 소식을 다루는 큐레이터다. 아래 "새 글" 목�
 [새 이슈의 필드]
 - title: 무엇이 일어났는지 한국어 한 줄로 쓴다. 12자 안팎으로 짧게 쓴다. 예: "클로드 6.0 출시"
 - subtitle: 왜 중요한지 또는 무엇이 달라지는지 한국어 한 줄로 쓴다. 예: "코딩 벤치마크 갱신"
+- summary: 무슨 일이 있었고 왜 중요한지 한국어 세 문장에서 네 문장으로 쓴다. 200자 안팎으로 쓴다.
+  읽는 사람이 원문 기사를 열지 않아도 사건을 이해할 수 있어야 한다.
+  주어진 글에 없는 사실을 지어내지 않는다. 숫자와 회사 이름은 글에 있는 그대로 쓴다.
+  "~한다" 형태의 평서문으로 쓴다.
 - axis: 다음 넷 중 하나를 고른다.
     llm      언어모델과 AI 서비스, 코딩 도구의 출시와 업데이트
     media    영상 생성 모델과 이미지 생성 모델
@@ -98,10 +102,11 @@ RESPONSE_SCHEMA = {
                     "items": {"type": "ARRAY", "items": {"type": "INTEGER"}},
                     "title": {"type": "STRING"},
                     "subtitle": {"type": "STRING"},
+                    "summary": {"type": "STRING"},
                     "axis": {"type": "STRING"},
                     "impact": {"type": "INTEGER"},
                 },
-                "required": ["items", "title", "subtitle", "axis", "impact"],
+                "required": ["items", "title", "subtitle", "summary", "axis", "impact"],
             },
         },
     },
@@ -330,6 +335,7 @@ def main() -> int:
                     "axis": axis,
                     "title": (group.get("title") or "").strip(),
                     "subtitle": (group.get("subtitle") or "").strip(),
+                    "summary": (group.get("summary") or "").strip(),
                     "impact": max(1, min(5, impact)),
                     "item_ids": [p["id"] for p in picked],
                     "new_sources": len(picked),
@@ -375,6 +381,7 @@ def main() -> int:
                 "axis": i["axis"],
                 "title": i["title"],
                 "subtitle": i["subtitle"],
+                "summary": i.get("summary", ""),
                 "impact": i["impact"],
                 "score": i["score"],
                 "source_count": i["source_count"],

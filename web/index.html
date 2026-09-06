@@ -156,9 +156,10 @@
   .arrow.up { color: var(--up); }
   .arrow.down { color: var(--down); }
   .detail {
-    margin: 0 0 4px; font-size: 15px; color: var(--text-sub);
-    letter-spacing: -0.2px; line-height: 1.5;
+    margin: 0 0 12px; font-size: 15px; color: var(--text);
+    letter-spacing: -0.2px; line-height: 1.6; word-break: keep-all;
   }
+  .more { margin: 8px 0 0; font-size: 12px; color: var(--text-dim); }
 
   .meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
   .axis {
@@ -217,6 +218,7 @@ const AXIS_NAME = Object.fromEntries(AXES);
 const BADGE = { surge: ["급상승", "surge"], new: ["새로 진입", "new"] };
 const SECTIONS = [["all", "전체"]].concat(AXES);
 const SECTION_LIMIT = 20;
+const SOURCE_LIMIT = 3;
 const INK_BASE = 100;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
@@ -279,9 +281,14 @@ function issuesFor(key) {
 
 function cardHtml(issue, position) {
   const badge = BADGE[issue.badge];
-  const sources = (issue.sources || []).map(s =>
+  const all = issue.sources || [];
+  const sources = all.slice(0, SOURCE_LIMIT).map(s =>
     `<a href="${escape(s.url)}" target="_blank" rel="noopener">${escape(s.name)}
        <span class="when">${ago(s.published_at)}</span></a>`).join("");
+  const more = all.length > SOURCE_LIMIT
+    ? `<p class="more">외 ${all.length - SOURCE_LIMIT}개 출처</p>` : "";
+  // 요약이 없는 이슈는 이전 실행에서 만들어진 것이다. 부제로 대신한다.
+  const detail = issue.summary || issue.subtitle;
   return `<div class="row">
     <div class="head">
       <div class="rank">${position}${arrow(issue)}</div>
@@ -297,8 +304,9 @@ function cardHtml(issue, position) {
       </div>
     </div>
     <div class="sources">
-      <p class="detail">${escape(issue.subtitle)}</p>
+      <p class="detail">${escape(detail)}</p>
       ${sources}
+      ${more}
     </div>
   </div>`;
 }
