@@ -70,7 +70,8 @@
     transition: padding-bottom .24s cubic-bezier(.22,.61,.36,1);
   }
   h1 {
-    margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px;
+    margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.5px;
+    white-space: nowrap;
     transform-origin: left center; will-change: transform;
     transition: transform .24s cubic-bezier(.22,.61,.36,1);
   }
@@ -81,9 +82,9 @@
     appearance: none; -webkit-appearance: none;
     border: 0; border-radius: 8px; background-color: var(--chip-bg);
     color: var(--text); font: inherit; font-size: 14px; font-weight: 700;
-    padding: 8px 28px 8px 12px; cursor: pointer;
+    padding: 8px 24px 8px 8px; cursor: pointer;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' stroke='%238B95A1' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: right 12px center;
+    background-repeat: no-repeat; background-position: right 8px center;
   }
 
   .compact .eyebrow { height: 0; margin: 12px 0 0; opacity: 0; transform: translateY(-8px); }
@@ -183,6 +184,8 @@ const AXES = [
   ["capital", "기업/자본"],
 ];
 const AXIS_NAME = Object.fromEntries(AXES);
+// 분류 선택은 제목과 한 줄에 놓이므로 짧은 이름을 쓴다.
+const SHORT_NAME = { all: "전체", llm: "LLM", media: "영상", hardware: "하드웨어", capital: "기업" };
 const BADGE = { surge: ["급상승", "surge"], new: ["새로 진입", "new"] };
 const SECTIONS = [["all", "전체"]].concat(AXES);
 const SECTION_LIMIT = 20;
@@ -269,8 +272,8 @@ function rowHtml(issue, position) {
 }
 
 function renderPicker() {
-  picker.innerHTML = SECTIONS.map(([key, label]) =>
-    `<option value="${key}"${key === section ? " selected" : ""}>${label}</option>`).join("");
+  picker.innerHTML = SECTIONS.map(([key]) =>
+    `<option value="${key}"${key === section ? " selected" : ""}>${SHORT_NAME[key]}</option>`).join("");
 }
 
 function renderList() {
