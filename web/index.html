@@ -138,7 +138,7 @@
   }
 
   /* ---------- 카드 ---------- */
-  .list { display: flex; flex-direction: column; gap: 10px; }
+  .list { display: flex; flex-direction: column; gap: 8px; }
 
   .card {
     background: var(--card); border-radius: var(--radius);
@@ -147,7 +147,7 @@
   .head {
     display: grid; grid-template-columns: 28px minmax(0, 1fr);
     gap: 11px; align-items: start;
-    padding: 18px 16px; cursor: pointer;
+    padding: 14px 16px; cursor: pointer;
   }
   .head > div { min-width: 0; }
   .rank {
@@ -165,16 +165,15 @@
   .badge.surge { background: var(--badge-hot-bg); color: var(--badge-hot-fg); }
   .badge.new   { background: var(--badge-new-bg); color: var(--badge-new-fg); }
 
-  .subline { margin-top: 4px; }
   .arrow { font-size: 13px; line-height: 1; }
   .arrow.up { color: var(--up); }
   .arrow.down { color: var(--down); }
-  .subtitle {
-    display: block; font-size: 15px; color: var(--text-sub); letter-spacing: -0.2px;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  .detail {
+    margin: 10px 0 4px; font-size: 15px; color: var(--text-sub);
+    letter-spacing: -0.2px; line-height: 1.5;
   }
 
-  .meta { display: flex; align-items: center; gap: 6px; margin-top: 9px; }
+  .meta { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
   .axis {
     font-size: 11px; font-weight: 600; color: var(--text-dim);
     background: var(--chip-bg); padding: 2px 7px; border-radius: 5px;
@@ -315,14 +314,16 @@ function cardHtml(issue, position) {
           <span class="title">${escape(issue.title)}</span>
           ${badge ? `<span class="badge ${badge[1]}">${badge[0]}</span>` : ""}
         </div>
-        <div class="subline"><span class="subtitle">${escape(issue.subtitle)}</span></div>
         <div class="meta">
           <span class="axis">${AXIS_NAME[issue.axis] || issue.axis}</span>
           <span class="count">${issue.source_count}개 출처 · ${ago(issue.last_seen)}</span>
         </div>
       </div>
     </div>
-    <div class="sources">${sources}</div>
+    <div class="sources">
+      <p class="detail">${escape(issue.subtitle)}</p>
+      ${sources}
+    </div>
   </div>`;
 }
 
