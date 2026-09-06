@@ -50,7 +50,19 @@ FEEDS = [
     ("MIT Technology Review", "llm", "https://www.technologyreview.com/feed/", True),
     ("Ars Technica", "llm", "https://feeds.arstechnica.com/arstechnica/technology-lab", True),
     ("Tom's Hardware", "hardware", "https://www.tomshardware.com/feeds/all", True),
+    ("AI Business", "llm", "https://aibusiness.com/rss.xml", False),
+    ("The Decoder", "llm", "https://the-decoder.com/feed/", False),
+    ("VentureBeat", "llm", "https://feeds.feedburner.com/venturebeat/SZYF", False),
+    ("SiliconANGLE", "llm", "https://siliconangle.com/feed/", True),
+    ("Engadget", "llm", "https://www.engadget.com/rss.xml", True),
+    ("CNET", "llm", "https://www.cnet.com/rss/news/", True),
+    ("The Register", "llm", "https://www.theregister.com/headlines.atom", True),
+    ("CNBC Tech", "capital", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910", True),
+    ("Semiconductor Engineering", "hardware", "https://semiengineering.com/feed/", True),
 ]
+
+# 피드 하나에서 가져올 최대 항목 수. 보관 기간 필터 앞에서 입력량을 제한한다.
+FEED_ITEM_LIMIT = 30
 
 GOOGLE_NEWS_QUERIES = [
     ("Anthropic", "llm"),
@@ -215,7 +227,7 @@ def collect_feed(session, source, axis, url, filter_ai=False):
         return []
     parsed = feedparser.parse(response.content)
     items = []
-    for entry in parsed.entries:
+    for entry in parsed.entries[:FEED_ITEM_LIMIT]:
         title = entry.get("title", "")
         if filter_ai and not AI_PATTERN.search(title + " " + (entry.get("summary") or "")[:300]):
             continue

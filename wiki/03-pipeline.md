@@ -25,6 +25,15 @@
 | MIT Technology Review | RSS | `https://www.technologyreview.com/feed/` | llm |
 | Ars Technica | RSS | `https://feeds.arstechnica.com/arstechnica/technology-lab` | llm |
 | Tom's Hardware | RSS | `https://www.tomshardware.com/feeds/all` | hardware |
+| AI Business | RSS | `https://aibusiness.com/rss.xml` | llm |
+| The Decoder | RSS | `https://the-decoder.com/feed/` | llm |
+| VentureBeat | RSS | `https://feeds.feedburner.com/venturebeat/SZYF` | llm |
+| SiliconANGLE | RSS | `https://siliconangle.com/feed/` | llm |
+| Engadget | RSS | `https://www.engadget.com/rss.xml` | llm |
+| CNET | RSS | `https://www.cnet.com/rss/news/` | llm |
+| The Register | Atom | `https://www.theregister.com/headlines.atom` | llm |
+| CNBC Tech | RSS | `https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910` | capital |
+| Semiconductor Engineering | RSS | `https://semiengineering.com/feed/` | hardware |
 | Anthropic | sitemap 폴링 | `https://www.anthropic.com/sitemap.xml` | llm |
 | Google News | 쿼리별 RSS | `https://news.google.com/rss/search?q=<쿼리>&hl=en-US&gl=US&ceid=US:en` | 쿼리마다 지정 |
 | Hacker News | Firebase API | `https://hacker-news.firebaseio.com/v0/topstories.json` | llm |
@@ -35,9 +44,13 @@
 
 ### 언론사 피드
 
-TechCrunch, The Verge, Wired, MIT Technology Review, Ars Technica, Tom's Hardware는 언론사 피드를 직접 받는다. Google News 검색과 달리 원문 주소를 그대로 주고, 일부는 이미지도 함께 준다.
+언론사 피드는 Google News 검색과 달리 원문 주소를 그대로 준다. 대부분 피드 안에 이미지도 담겨 있어서 추가 요청 없이 섬네일을 얻을 수 있다.
 
-기술 전반을 다루는 피드(MIT Technology Review, Ars Technica, Tom's Hardware)는 제목과 요약 앞부분에 AI 관련 키워드가 있는 항목만 남긴다. AI 전용 피드는 거르지 않는다.
+AI를 전문으로 다루는 피드(TechCrunch, The Verge, Wired, AI Business, The Decoder, VentureBeat)는 거르지 않는다. 기술 전반을 다루는 피드(MIT Technology Review, Ars Technica, Tom's Hardware, SiliconANGLE, Engadget, CNET, The Register, CNBC Tech, Semiconductor Engineering)는 제목과 요약 앞부분에 AI 관련 키워드가 있는 항목만 남긴다.
+
+피드 하나에서 최대 30건까지만 가져온다. OpenAI와 Hugging Face Blog 처럼 전체 아카이브를 반환하는 피드가 있어서 입력량을 제한한다. 이 제한으로 한 번 실행의 수집량이 2,889건에서 959건으로 줄었다.
+
+검토했지만 넣지 않은 피드: Reuters, ZDNET, Business Insider, Axios는 주소가 404를 반환한다.
 
 ### 섬네일
 
