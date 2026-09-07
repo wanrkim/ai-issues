@@ -172,17 +172,19 @@
      여닫기는 grid-template-rows 를 0fr 과 1fr 사이에서 전환해 만든다.
      내용 높이를 미리 재지 않아도 되고 자바스크립트가 필요 없다. */
   .sources {
-    display: grid; grid-template-rows: 0fr;
-    transition: grid-template-rows .3s cubic-bezier(.22,.61,.36,1);
+    display: grid; grid-template-rows: 0fr; margin-bottom: 0;
+    transition: grid-template-rows .3s cubic-bezier(.22,.61,.36,1),
+                margin-bottom .3s cubic-bezier(.22,.61,.36,1);
   }
-  .row.open .sources { grid-template-rows: 1fr; }
+  /* 아래 여백은 세로선 바깥에 둔다. 안쪽에 두면 선이 마지막 출처 아래까지
+     따라 내려가서 항목 구분선에 닿는다. */
+  .row.open .sources { grid-template-rows: 1fr; margin-bottom: 16px; }
   .sources-in {
     overflow: hidden; min-height: 0;
     padding-left: 16px; border-left: 2px solid var(--line);
     opacity: 0; transition: opacity .2s ease;
   }
   .row.open .sources-in { opacity: 1; }
-  .sources-in > :last-child { margin-bottom: 16px; }
   .detail {
     margin: 0 0 16px; font-size: 17px; color: var(--text);
     letter-spacing: -0.2px; line-height: 1.75; word-break: keep-all;
