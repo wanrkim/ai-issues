@@ -23,7 +23,6 @@
     --badge-new-fg: #3182F6;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
-    --panel: #F7F9FC;
     --gutter: 20px;
   }
 
@@ -159,7 +158,6 @@
 
   /* 펼친 화면의 분류와 출처 수 */
   .facts { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; }
-  .facts .axis { background: var(--card); }
   .axis {
     font-size: 11px; font-weight: 600; color: var(--text-dim);
     background: var(--chip-bg); padding: 4px 8px; border-radius: 4px;
@@ -167,11 +165,12 @@
   .count { font-size: 12px; color: var(--text-dim); }
 
   /* ---------- 펼친 내용 ---------- */
-  /* 펼친 내용. 들여쓰기 대신 옅은 바탕의 블록으로 묶는다. 들여쓰면 폭을
-     잃고, 들여쓰지 않으면 요약이 순위 숫자 아래에서 시작해 제목과 어긋난다. */
+  /* 펼친 내용. 왼쪽에 세로선을 그어 위 항목에 딸린 내용임을 나타낸다.
+     크게 들여쓰면 폭을 잃고, 아무 표시도 없으면 요약이 순위 숫자 아래에서
+     시작해 제목과 어긋나 보인다. */
   .sources {
     display: none; margin: 0 0 16px;
-    padding: 16px; border-radius: 12px; background: var(--panel);
+    padding: 0 0 0 16px; border-left: 2px solid var(--line);
   }
   .row.open .sources { display: block; }
   .detail {
@@ -182,7 +181,7 @@
     display: flex; align-items: baseline; gap: 8px;
     padding: 8px 0; text-decoration: none; color: var(--accent);
     font-size: 15px; line-height: 1.5;
-    border-top: 1px solid var(--card);
+    border-top: 1px solid var(--line);
   }
   .sources a .name {
     flex: 1; min-width: 0;
