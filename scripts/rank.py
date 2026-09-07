@@ -42,6 +42,12 @@ RETRY_WAIT = 12
 ISSUE_TTL_HOURS = 48
 SURGE_THRESHOLD = 3  # 직전 실행보다 이만큼 순위가 오르면 급상승으로 본다.
 FRESHNESS_HALFLIFE_HOURS = 18
+# 축마다 매체 수가 달라서 출처 수를 그대로 쓰면 매체가 많은 축이 항상 이긴다.
+# 축의 평소 출처 수를 기준선으로 삼아 나눈다. 이슈가 한두 개뿐인 축은 평균이
+# 흔들리므로 전체 평균 쪽으로 당긴다. 아래 값은 그때 섞을 가상의 이슈 수이다.
+# 축을 서로 섞으려는 것이 아니라 표본이 적을 때만 붙잡아 주려는 값이므로 작게 둔다.
+BASELINE_SHRINK = 2
+BASELINE_FLOOR = 1.0
 SNIPPET_CHARS = 320
 
 AXES = {"llm", "media", "hardware", "capital"}
@@ -338,21 +344,38 @@ def fill_images(session, issues, by_id):
 # ------------------------------------------------------------------ 순위
 
 
-def score_issue(issue, reference):
+def axis_baselines(issues):
+    """축마다 출처 수의 평소 수준을 구한다."""
+    counts = [max(1, i.get("source_count", 1)) for i in issues]
+    if not counts:
+        return {axis: BASELINE_FLOOR for axis in AXES}
+    overall = sum(counts) / len(counts)
+    baselines = {}
+    for axis in AXES:
+        vals = [max(1, i.get("source_count", 1)) for i in issues if i.get("axis") == axis]
+        mean = sum(vals) / len(vals) if vals else overall
+        blended = (len(vals) * mean + BASELINE_SHRINK * overall) / (len(vals) + BASELINE_SHRINK)
+        baselines[axis] = max(BASELINE_FLOOR, round(blended, 3))
+    return baselines
+
+
+def score_issue(issue, reference, baselines):
     """점수를 계산한다. 식은 wiki/05-ranking.md에 기록한다."""
     last_seen = parse_dt(issue.get("last_seen")) or reference
     age_hours = max(0.0, (reference - last_seen).total_seconds() / 3600.0)
     freshness = 0.5 ** (age_hours / FRESHNESS_HALFLIFE_HOURS)
     source_count = max(1, issue.get("source_count", 1))
+    baseline = baselines.get(issue.get("axis")) or BASELINE_FLOOR
     velocity = issue.get("new_sources", 0) / source_count
-    raw = issue["impact"] * math.log2(1 + source_count) * freshness * (1 + velocity)
+    raw = math.log2(1 + source_count / baseline) * freshness * (1 + velocity)
     return round(raw, 3)
 
 
 def rank_issues(issues, previous_ranks):
     reference = now_kst()
+    baselines = axis_baselines(issues)
     for issue in issues:
-        issue["score"] = score_issue(issue, reference)
+        issue["score"] = score_issue(issue, reference, baselines)
     issues.sort(key=lambda i: (-i["score"], i["id"]))
 
     for position, issue in enumerate(issues, start=1):
@@ -365,7 +388,7 @@ def rank_issues(issues, previous_ranks):
             issue["badge"] = "surge"
         else:
             issue["badge"] = None
-    return issues
+    return issues, baselines
 
 
 # ------------------------------------------------------------------ 실행
@@ -510,12 +533,13 @@ def main() -> int:
     with_image = sum(1 for i in issues if i.get("image"))
     print("섬네일 %d/%d개 (원문 %d건 열어봄)" % (with_image, len(issues), fetched))
 
-    issues = rank_issues(issues, previous_ranks)
+    issues, baselines = rank_issues(issues, previous_ranks)
 
     output = {
         "generated_at": iso(now_kst()),
         "model": used_model,
         "next_id": next_id,
+        "baselines": baselines,
         "issues": [
             {
                 "id": i["id"],
@@ -547,11 +571,13 @@ def main() -> int:
     badge_label = {"new": "새로 진입", "surge": "급상승", None: ""}
     axis_label = {"llm": "LLM/서비스", "media": "영상/이미지", "hardware": "하드웨어", "capital": "기업/자본"}
     print()
+    print("축별 기준선(출처 수): %s"
+          % ", ".join("%s %.1f" % (axis_label.get(a, a), baselines[a]) for a in sorted(baselines)))
     print("이슈 %d개. 상위 %d개:" % (len(issues), min(args.top, len(issues))))
     print("-" * 96)
     for issue in issues[: args.top]:
         print(
-            "%2d. %-22s %-26s [%s] 임팩트%d 출처%2d 점수%6.2f %s"
+            "%2d. %-22s %-26s [%s] 판정%d 출처%2d 점수%6.2f %s"
             % (
                 issue["rank"],
                 issue["title"][:22],
