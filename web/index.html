@@ -181,13 +181,10 @@
     display: flex; align-items: baseline; gap: 8px;
     padding: 8px 0; text-decoration: none; color: var(--accent);
     font-size: 15px; line-height: 1.5;
-    border-top: 1px solid var(--line);
   }
   .sources a .name {
-    flex: 1; min-width: 0;
-    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
-  .sources .when { flex: none; color: var(--text-dim); font-size: 13px; }
   .more { margin: 8px 0 0; font-size: 13px; color: var(--text-dim); }
 
   .empty, .error {
@@ -305,8 +302,7 @@ function rowHtml(issue, position) {
   const all = issue.sources || [];
   const sources = all.slice(0, SOURCE_LIMIT).map(s =>
     `<a href="${escape(s.url)}" target="_blank" rel="noopener"
-      ><span class="name">${escape(s.name)}</span
-      ><span class="when">${ago(s.published_at)}</span></a>`).join("");
+      ><span class="name">${escape(s.name)}</span></a>`).join("");
   const more = all.length > SOURCE_LIMIT
     ? `<p class="more">외 ${all.length - SOURCE_LIMIT}개 출처</p>` : "";
   // 요약이 없는 이슈는 이 필드를 넣기 전에 만들어진 것이다. 부제로 대신한다.
