@@ -19,7 +19,6 @@
     --accent: #3182F6;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
-    --line-strong: #EBEEF2;
     --gutter: 20px;
   }
 
@@ -47,11 +46,14 @@
     padding-top: env(safe-area-inset-top);
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg-soft) 100%);
   }
-  /* 접혔을 때만 아래에 구분선을 둔다. 목록이 고정 영역 뒤로 지나가는 것이
-     드러난다. 높이를 차지하지 않도록 겹쳐 그린다. */
+  /* 접혔을 때만 아래로 16px 짙기가 옅어지는 띠를 드리운다. 선을 긋지 않고도
+     고정 영역이 끝나는 자리가 드러난다. 고정 영역 밖으로 나가 겹쳐 그리므로
+     높이를 차지하지 않는다. 끝 색은 같은 색의 투명이다. 사파리는
+     transparent 를 검정의 투명으로 읽어 회색 띠가 생긴다. */
   .topbar::after {
-    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
-    height: 1px; background: var(--line-strong); opacity: 0;
+    content: ""; position: absolute; left: 0; right: 0; bottom: -16px;
+    height: 16px; opacity: 0;
+    background: linear-gradient(180deg, var(--bg-soft) 0, rgba(242, 246, 252, 0) 100%);
     transition: opacity .24s cubic-bezier(.22,.61,.36,1);
   }
   .compact .topbar::after { opacity: 1; }
