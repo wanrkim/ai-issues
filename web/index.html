@@ -101,7 +101,7 @@
     background: linear-gradient(180deg, var(--bg-soft) 0, var(--card) 160px) no-repeat,
                 var(--card);
   }
-  .list { padding: 4px var(--gutter) calc(88px + env(safe-area-inset-bottom)); }
+  .list { padding: 4px var(--gutter) calc(200px + env(safe-area-inset-bottom)); }
 
   .row { border-bottom: 1px solid var(--line); }
   .row:last-child { border-bottom: 0; }
@@ -111,7 +111,12 @@
     padding: 16px 0; cursor: pointer;
   }
   /* 제목 앞의 기업 표식. 배경과 테두리 없이 로고만 보여준다. */
-  .mark { width: 18px; height: 18px; flex: none; object-fit: contain; display: block; }
+  /* 정사각형 로고는 18px 정사각형으로, SK하이닉스처럼 가로로 긴 워드마크는
+     높이를 맞추고 폭을 늘려서 알아볼 수 있게 한다. */
+  .mark {
+    height: 18px; width: auto; max-width: 64px;
+    flex: none; object-fit: contain; display: block;
+  }
   .head > div { min-width: 0; }
   .rank {
     display: flex; flex-direction: column; align-items: center; gap: 4px;
@@ -213,7 +218,7 @@ const AXIS_NAME = Object.fromEntries(AXES);
 const SHORT_NAME = { all: "전체", llm: "LLM", media: "영상", hardware: "하드웨어", capital: "기업" };
 const BADGE = { surge: ["급상승", "surge"], new: ["새로 진입", "new"] };
 const SECTIONS = [["all", "전체"]].concat(AXES);
-const SECTION_LIMIT = 20;
+const SECTION_LIMIT = 30;
 const SOURCE_LIMIT = 3;
 const COMPACT_AT = 8;
 const STORE_SECTION = "ai-issues.section";
