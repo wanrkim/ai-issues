@@ -167,12 +167,22 @@
   /* ---------- 펼친 내용 ---------- */
   /* 펼친 내용. 왼쪽에 세로선을 그어 위 항목에 딸린 내용임을 나타낸다.
      크게 들여쓰면 폭을 잃고, 아무 표시도 없으면 요약이 순위 숫자 아래에서
-     시작해 제목과 어긋나 보인다. */
+     시작해 제목과 어긋나 보인다.
+
+     여닫기는 grid-template-rows 를 0fr 과 1fr 사이에서 전환해 만든다.
+     내용 높이를 미리 재지 않아도 되고 자바스크립트가 필요 없다. */
   .sources {
-    display: none; margin: 0 0 16px;
-    padding: 0 0 0 16px; border-left: 2px solid var(--line);
+    display: grid; grid-template-rows: 0fr;
+    transition: grid-template-rows .3s cubic-bezier(.22,.61,.36,1);
   }
-  .row.open .sources { display: block; }
+  .row.open .sources { grid-template-rows: 1fr; }
+  .sources-in {
+    overflow: hidden; min-height: 0;
+    padding-left: 16px; border-left: 2px solid var(--line);
+    opacity: 0; transition: opacity .2s ease;
+  }
+  .row.open .sources-in { opacity: 1; }
+  .sources-in > :last-child { margin-bottom: 16px; }
   .detail {
     margin: 0 0 16px; font-size: 17px; color: var(--text);
     letter-spacing: -0.2px; line-height: 1.75; word-break: keep-all;
@@ -321,7 +331,7 @@ function rowHtml(issue, position) {
         <span class="desc">${escape(issue.subtitle)}</span>
       </div>
     </div>
-    <div class="sources">
+    <div class="sources"><div class="sources-in">
       <div class="facts">
         <span class="axis">${AXIS_NAME[issue.axis] || issue.axis}</span>
         <span class="count">출처 ${issue.source_count}곳</span>
@@ -329,7 +339,7 @@ function rowHtml(issue, position) {
       <p class="detail">${escape(detail)}</p>
       ${sources}
       ${more}
-    </div>
+    </div></div>
   </div>`;
 }
 
