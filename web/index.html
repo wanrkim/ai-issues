@@ -19,6 +19,7 @@
     --accent: #3182F6;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
+    --line-strong: #E5E9EE;
     --gutter: 20px;
   }
 
@@ -46,6 +47,14 @@
     padding-top: env(safe-area-inset-top);
     background: linear-gradient(180deg, var(--bg-top) 0, var(--bg-soft) 100%);
   }
+  /* 접혔을 때만 아래에 구분선을 둔다. 목록이 고정 영역 뒤로 지나가는 것이
+     드러난다. 높이를 차지하지 않도록 겹쳐 그린다. */
+  .topbar::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: 1px; background: var(--line-strong); opacity: 0;
+    transition: opacity .24s cubic-bezier(.22,.61,.36,1);
+  }
+  .compact .topbar::after { opacity: 1; }
 
   .eyebrow {
     display: flex; align-items: center; gap: 8px; overflow: hidden;
