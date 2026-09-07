@@ -96,10 +96,17 @@
   /* ---------- 목록 ----------
      흰 바탕 위에 항목을 두고 구분선으로 나눈다. 최소 높이를 화면 높이로
      두어 항목이 적을 때도 아래가 흰색으로 이어지고 문서가 스크롤된다. */
+  /* 위쪽은 고정 영역의 그라데이션을 이어받아 흰색으로 끝나고,
+     아래쪽은 그 거울상으로 다시 파랗게 짙어진다. 문서 끝을 넘겨 당겼을 때
+     드러나는 문서 뿌리의 파란 바탕과 이어지게 하기 위해서다. */
   .sheet {
     min-height: 100vh;
-    background: linear-gradient(180deg, var(--bg-soft) 0, var(--card) 160px) no-repeat,
-                var(--card);
+    background:
+      linear-gradient(180deg, var(--bg-soft) 0, var(--card) 100%)
+        no-repeat top / 100% 160px,
+      linear-gradient(180deg, var(--card) 0, var(--bg-top) 100%)
+        no-repeat bottom / 100% 200px,
+      var(--card);
   }
   .list { padding: 4px var(--gutter) calc(200px + env(safe-area-inset-bottom)); }
 
