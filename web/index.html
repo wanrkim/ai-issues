@@ -30,7 +30,7 @@
 
   /* 문서가 스크롤된다. 사파리는 문서가 스크롤될 때만 하단 도구 막대를
      반투명 알약으로 접고, 그때 목록이 그 뒤로 이어진다. */
-  html { background: var(--bg-top); }
+  html { background: var(--card); }
 
   body {
     margin: 0; background: var(--bg-top);
@@ -216,7 +216,7 @@ const AXES = [
 const AXIS_NAME = Object.fromEntries(AXES);
 // 분류 선택은 제목과 한 줄에 놓이므로 짧은 이름을 쓴다.
 const SHORT_NAME = { all: "전체", llm: "LLM", media: "영상", hardware: "하드웨어", capital: "기업" };
-const BADGE = { surge: ["급상승", "surge"], new: ["새로 진입", "new"] };
+const BADGE = { surge: ["급상승", "surge"], new: ["NEW", "new"] };
 const SECTIONS = [["all", "전체"]].concat(AXES);
 const SECTION_LIMIT = 30;
 const SOURCE_LIMIT = 3;
