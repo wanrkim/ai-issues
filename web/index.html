@@ -17,10 +17,6 @@
     --up: #F04452;
     --down: #3182F6;
     --accent: #3182F6;
-    --badge-hot-bg: #FEECEE;
-    --badge-hot-fg: #F04452;
-    --badge-new-bg: #EDF3FE;
-    --badge-new-fg: #3182F6;
     --chip-bg: #EDF0F3;
     --line: #F0F2F5;
     --gutter: 20px;
@@ -113,7 +109,7 @@
   .row { border-bottom: 1px solid var(--line); }
   .row:last-child { border-bottom: 0; }
   .head {
-    display: grid; grid-template-columns: 28px minmax(0, 1fr);
+    display: grid; grid-template-columns: 40px minmax(0, 1fr);
     gap: 12px; align-items: start;
     padding: 16px 0; cursor: pointer;
   }
@@ -139,12 +135,12 @@
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
 
-  .badge {
-    font-size: 11px; font-weight: 700; padding: 4px 8px;
-    border-radius: 8px; white-space: nowrap;
+  /* 새로 진입과 급상승은 순위 아래에 빨간 글씨로 둔다. 등락 삼각형이
+     있던 자리이며, 배지가 있는 항목에는 삼각형을 보여주지 않는다. */
+  .flag {
+    font-size: 10px; font-weight: 700; color: var(--up);
+    letter-spacing: -0.3px; white-space: nowrap; line-height: 1;
   }
-  .badge.surge { background: var(--badge-hot-bg); color: var(--badge-hot-fg); }
-  .badge.new   { background: var(--badge-new-bg); color: var(--badge-new-fg); }
 
   /* 제목이 말하지 못한 핵심 한 줄. 줄바꿈하지 않는다. */
   .desc {
@@ -239,7 +235,7 @@ const AXES = [
 const AXIS_NAME = Object.fromEntries(AXES);
 // 분류 선택은 제목과 한 줄에 놓이므로 짧은 이름을 쓴다.
 const SHORT_NAME = { all: "전체", llm: "LLM", media: "영상", hardware: "하드웨어", capital: "기업" };
-const BADGE = { surge: ["급상승", "surge"], new: ["NEW", "new"] };
+const BADGE = { surge: ["급상승"], new: ["NEW"] };
 const SECTIONS = [["all", "전체"]].concat(AXES);
 const SECTION_LIMIT = 30;
 const SOURCE_LIMIT = 3;
@@ -322,12 +318,13 @@ function rowHtml(issue, position) {
 
   return `<div class="row">
     <div class="head">
-      <div class="rank">${position}${arrow(issue)}</div>
+      <div class="rank">${position}${badge
+        ? `<span class="flag">${badge[0]}</span>`
+        : arrow(issue)}</div>
       <div>
         <div class="titleline">
           ${markHtml(issue)}
           <span class="title">${escape(issue.title)}</span>
-          ${badge ? `<span class="badge ${badge[1]}">${badge[0]}</span>` : ""}
           <span class="when">${ago(issue.first_seen)}</span>
         </div>
         <span class="desc">${escape(issue.subtitle)}</span>
