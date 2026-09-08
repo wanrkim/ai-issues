@@ -123,6 +123,7 @@ Structured output을 사용한다. `responseMimeType`은 `application/json`이�
 - `assignments`의 `issue_id`가 현재 이슈 목록에 없으면 버린다.
 - `n`이 새 글 목록의 범위를 벗어나면 버린다.
 - `new_issues`의 `axis`가 네 값 중 하나가 아니면 그 이슈를 버린다.
+- `company_domain`은 `^[a-z0-9][a-z0-9.\-]{0,60}\.[a-z]{2,12}$` 형태여야 한다. 이 형태가 아니면 버린다. 가운데 자리를 한 글자 이상으로 두면 `x.ai`, `x.com` 처럼 첫 이름이 한 글자인 도메인이 걸러진다.
 - `impact`가 정수가 아니면 그 이슈를 버린다. 정수이면 1에서 5 사이로 자른다.
 - 글 번호가 하나도 남지 않은 새 이슈는 만들지 않는다.
 - `company_domain`은 소문자로 바꾸고 앞의 `https://`와 `www.`, 뒤의 경로를 떼어낸 뒤 도메인 형식과 맞는지 확인한다. 맞지 않으면 null로 둔다.

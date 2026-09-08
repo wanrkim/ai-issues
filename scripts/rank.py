@@ -53,7 +53,9 @@ SNIPPET_CHARS = 320
 AXES = {"llm", "media", "hardware", "capital"}
 
 # 판정이 돌려준 기업 도메인을 검증한다. 이 형태가 아니면 버린다.
-DOMAIN_PATTERN = re.compile(r"^[a-z0-9][a-z0-9.\-]{1,60}\.[a-z]{2,12}$")
+# 가운데 자리는 없어도 된다. {1,60} 으로 두면 x.ai 나 x.com 처럼
+# 첫 이름이 한 글자인 도메인이 걸러진다.
+DOMAIN_PATTERN = re.compile(r"^[a-z0-9][a-z0-9.\-]{0,60}\.[a-z]{2,12}$")
 
 
 def clean_domain(value):
