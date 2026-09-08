@@ -64,7 +64,23 @@ AI를 전문으로 다루는 피드(TechCrunch, The Verge, Wired, AI Business, T
 
 **Anthropic.** 공식 RSS를 제공하지 않으므로 sitemap을 폴링한다. 경로가 `/news/...`, `/research/...`, `/engineering/...` 인 URL만 대상으로 한다. 이전 실행에서 본 URL 목록을 `data/fetch_state.json`의 `anthropic:seen`에 저장하고, 목록에 없는 URL을 새 글로 판정한다. 첫 실행에서는 전체가 새 URL이 되므로 sitemap의 `lastmod`가 보관 기간 안에 있는 항목만 남긴다. sitemap에는 제목이 없으므로 새 URL마다 페이지를 한 번 받아 `<title>`을 읽는다. 한 번 실행에 최대 10개까지만 받는다.
 
-**Google News.** 쿼리는 `Anthropic`, `OpenAI`, `Gemini AI`, `HBM memory`, `AI chip`, `AI IPO funding` 6개이다. 피드 한 개당 최대 100건을 반환한다. 매체명은 피드 항목의 `<source>` 태그에서 읽어 `Google News / <매체명>` 형태로 저장한다.
+**Google News.** 쿼리 7개를 쓴다.
+
+| 쿼리 | 축 힌트 |
+|---|---|
+| `(OpenAI OR Anthropic OR "Google DeepMind" OR xAI OR "Meta AI" OR Mistral OR DeepSeek OR Qwen) when:1d` | llm |
+| `AI model launch OR release when:1d` | llm |
+| `AI video OR image generation model when:1d` | media |
+| `AI chip OR GPU OR HBM when:1d` | hardware |
+| `AI funding OR IPO OR acquisition when:1d` | capital |
+| `AI lawsuit OR regulation when:1d` | capital |
+| `intitle:AI when:1d` | llm |
+
+회사 이름 하나만 넣어 검색하면 그 회사 기사가 100건 가까이 들어온다. 순위를 기사 수로 매기므로 검색어에 이름이 있는 회사가 항상 위로 간다. 그래서 사건 종류로 검색하고, 회사 이름은 한 줄에 모아 같은 무게로 다룬다. `when:1d`는 최근 하루로 범위를 좁힌다.
+
+피드 한 개당 최대 100건을 반환하지만 앞에서부터 40건까지만 받는다. 7개 쿼리를 모두 받으면 판정에 보내는 글이 세 배로 늘어 묶는 품질이 떨어지기 때문이다. RSS는 최신순이므로 앞 40건이 가장 최근 항목이다.
+
+매체명은 피드 항목의 `<source>` 태그에서 읽어 `Google News / <매체명>` 형태로 저장한다.
 
 **Hacker News.** 프론트페이지 상위 100건만 가져온다. 신규글 전체는 건수가 많고 관련 없는 글이 대부분이므로 대상에 넣지 않는다. 제목이 AI 관련 키워드 정규식과 맞는 글만 남긴다. 본문 링크가 없는 글은 Hacker News 토론 페이지 주소를 사용한다.
 
@@ -82,7 +98,7 @@ Google DeepMind, Hugging Face Blog, Anthropic sitemap은 이 헤더를 제공한
 
 **URL.** 스킴을 `https`로 맞추고, 호스트를 소문자로 바꾸고, 앞의 `www.`를 제거한다. 프래그먼트를 버린다. 쿼리에서 `utm_`, `fbclid`, `gclid`, `mc_`, `igshid`, `ref_src`, `_hs`로 시작하는 추적 파라미터를 제거한다. 경로 끝의 슬래시를 제거한다.
 
-Google News 링크는 원문 주소가 아니라 리다이렉트 주소이다. Phase 1에서는 리다이렉트를 따라가지 않는다. 쿼리 6개에 각 100건이라 한 번 실행에 최대 600회의 추가 요청이 생기기 때문이다. 대신 제목 기준으로 중복을 제거한다. 리다이렉트 해석은 Phase 2에서 상위 이슈에 포함된 항목만 처리한다.
+Google News 링크는 원문 주소가 아니라 리다이렉트 주소이다. Phase 1에서는 리다이렉트를 따라가지 않는다. 쿼리 7개에 각 40건이라 한 번 실행에 최대 280회의 추가 요청이 생기기 때문이다. 대신 제목 기준으로 중복을 제거한다. 리다이렉트 해석은 Phase 2에서 상위 이슈에 포함된 항목만 처리한다.
 
 **제목.** HTML 엔티티를 문자로 되돌린다. Anthropic 페이지 제목 끝의 `\ Anthropic` 표기를 제거한다. SEC 제출자 이름 끝의 `(CIK 0001234567)` 표기를 제거한다.
 

@@ -64,14 +64,22 @@ FEEDS = [
 # 피드 하나에서 가져올 최대 항목 수. 보관 기간 필터 앞에서 입력량을 제한한다.
 FEED_ITEM_LIMIT = 30
 
+# 회사 이름 하나로 검색하면 그 회사 기사만 100건 가까이 들어와서 순위가
+# 검색어에 있는 회사 쪽으로 기운다. 사건 종류로 검색하고, 회사 이름은 한 줄에
+# 모아 넣어 같은 무게로 다룬다. when:1d 는 최근 하루로 범위를 좁힌다.
 GOOGLE_NEWS_QUERIES = [
-    ("Anthropic", "llm"),
-    ("OpenAI", "llm"),
-    ("Gemini AI", "llm"),
-    ("HBM memory", "hardware"),
-    ("AI chip", "hardware"),
-    ("AI IPO funding", "capital"),
+    ('(OpenAI OR Anthropic OR "Google DeepMind" OR xAI OR "Meta AI" '
+     'OR Mistral OR DeepSeek OR Qwen) when:1d', "llm"),
+    ("AI model launch OR release when:1d", "llm"),
+    ("AI video OR image generation model when:1d", "media"),
+    ("AI chip OR GPU OR HBM when:1d", "hardware"),
+    ("AI funding OR IPO OR acquisition when:1d", "capital"),
+    ("AI lawsuit OR regulation when:1d", "capital"),
+    ("intitle:AI when:1d", "llm"),
 ]
+# 검색어 하나에서 가져올 최대 건수. 구글은 최대 100건을 주는데 그대로 받으면
+# 판정에 보내는 글이 세 배로 늘어 묶는 품질이 떨어진다. RSS 는 최신순이다.
+GOOGLE_NEWS_ITEM_LIMIT = 40
 
 ANTHROPIC_SITEMAP = "https://www.anthropic.com/sitemap.xml"
 ANTHROPIC_PATH_PATTERN = re.compile(r"^/(news|research|engineering)/[^/]+$")
@@ -259,7 +267,7 @@ def collect_google_news(session, query, axis):
         return []
     parsed = feedparser.parse(response.content)
     items = []
-    for entry in parsed.entries:
+    for entry in parsed.entries[:GOOGLE_NEWS_ITEM_LIMIT]:
         # Google News 링크는 리다이렉트 URL이다. Phase 1에서는 따라가지 않는다.
         source_info = entry.get("source") or {}
         publisher = source_info.get("title") or "Google News"
