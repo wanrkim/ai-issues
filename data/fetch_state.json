@@ -1,7 +1,7 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "etag": "\"mGXdnA\""
+    "etag": "\"2RXgYg\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
     "etag": "W/\"3de21-I09oT9f3oNKakYAMppcUgk4PMOY\""
@@ -11,11 +11,11 @@
     "last_modified": "Thu, 03 Sep 2026 19:50:21 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"b6a321a2c9c262c5a20d1ddacfae0349\"",
-    "last_modified": "Tue, 08 Sep 2026 03:16:36 GMT"
+    "etag": "W/\"0136310f6ce278ac04f7723eaf17a932\"",
+    "last_modified": "Tue, 08 Sep 2026 04:38:25 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"f7976f4760d19bc6515dc91162991d2b\""
+    "etag": "W/\"1c6a6a3b6adc3141a4e5cc88bb12eb68\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
@@ -27,7 +27,7 @@
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Tue, 08 Sep 2026 04:23:23 GMT"
+    "last_modified": "Tue, 08 Sep 2026 05:41:45 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
     "etag": "\"f9da8865e0c995b82f055917760b5331\"",
@@ -45,8 +45,8 @@
     "last_modified": "Tue, 08 Sep 2026 00:30:00 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"1f45753ccb205118eadd6a722e24aa1b\"",
-    "last_modified": "Tue, 08 Sep 2026 04:19:54 GMT"
+    "etag": "W/\"65e95a48171b057b39febf74724d73bc\"",
+    "last_modified": "Fri, 23 Sep 2022 19:00:00 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
@@ -498,5 +498,12 @@
   "gnews:HBM memory": {},
   "gnews:AI chip": {},
   "gnews:AI IPO funding": {},
-  "hn:top": {}
+  "hn:top": {},
+  "gnews:(OpenAI OR Anthropic OR \"Google DeepMind\" OR xAI OR \"Meta AI\" OR Mistral OR DeepSeek OR Qwen) when:1d": {},
+  "gnews:AI model launch OR release when:1d": {},
+  "gnews:AI video OR image generation model when:1d": {},
+  "gnews:AI chip OR GPU OR HBM when:1d": {},
+  "gnews:AI funding OR IPO OR acquisition when:1d": {},
+  "gnews:AI lawsuit OR regulation when:1d": {},
+  "gnews:intitle:AI when:1d": {}
 }
