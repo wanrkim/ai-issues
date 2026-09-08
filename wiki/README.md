@@ -31,4 +31,8 @@ AI 소식(모델·서비스 출시, 영상·이미지 모델, 하드웨어, 기�
 | [09-backlog.md](09-backlog.md) | 아직 시작하지 않은 작업 | 작성함 |
 | [10-worklog.md](10-worklog.md) | 완료한 작업 누적, 최신이 위 | 작성함 |
 
-해결한 이슈는 `archive/issues/`에 보관한다. `archive/decisions/`와 `archive/worklog/`는 보관이 필요해질 때 만든다.
+해결한 이슈는 `archive/issues/`에 보관한다. 폐기한 결정은 `archive/decisions/`에 보관한다. `archive/worklog/`는 보관이 필요해질 때 만든다.
+
+| 폐기한 결정 | 폐기일 |
+|---|---|
+| [D-001. Hugging Face Hub 신규 모델 수집](archive/decisions/D-001-hugging-face-hub.md) | 2026-09-08 |
