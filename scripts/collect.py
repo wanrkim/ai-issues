@@ -89,10 +89,6 @@ HN_TOPSTORIES = "https://hacker-news.firebaseio.com/v0/topstories.json"
 HN_ITEM = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 HN_STORY_LIMIT = 100
 
-HF_MODELS_API = "https://huggingface.co/api/models"
-HF_MODEL_LIMIT = 100
-HF_MIN_LIKES = 1
-
 SEC_FTS = "https://efts.sec.gov/LATEST/search-index"
 SEC_QUERIES = [
     ('"artificial intelligence"', "S-1"),
@@ -380,35 +376,6 @@ def collect_hackernews(session):
     return items
 
 
-def collect_hf_models(session):
-    response = session.get(
-        HF_MODELS_API,
-        params={"sort": "createdAt", "direction": "-1", "limit": HF_MODEL_LIMIT},
-        headers={"User-Agent": USER_AGENT},
-        timeout=TIMEOUT,
-    )
-    response.raise_for_status()
-    items = []
-    for model in response.json():
-        if model.get("likes", 0) < HF_MIN_LIKES:
-            continue
-        model_id = model.get("modelId") or model.get("id")
-        if not model_id:
-            continue
-        created = model.get("createdAt")
-        item = make_item(
-            "Hugging Face Hub",
-            "llm",
-            "https://huggingface.co/" + model_id,
-            "신규 모델 공개: " + model_id,
-            iso(_parse_lastmod(created)) if _parse_lastmod(created) else None,
-            "likes %s / downloads %s" % (model.get("likes", 0), model.get("downloads", 0)),
-        )
-        if item:
-            items.append(item)
-    return items
-
-
 def collect_sec(session):
     items = []
     today = now_kst().date()
@@ -499,7 +466,6 @@ def main() -> int:
             "Google News: " + query, collect_google_news, session, query, axis
         )
     collected += run_source("Hacker News", collect_hackernews, session)
-    collected += run_source("Hugging Face Hub", collect_hf_models, session)
     collected += run_source("SEC EDGAR", collect_sec, session)
 
     # 피드는 과거 글까지 함께 반환한다. 보관 기간이 지난 항목은 병합 전에 버린다.
@@ -548,7 +514,7 @@ def main() -> int:
         for label, message in ERRORS:
             print("  - %s: %s" % (label, message))
 
-    total_sources = len(FEEDS) + len(GOOGLE_NEWS_QUERIES) + 4
+    total_sources = len(FEEDS) + len(GOOGLE_NEWS_QUERIES) + 3
     return 1 if len(ERRORS) == total_sources else 0
 
 

@@ -37,7 +37,6 @@
 | Anthropic | sitemap 폴링 | `https://www.anthropic.com/sitemap.xml` | llm |
 | Google News | 쿼리별 RSS | `https://news.google.com/rss/search?q=<쿼리>&hl=en-US&gl=US&ceid=US:en` | 쿼리마다 지정 |
 | Hacker News | Firebase API | `https://hacker-news.firebaseio.com/v0/topstories.json` | llm |
-| Hugging Face Hub | REST API | `https://huggingface.co/api/models?sort=createdAt&direction=-1&limit=100` | llm |
 | SEC EDGAR | 전문 검색 API | `https://efts.sec.gov/LATEST/search-index` | capital |
 
 축 힌트는 수집 시점에 붙이는 임시값이다. 최종 축은 Phase 2의 판정 단계에서 결정한다.
@@ -83,8 +82,6 @@ AI를 전문으로 다루는 피드(TechCrunch, The Verge, Wired, AI Business, T
 매체명은 피드 항목의 `<source>` 태그에서 읽어 `Google News / <매체명>` 형태로 저장한다.
 
 **Hacker News.** 프론트페이지 상위 100건만 가져온다. 신규글 전체는 건수가 많고 관련 없는 글이 대부분이므로 대상에 넣지 않는다. 제목이 AI 관련 키워드 정규식과 맞는 글만 남긴다. 본문 링크가 없는 글은 Hacker News 토론 페이지 주소를 사용한다.
-
-**Hugging Face Hub.** 생성 시각 역순으로 100건을 받고 좋아요가 1개 이상인 모델만 남긴다. 좋아요가 없는 신규 모델은 대부분 개인 파인튜닝이다.
 
 **SEC EDGAR.** 전문 검색 API는 기본값이 관련도순이라 오래된 제출이 앞에 온다. `dateRange=custom`과 `startdt`, `enddt`로 최근 3일로 좁힌다. SEC 정책에 따라 `User-Agent` 헤더에 이름과 이메일을 넣어야 한다. `ai-issues wanrkim@gmail.com`을 보낸다. 이 값은 SEC 요청에만 사용한다. 검색어는 `"artificial intelligence"`이고 서식은 S-1과 8-K이다.
 
