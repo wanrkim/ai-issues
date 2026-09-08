@@ -119,6 +119,25 @@
      그라데이션 띠 위에서 끝나 색이 글자를 덮지 않는다. */
   .list { padding: 4px var(--gutter) calc(160px + env(safe-area-inset-bottom)); }
 
+  /* 홈 화면에서 실행하면 주소 표시줄이 없어 브라우저 새로고침을 쓸 수 없다.
+     오른쪽 아래에 버튼을 띄운다. */
+  .refresh {
+    position: fixed; z-index: 6;
+    right: var(--gutter);
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    width: 48px; height: 48px; padding: 0;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--line); border-radius: 24px;
+    background: var(--card); color: var(--text-sub);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    cursor: pointer;
+  }
+  .refresh svg { width: 20px; height: 20px; display: block; }
+  .refresh:active { background: var(--chip-bg); }
+  .refresh.busy { pointer-events: none; }
+  .refresh.busy svg { animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
   .row { border-bottom: 1px solid var(--line); }
   .row:last-child { border-bottom: 0; }
   .head {
@@ -237,6 +256,13 @@
     <div class="list" id="list"></div>
   </div>
 </div>
+
+<button class="refresh" id="refresh" type="button" aria-label="새로고침">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 11a8 8 0 1 0-2.2 5.6"/><path d="M20 5v6h-6"/>
+  </svg>
+</button>
 
 <script>
 const AXES = [
@@ -399,21 +425,38 @@ window.addEventListener("scroll", () => {
   });
 }, { passive: true });
 
-/* ---------- 시작 ---------- */
+/* ---------- 불러오기 ---------- */
 
-Promise.all([
-  fetch("../data/issues.json", { cache: "no-store" }).then(r => r.json()),
-  fetch("logos/index.json").then(r => r.json()).catch(() => ({})),
-])
-  .then(([json, logos]) => {
+function load() {
+  // 로고 목록은 한 번만 받는다. 이슈만 매번 새로 받는다.
+  const logos = Object.keys(logoMap).length
+    ? Promise.resolve(logoMap)
+    : fetch("logos/index.json").then(r => r.json()).catch(() => ({}));
+  return Promise.all([
+    fetch("../data/issues.json", { cache: "no-store" }).then(r => r.json()),
+    logos,
+  ]).then(([json, map]) => {
     data = json;
-    logoMap = logos;
+    logoMap = map;
     renderPicker();
     renderList();
-  })
-  .catch(() => {
-    listEl.innerHTML = '<div class="error">데이터를 불러오지 못했다.</div>';
   });
+}
+
+const refreshBtn = document.getElementById("refresh");
+refreshBtn.addEventListener("click", () => {
+  refreshBtn.classList.add("busy");
+  // 응답이 빨라도 한 바퀴는 돌려서 눌린 것이 보이게 한다.
+  const turn = new Promise(done => setTimeout(done, 800));
+  Promise.all([load().catch(() => {}), turn])
+    .then(() => refreshBtn.classList.remove("busy"));
+});
+
+/* ---------- 시작 ---------- */
+
+load().catch(() => {
+  listEl.innerHTML = '<div class="error">데이터를 불러오지 못했다.</div>';
+});
 </script>
 </body>
 </html>
