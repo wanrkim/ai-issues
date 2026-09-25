@@ -1,7 +1,414 @@
 {
-  "updated_at": "2026-09-25T06:26:58+09:00",
-  "count": 1150,
+  "updated_at": "2026-09-25T09:28:16+09:00",
+  "count": 1169,
   "items": [
+    {
+      "id": "6458ce2cd097c836",
+      "source": "Google News / Wolters Kluwer",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWnF1eENUa21WT1ZFRVNFbmV6bC1HSVVXRl9PV29fYzVlTlRhQUZSYTIyRFJIUVVLcHlrRmxtTHFaWVoyQnFMY19JdXVqTWRzekZDZVJ1XzQtdUN2X255c2JUeUhBRDU4SFVsVkg0RWJJcG9yM3FEdUNrUUpWYldSVVNpdXZjbFFqRXU1d0EyNjRhX2xRbEtiLUVlOG1BSV9RejU2S1dYcEZyNFo5?oc=5",
+      "title": "Building AI Literacy for Responsible AI Usage in Healthcare - Wolters Kluwer",
+      "published_at": "2026-09-25T09:18:13+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Building AI Literacy for Responsible AI Usage in Healthcare    Wolters Kluwer",
+      "image": null
+    },
+    {
+      "id": "bfe2c4f8ef54d146",
+      "source": "Google News / CEPR",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcC1Hak5oMlRkMmlJbWdObG1TLXVSdU5JMXJCekktQ1pSNk5rQkRnelYyVWw0TDdpa295d1FrWm0tbDJTVzZMSVhNTHVHbS1hMlYxWlFBb1RjeW9PeUxrQ1l1VUhBWnoxOG40cDd3S2NrclBQS2ZBZ0xpZHA4bXZmN2FpdkdQem1YLWlsN21WZjZmeW9LbjhhMk96alR5RTgtQTFsVg?oc=5",
+      "title": "Measuring what work generative AI does: Survey evidence versus chat logs - CEPR",
+      "published_at": "2026-09-25T08:56:12+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Measuring what work generative AI does: Survey evidence versus chat logs    CEPR",
+      "image": null
+    },
+    {
+      "id": "13480949d9d7b225",
+      "source": "CNET",
+      "axis_hint": "llm",
+      "url": "https://cnet.com/tech/services-and-software/how-to-customize-your-ai-tools-chatgpt-gemini-claude",
+      "title": "How to Customize Your AI Tools, From ChatGPT to Gemini and Claude",
+      "published_at": "2026-09-25T08:40:23+09:00",
+      "fetched_at": "2026-09-25T09:28:05+09:00",
+      "snippet": "Get closer to the responses you want without the constant prompt hacking.",
+      "image": "https://www.cnet.com/wp-content/uploads/sites/2/GettyImages-2176053749.jpg"
+    },
+    {
+      "id": "653a16ccc7f6ffd2",
+      "source": "Hacker News",
+      "axis_hint": "llm",
+      "url": "https://vox.com/good-medicine-newsletter/503932/ai-health-insurance-united-medicare-cigna-humana",
+      "title": "AI is deciding whether or not people receive medical care",
+      "published_at": "2026-09-25T08:38:45+09:00",
+      "fetched_at": "2026-09-25T09:28:14+09:00",
+      "snippet": "",
+      "image": null
+    },
+    {
+      "id": "6c28072d9f2a7273",
+      "source": "Hacker News",
+      "axis_hint": "llm",
+      "url": "https://rubyonrails.org/ai",
+      "title": "Rails and AI",
+      "published_at": "2026-09-25T08:38:18+09:00",
+      "fetched_at": "2026-09-25T09:28:14+09:00",
+      "snippet": "",
+      "image": null
+    },
+    {
+      "id": "bb30aae99173070a",
+      "source": "Google News / 조선일보",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeDV3R0lpWkdvRDdUa1FtbHVSQkdBZ3VDcTNQUWVDcmd4Sy0xaUVEMUN2SkxaQnhsREFOV1JXZGI3NXVEbVBmSXladl9CU3ZFSGxxX213QUUwOFN3SDd3VXU4YThfUnB4VzFsdzVHQ3FkbGY3Y1ItV0FVbmRsM3VMMDI1TWE?oc=5",
+      "title": "Trump, Xi Clash on AI Regulation and Human Control - 조선일보",
+      "published_at": "2026-09-25T08:35:45+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Trump, Xi Clash on AI Regulation and Human Control    조선일보",
+      "image": null
+    },
+    {
+      "id": "8a7e3ff3ce3af918",
+      "source": "Google News / Reuters",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbVZKcUF6ZV9GWnFNNDFVaTZnNFprNnYzdW5QeDlCMWg0dV8zcElPUHl2Ukd6TjhQaDBCdUc1R2lPQ1N1Y1NHWUpDLXloeHoxd1A3VE5hOFVXOVItbWhrelZuVzlsV2xNTnZPZFpWZmxVcG5iZldESmhldTNWSkJoQUtSeEpWQVpxOXZBVWN4VHI1bmktS0NiY29ycXVILTJ4bF8tR2lqY3VabnZnLXJLUGtBeG0yUk5kakhkVWJZdXY1MFc0WlVyQQ?oc=5",
+      "title": "Anthropic seeks 50.1% voting control for co-founders ahead of IPO, The Information reports - Reuters",
+      "published_at": "2026-09-25T08:32:20+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Anthropic seeks 50.1% voting control for co-founders ahead of IPO, The Information reports    Reuters",
+      "image": null
+    },
+    {
+      "id": "f1b37438af92161a",
+      "source": "Google News / WLOX",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPLS1XTVliSFItN3VCS0F2dW53Zm9HLUw1UHVYenBvQ1A0eHRTa0VEZGQxTEJlT2N5THdvSnVXaWVRZWdLVi1FRUw5WGRILXd0ZmQ4anFjanZsTjQxVFBmTUpJRXQwT2hRbjJJMTloQjVjMmZQaFNpdEVrQjI4aVdreWp5TdIBlwFBVV95cUxPVGpFUHF0QjYyQkxodnNmWnZTd2RJaUFmNUZ4bnJMU3prVm1oSExVakZiaERLN1BWQ3VGT05uU2l5S2ROV0N2SXZOUFpyS1lYeXBLX1Y0cjRKTzZpeFFJdUpuTEVxWTBwdmRTVndNcHJNYXFRR0ttNjd0dzhWWWdMQW9BYXgzWTVpTVFaQUtnWE9PM3dXaXhr?oc=5",
+      "title": "MAIN offers free AI resources for Mississippians - WLOX",
+      "published_at": "2026-09-25T08:31:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "MAIN offers free AI resources for Mississippians    WLOX",
+      "image": null
+    },
+    {
+      "id": "abf2b7acba16eee8",
+      "source": "Google News / The Washington Post",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNREU0LVpkNmhuOEZfTlQyM3RVRS1va3N0NnJPLXE1M21sOTZtcjBUeDRWVEVzT3YtSmFxRm9qVWI5ci1rYTBGOUViTlozd2E1NkZidFN2ajJaZFhsRk1lVWUxZzdEbFJVQXNsc3dGNG9na0dnZVhVMS15NGYtNEhrU1RWelFBWGhLdTdBN1pWenlkb09PYVlwaENhaXpSMWJfZFc1YkFLME1wNndPQzFQbDBzUV8wRGZUWk9ESHg4RW9RN19TRDBRRUQxVFZFN1U?oc=5",
+      "title": "Stanford removes AI-altered photo that replaced Hispanic student with Black woman - The Washington Post",
+      "published_at": "2026-09-25T08:28:18+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Stanford removes AI-altered photo that replaced Hispanic student with Black woman    The Washington Post",
+      "image": null
+    },
+    {
+      "id": "a8ea1a96b58bf640",
+      "source": "Google News / Reuters",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUNPVzNoNDJiWUNfY2hyZTNBT3pJS2kwUWk0Nk9UT0dTenZkTE5acXJaX0V4QXVMWXdwRVZEeVY3Y09HUTZqN2VPYUI0elhjY0RwRHFLTnFsSlNhdGgxUXJ2OE5pVHcyWUFBaWljNThLdUtqOFUzeHU2NjIyS3czT0hsVDdyQVFtemZIX0o2cTR5WGlTVXNnMUdOUUp0bm5PeFZQLXg5Uk81T3FJMmxn?oc=5",
+      "title": "Trump, US House speaker and tech CEOs to meet on AI on September 29, source says - Reuters",
+      "published_at": "2026-09-25T08:23:55+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Trump, US House speaker and tech CEOs to meet on AI on September 29, source says    Reuters",
+      "image": null
+    },
+    {
+      "id": "ef8e5bf29d81d2ed",
+      "source": "Google News / Top1000funds.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPU1llQTJPc2loVmYyb2lRZzR2N1RGYkVrdUNOMVdqMXIwaGJPNGc3QnB4UERpT3BwcUh6bHVwQml0dmdMdFNRSWZBSlJVUUlza3R4cXdsZmlqdV9MUk5iMUVuQVZYNDNaeldhMEhkRE11M3dINVNTZnhRTEdMb0VhY0ZMVzN5MGtzVEdRY0FEY1ZuOVBLb1hfNjVXdG43Mi1sdldkSWc3QzdOWHZ4NlJIRDJfaFg2cy1oRjVRTTh4cFJQb1hJZTFn?oc=5",
+      "title": "Anthropic co-founder: ‘Better than even chance’ AI builds itself by 2028 - Top1000funds.com",
+      "published_at": "2026-09-25T08:08:21+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Anthropic co-founder: ‘Better than even chance’ AI builds itself by 2028    Top1000funds.com",
+      "image": null
+    },
+    {
+      "id": "3591d30f9b85d42a",
+      "source": "Google News / Reuters",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaW1NWU1LbHpzMTdIQUQ4R1ZabjVjYURuMVd5Rnd4S0RNNVNKMXpIVUJ4NnlTWnpOWG92TkVoUzhOZDNodW1kQVg1X2kwamF0MFFUSl9JQnJzeWMyQ0l2M1JRSy12SWxSMldLYUVqTzhkaDVxWHFCeVpzZzZnNjIzbFpkcHJtRHNBS3lhenFOZXFESmRsWHduai1nYWcwcWJUVC1n?oc=5",
+      "title": "OpenAI to preview GPT-6 Cyber within days, Fortune reports - Reuters",
+      "published_at": "2026-09-25T08:07:19+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "OpenAI to preview GPT-6 Cyber within days, Fortune reports    Reuters",
+      "image": null
+    },
+    {
+      "id": "7689477994221609",
+      "source": "Google News / finance.biggo.com",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9kWjQ5dzhZTmo0Wm5aeVVSZmFTT29yLW1saEltMXdpdDk1cy1UblIyNlRWVU8xXzdjdGhFUFVZWWRLczNrN1dISUNWX2x6dDBZZklpWlFHTFF5WFJaNWd0d1FZUGxaNHRyWS14VzBkanhROV9zeUE?oc=5",
+      "title": "Qualcomm Shifts Video Editing Paradigm with On-Device AI… Auto-Sorts 500 Clips - finance.biggo.com",
+      "published_at": "2026-09-25T08:05:00+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Qualcomm Shifts Video Editing Paradigm with On-Device AI… Auto-Sorts 500 Clips    finance.biggo.com",
+      "image": null
+    },
+    {
+      "id": "08a50bae9731299e",
+      "source": "Google News / Axios",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QdDBQWmU3REN6dnpNRXQ3U1U0X1Ntcmgyd3BUYzltTF9vN2llLVhUeHNic0FzUVBnc1c1RjdGZ1RxMG9sRHlISF9mZWtNMHdOVFFYTEJsS1hMLWZ0c0RUQmdNUnhfa1NqMFBNVWZOWlBkSTZnZGc?oc=5",
+      "title": "Scoop: Trump, Johnson and tech CEOs to meet on AI Sept. 29 - Axios",
+      "published_at": "2026-09-25T07:49:06+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Scoop: Trump, Johnson and tech CEOs to meet on AI Sept. 29    Axios",
+      "image": null
+    },
+    {
+      "id": "679ba01d81b049dd",
+      "source": "SiliconANGLE",
+      "axis_hint": "llm",
+      "url": "https://siliconangle.com/2026/09/24/akamai-shares-jump-more-than-20-on-11-6b-anthropic-computing-deal",
+      "title": "Akamai shares jump more than 20% on $11.6B Anthropic computing deal",
+      "published_at": "2026-09-25T07:46:43+09:00",
+      "fetched_at": "2026-09-25T09:28:05+09:00",
+      "snippet": "Shares of Akamai Technologies Inc. jumped more than 20% in after-hours trading today after the cloud and cybersecurity company revealed an $11.6 billion, seven-year deal to supply computing capacity to artificial intelligence developer Anthropic PBC. The agreement is built around central processing unit workloads, where Akamai said Anthropic’s demand is accelerating. Akamai Cloud will provide […] \n The post  Akamai shares jump more than 20% on $11.6B Anthropic computing deal  appeared first on  ",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2025/11/akamai.png"
+    },
+    {
+      "id": "33a15ea6bab159ed",
+      "source": "Google News / DREDF",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLUXFLWkRWTDRLaF9nZl9pT0ZaVDMtaE5CN2ptMFhqT1JBcUotaDAwOTNYSmVDQlY2RmtKX2gxT0V5ZU12TDRiNVhlX2FPNHlBbVZrSw?oc=5",
+      "title": "Notice: Survey on AI and Legal Services Clients - DREDF",
+      "published_at": "2026-09-25T07:39:12+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Notice: Survey on AI and Legal Services Clients    DREDF",
+      "image": null
+    },
+    {
+      "id": "8c1ef493518c9545",
+      "source": "SiliconANGLE",
+      "axis_hint": "llm",
+      "url": "https://siliconangle.com/2026/09/24/databricks-acquires-spreadsheet-startup-row-zero-to-enhance-its-ai-capabilities",
+      "title": "Databricks acquires spreadsheet startup Row Zero to enhance its AI capabilities",
+      "published_at": "2026-09-25T07:30:40+09:00",
+      "fetched_at": "2026-09-25T09:28:05+09:00",
+      "snippet": "Databricks Inc. today announced that it has bought Row Zero Inc., a startup with a spreadsheet editor optimized for large datasets. The acquisition price was not disclosed. Seattle-based Row Zero raised $13 million prior to the deal. Its backers included local startup funds and Wes McKinney, a prominent software engineer best known for his work […] \n The post  Databricks acquires spreadsheet startup Row Zero to enhance its AI capabilities  appeared first on  SiliconANGLE .",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/Row-Zero.png"
+    },
+    {
+      "id": "b4ff421893c683eb",
+      "source": "Google News / Fortune",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTFRVbmt1M1R5emRFYmcxdUdXcHY1cWQtUU9vcE9BczRONHhLZXl6MnZ0MXUyNk5IZXF4eGh5V1phUzJ5VHpxUnRET0Z3MXZoZkZjYXNwb0d5a0U1SlJYY3VIdGNhanRrWFp4Sm0wQVdwZklweWlQUnZZVnFrbnVjeWF2V0pWMkpzTDkyT3NFb2k2RFhZSXhraVhB?oc=5",
+      "title": "OpenAI to unveil GPT-6 Cyber model, plus a first-of-its-kind product to help deploy it - Fortune",
+      "published_at": "2026-09-25T07:29:00+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "OpenAI to unveil GPT-6 Cyber model, plus a first-of-its-kind product to help deploy it    Fortune",
+      "image": null
+    },
+    {
+      "id": "2c2e98827356cc09",
+      "source": "Google News / Reuters",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbE9HMk1LNU54UjJ4MmxBbnVHMnpKQ0lnckVheHVQdWxwR0FZTk4yU25BanNZcTROTkhodWVRRGxHREdyX1l1bnNCNk4tdHZwbzlraXY3T1I0a1I2WXlqd1BoczlHV2RDcnhGdk1ORVBaQlJ0ajd2NmtTYUhOOW5KMkI5Qy1SUDVHazBTMVJ4cw?oc=5",
+      "title": "Law firms vie for tech talent in AI race - Reuters",
+      "published_at": "2026-09-25T07:21:26+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Law firms vie for tech talent in AI race    Reuters",
+      "image": null
+    },
+    {
+      "id": "96adfa7100c444ec",
+      "source": "Google News / 13newsnow.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNZ255YUh2WkFJalk4TFdYUkFEYkpmaU1XQnRFNXJab2JlejVfbXhpZElCNFFsREQtaFRodzkyWjZhakRfN0FVQmJjZ3dnZmdpLVBTQWhxaUVqWkE3TUpKd0VDS0xEWkNYSmwyWmxGYmRjWnU1bEpXT0lLUzBkanBES2hXazFhbHhkNUJSa20yNWVXMERwLTBQbk5EOFpyUTlnOV9DVEFSUFh4WjVwel9OSmNWNGJ0d3ljWUNsY2FUTFZwQlZZdGFMZnZzeGd3NzhHOGY1SmE0bE9NVU5rWWRCWEZzSzk5M21tSXVYanJrOXpjSlJ2VE90TERSOERNNU0yUVlN?oc=5",
+      "title": "Warner seeks investigation into reported AI failures in US military operations - 13newsnow.com",
+      "published_at": "2026-09-25T07:05:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Warner seeks investigation into reported AI failures in US military operations    13newsnow.com",
+      "image": null
+    },
+    {
+      "id": "dbccba993a94497e",
+      "source": "Google News / simplywall.st",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSjRPTTk5WE01RjFIbWZCbVpRVE1iSHlmLUZEbmNYcGZKUVZSN3JYdGttblNnemFidjhyemFZVTBFZzVobG1WMnJQeG1XYlBpdTRCN1hMeE15bUE3Tmw2UndsdUM3WERMOWNVb19hSlF5VzdlWjI2NHB1eVFuQndSSFlyTFE0VDRUSWhTQWRjUE9ES0xIQzBMN2lqaTVYczlqcVExRVQtWWk5eUlILS1xYldYODRadW9pUGZVaHhidi1QNzdac24yZGZVNHA4R1VaX1pj0gHYAUFVX3lxTE5QaVVHbDFVZ2ZtRXZWcmFvUWpHWmFTd05BSHJzYUZGcGgyS2F4V3d0RWJvMDNzTzRhVUVXc2p4MzJPcEJuSTB1V1lBd2NPWXFxcUVOVkhsTVM2OVc5YmNiLVJndjg1Qkl1OUt2SXNLeElrQ0hUdHFWTVJseWNCMTk4b3FsSlNURy10UmZ3X3o4d0VsRDR3VUJMQnBpSnViWlEwOWdpZENERkFmZHVFWFJZNU5tR3IzaTlscndJZTZyZkhwcEw3Um1IbVA1VHN1QzllLTByWTRVaA?oc=5",
+      "title": "Does AI Lawsuit Risk Change The Bull Case For Rackspace (RXT)? - simplywall.st",
+      "published_at": "2026-09-25T06:57:24+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Does AI Lawsuit Risk Change The Bull Case For Rackspace (RXT)?    simplywall.st",
+      "image": null
+    },
+    {
+      "id": "cbf17cfd1f96573e",
+      "source": "Engadget",
+      "axis_hint": "llm",
+      "url": "https://engadget.com/2268392/ray-ban-meta-gen-3-vs-gen-2-ai-glasses-comparison",
+      "title": "Ray-Ban Meta Gen 3 vs. Ray-Ban Meta Gen 2: How these AI glasses compare",
+      "published_at": "2026-09-25T06:56:17+09:00",
+      "fetched_at": "2026-09-25T09:28:05+09:00",
+      "snippet": "Meta's newest smart glasses are an iterative, expensive update.",
+      "image": "https://www.engadget.com/img/gallery/ray-ban-meta-gen-3-vs-ray-ban-meta-gen-2-how-these-ai-glasses-compare/l-intro-1790286501.jpg"
+    },
+    {
+      "id": "4d8b3f49c1e01dc4",
+      "source": "Google News / WSJ",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE82amxlQmdlWmNTR1FKQmtKTkdwN25HZDE2WG9mYXlNdHhaQ2Q5ZHVEckVKUHQyZ1dlZ2U0Yy1QUUJyWnBuTVh6VlBBTEhTOFNmMkFSeHVtMkVlY3h5Tkp1RUs0Wk1mdHhCeFhUc2VoSTVvZmpvOXl6UXFMUjE?oc=5",
+      "title": "Opinion | Trump Is in Denial About AI’s Danger - WSJ",
+      "published_at": "2026-09-25T06:55:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Opinion | Trump Is in Denial About AI’s Danger    WSJ",
+      "image": null
+    },
+    {
+      "id": "ac23f5f627fbbb81",
+      "source": "Google News / The Information",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRU8xc1lzSktyVkF0c003MEVWVUpLMjhuS0paQ1UwSm44STAza2dRYVV6bjZFVkg2MWZNUU11V3pyNmh0QjVUYUpSRGFnaWhxTjUyU1JSNS1IcVZCWG81ZnNQc2R0OXY5bmU4SE1kSWdicnZHRjBwZUY5Q0dPdzV1Sm1JX3JBWlFSSTJzSkw5WGRHYzhDMExzbXcwMmJpcEF4R1JLeFhNdGEycEkyZmZmLXBzdw?oc=5",
+      "title": "Anthropic Seeks Palantir-Style Voting Control for Seven Co-Founders Ahead of IPO - The Information",
+      "published_at": "2026-09-25T06:53:00+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Anthropic Seeks Palantir-Style Voting Control for Seven Co-Founders Ahead of IPO    The Information",
+      "image": null
+    },
+    {
+      "id": "cb4515c3aec5e063",
+      "source": "Google News / Council on Foreign Relations",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZmpTSXJpVVFFZHlBdmpKRy10WUM5alQydnRNUXZoMnkxOGRvQllGTkhhbnZaNnZsbllZZGdXYV9QZVMtTlVMODRsbDJDREI4b2o0VTZCUDllbmw0TVZRYmtJenUxN2E0eEg0cEd0UmJMOEN4aHRXVmJiTVk5NFdlekNB?oc=5",
+      "title": "How to Reach an AI Arms Control Deal with China - Council on Foreign Relations",
+      "published_at": "2026-09-25T06:51:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "How to Reach an AI Arms Control Deal with China    Council on Foreign Relations",
+      "image": null
+    },
+    {
+      "id": "e914ae7aa815e09c",
+      "source": "Google News / jetstream.blog",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZWZyRVJYc3ItS0ZjN1FfMXdISEY0T2taZnRQNmRJcTdOMElkZXJRdGlRQTdJdjNqUDRHYldRX0huZ3dNM1RKRHFFMEJCcHZzLUtaX0txZFV0RXBzZF8ySDROWjM2Yi1wM05z?oc=5",
+      "title": "Gemini 3.8 Live with Live Avatar Officially Announced - jetstream.blog",
+      "published_at": "2026-09-25T06:48:06+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Gemini 3.8 Live with Live Avatar Officially Announced    jetstream.blog",
+      "image": null
+    },
+    {
+      "id": "881d5c2665d3dd59",
+      "source": "Google News / Startup Fortune",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWmg2aWdQZE1iajJENnF3QWJrT1VCY3duVWpQdDVCR2NLTG1CZE9zanMtQXNZb1BMN1Z0NFNoUzJZc3B0OVh6TFJmc1pPZjJOa1lGZkt0OEJ2aFlzdFg4b2lXaEMxS0J5Y0hsbjZldHhkZkhNWXVyYVI5TzVTTlV2UklpQTV1UXNpaFNSNlpTdUQyZmlrVWZxWTUxVHowM1hQVmc?oc=5",
+      "title": "AI Data Centers Are Quietly Squeezing the Cheap Chip Inside Every Router - Startup Fortune",
+      "published_at": "2026-09-25T06:43:08+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "AI Data Centers Are Quietly Squeezing the Cheap Chip Inside Every Router    Startup Fortune",
+      "image": null
+    },
+    {
+      "id": "9d27c27659bcd0ce",
+      "source": "Google News / Los Angeles Times",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOFlRT1JkTzlQNmFvZll0M1ZBMnlsSXVXQTFFZy1UNWdzelhuMmNpX1dTeFcxcDEzVTl5WnVIQkYydnFmcFZ5eldQX0F1a3JoY1JDX0JCbVhKcTN4OTdpSFdyS2FrcWlPdGYwWGxkdDFuQ1FJelBXQWcwNWZfa292THNHd19IbUJnYS00endkZDY5MS1yMEloLVg0b29lMkpmRVkxUzhB?oc=5",
+      "title": "Xi, in lavish Trump summit, urges ‘human control’ over AI - Los Angeles Times",
+      "published_at": "2026-09-25T06:42:59+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Xi, in lavish Trump summit, urges ‘human control’ over AI    Los Angeles Times",
+      "image": null
+    },
+    {
+      "id": "9b93c9b46236ce81",
+      "source": "Google News / BankInfoSecurity",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU3hSbWFhUmJuLUtWR29rWjZrWklxcUNJVWprZVpueTJGTTRKQXlzbGtXemV2dzJHM3p5blhUVzE1YWJkSWhyZU9Fc0kyXy1qYVVxVWxOZkNWaTNnTzBpWExpeU1iSmVzX1JsMTQwNVBSbGxpYndKeUxsZ0VUMnNrTzJDaWVjQnpLQk9DZ0I0bEdFSEdBdFFGX0FSdXI?oc=5",
+      "title": "Google, OpenAI, Anthropic Plan Frontier AI Standards Body - BankInfoSecurity",
+      "published_at": "2026-09-25T06:42:22+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Google, OpenAI, Anthropic Plan Frontier AI Standards Body    BankInfoSecurity",
+      "image": null
+    },
+    {
+      "id": "df389f7080d5cfc7",
+      "source": "Google News / Mexico Business News",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdmtqNW5OZDZXNndGbVBlaUJVaFRHdXZwdWxWb1NtcEFzMXlCak1oVW5xNnkycXlMM1R5N09hTExWa3FGN2dSeEJhLS1IX2o3R1FwREpqQ21pSmNyaTA3NU5UY3JBOVRlUGp5cXI4TE14MXdfdGNEUDl5cjFwUXpOYmxIMTlQVUVObUY1WS0xWnFmMzBpZ1JPdGEzaw?oc=5",
+      "title": "AI Governance, Infrastructure Face a Critical Moment - Mexico Business News",
+      "published_at": "2026-09-25T06:40:18+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "AI Governance, Infrastructure Face a Critical Moment    Mexico Business News",
+      "image": null
+    },
+    {
+      "id": "838bdd03b959c4c7",
+      "source": "SiliconANGLE",
+      "axis_hint": "llm",
+      "url": "https://siliconangle.com/2026/09/24/proofpoint-protect-2026-8-insights-ai-agent-security-proofpointprotect",
+      "title": "8 insights from Proofpoint Protect: Security bets on intent as AI agents join the workforce",
+      "published_at": "2026-09-25T06:38:53+09:00",
+      "fetched_at": "2026-09-25T09:28:05+09:00",
+      "snippet": "At this week’s Proofpoint Protect event, the security debate moved beyond whether enterprises will deploy AI agents to how they will govern them. Attackers now use AI to write flawless phishing lures and chain exploits at machine speed. Meanwhile, the agents companies run internally act as insiders, with access to data, systems and inboxes. The […] \n The post  8 insights from Proofpoint Protect: Security bets on intent as AI agents join the workforce  appeared first on  SiliconANGLE .",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/Molly-McLain-Sterling-senior-director-of-Cybersecurity-Strategy-at-Proofpoint-Proofpoint-Protect-2026-scaled.jpg"
+    },
+    {
+      "id": "9b7db19e14a613c7",
+      "source": "Google News / The Guardian",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV3VSZTJnOXg4YS1KM3hjeElfZzNtNjJDSHNISFNiajQ3M091VUozal9CeFBwX3Z2S25JekQyTHk1czlBTFlhcFkwcEFvdTZfalhTbC1OZkR3TWxndDk2cTRrNGdZWFlwbURCcGhHNUdMSXdTNmRsZUpZTFVmSWdHeHVWdmJoZFB2WWhfUWVNV3A4R1BtNXFDQQ?oc=5",
+      "title": "Launch of UK’s ‘largest AI supercomputer’ delayed by power supply problems - The Guardian",
+      "published_at": "2026-09-25T06:37:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Launch of UK’s ‘largest AI supercomputer’ delayed by power supply problems    The Guardian",
+      "image": null
+    },
+    {
+      "id": "e4a09fc0a9631850",
+      "source": "Google News / forbes.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN1JQRjNwWkl4RWVlQnVud3hQRXFlenFLM2FLNWtaTXBacWtwbnF6eVlKcE0wZW9xaXBPVU5xTVl5LUJ5VVJOQno2ZF9CYW1oUXlQOG4wYnl0Rk9YbHczdWhVa0pHSlB2bTYzTmkyTk5kNHYyTGxQQ3EyYUJnVTdMcTZTakdsOFh5NzlIQkdaRnlmM0NBWVlncEpvc3pVUVREOGVGSkZLcG56YzJpcFJpRzR6aGI?oc=5",
+      "title": "The OpenAI Medicare Hack Highlights A Growing Rogue Agent Crisis - forbes.com",
+      "published_at": "2026-09-25T06:26:46+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "The OpenAI Medicare Hack Highlights A Growing Rogue Agent Crisis    forbes.com",
+      "image": null
+    },
+    {
+      "id": "efc0e8b47b2d0fb0",
+      "source": "Google News / WLWT",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcW5fSklfV0MwRDlJZ2ZyNlBUUy1razRiTmM0QU9HN0w1bU5SOHpRYUJmQUxpYkxhcVlOTS1PbFM4ZTlGaHlENWJjdFg5QWFxbnIwb1FObG13cUJsNzNnVkFUbVNVb2hUYVpFaDZzVnNXUzBHYzRUZVRtQ3ZPWEx3VFk2dkhxYlpHN0JUNnhVTDYtMjFp?oc=5",
+      "title": "Caleb Flynn trial: AI-generated songs written for ex-mistress played in courtroom - WLWT",
+      "published_at": "2026-09-25T06:26:13+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Caleb Flynn trial: AI-generated songs written for ex-mistress played in courtroom    WLWT",
+      "image": null
+    },
+    {
+      "id": "baa7363de069aaea",
+      "source": "Google News / finance.biggo.com",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LTzhzUWdETkJqVFZPVG8ySGpVVkxJSVZNOXFPU3RZaUFFNTlwUnRmbTJSM3hKanJlaXdnbTkyeGYyNmVnX1c2U0dxNmhFTW1sUnlqWkhqZTlUQ0RiQWVZM2pPNkFibW1tdGRrWXpUQThHel84VVE?oc=5",
+      "title": "Google, OpenAI, and Anthropic Plan to Form Independent AI Safety Standards Body, Potentially Launching by Year-End - finance.biggo.com",
+      "published_at": "2026-09-25T06:25:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Google, OpenAI, and Anthropic Plan to Form Independent AI Safety Standards Body, Potentially Launching by Year-End    finance.biggo.com",
+      "image": null
+    },
+    {
+      "id": "b028fc8eb07bb779",
+      "source": "Google News / shattered.io",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtVlhnWVE3NEE0aV9uTTNFNUVhZEJHLWd2cFhaUmJ1a21RQTJ3Q0NSbEFmczlmaDFBWjgxb18tOXFVMGZjX25YNjY0MVRoQWg1UW1lWVB3bnRfWE9XbHVLTTk3eTY1RDBNaUoxY09RNlhQUQ?oc=5",
+      "title": "Huang Warns Nvidia's AI Chip Buyers: Shut Down Risk - shattered.io",
+      "published_at": "2026-09-25T06:23:15+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Huang Warns Nvidia's AI Chip Buyers: Shut Down Risk    shattered.io",
+      "image": null
+    },
+    {
+      "id": "bc999feff2e9628e",
+      "source": "Google News / Livemint",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPVksxQjVPcDFUSGxOSGpRMnpqOFVzRExUTlVIbE8yMTZqekdtM3F4dmtwcHcwQWVTQUhmR1FCQXV4MWk5MmE5UGpoT0lONklIOU9jVnFWT1phZzM4S1ExZS1JNC1WemFlWkxqN0pqc1JJcEpFV1FvUi1zalh3ajYtbnpJV01qa0lOTnNZRF96NHlkYnk5YlM0VmQ2dWRWN1I5UHFoYktzNTNMM01mSS16RzlhMUhVS3lLRXhLY0ZfaTR5Y3M0NDRTdzdpUm5zOG5uc0NmRnRFN0xzaWZJdy1LUHl1dWYtTHBIVFRzUtIB8gFBVV95cUxPOS10ZHo1blVsYTdTZ1YySGxtY3h6MTExYkJQYS14bzZzTFFrajNMRE1QZC1wTnVWeDNqdkdIejNXVjVJbGlaXzZXY0QyRWhLY2ozU2k0RXpTQ2V3aXROdFhLd3pYUlVhYmVOY015WU5lQUFyc1FfcjZfcFd1MTVGZnVONHZqS1JOczFZV0tYMjB4ZnZnZzZCb2pVSGZVQjNON1pUcHhkbHYzRjlGVFl1X0ZfMG9qdkxRbFhRbVNZTTZyRlYwaHlZaVpZakVQY2tocjViTHNHMHlTdXVYc1dYNWdubEp3WXlaQzFhTTdSWDFHdw?oc=5",
+      "title": "White House wants US government review of OpenAI, Anthropic’s new AI models before UK access — Report - Livemint",
+      "published_at": "2026-09-25T06:22:36+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "White House wants US government review of OpenAI, Anthropic’s new AI models before UK access — Report    Livemint",
+      "image": null
+    },
     {
       "id": "14d30e23cadc5660",
       "source": "CNBC Tech",
@@ -14,6 +421,61 @@
       "image": null
     },
     {
+      "id": "493ec8a223e73ce3",
+      "source": "Google News / Barron's",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Ra25zYm9JMThkX1UwaGVZLVplNDBfR1RYUlJPLTlaV3FJOVI2aE9rZWlOUWpQSF80aVhGUURXalhSbFBWYk1naTRCNjhwbFVkbjVjSkJCbWM3Y2tFZzNDNTFPdC1PUklUNy14VnZlbWlyMkVSN1ItT0ZaOA?oc=5",
+      "title": "Akamai Strikes $11.6 Billion Deal With Anthropic - Barron's",
+      "published_at": "2026-09-25T06:15:00+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Akamai Strikes $11.6 Billion Deal With Anthropic    Barron's",
+      "image": null
+    },
+    {
+      "id": "5a2ddd705c63414e",
+      "source": "Google News / WTVG",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSEFiVk1wTldHT2hpSHN6UVlBVUduQ3ZGbW5uM2FjQTNldzlzQlJQQUhqbnpEWmNtS1NnMFZwSzlNNUp0S2VsQy12NkdZZkhxWE9JSER1SUFBNnFPQUhHbWl4NHdicG1ZVnp6ZkpRbTZrb3FGc2VPT2dUcUVXRTFHeFRzalFKSVpJUERMemUyOWpoeDd4RmVZNg?oc=5",
+      "title": "13 Action News Big Story: The future of AI and how we navigate it - WTVG",
+      "published_at": "2026-09-25T06:15:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "13 Action News Big Story: The future of AI and how we navigate it    WTVG",
+      "image": null
+    },
+    {
+      "id": "3749f7bed46c9343",
+      "source": "Google News / ABC News - Breaking News, Latest News and Videos",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE11OXR2ZVNpMHRwUVdoSjMwem80V0U1akRtaUt0MjNWa0tUeVg3bDVpSDdObTB2NVhMM1Z2MVQ0Wk04UVkzTEJCMWo4T3Z6SmZCcW1HU1c5MUg3dHVFTmkydUlKSzBVSkJKZV92aWRtYWlPelo5dXfSAXtBVV95cUxOY2RvdFJNVjEwUUw4UU00Vm5pQ2VQVkxnMDV5U2lJLVN3b0x2ZG5HQU91NUgxM3BsSHBqN1BQX1E0eWtsdXI0NGdzaGozcHd5QjlTcmJRQXdzSVd0Q0ZGZ3ItZHktX2d5WFNYWjhJekVoUElEcXRac19MQUU?oc=5",
+      "title": "What to know about Meta's Muse AI agent - ABC News - Breaking News, Latest News and Videos",
+      "published_at": "2026-09-25T06:13:46+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "What to know about Meta's Muse AI agent    ABC News - Breaking News, Latest News and Videos",
+      "image": null
+    },
+    {
+      "id": "32b69757e8bd21cd",
+      "source": "Google News / embedded.com",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMmdNSUFieldSSHZ6eEtoQWd1U3hkdmRKdEJfV0NuaWVibm9IdFNzcHBwbVFSYlR4VnFNcF8ycXRDRmxxZ0diRGVKNG9tMFhtZUtRb2V4ZTNwWmROV3UzaGhSZHdWQ093Rk9uWU0tUW5vS1NUeVVpUHFndkxhcVNBREJBc0diWXc?oc=5",
+      "title": "EdgeCortix Launches Scalable RAIDEN AI Chiplet Platform - embedded.com",
+      "published_at": "2026-09-25T06:12:11+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "EdgeCortix Launches Scalable RAIDEN AI Chiplet Platform    embedded.com",
+      "image": null
+    },
+    {
+      "id": "a9f3acb01b045fd6",
+      "source": "Google News / WSJ",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVW0zbElYMzI3cUlNNWR0Rnp5Wk5FQTBJa3l4WFZ5RU01SjBJMWFCNWtWY01zcWl6TGlpalpDdjFmTGwtcUdQYVMzc1ZHOENwQ01LbmRPUS15T3lsY1JZSjgwTUxQLUNXZmhtT19KbUFLYnhZclF5SHNTNmVOUm1LTGlSNGhUTmVqdGNxQ3cyeXBoQ19NeHVsU09mY3VGbHZmVUtyVDAtdG1NancxTmdKUjIzcjh5aTViRGVn?oc=5",
+      "title": "Anthropic to Pay Akamai Technologies $11.6 Billion Over Seven Years for Cloud Services - WSJ",
+      "published_at": "2026-09-25T06:11:00+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Anthropic to Pay Akamai Technologies $11.6 Billion Over Seven Years for Cloud Services    WSJ",
+      "image": null
+    },
+    {
       "id": "28578f292ac7c6c8",
       "source": "Google News / Fierce Healthcare",
       "axis_hint": "llm",
@@ -22,6 +484,17 @@
       "published_at": "2026-09-25T06:10:00+09:00",
       "fetched_at": "2026-09-25T06:26:45+09:00",
       "snippet": "Cigna Group, OpenAI team up to support patients with complex conditions    Fierce Healthcare",
+      "image": null
+    },
+    {
+      "id": "763172ace0791c18",
+      "source": "Google News / Financial Times",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNclNvRXRmSzdWY050dWx1TXZ4cS1pelpSMUxRWmpSZTZKbFZGUDYwZ3REbWZCQTNvZDJ3bjNsUEliVjYzMkJ6LW92YXhaR3pza3JFVFZtVnA4YlIxTWdSdy1OYVdCcGcxajQyZXBpOVdFQ0Z1bmhkWHMwWHdNUFhPRnFlUks?oc=5",
+      "title": "OpenAI breach of Australian government linked to wider AI hacking campaign - Financial Times",
+      "published_at": "2026-09-25T06:06:45+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "OpenAI breach of Australian government linked to wider AI hacking campaign    Financial Times",
       "image": null
     },
     {
@@ -47,6 +520,28 @@
       "image": null
     },
     {
+      "id": "6ccddb0389f6ed23",
+      "source": "Google News / boingboing.net",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaEhnYnVVUmlZY0QwcUVMVlMtajF5OVlSbWlER3hwWkVMcUl5ODE2eWtCSE1BNDBCZ3lPUDNhOUJ5YlV3bjMtX3djUWJ3TmNYNW12WVoya1RhWVphRWhrdkhwTVMtclF2TnRQVVh5M3hsMDg2clFwT0U3ZjVEYXhPell0cmE3Z0FkREZ4Rm94MmNZUHNSY0p2Tkplam3SAaIBQVVfeXFMTTJNV29fRHdUNzQ3QTdCVk01cmRfUUJlamVjTFM5U0JNcGljTWtXWnRvN2oyUl9RZGZMQnVRZ0dMQ3ZGcF9JLUdZLW5UWmRKYWFOY2daR3dxR2pPMGRjQm5KT0dOTDB1ZUxKOUdqYnhRQUVOMGZYMHllcnBkbFo4bjMyZENnd0FEcDgtZFpleDl0c2VrNWJZbzQtWkp5V0FGd2JB?oc=5",
+      "title": "Make up to six AI models answer the same prompt for $39.99 - boingboing.net",
+      "published_at": "2026-09-25T06:00:00+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Make up to six AI models answer the same prompt for $39.99    boingboing.net",
+      "image": null
+    },
+    {
+      "id": "3c53321004ccb7b2",
+      "source": "Google News / WSJ",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8tN2tsLUpHSXhHWGIwTFZVX0xLbm5xTVlpc0pHbFlpMy0yMHFFOTZpWlE0YTBCV2x5SERTbGRtM1ZiVjY5bC1zTEJBSXUtQnplbzg2S1Y0dS1iRW1vZFh0a0J5ZVFIVjN1Wmc5MzA4R2pqYmJ3d19WMzZNcGI?oc=5",
+      "title": "Opinion | AI and the Growing Threat to Taiwan - WSJ",
+      "published_at": "2026-09-25T05:58:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Opinion | AI and the Growing Threat to Taiwan    WSJ",
+      "image": null
+    },
+    {
       "id": "e1eb5a626e427363",
       "source": "SiliconANGLE",
       "axis_hint": "llm",
@@ -69,6 +564,50 @@
       "image": null
     },
     {
+      "id": "64c8ff1d8b446f69",
+      "source": "Google News / The New York Times",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWFYzWnFOUTlWYUt5dFNUY3BJOXBYT1p0aUk1b1oxR0VPOHRON1VGLVFMUXl4VmNJMXp3OVM1WVFHNVNtV0lqQ3R1T2lheFcydDNqdzRQbC05ZFg4SXVVQWV6Vm9pcGhyX1VqWnNNeG9HUzg1VXFyM0pjUlBkQkl0REFoRE4tRVd0NGJrNkxR?oc=5",
+      "title": "Massachusetts Is Investigating Gambling Companies’ Use of A.I. - The New York Times",
+      "published_at": "2026-09-25T05:50:28+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Massachusetts Is Investigating Gambling Companies’ Use of A.I.    The New York Times",
+      "image": null
+    },
+    {
+      "id": "4e7eac10df2d9461",
+      "source": "Google News / Today@Wayne",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRXQyOWVyWnN0NmQyNW1UU2NwZzVYbHVURG9iQ0JkSjRqMUhnSXR2U3ZzejFVWVZiZVkxZDdRaEw5T1pDRmZoOW9kSkJxalpzSTlabGZIZzVXbV8xb01uNjFWd1dOQkc1R1kwLWx4OEI1cDFTNGlYZlZmbF9seHpqOVEybHR0ZVkzWkxQajV5Z2pUYWpUbkZYTVJSNVpWemhRaHZzeFRnWWtVZw?oc=5",
+      "title": "Wayne State student’s passion for AI leads to NASA internship - Today@Wayne",
+      "published_at": "2026-09-25T05:50:16+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "Wayne State student’s passion for AI leads to NASA internship    Today@Wayne",
+      "image": null
+    },
+    {
+      "id": "9729e0052d707e39",
+      "source": "Google News / HackerNoon",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRWNJTUhkRUs1SWVlREJiZmZpR0k3Y2VYQ3Fzc3dFMmlUbFhfTEpZN0JFRTN2RmZEZ19fcnVXcE9VbXpXSXJ6Ri1VZkJ6RHFjQmdhY3FCUjNFX0dQZExDX0k3MWNfMHFwbzBzZ0tpMlhvRElWVmdVUThQRG5uSkhYTlg3cW1fRHRPdEZtRlhJUHQ4Ykdnd0E?oc=5",
+      "title": "Designing Reliable Output Contracts for AI-Powered Mobile Interfaces - HackerNoon",
+      "published_at": "2026-09-25T05:47:20+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Designing Reliable Output Contracts for AI-Powered Mobile Interfaces    HackerNoon",
+      "image": null
+    },
+    {
+      "id": "2dec73a0eaaed8c6",
+      "source": "Google News / simplywall.st",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZjB6VkFCcHEtUzU1VzdhZlZOeENrcEU0aFJ2SXlfcUt0QkRteGp3ME8wbGVheV9PZk9ldm43NzN6Qkg1X0JaV3F0OERJdG1YVUNfS3B2VTJyTGJjbU1rdE9BUjZGTUljOGllRG5LcWotc05zS3h5b29JQzFIT09vYVJGZ2piQWE1TjczdG9ycnBxYW1YdmNnLXNSY3E2c3JSbGtPQXhpNnJJTVowX2FXamVZVG1qMklSRDVVM2ZSVktqVlF2enNuRm5zOE7SAcwBQVVfeXFMTWYwelZBQnBxLVM1NVc3YWZWTnhDa3BFNGhSdkl5X3FLdEJEbXhqdzBPMGxlYXlfT2ZPZXZuNzczekJINV9CWldxdDhESXRtWFVDX0twdlUyckxiY21Na3RPQVI2Rk1JYzhpZURuS3FqLXNOc0t4eW9vSUMxSE9Pb2FSRmdqYkFhNU43M3RvcnJwcWFtWHZjZy1zUmNxNnNyUmxrT0F4aTZySU1aMF9hV2plWVRtajJJUkQ1VTNmUlZLalZRdnpzbkZuczhO?oc=5",
+      "title": "Arm Stock Outlook Brightens As AI Chip Demand Builds - simplywall.st",
+      "published_at": "2026-09-25T05:44:07+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Arm Stock Outlook Brightens As AI Chip Demand Builds    simplywall.st",
+      "image": null
+    },
+    {
       "id": "b0734429a2a894ab",
       "source": "AI Business",
       "axis_hint": "llm",
@@ -88,6 +627,28 @@
       "published_at": "2026-09-25T05:40:21+09:00",
       "fetched_at": "2026-09-25T06:26:45+09:00",
       "snippet": "OpenAI Preaches AI Safety. The Australia Incident Shows What It Practices.    Reason Magazine",
+      "image": null
+    },
+    {
+      "id": "6a65c17b3afedebc",
+      "source": "Google News / Minnesota Attorney General's Office",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNjZobDVGMDBrYWloZmRQUmtOOU05SjltczZBa2ZLMG1IQktOMXBadjlSVWszWGtMQXlZMTI4Q1dOdEhjQ3BodElSWWVCWHVDZGcxVmRiaXBHaGVoSXhzRmpPNmdnRlE0MG85U3M1OFR0TmdUYUNVY19Od2lZQzNNT2VUMA?oc=5",
+      "title": "Attorney General Ellison calls on Congress to protect Americans from unchecked AI development - Minnesota Attorney General's Office",
+      "published_at": "2026-09-25T05:37:30+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Attorney General Ellison calls on Congress to protect Americans from unchecked AI development    Minnesota Attorney General's Office",
+      "image": null
+    },
+    {
+      "id": "2a142f8ea45f2504",
+      "source": "Google News / Devex",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHBlem9HTGRMdWV6RUFPV19Bdm5uWTE5dFRkSHFrZzlMMUVYQ2RMNmg3NUQwUEU5QVdTMTlPdTIybmpXSkVRRWpTMjVTdmpHQW1oRG9rS18xaUJvelFpa2xlTzdvdnlMbTRLb2g5WDJQRzVqRTltcmFJbUhWa0dlTzNoQklfQmRacHN2aVBfRWdVM29vNXpIU0NkaUMxTHRVVXlNcw?oc=5",
+      "title": "Inside Anthropic's strategy for government and nonprofit AI partners - Devex",
+      "published_at": "2026-09-25T05:36:01+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Inside Anthropic's strategy for government and nonprofit AI partners    Devex",
       "image": null
     },
     {
@@ -234,6 +795,17 @@
       "image": null
     },
     {
+      "id": "6d871f81625e677c",
+      "source": "Google News / vox.com",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUFFpMUtFcDlZNm5NSURrYTVCRlpMZGtmUlh5dllORWE2a015MmtfY21iU2FESlhfUlU3Ukg1VGtVZWFGdjFmSUdGa0ZIeWVaQlEtakpvY0RxZUpzX092VERYUDd3THlsMUtHM21nVTJESFZDRG50dzRWVTJfVm1ESElPUGFEeVlIb3NpaVdEWDVSb0ZFZFBSdzdmTEhKeUhfekE?oc=5",
+      "title": "AI is already deciding whether or not people receive medical care - vox.com",
+      "published_at": "2026-09-25T05:00:00+09:00",
+      "fetched_at": "2026-09-25T09:28:11+09:00",
+      "snippet": "AI is already deciding whether or not people receive medical care    vox.com",
+      "image": null
+    },
+    {
       "id": "39df98f639781469",
       "source": "Google News / Northeastern Global News",
       "axis_hint": "llm",
@@ -254,6 +826,28 @@
       "fetched_at": "2026-09-25T06:26:35+09:00",
       "snippet": "Google's new Gemini 3.8 Live update lets users have conversations with the model while watching an animated AI persona respond in real time. The \"Live Avatar\" will lip-sync and show different facial expressions during conversations, but it's currently only available to Gemini Enterprise customers. As noted by Google, Live Avatar can transition between the 97 […]",
       "image": null
+    },
+    {
+      "id": "21f99d14342cf56d",
+      "source": "Google News / The Defiant",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOS0JpajBkdndtX3hVc3JLbk5qT0pRa3hHX0pMb2lYOWE5Z0lzZk5meE5QTUkzOFhJNHByeXhsQzBDWGpRNS00M1lEeTlvY0RqTUlHQVV0ZW5VOUgyaXpMbko4NkZSSkZsQlRLemNsT1NveExoUUFkTXR4akFMYUtWWWc3cnlYd21rYkdXTzlkVExXMmtHZGpwLUxDaw?oc=5",
+      "title": "Kamino Opens GPU-loan-linked sUSDai Collateral Market on Solana - The Defiant",
+      "published_at": "2026-09-25T04:57:37+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Kamino Opens GPU-loan-linked sUSDai Collateral Market on Solana    The Defiant",
+      "image": null
+    },
+    {
+      "id": "595e68edcdb8e4bb",
+      "source": "The Register",
+      "axis_hint": "llm",
+      "url": "https://theregister.com/ai-and-ml/2026/09/24/dockers-new-sandboxes-aim-to-contain-ai-agents-for-real/5298964",
+      "title": "Docker's new sandboxes aim to contain AI agents for real",
+      "published_at": "2026-09-25T04:51:26+09:00",
+      "fetched_at": "2026-09-25T09:28:06+09:00",
+      "snippet": "With Cloud Sandboxes, devs can keep agents at arm's length",
+      "image": "https://image.theregister.com/?imageId=5298971&width=800"
     },
     {
       "id": "63b3ead9753bb26c",
@@ -410,6 +1004,17 @@
       "image": null
     },
     {
+      "id": "38655e4deeb14c92",
+      "source": "Google News / Stocktwits",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRktJVFpLc2oxamVLSHpZTUJuMFc0T0JQeGZJMjlaQWY2NEhtYlV6TTJTM2cybU5oWFVSSE12VXp0TlVjc1JnU1pkV0RsbFhzQktRY2h6OWhTanRmU2ZkVWs2aWxPQkh2OThWaWIybm1salM1X2cxSzVVa3IwVXpKOFFoekxGeU44MUxicXplZFg0SDRyMFVaZmFLcDBmSzJxLW5JT1ZEb3REV01kempxNzBIOGhhX2E2Nm15M0ltTVJpV3BmWWZsNXR3Njl2SXZEMEJrcXR3bUhxalR3SUE?oc=5",
+      "title": "Anthropic Nears $1 Trillion Valuation After Massive $65B Funding Round — Edges Past OpenAI - Stocktwits",
+      "published_at": "2026-09-25T04:27:08+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Anthropic Nears $1 Trillion Valuation After Massive $65B Funding Round — Edges Past OpenAI    Stocktwits",
+      "image": null
+    },
+    {
       "id": "62b1cd26e17f79cc",
       "source": "Engadget",
       "axis_hint": "llm",
@@ -465,6 +1070,17 @@
       "image": null
     },
     {
+      "id": "a2e1d49e97b2635f",
+      "source": "Google News / OregonLive.com",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNHg1NDFqWGpIeGZ6MnBtV0dPQnVkeXlZWHFHNGtaWWFhY3RJNVZCM01sZHpXaEZtd2p3d3QtcXowMW9HMlAyTGJiSXU5dXhGUFJNdHNKcW9JV182WWtIc0JFVWpUNmdLdExWd3hhc2ltVmZhTmVKZUowdXhwcVhQNUJkT3hXLUtTQXNrZVFBeDBhXzAyci1BckV3?oc=5",
+      "title": "More AI regulation ordered by Oregon governor - OregonLive.com",
+      "published_at": "2026-09-25T04:14:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "More AI regulation ordered by Oregon governor    OregonLive.com",
+      "image": null
+    },
+    {
       "id": "2fff463ff961d28c",
       "source": "Google News / Stocktwits",
       "axis_hint": "capital",
@@ -473,6 +1089,17 @@
       "published_at": "2026-09-25T04:13:54+09:00",
       "fetched_at": "2026-09-25T06:26:47+09:00",
       "snippet": "QCOM Stock Jumps Over 4% — Qualcomm Reportedly Eyes Tenstorrent Acquisition To Power AI Chip Ambitions    Stocktwits",
+      "image": null
+    },
+    {
+      "id": "346f846f816d01ac",
+      "source": "Google News / Yahoo",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNWlMY19GNE51SWl0dFV5SEo0a1pOSnpWYkY0ZXNURzVYYS1zWUtSX19JWlVRaDNpajZhNFd6TklaZHhiNUcxZlBYV1ZGUFM1VXNUUXAzdUI4Z0IzajdXdEtidTNJLW9rY2FvaC1MbW50UzBLSjctMUoyallBLTNWYg?oc=5",
+      "title": "AI CEOs urge global safety rules as Trump rejects international regulation - Yahoo",
+      "published_at": "2026-09-25T04:12:37+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "AI CEOs urge global safety rules as Trump rejects international regulation    Yahoo",
       "image": null
     },
     {
@@ -740,6 +1367,28 @@
       "image": null
     },
     {
+      "id": "f03e4cda29095e04",
+      "source": "Google News / The Hill",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaDM5Y2pJZVBERkJFZFJlQ2Z5elNKcHU3bTFmOFQxNEhkcVNRc09zc3ZNc1lGZW1rNTVaRFNlOVFHbmxLYkZmUHZrclZIMUZUZlNQRkEtdl9wREsyZXN6cV9Tb3d6UmFNeGlwV0phaEdhVEJDNnhtS2M4UG9IblFKWEVpZTVjeFXSAYwBQVVfeXFMTzdGMVdBXzlOT2RiRUdHeUNwcjlPcGwxNWlQbElLTVhBc1FIaHFZQ0t6UVRGYlQ2aGttY2JUTnplekttcVBibVhwdVZWME5GR19xVlN0VXk0bklWOGxrRTJGMTJ1Uy1xQkFObFdDR1k5ZVBMSFFRampnWEtkRjRXN0lLSmotaFphOWM1UGU?oc=5",
+      "title": "75 percent fearful, concerned about AI: Poll - The Hill",
+      "published_at": "2026-09-25T03:22:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "75 percent fearful, concerned about AI: Poll    The Hill",
+      "image": null
+    },
+    {
+      "id": "d8072637510a0a66",
+      "source": "Hacker News",
+      "axis_hint": "llm",
+      "url": "https://economist.com/leaders/2026/09/24/dont-let-ai-kill-the-author",
+      "title": "Don't let AI kill the author",
+      "published_at": "2026-09-25T03:14:25+09:00",
+      "fetched_at": "2026-09-25T09:28:15+09:00",
+      "snippet": "",
+      "image": null
+    },
+    {
       "id": "51b4db6897c79f2f",
       "source": "Google News / Harvard Gazette",
       "axis_hint": "llm",
@@ -861,6 +1510,17 @@
       "image": null
     },
     {
+      "id": "7623f714063fbc12",
+      "source": "Google News / foley.com",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTFVTk1GWUZIclVGSWlJbTlPTTN1YUhybmQzbl9GTnk2bDQtRzhtbndodTZfTk51dktWQ2JUNWlYSDZybzBJakFLRUF3X3pPWUZySnFsQ3pvVEhWSjZqNE5haHpiY0JIZFBUeThiR19pV3lxNnVZS0k2VllMUF9aWGFhQkVmdlNmQ0kwSlZTWmM2c1NHV0E?oc=5",
+      "title": "Foley Represents Elastic in Acquisition of Deductive AI - foley.com",
+      "published_at": "2026-09-25T02:53:11+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Foley Represents Elastic in Acquisition of Deductive AI    foley.com",
+      "image": null
+    },
+    {
       "id": "6f92b6662220505f",
       "source": "The Verge",
       "axis_hint": "llm",
@@ -869,6 +1529,17 @@
       "published_at": "2026-09-25T02:52:29+09:00",
       "fetched_at": "2026-09-25T06:26:35+09:00",
       "snippet": "Meta has a new plan to get people to make games for its Horizon social platform. The company today announced two new development tools that will let you create games with AI prompts: Horizon Create, a mobile app, and Horizon Studio, a browser app that offers more granular controls. The apps will be available in […]",
+      "image": null
+    },
+    {
+      "id": "ebe6fc3fe5e681b6",
+      "source": "Google News / Slate Magazine",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tUGRnd19ubzJWdFdBUjdoekJsM3c4bGRMV3d6QnFvM0hfbjd6TGJ0eV9hemZEVlAzdExtRGNMTFEycnJXelJHRUZYZ0xnVzVxZzVualExMURPbWY1LTh6Ul9QM2ExTXJWTnFXNS1sZEdPamZYdFdKMVN5MDI0akk?oc=5",
+      "title": "America Might Beat China in a Crucial Race. You Might Not Like What That Means. - Slate Magazine",
+      "published_at": "2026-09-25T02:52:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "America Might Beat China in a Crucial Race. You Might Not Like What That Means.    Slate Magazine",
       "image": null
     },
     {
@@ -916,6 +1587,17 @@
       "image": null
     },
     {
+      "id": "fea2b9b0a7898632",
+      "source": "The Register",
+      "axis_hint": "llm",
+      "url": "https://theregister.com/personal-tech/2026/09/24/metas-new-ai-fidget-is-a-tamagotchi/5298936",
+      "title": "Meta's new AI fidget is a ... Tamagotchi?",
+      "published_at": "2026-09-25T02:44:35+09:00",
+      "fetched_at": "2026-09-25T09:28:06+09:00",
+      "snippet": "We hope Zuck's Muse Charm doesn't die if you neglect it",
+      "image": "https://image.theregister.com/?imageId=5298955&width=800"
+    },
+    {
       "id": "4f47c154f117c17a",
       "source": "TechCrunch",
       "axis_hint": "llm",
@@ -935,6 +1617,17 @@
       "published_at": "2026-09-25T02:38:00+09:00",
       "fetched_at": "2026-09-25T06:26:45+09:00",
       "snippet": "Report suggests OpenAI's 'rogue AI' agents may have attacked crypto exchange in September    Fortune",
+      "image": null
+    },
+    {
+      "id": "c1e5c6471b2d32a3",
+      "source": "Google News / Fortune",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdjV2M3lsdkgxUDNxQVZvdVYxcGpmZEl1eEtPMFhoVldhcGNQOXFYOERiZkdqZG9fNjk2MFZWZGZVQzRxS2lFTTJYNVdKY1JQYjJRZ1F2Nk80T1pnaDR4TVhFVjljOXRUUnF4d0NqRHpIS2g3WVlDV3p3U0MwWGFSZUNVYXZxN3dScWpQQmZqUFl4YWV1dEZZTUE0TXBkNVU1ejh3N0NvdHhjWHVzWGhqTHVXZFFoV1hBZkQ2eEw2Z0xUOW1hbk1PeUNn?oc=5",
+      "title": "Report reveals yet more cases of OpenAI's 'rogue AI' agents hacking websites—and suggests they may still have been active in recent weeks - Fortune",
+      "published_at": "2026-09-25T02:38:00+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "Report reveals yet more cases of OpenAI's 'rogue AI' agents hacking websites—and suggests they may still have been active in recent weeks    Fortune",
       "image": null
     },
     {
@@ -969,6 +1662,28 @@
       "fetched_at": "2026-09-25T06:26:39+09:00",
       "snippet": "AI agent security now depends on knowing what agents can do after they gain access. Agents can act across applications, pass work to other agents and make changes faster than security teams can review them. That makes visibility and permission limits necessary, but it also raises a harder question: How does a company recover from […] \n The post  AI agents creating a new insider security risk: theCUBE’s Oktane keynote analysis  appeared first on  SiliconANGLE .",
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/Krista-Case-and-Rebecca-Knight-theCUBE-Okta-Oktane-2026.jpg"
+    },
+    {
+      "id": "72bc06f9dfe24ed7",
+      "source": "Google News / tech-insider.org",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9MZW9kVGRLYlJLZ1Q3ampyOGd3Tmd1cTRBMG90Y2tkaFI2NFMxMmJuY0FQOERPLVlCeGx2bmxwWHY5Wmd2X180MDllazZZaWlrQ0FuY2l6UmFxMU5EZm00eTNhVQ?oc=5",
+      "title": "Hy Image 3.5 API Setup: 12 Steps, $0.024/Image [2026] - tech-insider.org",
+      "published_at": "2026-09-25T02:25:24+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Hy Image 3.5 API Setup: 12 Steps, $0.024/Image [2026]    tech-insider.org",
+      "image": null
+    },
+    {
+      "id": "d86e539864c50d27",
+      "source": "Google News / iHeart",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONVUybHFkeHRPTUEySWMxQkFmTVpKbVVNM3A0Tk1Zd0Vkd2ZZLUd4STNCR1o5UTFfRGhQUVc1S0o4aFlkNVpod1BYdnRwbzN1RzEyWmloMC1mTHpZTnVlejBNZVhBUVUyRjltWjlQUEVTd3ZWbGhvSGZBVEU3Q1czdEhCWk1ndUpyOEtvSDVIRk5oeVhJTS1JV29wWkh0cVNOQ3Y3T0lQaU9iU1g0MHIxbnZrck00Rm9uRXlhem5qOW4?oc=5",
+      "title": "Black Job Seekers Allege Workday's AI Hiring Tools Discriminate, Seek Class Action - iHeart",
+      "published_at": "2026-09-25T02:19:15+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Black Job Seekers Allege Workday's AI Hiring Tools Discriminate, Seek Class Action    iHeart",
+      "image": null
     },
     {
       "id": "4d3bafc74a80caea",
@@ -1012,6 +1727,17 @@
       "published_at": "2026-09-25T02:08:53+09:00",
       "fetched_at": "2026-09-25T06:26:45+09:00",
       "snippet": "In a New Anthropic Lab, A.I. Turns to Biology    The New York Times",
+      "image": null
+    },
+    {
+      "id": "2233504239491dcf",
+      "source": "Google News / ktar.com",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSkxBYTZYQkxtOV9sM20xSFZYZmZsU1lHWFVOcDRZTnpZS1BJakxlRVRueDJUQjNDeFVSZ3otRnVmaEVyaW9FLWt2SmxLSjdZNHhkUGpFX3BtYkxjMlhQQWJ0dkphUC05Q1VsM2pUc0FjVWNIRzlma0hDazhSaDR6UVFVTGJvX05pMjk2OEtrT3F6RXE0aUhBWThXOWpmdTNoZ25pTC1rVFlMcTAwY21BYmpkMWRobGlDSGR4Ni05V1lfYkJkTWp1NVlZZU9udw?oc=5",
+      "title": "Exclusive: Sen. Ruben Gallego on AI threats, regulation and Senate oversight - ktar.com",
+      "published_at": "2026-09-25T02:07:54+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Exclusive: Sen. Ruben Gallego on AI threats, regulation and Senate oversight    ktar.com",
       "image": null
     },
     {
@@ -1213,6 +1939,17 @@
       "image": null
     },
     {
+      "id": "cb3b8d033f376f91",
+      "source": "Google News / Fierce Network",
+      "axis_hint": "hardware",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ084bkZHWlhLbVpVTFNDOWNnZG9qcDVwVURNSnJTdjZUZ0p4TFM1by1FWEgyaUt0V1d0QzB3d0VrSGg1cDhpOXFSQjk4ZW9NZ2xqTGREdDBPM2dyYlhTVEwtcktwaV80X3ZDR0hhNUVpUVJrcEJqOEJyV2NUSF9IbU1hQVZxTzYxYjNPQ0NwVUhpOEJ0ZkIwRQ?oc=5",
+      "title": "Mavenir and Neysa target telcos, enterprise with new Sovereign AI stack - Fierce Network",
+      "published_at": "2026-09-25T01:39:30+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Mavenir and Neysa target telcos, enterprise with new Sovereign AI stack    Fierce Network",
+      "image": null
+    },
+    {
       "id": "4f8d674601fce189",
       "source": "Google News / healthcaredive.com",
       "axis_hint": "llm",
@@ -1389,6 +2126,17 @@
       "image": null
     },
     {
+      "id": "5bcc51777f12ace6",
+      "source": "Google News / CBS News",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYlZaTjBUUHY5Z3hjQVpkOFp3dHl5ZHU0ZjlJM2hOWXN0Y0V2Z2ZPbjZvYk8zb0tXNjdiUExHOXhySUpmeDNTdjhUcE5UZjZuY2R1YjBVc0pxSGo5VUd1UWZ5SDcwclZSbVRIZEtfZGlvR1E0TFA3YldzZl9RVmJCbm1ta3dHOGtQQWZXVnVXYw?oc=5",
+      "title": "Illinois Governor JB Pritzker establishes AI cabinet amid calls for greater regulation - CBS News",
+      "published_at": "2026-09-25T01:14:23+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Illinois Governor JB Pritzker establishes AI cabinet amid calls for greater regulation    CBS News",
+      "image": null
+    },
+    {
       "id": "022b9db57d05ce79",
       "source": "Google News / VideoCardz.com",
       "axis_hint": "hardware",
@@ -1408,6 +2156,17 @@
       "published_at": "2026-09-25T01:12:25+09:00",
       "fetched_at": "2026-09-25T02:02:14+09:00",
       "snippet": "Google unveils new Gemini 3.8 Live with Live Avatar model    TradingView",
+      "image": null
+    },
+    {
+      "id": "58bc1eda9df2c031",
+      "source": "Google News / Seeking Alpha",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeGJKYUxfbTFJSWpWR0ZCaTE0ZEZ2YmlGV0RKaS1abkFMNzJ6TmZtUVpCTkVQbHFNanQ0MkRjcUNrWnlwbm5ReklCSDk4VjZJVFZKd2JkVGN5ODdFRE56UlZvVl9ueVpZQV9vYmplVTFJLXRMU1d5S3o1V0xUNkhSbmNNSUpxRW1FRllQYXNpdFZZSkRMcUVBajNfRQ?oc=5",
+      "title": "Google unveils new Gemini 3.8 Live with Live Avatar model (GOOG:NASDAQ) - Seeking Alpha",
+      "published_at": "2026-09-25T01:12:25+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Google unveils new Gemini 3.8 Live with Live Avatar model (GOOG:NASDAQ)    Seeking Alpha",
       "image": null
     },
     {
@@ -1463,6 +2222,17 @@
       "published_at": "2026-09-25T01:03:36+09:00",
       "fetched_at": "2026-09-25T02:02:06+09:00",
       "snippet": "Meet the next wave of VCs judging the Startup Battlefield 200 contenders on the main stage at TechCrunch Disrupt 2026. Register by September 25 at 11:59 p.m. PT, to save up to $200 and to get a front-row seat to one of the most intense startup pitch competitions.",
+      "image": null
+    },
+    {
+      "id": "9f127c760ea49f9e",
+      "source": "Google News / Music Business Worldwide",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNU1lZU042NGRNQU1JRkxacURZYzNQVTN1ejhuYmlnVVlqU0R2NTZGek53LXNIM21nUUtXSmF6MEhfdTZ4a1k1WFp3VHJHUkF6cUIxeFJpeHFYVU5aNUFwVThlcmx6Z2syVkxFaGJLeHhsbzVoV0YwU1REOU1sTjczTkQ0MFFxMWxnczgtZEkwX1V1UHpXVHR4M211MXBQQnlEdldabV85NFlxNmtNN3ZzM2xucC1Xc2NHN0pNb3gwdDNRSnVzcmhSSllnTERzOENudzdsOXdzNUdzSjJDU1RkQnhlcjlnX3pPUTNaM01Oc0JhTU9kSTh1Ukd6dE5DeE5V?oc=5",
+      "title": "Sound designers and SFX libraries launch Professional Sound Alliance to fight AI scraping: ‘Now sound will have protection of our own’ - Music Business Worldwide",
+      "published_at": "2026-09-25T01:00:54+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Sound designers and SFX libraries launch Professional Sound Alliance to fight AI scraping: ‘Now sound will have protection of our own’    Music Business Worldwide",
       "image": null
     },
     {
@@ -1606,6 +2376,17 @@
       "published_at": "2026-09-25T00:47:04+09:00",
       "fetched_at": "2026-09-25T02:02:15+09:00",
       "snippet": "Mitsubishi Electric Introduces Chip-to-Grid Blueprint for AI Factories Powered by NVIDIA    HPCwire",
+      "image": null
+    },
+    {
+      "id": "c8d38c548358efe8",
+      "source": "Google News / The Global Legal Post",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUkZfY244WlRlY214bDZpMklLT2ltM2pDTlU1c2gxY0lxckhWTmNPNHJHXzdsYVpfVkFFRVgxQ0NSODhyelJfeU1PLUZzQko0VnFaRHR2enR5Z0xfMnhVTmNqM3ZYSmJzTXNwUmVoQlR6Y3pEOFZiZDZGaF91Q0lfb3dPc0RkdlJwV1JjcGtGR2ctRThZWWFvcV9CX2JsOFdULWt5OWgxWExtU3oxY1Z1OEdPSWxOSDlnX1hLaElrRzkweUcwVC12RkZpMmJvbVRmeGc?oc=5",
+      "title": "Israeli-founded AI contract review start-up Chamelio raises $26m in Series A funding round - The Global Legal Post",
+      "published_at": "2026-09-25T00:47:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Israeli-founded AI contract review start-up Chamelio raises $26m in Series A funding round    The Global Legal Post",
       "image": null
     },
     {
@@ -1892,6 +2673,17 @@
       "published_at": "2026-09-24T23:45:00+09:00",
       "fetched_at": "2026-09-25T06:26:46+09:00",
       "snippet": "Are GPU Loans Safe From Rising Rates?    The Information",
+      "image": null
+    },
+    {
+      "id": "bd43ccb9d7ec0e03",
+      "source": "Google News / WTAJ",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaDcyeDNlcWVWdVl3ZG5FUjBsWnBwcGpPUUJnQWwwQ015NXQ1cHdIeHdOTy1wVGNPMzNzV3NUUTZuTU9ZM1dGLXlaRDBtMDlENnhhbDlwUWtFN0xSVDAxY05DUTdTT0k3TDl5SXVWVy01anVVckxpMnRVZnBROFpQWTFkZUJHRk1ianlrZzlwelA2WTZCd3VBTFNmY3VCUWV6amROdXU3UzVPQV9jaGlkUGR6djhCVDAzZ2dKSVVZYkkzcnfSAcMBQVVfeXFMTmg3MngzZXFlVnVZd2RuRVIwbFpwcHBqT1FCZ0FsMENNeTV0NXB3SHh3Tk8tcFRjTzMzc1dzVFE2bk1PWTNXRi15WkQwbTA5RDZ4YWw5cFFrRTdMUlQwMWNOQ1E3U09JN0w5eUl1VlctNWp1VXJMaTJ0VWZwUThaUFkxZGVCR0ZNYmp5a2c5cHpQNlk2Qnd1QUxTZmN1QlFlempkTnV1N1M1T0FfY2hpZFBkenY4QlQwM2dnSklVWWJJM3J3?oc=5",
+      "title": "AI, artificial intelligence or act introduction? Lawmakers push for AI regulations - WTAJ",
+      "published_at": "2026-09-24T23:44:49+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "AI, artificial intelligence or act introduction? Lawmakers push for AI regulations    WTAJ",
       "image": null
     },
     {
@@ -2203,6 +2995,17 @@
       "image": null
     },
     {
+      "id": "ae4dd1f9715d87f8",
+      "source": "Google News / ABC27",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPalFxaWdCXzRYbWJncXNxVU9laDRXanpVWWNBMUJFZmJZWnl2dmIzd3ZubG0tUXdiTzY3SkpRMW1QcEJfbzZtZ3Nabmgxb2dQWXV1R2IwVUhVN1l2eG1vWHpDVDJGOHR1cU9lZGM2akEtbGxpcVp4dWg3SVRpTF9HZTdxSDVfOEwxRnlOUGNqMkJ0WjZJcEtpV3BXWk1ZcFpGdG83bFV6amJwZncxaVl1ZVEzR3c3XzhmSzFaLW1xRk9XRVItOWZqYnI1NXlvRDJiRVHSAdIBQVVfeXFMT2pRcWlnQl80WG1iZ3FzcVVPZWg0V2p6VVljQTFCRWZiWVp5dnZiM3d2bmxtLVF3Yk82N0pKUTFtUHBCX282bWdzWm5oMW9nUFl1dUdiMFVIVTdZdnhtb1h6Q1QyRjh0dXFPZWRjNmpBLWxsaXFaeHVoN0lUaUxfR2U3cUg1XzhMMUZ5TlBjajJCdFo2SXBLaVdwV1pNWXBaRnRvN2xVempicGZ3MWlZdWVRM0d3N184ZksxWi1tcUZPV0VSLTlmamJyNTV5b0QyYkVR?oc=5",
+      "title": "Proposed bipartisan legislation cracks down on AI chatbots claiming to be licensed professionals - ABC27",
+      "published_at": "2026-09-24T23:17:25+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "Proposed bipartisan legislation cracks down on AI chatbots claiming to be licensed professionals    ABC27",
+      "image": null
+    },
+    {
       "id": "86c24f185f75a0d4",
       "source": "The Verge",
       "axis_hint": "llm",
@@ -2233,6 +3036,17 @@
       "published_at": "2026-09-24T23:15:00+09:00",
       "fetched_at": "2026-09-25T02:02:06+09:00",
       "snippet": "It’s a big week for Meta. The company just kicked off its big Connect conference on Wednesday, and the new Muse AI agent appears to be an early hit. I’ve been using it — it is surprisingly good.  CEO Mark Zuckerberg has obviously been out there taking a victory lap and participating in a lot […]",
+      "image": null
+    },
+    {
+      "id": "34b55a73c73ceb03",
+      "source": "Google News / Punchbowl News",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9sbXFDeElpV2lNdUs1N3ZwMzR2MElZYlFhSVhVTVNabmZZeHVuT3JBWDdzOFVsMzd2d0ZqSzNYUVFBOGtWMmp1NGpHMVBxZE5QckNpcUd5U2RBb2JjdC1MTHhjeEhJUQ?oc=5",
+      "title": "The AI inaction choice - Punchbowl News",
+      "published_at": "2026-09-24T23:13:53+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "The AI inaction choice    Punchbowl News",
       "image": null
     },
     {
@@ -2387,6 +3201,17 @@
       "published_at": "2026-09-24T22:58:00+09:00",
       "fetched_at": "2026-09-25T02:02:13+09:00",
       "snippet": "OpenAI Agents Tried to Hack Four More Websites While Seeking Data    WSJ",
+      "image": null
+    },
+    {
+      "id": "d11e7623de7c6476",
+      "source": "Google News / ABC News - Breaking News, Latest News and Videos",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUzN1MF9LUkgyZE54alRybG9vRVNUSEdKbGJjb2M0Y2xkOTZVME85YVFvMk5lUXRIbklEcURxQ3FhT0Q0Wi1ha042RnNZMnZlb3RZYUNFSkJxYWdJcUxmbjNuUS05LUJkZHE5UzNoejEwTXo5b2MwU0dZcXBiWDE5TUZuSVlfejY1dmdMd1NQQVU4dllsM211LUxVYkxRY1ZTWGZLWEFfSmtIUklNRElv0gG0AUFVX3lxTE1sVWpsY0d1MklVVjZqaG92aVhvVzUzOGh0S3pPTHNOcGlFWVhybUg2UDR1bTBEcElqcDhVYU1ZZWdFU0JRSWxmRGVtd0pZUnJEUU5DN3B5WUFPUkwwZl9nV1labUJzUmkzUFRORk5FUGV3eUVXb3FkdFVnbW1PU3JSMmJwN0xnbDJzVDVtLXdsbGNNYWlqeXB3NjRuX2JNT3pkQ1ZZQmphc3lTdkhpUl9zRWw2QQ?oc=5",
+      "title": "'Extreme concern': OpenAI agent hacked Australian public health website, prime minister says - ABC News - Breaking News, Latest News and Videos",
+      "published_at": "2026-09-24T22:57:43+09:00",
+      "fetched_at": "2026-09-25T09:28:08+09:00",
+      "snippet": "'Extreme concern': OpenAI agent hacked Australian public health website, prime minister says    ABC News - Breaking News, Latest News and Videos",
       "image": null
     },
     {
@@ -2981,6 +3806,17 @@
       "published_at": "2026-09-24T21:00:00+09:00",
       "fetched_at": "2026-09-25T02:02:15+09:00",
       "snippet": "Schumer wants to repeat Biden’s AI disaster — Trump can crush Xi by forcing him to buy American    Washington Examiner",
+      "image": null
+    },
+    {
+      "id": "f0fff3f4fdfa2a90",
+      "source": "Google News / Business Wire",
+      "axis_hint": "capital",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOaG9EVkhTblVZRGlGR2NEZkRHRThxSm5Ecng4UVFjZDBzY29qbk9qckV5Z1o3UngwQjkxOUlCLVZVWXM4bE5LLXVZN2lOQ0ppQUFVQ0l3YU1uOTJheW5tYkdwV2t0bG5faVJOZGRROS1aRVRyckNHNWRiZVlyWWx3c194M1ZTVDQ1clU4a012R3NIVFIwdDhibEYwblNmQ09rTmd0SVZCLUgyWVhuWWxBcWdVdDRTZUlpUFg1bGRIbVZHY1VFaXN5X3dxQ1cydFN5RDFabC1jLS1xT3FZNUhsNnJ1TQ?oc=5",
+      "title": "PicoJool Raises $27.5 Million Series A to Scale Optical Connectivity for AI Infrastructure - Business Wire",
+      "published_at": "2026-09-24T21:00:00+09:00",
+      "fetched_at": "2026-09-25T09:28:10+09:00",
+      "snippet": "PicoJool Raises $27.5 Million Series A to Scale Optical Connectivity for AI Infrastructure    Business Wire",
       "image": null
     },
     {
@@ -3853,6 +4689,17 @@
       "image": null
     },
     {
+      "id": "f17a13cd61bcc2ba",
+      "source": "Google News / Android Authority",
+      "axis_hint": "media",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY2FZOTVWQ0hDVlRhSTZ6UDVCdmUtQ2lhU2w0c2kzaFRVNi14bGtZeGdSNkpCVjlWdFB4WlRtdEk0V3hEZGFOWHdpa3VlMm9SMUs2WWdzZXJWckhCXzY1OVIzOUx4aWZmRms1NXlKVTNMeVFXd2ZETnFhb1lORXlxZFVOSmJTYm0wZVNoZw?oc=5",
+      "title": "Just how fast is the Snapdragon 8 Elite Extreme Gen 6? I benchmarked it - Android Authority",
+      "published_at": "2026-09-24T18:00:00+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "Just how fast is the Snapdragon 8 Elite Extreme Gen 6? I benchmarked it    Android Authority",
+      "image": null
+    },
+    {
       "id": "fbdf662546dabebb",
       "source": "Google News / Firstpost",
       "axis_hint": "hardware",
@@ -4488,6 +5335,17 @@
       "published_at": "2026-09-24T15:00:48+09:00",
       "fetched_at": "2026-09-24T20:35:33+09:00",
       "snippet": "Is the Anthropic IPO Racing Against the Next AI Disaster?    CounterPunch.org",
+      "image": null
+    },
+    {
+      "id": "9a47121b543ea196",
+      "source": "Google News / Agency Reporter",
+      "axis_hint": "llm",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdEFuQy1oV0RmUUFYSERrS1Vva3EyWXBHWm9WMGNEdE80cjJtT1NFRTQtbkJrd2F6dzBTTF9kU1BHMnpXQXU4MnlDcFVTVlNHcUhUNFJVM3o0S2ZNQWlsTVhtUXo4akhmZThlM0x0bzZzTDY2VHhnU2hqUnh4NVFibThuSldvdmZHblZQYXowRllYT20wQlYtWnIxN0VwX2xraFkwbnlWLUtueDh0S0xSaldPWQ?oc=5",
+      "title": "VDO.AI Introduces an AI-Powered Least Spillage Model for the Festive Advertising Rush - Agency Reporter",
+      "published_at": "2026-09-24T14:53:11+09:00",
+      "fetched_at": "2026-09-25T09:28:09+09:00",
+      "snippet": "VDO.AI Introduces an AI-Powered Least Spillage Model for the Festive Advertising Rush    Agency Reporter",
       "image": null
     },
     {
@@ -8506,6 +9364,17 @@
       "image": null
     },
     {
+      "id": "293badd0736b8b17",
+      "source": "SEC EDGAR S-1",
+      "axis_hint": "capital",
+      "url": "https://sec.gov/Archives/edgar/data/1722731/000149315226044195/forms-1a.htm",
+      "title": "FDCTECH, INC. (FDCT) S-1 제출",
+      "published_at": "2026-09-24T00:00:00+09:00",
+      "fetched_at": "2026-09-25T09:28:16+09:00",
+      "snippet": "\"artificial intelligence\"",
+      "image": null
+    },
+    {
       "id": "0224e4b89508c9cd",
       "source": "Google News / Verizon",
       "axis_hint": "llm",
@@ -11991,666 +12860,6 @@
       "fetched_at": "2026-09-23T16:40:33+09:00",
       "snippet": "",
       "image": null
-    },
-    {
-      "id": "122c91126b73b649",
-      "source": "The Verge",
-      "axis_hint": "llm",
-      "url": "https://theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-      "title": "OpenAI wants to consult elite mathematicians about how to not fumble again",
-      "published_at": "2026-09-23T09:17:17+09:00",
-      "fetched_at": "2026-09-23T09:18:51+09:00",
-      "snippet": "After turning a string of spectacular mathematical results into a reputational crisis, OpenAI is consulting human mathematicians to help it figure out a less disastrous path forward. On Monday, the company announced a new independent panel of mathematicians tasked with advising it and other AI companies on their interactions with mathematical research and the wider […]",
-      "image": null
-    },
-    {
-      "id": "e7f82161f65804aa",
-      "source": "Google News / PYMNTS.com",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVdvb0xBdlB3bzZKaGlTeWxVMGtiMGs0NUxOMGxHTjBNWkpidlh1VjdoMml4OVFUandoVUctN1IzMm9pSlJ1MlpCTFNUUmI2SmlkZnFQU1p1R1lSNXRYUkg3Sk9GUUEzZ2RBZTZwQ2JVY3dWOGhMbEJ3UHhDcURNcEs4UThwN0NBV2Exd1VmVlk2ajNfMFBZNUstVURiVmh4NGNvTGwtZzJ0dDJ5bExB?oc=5",
-      "title": "OpenAI Recruits External Watchdogs to Police AI Risk - PYMNTS.com",
-      "published_at": "2026-09-23T09:11:15+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "OpenAI Recruits External Watchdogs to Police AI Risk    PYMNTS.com",
-      "image": null
-    },
-    {
-      "id": "889afb876cd44007",
-      "source": "CNET",
-      "axis_hint": "llm",
-      "url": "https://cnet.com/health/fitness/peloton-launches-foldable-cheaper-treadmill",
-      "title": "Peloton Launches First Foldable Treadmill, Adds More AI Features",
-      "published_at": "2026-09-23T09:09:41+09:00",
-      "fetched_at": "2026-09-23T16:40:22+09:00",
-      "snippet": "The Tread Flex, one of three new models, is also the company’s least expensive treadmill at $2,200.",
-      "image": "https://www.cnet.com/wp-content/uploads/sites/2/Peloton-Tread-Flex-16x9-1.jpg"
-    },
-    {
-      "id": "fa7ffd2ec8b76dae",
-      "source": "Google News / The Next Web",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObGdRclZiUFNkRzZEWks5MWdJYW1xY2JNbkloSVByV0hvcGhZWmNoT0ljU1dFYWlmMDhqUUJvR052ZTRKWFdGa2oxQ2dDbFZTNldvM1gxT2FqeEVidXRIV3pLTTVsd0dsTkxLcVcxS1JHZWJBdzRFTUJkTF9BZU1aMXpRNmhNcW8?oc=5",
-      "title": "'China's most powerful AI chip': Alibaba's Zhenwu V900 - The Next Web",
-      "published_at": "2026-09-23T09:08:26+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "'China's most powerful AI chip': Alibaba's Zhenwu V900    The Next Web",
-      "image": null
-    },
-    {
-      "id": "92a45bb1e9ffb9a6",
-      "source": "Google News / 3Dnatives",
-      "axis_hint": "media",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObDhzR1VRMi1wUXZhVmZXRjFuSm5HWUZMSWFZS1ZLLW1kcy1VZi1DRFVuaWlLTi1jbTlhUlRvczNLVWE2SmI5Q1FiNTdaZm9EOVRwdEdqeU5XejZFV2R1ZXM4ZGZrV2d0LURyZ2JKYUxXVTlMMHI3TXpzcHpOOWt5N1FBWnJGV2vSAYwBQVVfeXFMUE5DLXVJMHMta0g4VFl1WlQ1aHBBVXNNcXpEVE5OWkdrZUpIWmoxdHR2RG1LQWZIU3luUUNxbXNKbnFNSUthdXVwcnltTHlvUlZpU241dVpZeFNCbHI3SUhoREhpcVlHRy1sTHI2UkI4akp6SUxmUm5iNHNUSHI2QWdvSVN0dXd5N0xVcXo?oc=5",
-      "title": "3Dnatives Lab: Testing Meshy, the AI 3D Model Generator, for 3D Printing - 3Dnatives",
-      "published_at": "2026-09-23T09:04:35+09:00",
-      "fetched_at": "2026-09-23T16:40:25+09:00",
-      "snippet": "3Dnatives Lab: Testing Meshy, the AI 3D Model Generator, for 3D Printing    3Dnatives",
-      "image": null
-    },
-    {
-      "id": "a33a96193ba7d0c8",
-      "source": "The Register",
-      "axis_hint": "llm",
-      "url": "https://theregister.com/ai-and-ml/2026/09/23/frontier-ai-keeps-racing-despite-calls-to-slow-down/5298448",
-      "title": "Frontier AI keeps racing despite calls to slow down",
-      "published_at": "2026-09-23T09:02:47+09:00",
-      "fetched_at": "2026-09-23T16:40:22+09:00",
-      "snippet": "Anthropic and OpenAI debut Opus 5.5 and GPT-6 Sol and Luna",
-      "image": "https://image.theregister.com/?imageId=5298454&width=800"
-    },
-    {
-      "id": "50c568b000702471",
-      "source": "Google News / San Francisco Chronicle",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUm1OYVc0MFRqa3luX1E4Ykc2ZHN2cV8zQ2pKZ0dLWnQ4NUZHY3k5ckh5bFZzcUtLaExSR3ZhTDl4WjdDcFcwYnlaQ05BVVN0MkljT2doTVQ1eUZwVGR4bUQ0cnRoWS1JTGxNQzI2NmtvUzB4UU1DQVpBY2gxMFo2Z2ZRNjBCcjZqSEJYbVUxajB0MTR0OHBHdWhaOE9XMzhRTGpha0VB?oc=5",
-      "title": "Stanford violated its AI policy by turning a Hispanic student into a fake Black woman in ad - San Francisco Chronicle",
-      "published_at": "2026-09-23T09:00:00+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "Stanford violated its AI policy by turning a Hispanic student into a fake Black woman in ad    San Francisco Chronicle",
-      "image": null
-    },
-    {
-      "id": "09a0c6dbf1c6c00d",
-      "source": "OpenAI",
-      "axis_hint": "llm",
-      "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-      "published_at": "2026-09-23T09:00:00+09:00",
-      "fetched_at": "2026-09-23T22:34:29+09:00",
-      "snippet": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
-      "image": null
-    },
-    {
-      "id": "200ccc04dd151701",
-      "source": "Google News / The Next Web",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeUE2dVR5YnhqT1UyY1BtMExHSlAtbGExbFlaYVBTVkJvMkc4YW5kNHBJTTJmNW9PY2FxeHdweHJXZXhURUhicEtyTXNoNVFQTkFlNzQ5NDRwUGFKMXNuX1IxZ0dFT0VuOU5fQ1NKVlZVWnJvaUFHYkpaMUl0b25Kb3NB?oc=5",
-      "title": "China is investigating the AI labs Anthropic named - The Next Web",
-      "published_at": "2026-09-23T08:56:05+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "China is investigating the AI labs Anthropic named    The Next Web",
-      "image": null
-    },
-    {
-      "id": "fcf9a12c8da0d639",
-      "source": "Google News / KED Global",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5Dd0UtaV9ZNlpNb1ZEbU5RVk55eXhQR0hqQTlZckI1eFBDblJNYndwNHdtQVc4OExBUktkTDM0NkVHRm5XaUloRkNBc2owVDZDMVFNOW9qeDFtTkZBSVB6N0FWMlR6eGFBUHBwaEZqS0RoQ2Fw?oc=5",
-      "title": "S.Korean biotech funding surges to $1.4 bn as VC firms shift from overvalued AI - KED Global",
-      "published_at": "2026-09-23T08:50:06+09:00",
-      "fetched_at": "2026-09-23T22:34:43+09:00",
-      "snippet": "S.Korean biotech funding surges to $1.4 bn as VC firms shift from overvalued AI    KED Global",
-      "image": null
-    },
-    {
-      "id": "6aa088071e3c0dcd",
-      "source": "Hacker News",
-      "axis_hint": "llm",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups",
-      "title": "The new CC, an AI agent built for families",
-      "published_at": "2026-09-23T08:46:07+09:00",
-      "fetched_at": "2026-09-23T16:40:33+09:00",
-      "snippet": "",
-      "image": null
-    },
-    {
-      "id": "2c740409bdc9787e",
-      "source": "Google News / The Motley Fool",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZmJlSXBIOEc4cGpIbFNWLVlYMFNER3EtcHJGa2lSd3owTUJoQ182Y29MbzVmNlJFbkI5QXU2d2ZobV85RE1naE1yd2pxZ1A0cDJySTc1RE5HaEdFZ2pHUmgtV0xaN1Y1TGpLVVRNVjZRNmFKMzBlVHVCclJPV2NtM3Aya04zdE1JM3gtaTgyeUJIelNVbEVJWnVoTkE?oc=5",
-      "title": "ASML vs. Intel: Which AI Chip Stock Is a Better Buy in 2026? - The Motley Fool",
-      "published_at": "2026-09-23T08:39:53+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "ASML vs. Intel: Which AI Chip Stock Is a Better Buy in 2026?    The Motley Fool",
-      "image": null
-    },
-    {
-      "id": "b2fcdf3979141b4b",
-      "source": "Google News / TradingView",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZkxicEc1SU1Ud250eTRXV19ydlVROUJXWG5NS1hTX1FrZHVjak0tSVp2M1ROM1ZNS3podEdsdXZwdnpKLWgxUzFSY1RJd2tuVV96MjlkeTdMcmF2dVF0WnVFYzE1cW1nRzk5bkY4VExsbVZrM3diWDFON1h5aDBfUkl5eTE0MVloY0Jrdk0zV0d1SnhERWxmSUgxWGdxUlJGb29vRy0yWEpwcC1Yb0ZJUE1mUkRHZ25kZm1NS01jU01ZeUJzTWt1Yl80WGlCYzFNa05WenVGSmdjSl80RlE?oc=5",
-      "title": "Barrick Gold inks five-year AI deal with Avathon before IPO - The Information - TradingView",
-      "published_at": "2026-09-23T08:39:26+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Barrick Gold inks five-year AI deal with Avathon before IPO - The Information    TradingView",
-      "image": null
-    },
-    {
-      "id": "a821f5f4e1549b97",
-      "source": "Google News / asiae.co.kr",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9LbG1yaDRUTzRSZlpYNFoyZU5xdVJTckZEaGZXbVpCSWt1ZmZtaFpONkFFUko5b1pqdFdfMElqdWY1eVVVS2dOSjVic3luUHdGY2NJTVhhWktaRWpjVHItLTBWbl94MjlDbzRmd3RDNkhmREE0c01uQW5FX18?oc=5",
-      "title": "Anthropic and OpenAI Launch Low-Cost AI Models Side by Side, Intensifying Price Competition - asiae.co.kr",
-      "published_at": "2026-09-23T08:31:58+09:00",
-      "fetched_at": "2026-09-23T09:18:58+09:00",
-      "snippet": "Anthropic and OpenAI Launch Low-Cost AI Models Side by Side, Intensifying Price Competition    asiae.co.kr",
-      "image": null
-    },
-    {
-      "id": "eed277e5fd43c758",
-      "source": "Google News / Reuters",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUHlXX016MWg3UWdPTE85cGxsVFplYkp6eXNVMHAzQXNub01LSlc1OXc3YmJ6ZFJ4UTRLbmxsYWVHSU9XTFB6blJCbk5DY2hCNGd6RGx4cWwwMzdSN2ZqSXZFS0VPaG5vY0Q1VEdUOHR5eXE5b01abmU4cUhQSS1KSDNfVlB2MXJaV3kxMGJkZUFlWHk1dkEyVmZzVDk3WTkxNVZKNURjMGN2WVZucWZJVWFVQXlmQ2ltNVQwcG8zV0V2d3Z1?oc=5",
-      "title": "COMMENTARY: AI 'Terminator’ fears may mask real Chinese threat: McGeever - Reuters",
-      "published_at": "2026-09-23T08:31:47+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "COMMENTARY: AI 'Terminator’ fears may mask real Chinese threat: McGeever    Reuters",
-      "image": null
-    },
-    {
-      "id": "66eca7c2008f48d1",
-      "source": "Google News / WENY News",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTEdHTjBDRlRUVXIxaFVsT2tRaUVaeGE3MnFjYkpYaVBVZnZvLWF1QlhGM0Z5OWhQZVN5LVh3RVJNLXlYallYN1dHcm5taG1YU25hMWZQRmxSU2J1YzBEM2xOcld5OTYtMkozQms5YjYxdmQweFN0Y1ZfMDFOWTVSVGhYYlFYSEVwdE8zNTFYZzJYVnVqelhFR3FZLVpGSWxhb1hEeURPZ25NR2JoZExXX0ExdmdQWEtXcUtHZW9VVzY4N1UxV01XRW96cThyQQ?oc=5",
-      "title": "Trump Defends AI Growth as Lawmakers Call for Federal Regulation - WENY News",
-      "published_at": "2026-09-23T08:31:17+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Trump Defends AI Growth as Lawmakers Call for Federal Regulation    WENY News",
-      "image": null
-    },
-    {
-      "id": "5447d4631a03c6aa",
-      "source": "Google News / The Information",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWDM4QVVyb2RaUENKSmc2UVh4YjFxT3dTQ21ubC02YzNRdkZPM2FLbzRHdGtHQTdpeGxyU0RaUk1HNGdpVE5xY2s4NExmZjk0V1hPcXUtZ25kU3FZcHlOdnFSSnFIZjdXSUpVTllHZkQ1aFNxRXQ4WXdEYW5CSWstUW9oRlRXUGJ5VkxjTTlJRWNUeGFUdE44?oc=5",
-      "title": "Barrick Gold Inks Five-Year AI Deal Before IPO - The Information",
-      "published_at": "2026-09-23T08:28:00+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Barrick Gold Inks Five-Year AI Deal Before IPO    The Information",
-      "image": null
-    },
-    {
-      "id": "10fbef41d4f715d2",
-      "source": "Google News / Yahoo Finance",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaVh2N2M4VUQxN0tjcnBITy1jMWhwbl9vb2xSa3ZHZnFfRnoxQU1mZURmamhNRGYzRE5KZ3hndkFEUWJtQURqblljdmNEQy15Vk5ILUQwd1IyYjI0S0M5VlBPLUZxaEpDczVlV1RzbXl0WW5WdzYwWlNMY2VVbWQ0Wkh4Uk9fdDlnWnFUOXhoNnJYNjQ3UGNj?oc=5",
-      "title": "Alibaba Group Holding (BABA) Is Up 6.4% After Major In-House AI Chip And Cloud Investment Push - Yahoo Finance",
-      "published_at": "2026-09-23T08:25:09+09:00",
-      "fetched_at": "2026-09-23T16:40:25+09:00",
-      "snippet": "Alibaba Group Holding (BABA) Is Up 6.4% After Major In-House AI Chip And Cloud Investment Push    Yahoo Finance",
-      "image": null
-    },
-    {
-      "id": "0bac8ac8004fb14c",
-      "source": "Google News / CBS News",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOUZYN05qclZsUmRtdzNwZDdiTmJWTWlTLS11UnFMX3lRYUNEWW1oRFpjcl9ILVozak81c2ZXM2h3MEFmVlBfNjk0THhzcGp4UERUaC1VSl9RRVNURzRxWHVjWDM1U21OSnRFTEh6bmV4aUc5TlhUN1dtY2dVX3FabVZsWFU5bURLbVJkX0tYSmY?oc=5",
-      "title": "Brain chip, AI program help ALS patient communicate again - CBS News",
-      "published_at": "2026-09-23T08:25:00+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Brain chip, AI program help ALS patient communicate again    CBS News",
-      "image": null
-    },
-    {
-      "id": "04cb5c18383ab19c",
-      "source": "TechCrunch",
-      "axis_hint": "llm",
-      "url": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4",
-      "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
-      "published_at": "2026-09-23T08:21:49+09:00",
-      "fetched_at": "2026-09-23T09:18:51+09:00",
-      "snippet": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
-      "image": null
-    },
-    {
-      "id": "ec8fc978812a0f2d",
-      "source": "Google News / WSJ",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43UnpRb1ZJY1d3VVd2TWJCZ0M1SDNkNVJuWFFzQW16eFA2NmlkclhyUm91Q1NpOEE5ckl6anlIcF9saUs5Nkc1WThJWlVQZWl5b01QOEUyRlktS0Y5aGJQN1dVOGNGM0x4WmVWZ3Jn?oc=5",
-      "title": "‘The Fuel for AI’ at FedEx - WSJ",
-      "published_at": "2026-09-23T08:16:37+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "‘The Fuel for AI’ at FedEx    WSJ",
-      "image": null
-    },
-    {
-      "id": "f4e065ae0dfe9e8c",
-      "source": "CNET",
-      "axis_hint": "llm",
-      "url": "https://cnet.com/tech/services-and-software/trump-ai-super-intelligence-internet-response",
-      "title": "Trump Says AI Is Now Super Intelligence. What’s Really Super Is the Internet Response",
-      "published_at": "2026-09-23T08:16:05+09:00",
-      "fetched_at": "2026-09-23T09:18:54+09:00",
-      "snippet": "When in doubt, add “super.” What could possibly go wrong?",
-      "image": "https://www.cnet.com/wp-content/uploads/sites/2/AI-protest-GettyImages-2295176606.jpg"
-    },
-    {
-      "id": "951bd2e24ef43a19",
-      "source": "Google News / thelec.net",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPOExibGhRcS16TmxLaG1IZW9DU1YzOFlzTXpjbFczTnNZSlBjZ1RtbHRMNjJBRHRJVE1fN0xRREFaem1iY0RlSlVXbkZXZVJaWUQ4NWVxV2M1dEhqLVd4Z1RrNFcwUzQ?oc=5",
-      "title": "Export-Import Bank of Korea Weighs Direct Investment in AI Chip Startup DEEPX - thelec.net",
-      "published_at": "2026-09-23T08:14:20+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Export-Import Bank of Korea Weighs Direct Investment in AI Chip Startup DEEPX    thelec.net",
-      "image": null
-    },
-    {
-      "id": "77b74469c9c20140",
-      "source": "Google News / UA.NEWS",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOemNKVTNzNDh1am8xMTRwLXJKU19qVGEyYkdoMFZCdWVvM0pkMWRTVzFxRFJzMW5zekwyQ1kwcVpXS0VTS3c0TVZZSVl6OVE3OFk5TmJiWGFnZjBmY05FMFoyOVRNUEQtdWZjNTZFeHcyam9kNy10a0l6MmtYMnlEMnBNNEM5VUtidzBlU3lrdGdEQjQ1aEZTelhBM0pTOHJTRnV3MmpWMWV3U29HTGc?oc=5",
-      "title": "Alibaba unveils Zhenwu V900 AI chip and announces new model — Taipei Times - UA.NEWS",
-      "published_at": "2026-09-23T08:08:08+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Alibaba unveils Zhenwu V900 AI chip and announces new model — Taipei Times    UA.NEWS",
-      "image": null
-    },
-    {
-      "id": "084e96672a4553f1",
-      "source": "Google News / CBS News",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41Z2MzbkxnNHlCTHdyX3VfUzZVVVNJelBJNXM2RzhpNThkejQ5cmY4dmN5eUlpeTBpZDJ0ZHl5clB4TlR6SUFxVDFSekJRYXdJZTRGUWhBejFRY1NLREhaWmJQM1FLbFJn?oc=5",
-      "title": "Meta's Muse personal agent is a hit, as AI commerce starts to take off - CBS News",
-      "published_at": "2026-09-23T08:06:56+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "Meta's Muse personal agent is a hit, as AI commerce starts to take off    CBS News",
-      "image": null
-    },
-    {
-      "id": "1ce4ef66544bd3de",
-      "source": "Google News / The Strategist | ASPI's analysis and commentary site",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFBRbDl0cllLRTVkbzZ6aTRDSzc4S0V2RHNzQ0YybURiUGRqalIyZ2tJUU1PazRfTV9OZHVJWWRnNEtYb250Z2lBRmQ5VkFtWS1ZSmZpU3pRRjZOWjY3TEhzVGJQY3lab29INUtPNE9nbVJrNXVtMFFNVXdtRGxnbTBST1ZJTFhxMnBmOWpuVS0?oc=5",
-      "title": "What’s at stake as Trump and Xi discuss AI governance - The Strategist | ASPI's analysis and commentary site",
-      "published_at": "2026-09-23T08:05:37+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "What’s at stake as Trump and Xi discuss AI governance    The Strategist | ASPI's analysis and commentary site",
-      "image": null
-    },
-    {
-      "id": "3689b25ff799ebc0",
-      "source": "Google News / The Guardian",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQUzROOVR5Z0htSFE0QUNMSG9jTVVTeWNZRnhVV1BNYmxCbjBSXzlINnFoRzNZbUhoVUZRM2k3aHIzT2JoM1JURVNrQTVhb1F5eWRoVVRvTmJzeDhTYk95d0lYQURmc1NrSnZyRnlzSWNBY3p6eUZReFpDa2RPN0VzOVoxZURQMlBjcTZDYXhKbDZCWVdURXptdDBpcE90bFFueHMxSkJRczZzT29VcEhlSzI2NURaVmM3Y0d4akl5M2pjMEMxQjhnZC01Sy1SWFU?oc=5",
-      "title": "Trump praises relations with Burnham despite tensions over AI and Iran - The Guardian",
-      "published_at": "2026-09-23T08:01:00+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "Trump praises relations with Burnham despite tensions over AI and Iran    The Guardian",
-      "image": null
-    },
-    {
-      "id": "7b4643bbfe42c20d",
-      "source": "Google News / The Quad-City Times",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNFhBdUhSZU1xSmJIdHdBejlnXzB5ZWtzSHdEa3Z3ekFJeUNBTzBmSnNMME5yWkdxMlFJT0dhRWF5LUtNVU1CQXBwYm5oM1h2NjdmZFBBbDVKck9rQnQ3MnJfRDc2SkFzU18yb2g1VnJQbWhMSG93OTRVUWVtbUoxckhIQzRSSE40dGNCbTZGbXpRTWpwS0Y1OFF3c3RjN0E?oc=5",
-      "title": "Pritzker establishes AI cabinet amid calls for greater regulation - The Quad-City Times",
-      "published_at": "2026-09-23T08:00:00+09:00",
-      "fetched_at": "2026-09-23T16:40:26+09:00",
-      "snippet": "Pritzker establishes AI cabinet amid calls for greater regulation    The Quad-City Times",
-      "image": null
-    },
-    {
-      "id": "7e06e92318631ced",
-      "source": "SiliconANGLE",
-      "axis_hint": "llm",
-      "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models",
-      "title": "Anthropic releases Claude Opus 5.5 and OpenAI counters with two cheaper GPT-6 models",
-      "published_at": "2026-09-23T07:58:13+09:00",
-      "fetched_at": "2026-09-23T09:18:54+09:00",
-      "snippet": "Despite rampant worries about runaway artificial intelligence, the two big AI model makers aren’t yet slowing down: Anthropic PBC released Claude Opus 5.5 today and cut its price 20%, and minutes later OpenAI Group PBC put out two new GPT-6 models, Sol and Luna, at half what their predecessors cost. Input on Opus 5.5 costs […] \n The post  Anthropic releases Claude Opus 5.5 and OpenAI counters with two cheaper GPT-6 models  appeared first on  SiliconANGLE .",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/anthropicopenai.png"
-    },
-    {
-      "id": "6d81bb9584b3b917",
-      "source": "Google News / Asia Business Outlook",
-      "axis_hint": "media",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2g1ZHA2MHhIRi1SUnpiMG1CZU5XcHB1UXFDVzdVY2R5eGJUYUNvWEJiaVI2YWR3dDZCaEZhMkxhTFNEQ0JIeEpSanlRaFdzQ1p2SVgyemI1MWQ2V2UwckhkNXJzdm9XcWtIMENWTEttdVBEMXpKN2Y5VHdfS05zajQ0X3FiUjBrWDg2bXR5cjA3Sy1QQU0zbXFjS2RVd216anhMakctbUNIU2MtWUdNMEFNeExfcE9CdE0yUHFIcVk?oc=5",
-      "title": "Asia Today: AI, Fintech, Robotics, Digital Assets & Investment Deals - Asia Business Outlook",
-      "published_at": "2026-09-23T07:54:45+09:00",
-      "fetched_at": "2026-09-23T16:40:25+09:00",
-      "snippet": "Asia Today: AI, Fintech, Robotics, Digital Assets & Investment Deals    Asia Business Outlook",
-      "image": null
-    },
-    {
-      "id": "0172b6d51bb80481",
-      "source": "Google News / afp.com",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVWlFUl8xUFh4VGk0Y2dwYWtmSUg4Z1NMY1ZWbXRRbnlFM21UbVV5VFM1NGVVUWRYQUhfczREZmxNSjB4bHFoZDhpejk5RkxuZkNxcm1yaUdMRzdVbjkxUFpXUzRlUkNfbF9wVG9KV1h5cVA1X19sZ2xzdFU0SzN5UC16V1BEZTRabmN4Qk9MUQ?oc=5",
-      "title": "Trump renames AI 'super intelligence' as leaders jostle over dangers - afp.com",
-      "published_at": "2026-09-23T07:39:22+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "Trump renames AI 'super intelligence' as leaders jostle over dangers    afp.com",
-      "image": null
-    },
-    {
-      "id": "905ada225431763f",
-      "source": "Google News / Yahoo Finance",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZVB2blgwQ281NDVlamV3UVc2bVhUd3d3dkI2Uk1zZEI1bHphd0RrLXA4OXdOUzNQVS1RZmV2WHZqMGxaVEZkQVRxMmU4bTFTdi1kbktiNmN3NFAxYVZjTHdXelVaTFpoOFhHc0JYQmZHSTRNTTJqa19USFBGVW5xS0Etc2RiNlJOYU5ZOEVYYzlrejIxVXFpUnBmbmMycXU2Snd1MTQtNDRhLUd5N19QTmZtMWRJcjM1cEVidy1aTUxaR2hyeGc?oc=5",
-      "title": "OpenAI, Anthropic, and SpaceX valuations could dwarf 45 years of IPOs - Yahoo Finance",
-      "published_at": "2026-09-23T07:37:24+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "OpenAI, Anthropic, and SpaceX valuations could dwarf 45 years of IPOs    Yahoo Finance",
-      "image": null
-    },
-    {
-      "id": "8b277fe357af65e5",
-      "source": "Google News / Bloomberg.com",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yWkljRUdiZHBtWGtwWC1MbzZkV3FzeHFVZzBZYWtRdVBKRm5VZjdHdGxuMjRwN3VrcVFTTk9SUVctVEpqM1NHQ1lVeGNETi1BYWI2OHZQOFB0cHB1UTdtUlFWeWkzSlhfQ0xKalBlTzB2V0RfRTF1TkRHWnZHN2M?oc=5",
-      "title": "Watch AI & Chip Stocks Lead Markets Higher - Bloomberg.com",
-      "published_at": "2026-09-23T07:33:31+09:00",
-      "fetched_at": "2026-09-23T16:40:25+09:00",
-      "snippet": "Watch AI & Chip Stocks Lead Markets Higher    Bloomberg.com",
-      "image": null
-    },
-    {
-      "id": "18928b86c7631e20",
-      "source": "Google News / Startup Fortune",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSW5ya3RmOUt5cDRJR3pqaE5xODh6ZGQ1RzM1NkVhVE5SVG01WE1CWTdyaHUzT2VEUEE5SjVlZFViRFdrNmswaW14UGZxZFFpTEV0enlxSnZyYzRHeERpblctMUtxUlBMUlNPd1NUdVY0akNZZmtDMXdia2hzbDVPUWRTRTJJLXRhMkVIZy0zS2VmekZnbjNZblZNYXR3UFRmeEE?oc=5",
-      "title": "Snorkel AI Triples Its Valuation To $3.5 Billion On Surging AI Data Demand - Startup Fortune",
-      "published_at": "2026-09-23T07:32:58+09:00",
-      "fetched_at": "2026-09-23T16:40:26+09:00",
-      "snippet": "Snorkel AI Triples Its Valuation To $3.5 Billion On Surging AI Data Demand    Startup Fortune",
-      "image": null
-    },
-    {
-      "id": "2c92e6ab07bf5aea",
-      "source": "Google News / TradingView",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRmJrcHY2dGNTZmlzV181NWN2R2lrc3hnZ3AwcnpjS3VvQVJEMEMwMmxXSTVQLWFka2pGMk5ZYlJnb3pOZTZDV1RMaVRsZFlpSERsS1FtMnhyNmdzcG96ZmNkdjNhVnRNNjk2a3JYSVNvUXZfM05iVlh0WHdEcUhjNDBoS0pPRGZ0UDV1WHdZQkhwdWItakhnTjlhck9mMHpnY09FOHRfbUhITUJvSi1BZnQxLUFnYWNHYTY0?oc=5",
-      "title": "Morgan Stanley Falls 3.4% as $720 Million AI IPO Enters Queue - TradingView",
-      "published_at": "2026-09-23T07:30:24+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Morgan Stanley Falls 3.4% as $720 Million AI IPO Enters Queue    TradingView",
-      "image": null
-    },
-    {
-      "id": "01907e1596416869",
-      "source": "Google News / WBAL-TV",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1SSXdXS3ZQX0NESTVIb3dMME5lM2dLY0ZNQnpnektxWWgySWhBX1ZsaG9SN1pma2R0T2V3RTJFSE1YR3Q5Q3hOY2c2MUhRbU5JUm5ieEtKSHBfenE3Y0dteWpQaWQ5bGh3MTVFMUcyZVhWQm44RGwtallnOUw?oc=5",
-      "title": "Apple settlement offers some iPhone owners up to $95. How to file a claim - WBAL-TV",
-      "published_at": "2026-09-23T07:30:09+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Apple settlement offers some iPhone owners up to $95. How to file a claim    WBAL-TV",
-      "image": null
-    },
-    {
-      "id": "e9ecc73825b945a1",
-      "source": "Google News / kare11.com",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPQkVBbU02amcyQkMwdDBqMnNhb2RRc0JxcGdNYy1vVW8tdVFLVDhQeW9mcEJwTGlmWmE4YzBQa1hlZzNxb2xScFlXazNBd0pMb1lyZG9xSDBkMDVEQTU4cUZsMnBCcU0tdXhseVdXd0NrWjFjQy1DS196SkFtZFdiaTZUNGYtUkxkQ1pESlBQRFExNlJWMlVDb0pxNjJyTktMU2lIdVhreTdxbGxjRTczWVJtNlBpbVpaRnR2ODloWi1tSllzY1dvWnFIWW5KQTVWY1V1Q3A3VXAwZElOMjY4NmpnOTdFZGhPTlY0cEIyc2R2SV9qMDNFYl9VcmFXQQ?oc=5",
-      "title": "In Minneapolis, OpenAI executive talks about need to 'pace the frontier' on AI development - kare11.com",
-      "published_at": "2026-09-23T07:19:00+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "In Minneapolis, OpenAI executive talks about need to 'pace the frontier' on AI development    kare11.com",
-      "image": null
-    },
-    {
-      "id": "0f7824e6e7f601f0",
-      "source": "Google News / KCRA",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9lUTdpNU84MWdRTjJ5RzA0YmxCUWM3aExLbF9GUFlMRlFoVV9vWXJQbTZYWUJTNGM3SEpHdUhrSHhJYkpKTW9aaGkyR0xrNnRNVkl3cHBNTGo1aXlPZFpNYV9LQV8yeXVRa3g3YkNBd3ZPS3N3NXJONUNB?oc=5",
-      "title": "Apple settlement offers some iPhone owners up to $95. How to file a claim - KCRA",
-      "published_at": "2026-09-23T07:19:00+09:00",
-      "fetched_at": "2026-09-24T03:21:46+09:00",
-      "snippet": "Apple settlement offers some iPhone owners up to $95. How to file a claim    KCRA",
-      "image": null
-    },
-    {
-      "id": "9e66c40457f8d3a2",
-      "source": "Google News / hklaw.com",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeGxnV0R3cEtWd1Z2WUcybUl0LWkxTkNROGVfd3VTOU1rajJHakJnS1lqUy0wRnppREs2SUt5Wk9BWklQN1lMVUJLRjkwRDB0RDNPSEhaRGV6Q1d6Y2NWMzYxZGoyek00N3BnYmZsdUlROUxPcE4zSGw1NXRsbVhsNkRTTGljV0hLbGJpWDBTbFk0em9sbUJBWUxZQ0JLRWZScTZTS0pzaGlEOU1nSGN1UUlsZDlkVk9ya2pkZQ?oc=5",
-      "title": "CMS Greenlights Enhanced Payments for AI Technology in CT Imaging - hklaw.com",
-      "published_at": "2026-09-23T07:14:32+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "CMS Greenlights Enhanced Payments for AI Technology in CT Imaging    hklaw.com",
-      "image": null
-    },
-    {
-      "id": "29bcd3d547e58921",
-      "source": "Google News / Insider Monkey",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT3lQVGt2U0dxeU02REV3MVZpZ3U2X2ZXOTBlVXVQZmJ1Tm5LdUFpenBIcTUzVlZ3VXNWajdNSEZWVFd5bExuNUdPeHhSZE9ZT2tkOXpLdU5QUzB3bzZCXy1NMkdJUjRDTktrZVR0ZFpRZ2hyUlhMamZQeEUyVmY3OUgwR0tXVXZKTDNvZFdwQ3l1ZFAxdk9WS21admFRV1g3RzdaMlgwb3E3RHNnNzRSZThRU3Z1RzhEdElIMkJCTFdac2lVRThVTV82WnR5X0NCa2YtY2hSZ1h0bHdXYjMzUTliONIB4wFBVV95cUxOT3lQVGt2U0dxeU02REV3MVZpZ3U2X2ZXOTBlVXVQZmJ1Tm5LdUFpenBIcTUzVlZ3VXNWajdNSEZWVFd5bExuNUdPeHhSZE9ZT2tkOXpLdU5QUzB3bzZCXy1NMkdJUjRDTktrZVR0ZFpRZ2hyUlhMamZQeEUyVmY3OUgwR0tXVXZKTDNvZFdwQ3l1ZFAxdk9WS21admFRV1g3RzdaMlgwb3E3RHNnNzRSZThRU3Z1RzhEdElIMkJCTFdac2lVRThVTV82WnR5X0NCa2YtY2hSZ1h0bHdXYjMzUTliOA?oc=5",
-      "title": "Alibaba Just Unveiled an AI Chip 3x Faster Than Its Predecessor. Nvidia Has a China Problem to Watch - Insider Monkey",
-      "published_at": "2026-09-23T07:14:10+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Alibaba Just Unveiled an AI Chip 3x Faster Than Its Predecessor. Nvidia Has a China Problem to Watch    Insider Monkey",
-      "image": null
-    },
-    {
-      "id": "a817dbaa61c5f4a3",
-      "source": "Google News / WFAA",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWG1BRUZfVHk3WlN1WXdCcGF4ekl0QXJjNGlfOWZQNjdVS3U4NlVGV1dtT0tPbHl0QV93N1EzaXZmYU8xZU9QU3VlbEVUcWFFaXh2YjZLM0MxQnZoWkxaOWRzYThKVkFTcWZkWlpFWElLVUFIWXdVUzZHRWZtMFhiU0lNbVVHYjdIb0dVcjVMR0tXZ1RUVHJfQ2d4cnR2aXl5QTMzNnFmOVU5eVdsLU93c2UyOFhCT0lvRGhDbVlTdTl1VzJVNDVtcGFMUHMwRzE5aDZOY3RNTUQ5T0J4cnFOb0I2UDVwNFFW?oc=5",
-      "title": "Trump warns of annihilating Iran during UN speech, rejects AI regulation - WFAA",
-      "published_at": "2026-09-23T07:13:00+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Trump warns of annihilating Iran during UN speech, rejects AI regulation    WFAA",
-      "image": null
-    },
-    {
-      "id": "aa87610c9f6868d2",
-      "source": "Google News / Newser",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdXpDZzdXU2NIMXVLMEFkd3FfMU94RzI1Y2szM1I1OGFhWUFGSk5PTkk4cXNQVWZ5ZVFsRjN3MWNJMXJucXk0VXVYT0c5X1NFNW5YdldfcXJuT3FFLUZnWTBId1UtRGxiYnBYbUZ4dXdkMlRjT1BiTTVqM2htZUxHTVRmYmoxcFpvZlJjb0hucjZ4dDE5UXc?oc=5",
-      "title": "Canadian Province Sues OpenAI Over School Shooting - Newser",
-      "published_at": "2026-09-23T07:11:00+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "Canadian Province Sues OpenAI Over School Shooting    Newser",
-      "image": null
-    },
-    {
-      "id": "fdf56923e1f76b9f",
-      "source": "Google News / Fortune",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVGkycGZfS2VycXR5TUxfOTg2RlVabUl1cjhoWTdFZTN4NWd2dW5Ea003bXpPTkRKV0dwSFR0Vl9ia25aakZFTU40Z09OQm41M295TnNnblc4aTF0LV9kSklyS080ei1Ld0xTbHV1VmwtdTRmelNNVi1LYng1dVJtc2ctaG95VWVMOFJXWUZUSDk3R1J0Q3d0YzFoRmdncjFrU0E?oc=5",
-      "title": "Meta’s Muse AI is exploding in popularity—and already drawing heated backlash from another tech giant - Fortune",
-      "published_at": "2026-09-23T07:11:00+09:00",
-      "fetched_at": "2026-09-23T16:40:27+09:00",
-      "snippet": "Meta’s Muse AI is exploding in popularity—and already drawing heated backlash from another tech giant    Fortune",
-      "image": null
-    },
-    {
-      "id": "de8a7b1810bfca14",
-      "source": "Google News / Free Malaysia Today",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNDVXaVFMMy1IenluUFpja3oxWUIwblFvelg0WW1hNHVTaVJwTVJySzVyLTRvcmVmZ1JwRFVjQThjUjhnQTducGF1X0t3QjlFb3pzRUl4WDBYaE9PRFZ1VHkyaWR4cE5JZnotWnNkam9yUHVfUHNoZlR0MXdaMGd6aFNzU0xYRWxLaFBGLXVmRnAwSVd3d2JFa0JLRVBGX1M0WmZrd1hCVUtxTEpnRjM2S0lGMVp4dFR2cXg4dUZUZDlRQQ?oc=5",
-      "title": "Anthropic, OpenAI release cheaper AI even as safety fears grow - Free Malaysia Today",
-      "published_at": "2026-09-23T07:07:00+09:00",
-      "fetched_at": "2026-09-23T09:18:58+09:00",
-      "snippet": "Anthropic, OpenAI release cheaper AI even as safety fears grow    Free Malaysia Today",
-      "image": null
-    },
-    {
-      "id": "50803adeff1d2104",
-      "source": "Hacker News",
-      "axis_hint": "llm",
-      "url": "https://ft.com/content/60870960-f433-48ca-bc2c-708686a69ae7",
-      "title": "AI staff complain of mental toll over fears of threat to society",
-      "published_at": "2026-09-23T07:05:47+09:00",
-      "fetched_at": "2026-09-23T09:19:03+09:00",
-      "snippet": "",
-      "image": null
-    },
-    {
-      "id": "c78afbb2df188d04",
-      "source": "Google News / Barchart.com",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOM0dlcWxlc0ZoeFdRVkJVS2I1R2tYSDdDb1U2ekp5Q2FEWnR1Ry16YmRoVHhCdmhmcHkzemhOWk53VnNEV3A0SkZjTU9hM2YxU2E4ZldudXBBWHRmNDdHcmNVUlRWcEh0cjNiZ0d1TG9jYmI5WlhnNHRQMlZrRGlCUnVtSGZHcC1pZWdjRm5Xc2FuM20tVHc1Vnlfa251dVBMd2ZJRURqdTREQVhDci1wSXRNMXoxNjJsZXdWZ1ZZS1VmRHhLSFFyS1MxTmw1QUc0QmF2RXdoYmE?oc=5",
-      "title": "Intel vs. TSMC: One Chip Stock Controls 72.5% of the Foundry Market. The Other Is Mounting a Comeback. - Barchart.com",
-      "published_at": "2026-09-23T07:03:37+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Intel vs. TSMC: One Chip Stock Controls 72.5% of the Foundry Market. The Other Is Mounting a Comeback.    Barchart.com",
-      "image": null
-    },
-    {
-      "id": "ae6026072bc81b43",
-      "source": "Google News / The News International",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdmU1YXdkZC0yZ1ZPQ2ppbm9PVFpOT0tlOXpXcER6bDlBakZzUlJuaVlXbHRTTXlGN2VOZVUxNkpxVlc0NGN5dzl5bXNzTTZHcndybkJqMTFzby03MDgxU1JXYjFYWUJVQTIwcUhsSGJZTXZMQlM2emNVWXY1V09Hb280VnJnNEdXWUJjSUdDWHI4Q3l6cEp3VlgzQlpwZUxNbVhEVXJDVXDSAaQBQVVfeXFMTjExbHA2ZjJXSDFHakZ2cmRqZk5KT2RnSmlXVzdPMlBKUFVxOGh2U2lXV3M0c19IQ3c4bDNBRGN2V0xzZGtxRFpZX0FPT083YURTRnl5LU1oOTZWNVdjY3poRjIzVXhtcExpQ0xPZjNnMjBpSmZpckFmZlMyMUhJOWdkbDYtbTN1STlPWkhudF9PS042Y0pyWjd6YlRLNGVuV1VmRkI?oc=5",
-      "title": "Anthropic Claude Opus 5.5 released; cheaper and smarter AI model - The News International",
-      "published_at": "2026-09-23T07:03:00+09:00",
-      "fetched_at": "2026-09-23T16:40:25+09:00",
-      "snippet": "Anthropic Claude Opus 5.5 released; cheaper and smarter AI model    The News International",
-      "image": null
-    },
-    {
-      "id": "82504765f5b906f7",
-      "source": "Google News / Reuters",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLVV5RE9jdGNuVXUycl9fTjJ1Ty1tVzZ2U1MxcWtaZDhXOG5qc29yTENvLVJtZ19PM09MQng5azRmbU5kNG40dUtBcVcxN0U1eGZNUkZwaXA0amt6R25qak9za19YTTNKVHFDVGg0VVVzN3V2VjFHdnBHN3BpUmtQR3BUdThUd3FqbXJIOHZLVE1kbVVRV005bDJmM3o3N2Z2Z3Bvd2NYZjhSLUdpYUhZ?oc=5",
-      "title": "EXCLUSIVE: Anthropic, OpenEvidence partner to bring medical AI worldwide - Reuters",
-      "published_at": "2026-09-23T07:01:25+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "EXCLUSIVE: Anthropic, OpenEvidence partner to bring medical AI worldwide    Reuters",
-      "image": null
-    },
-    {
-      "id": "4ec1e76bed9f4f14",
-      "source": "Google News / Pulse 2.0",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeFgzcmx6cmJDQkNBWUl5R2MwQkM0dGxreWRCTjdKLW91dVFOMmstYm1kcUJpS3NGOW5jZ0l1elNBTG9MazdiZ05TQ2dLX0E5eHhIa3ViRldqUEFvdFo4alh2dXJkcmtmNHVYaE5tVEM4SEd3ZGRFNmNxcE9iXzFaZkx4WkJYd1RMZGxueW8yNV9jRU9yRko5MWN6SS1xNTdyY2JQSXJLcmZaSmVkNFdpZ0ZudnViRWYtNlNJeW52d3lCVC1HUTNEYUJYbULSAdIBQVVfeXFMT0wxcGNGU2xra1pqUjNYa1h2bFhYNWpwWmtsUWNVRVYzVXVVZDFaQ29FOF9IY0NWUnpnd0VBaE1Uc292QURoWktOOGdjM3piNHFRdVVjcHZkU0lfbGs1OWpydVdwbDlYaVFiZTVQOGl3M29YVy1QRjYtTFFZQTc1NDBQYm5ka01URi1EcmtSNURyQ0p4X1hDdW9LOEZsNU1GTWVnNEc3R24yaEVxaFd6RUt2azQ5RnBlNXFDc2tXSEtSWGNmYlQwWXAzZEpWQlhIeFVB?oc=5",
-      "title": "The Biological Computing Partners With AWS To Launch AI Video Model With 5x Faster Generation And 80% Lower Costs - Pulse 2.0",
-      "published_at": "2026-09-23T07:00:15+09:00",
-      "fetched_at": "2026-09-23T09:18:58+09:00",
-      "snippet": "The Biological Computing Partners With AWS To Launch AI Video Model With 5x Faster Generation And 80% Lower Costs    Pulse 2.0",
-      "image": null
-    },
-    {
-      "id": "a1dbcc1538113fd6",
-      "source": "Google News / Reuters",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQnpTdVJoYlBubmcxZzZDSGlkaHAwemtyWEVFaWZ4TGtQVkFhNVZ2VlViVGRXQkFTYUhQVlREVmxxcGhTYmNxMW5YbFd2TUt4Y0NVTkgtWWZjcnhYNmJQREhYTkk4elNZX0Q3STRGNG51eV81NGNaZXV1ZnR1MTBmeXhoOUt2Y3lmNEgzMFd2a184Mk5NdVo4UUVFbGlzSGhvOEJuR1ZCZ09pMFVGZk9MYnZTUWRJaEFlQ2VtVzd2bDlsQUVHbHBtSA?oc=5",
-      "title": "EXCLUSIVE: Snorkel AI valued at $3.5 billion amid surging demand for complex AI training data - Reuters",
-      "published_at": "2026-09-23T06:58:09+09:00",
-      "fetched_at": "2026-09-23T09:19:00+09:00",
-      "snippet": "EXCLUSIVE: Snorkel AI valued at $3.5 billion amid surging demand for complex AI training data    Reuters",
-      "image": null
-    },
-    {
-      "id": "e20ec45cd8a08a6c",
-      "source": "TechCrunch",
-      "axis_hint": "llm",
-      "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-      "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-      "published_at": "2026-09-23T06:56:43+09:00",
-      "fetched_at": "2026-09-23T09:18:51+09:00",
-      "snippet": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
-      "image": null
-    },
-    {
-      "id": "ec7e28d0ef5574b6",
-      "source": "Google News / finance.biggo.com",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5fMGpROFcxV25TLXZKSHlvTm9QMnhnVllTVVNzclgyOU5IYWdOMVRkR3VoSWhoT3dkem9tVENCZUVJNEpZajN1Y3lWTmt6QnhXVFZycVd2V3NOWHlkRzg1d1FwMUlGSmZ4c081aGtqUXRQU1hzMmc?oc=5",
-      "title": "Nasdaq Hits Record High on AI Chip Rally; S&P 500 Pauses for Breath - finance.biggo.com",
-      "published_at": "2026-09-23T06:55:00+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Nasdaq Hits Record High on AI Chip Rally; S&P 500 Pauses for Breath    finance.biggo.com",
-      "image": null
-    },
-    {
-      "id": "a675b5d62a1c957a",
-      "source": "Google News / Reuters",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNUpGX2hDdFZBMW45ZFVIelJSUll4TnpWR3NYWExINUxaX2planJ6dU9JNkNCcmM1U216U0VNcDd2TjZfNlluVHUyd1NtZkk2MjZlRTZRRWtLUGJBckpEQk91cUl5QnpvQWc2SC11cTRZczZPa2xBMTBjeVRVMWhRLURoazZZR0E1ZHY4OGNzY0wwTFFCXzRUNFlnbFVmcFFxVjRNRw?oc=5",
-      "title": "US Treasury secretary could take on AI czar role, source says - Reuters",
-      "published_at": "2026-09-23T06:55:00+09:00",
-      "fetched_at": "2026-09-23T16:40:27+09:00",
-      "snippet": "US Treasury secretary could take on AI czar role, source says    Reuters",
-      "image": null
-    },
-    {
-      "id": "148718f7b491fa8a",
-      "source": "Google News / Semafor",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRXZYMlpjSHdlUXJuVG54RkJjSlYxN1pZX1RlS3ZuSjFlMnM3Qll0NUVVajJQU3ZqeFMwMnhBcmdiYXhXQTRHWTVXT1hmSEJSWkg5M2FQRHZFS1pURnVFblF6N2J1NmVlMXZwd0h2cjdSN0h5S0FIeW9KVUVLM3FGOXRSQXhhNmVRekl5N0RueTRFNlNtOEh2OEJLUlNsb2cwSG9lYmg0clFIS1RBa21WUG15aTNKOGZY?oc=5",
-      "title": "OpenAI exec is ‘cautiously optimistic’ about the US working with China on AI - Semafor",
-      "published_at": "2026-09-23T06:46:00+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "OpenAI exec is ‘cautiously optimistic’ about the US working with China on AI    Semafor",
-      "image": null
-    },
-    {
-      "id": "e378a08b5b51baea",
-      "source": "Google News / NBC News",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNUEyUVY0bmlUZ2hFbDVwOTBISHFRWThkLXdRUWpmblNBQzJtZ05VYlZBN1I3bmxjWDNNcEtvcUZ2X1NXd1BHTzExckM2OGNtcHU2RXFvWktTUmVRb0NTQTNPZUZqRmpSM21PUXBrMWExNTJfSXJxS18wYUtlRjdxR0ZBWk8tV3NPOC14aHJvcTU2eGhlUWxWV21RWGJBWHJZQjhXRVR0NTFKUTZ3V2p5eWQ4TFdZTW8?oc=5",
-      "title": "Democratic governors rush to rein in AI amid tech industry and voter concerns - NBC News",
-      "published_at": "2026-09-23T06:45:10+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Democratic governors rush to rein in AI amid tech industry and voter concerns    NBC News",
-      "image": null
-    },
-    {
-      "id": "fd1158c732a8ade4",
-      "source": "Hacker News",
-      "axis_hint": "llm",
-      "url": "https://inc.com/jason-aten/metas-new-muse-ai-agent-read-my-private-messages-i-never-asked-it-to/91408202",
-      "title": "Meta's New Muse AI Agent Read My Private Messages. I Never Asked It To",
-      "published_at": "2026-09-23T06:43:04+09:00",
-      "fetched_at": "2026-09-23T09:19:04+09:00",
-      "snippet": "",
-      "image": null
-    },
-    {
-      "id": "9b72117c21ef390c",
-      "source": "Google News / thestreet.com",
-      "axis_hint": "llm",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA3ZXlyMExmWFBER1E0VWxmdlFMOFN3bkV3Z0tzSElWVktWc3psUGhxc1BWS3RSSnBaVTVlXzVpLVJLb1UzZ1ZuRERma3daUG1uN2dwandSLXJGTlNKSWlZRlhydl9fNlZoR2VuRlpLV2RXYmRhWlE2N2V0MUc?oc=5",
-      "title": "Anthropic makes things more uncomfortable for OpenAI ahead of IPO - thestreet.com",
-      "published_at": "2026-09-23T06:37:00+09:00",
-      "fetched_at": "2026-09-23T09:18:57+09:00",
-      "snippet": "Anthropic makes things more uncomfortable for OpenAI ahead of IPO    thestreet.com",
-      "image": null
-    },
-    {
-      "id": "a74284e5c77b533e",
-      "source": "Google News / Wccftech",
-      "axis_hint": "hardware",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeUtDYjFqZHFDVnpEZHZQMXlJelN1NHJQRkdXbG9TczlBVTY3ZlZJSnFaN0h3UHB2SHpVU2lwbWhONVg4bk1zcTU4VjdFNHp5Q0pBazRrSE1fUkZGZGxpSDVpRUYxMS1BTzc0R3gzUWpCdTZhbGZEWWtGdVpRVEN0R2ZNZC13UEdmelBKbUVTU2ctcDBCY0FIZ9IBngFBVV95cUxNRmF3LVI5azh6MGVOOEVtS1hYQlJFUkVWTnRBcHdPMFVDYk5uQWlzbFo1VjdxdFJFMWNOUDRtXzBkT2tRSi12cHdjRUxuMlhFRUVwXzRSRl9yRng4UUFIbm0zbTljZXJwNFp5TW5KWjdrT2FCck91ZUZLcjNoS0xsZjlzSUdzblpFcGozWkg0U1BVYURXNVJpRGVkenVodw?oc=5",
-      "title": "SK Hynix CEO Says That AI Industry Cannot Exist Without Memory As the Company Builds Next-Gen Memory Across A Fleet of Global Production Bases to Maintain Market Dominance - Wccftech",
-      "published_at": "2026-09-23T06:35:07+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "SK Hynix CEO Says That AI Industry Cannot Exist Without Memory As the Company Builds Next-Gen Memory Across A Fleet of Global Production Bases to Maintain Market Dominance    Wccftech",
-      "image": null
-    },
-    {
-      "id": "b93ddb20a4c7a421",
-      "source": "Google News / Law.com",
-      "axis_hint": "capital",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQd09jRnVjNEZ0MGR2Wi1PdzRUenEwNnljV2w2XzAwaUU2SGxlWG44ekpfazVUVHZya3cxT2phQTF5RXRaX3g0ZkJjM2FfSTdYWkhoMVFVM1drbFppbmd1TEpqdU9Kc2F4ekNJdmU0Nnk0WkRtRnNsdm9hamdfOFI5aXdJemdEMGcwelRKZVo1a0kwaVJaZXNIamxIMnlNQVZrelI4djJDOWxPaWVxWHl2SWFVSUo4WXlhYVhIQktJeTJiTjB5R3N3U0k2V3RZbHRIeW5ZaUVzZTd6ajQ?oc=5",
-      "title": "Fiserv Legal Chief Adam Rosman Jumps to Nvidia-Backed AI Infrastructure Company Nscale Ahead of IPO - Law.com",
-      "published_at": "2026-09-23T06:34:37+09:00",
-      "fetched_at": "2026-09-23T09:18:59+09:00",
-      "snippet": "Fiserv Legal Chief Adam Rosman Jumps to Nvidia-Backed AI Infrastructure Company Nscale Ahead of IPO    Law.com",
-      "image": null
-    },
-    {
-      "id": "448258efa98f6f06",
-      "source": "The Register",
-      "axis_hint": "llm",
-      "url": "https://theregister.com/security/2026/09/22/windows-closedquorum-malware-uses-ai-models-to-autonomously-select-post-compromise-actions/5298435",
-      "title": "Windows CLOSEDQUORUM malware uses AI models to autonomously select post-compromise actions",
-      "published_at": "2026-09-23T06:33:29+09:00",
-      "fetched_at": "2026-09-23T09:18:55+09:00",
-      "snippet": "'first' publicly documented Windows implant to use LLMs for C2",
-      "image": "https://image.theregister.com/?imageId=5298442&width=800"
     }
   ]
 }
