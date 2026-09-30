@@ -1,56 +1,58 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "etag": "\"-xPJ9A\""
+    "last_modified": "Wed, 30 Sep 2026 15:03:07 GMT"
   },
   "feed:https://huggingface.co/blog/feed.xml": {
-    "etag": "W/\"3ea16-AL+Q3Eb0t/GiWqjtqcYGKqB1zcM\""
+    "etag": "W/\"3eb60-7smxbYDpaIn3sXs66OUT2ey2K+4\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6abc0e02-c00d\"",
-    "last_modified": "Tue, 29 Sep 2026 19:14:10 GMT"
+    "etag": "\"6abd4091-c193\"",
+    "last_modified": "Wed, 30 Sep 2026 17:02:09 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"bb0ed831db384ac78cdb453b9a811574\"",
-    "last_modified": "Tue, 29 Sep 2026 21:21:25 GMT"
+    "etag": "W/\"f7493acd898c9e52793d474a3b54f7c9\"",
+    "last_modified": "Wed, 30 Sep 2026 19:00:57 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"4c0c07e2702bda1ad5dc39b8fcc368b9\""
+    "etag": "W/\"59166b54e0893f3b423a56c0d3acf45b\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"263a4a3dcfd50acbff7d842800d973d7\"",
-    "last_modified": "Wed, 30 Sep 2026 11:25:26 GMT"
+    "etag": "W/\"5474abf08ab8d1ad624267180ab853ac\"",
+    "last_modified": "Wed, 30 Sep 2026 18:35:44 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "last_modified": "Wed, 30 Sep 2026 11:49:44 GMT"
+    "last_modified": "Wed, 30 Sep 2026 18:33:38 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
-  "feed:https://aibusiness.com/rss.xml": {},
+  "feed:https://aibusiness.com/rss.xml": {
+    "last_modified": "Wed, 30 Sep 2026 19:05:55 GMT"
+  },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"2e35713467ac6e00e2c9b961da0d859f\"",
-    "last_modified": "Wed, 30 Sep 2026 11:05:24 GMT"
+    "etag": "\"a871e62c4bc4154168092b898f87472b\"",
+    "last_modified": "Wed, 30 Sep 2026 18:17:15 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
     "last_modified": "Thu, 3 Sep 2026 20:32:32 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"bfbf6adc0de3b6207d7e601a062f6ec4\"",
-    "last_modified": "Wed, 30 Sep 2026 12:00:11 GMT"
+    "etag": "\"14baca8d3a100cfefa5a6326afa8030f\"",
+    "last_modified": "Wed, 30 Sep 2026 19:00:21 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"2645cd0056f697b0fe3fd752e81718d3\"",
-    "last_modified": "Wed, 30 Sep 2026 12:00:00 GMT"
+    "etag": "\"8a52847dcbf6d541f0257f274957ee4e\"",
+    "last_modified": "Wed, 30 Sep 2026 18:37:29 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"79df0a1f38ee81bf57c85570616b5c15\"",
-    "last_modified": "Wed, 30 Sep 2026 12:23:23 GMT"
+    "etag": "W/\"799196eec45995a25b4cd7ff2f6c3e9f\"",
+    "last_modified": "Wed, 30 Sep 2026 18:45:39 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
   "feed:https://semiengineering.com/feed/": {
-    "etag": "W/\"1cea40f6fe97d1ade4f83552a736607b\"",
-    "last_modified": "Wed, 30 Sep 2026 07:04:53 GMT"
+    "etag": "W/\"f516eac74845f93bc31a6a05576e8d49\"",
+    "last_modified": "Wed, 30 Sep 2026 16:58:08 GMT"
   },
   "anthropic:sitemap": {},
   "anthropic:seen": [
@@ -500,6 +502,7 @@
     "https://www.anthropic.com/research/trustworthy-agents",
     "https://www.anthropic.com/research/values-wild",
     "https://www.anthropic.com/research/vibe-physics",
+    "https://www.anthropic.com/research/what-work-can-robots-do",
     "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
     "https://www.anthropic.com/research/your-thoughts-on-ai",
     "https://www.anthropic.com/research/zero-days"
