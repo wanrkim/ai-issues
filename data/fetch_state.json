@@ -1,52 +1,52 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "etag": "\"5llwLw\""
+    "etag": "\"9gTTqQ\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
-    "etag": "W/\"3efec-sJE6Cwk6szU5+522hIFBC1VxMhQ\""
+    "etag": "W/\"3f0ec-aogZMAKrY4InoX5vl7AAfCM0Irc\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6ac7945e-c054\"",
-    "last_modified": "Thu, 08 Oct 2026 13:02:22 GMT"
+    "etag": "\"6ac7aa59-ce49\"",
+    "last_modified": "Thu, 08 Oct 2026 14:36:09 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"2357586bc2b1b617e09ffa530a20d194\"",
-    "last_modified": "Thu, 08 Oct 2026 13:12:42 GMT"
+    "etag": "W/\"6054c3b5cad07b9807da79fa2f299f7b\"",
+    "last_modified": "Thu, 08 Oct 2026 19:48:31 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"478b26db12eab030b02aa7beefee7626\""
+    "etag": "W/\"62829e763c89c1450a9958f7cd62de52\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"57f8a2464ccb23c58ca78347e2bba0eb\"",
-    "last_modified": "Thu, 08 Oct 2026 12:56:19 GMT"
+    "etag": "W/\"6dae1bda7a9309a9cffcaa3f473d5321\"",
+    "last_modified": "Thu, 08 Oct 2026 18:52:33 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "last_modified": "Thu, 8 Oct 2026 11:38:27 GMT"
+    "last_modified": "Thu, 8 Oct 2026 19:35:36 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Thu, 08 Oct 2026 13:17:41 GMT"
+    "last_modified": "Thu, 08 Oct 2026 19:49:28 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"0168557e3e722d261f8e251279932b2f\"",
-    "last_modified": "Thu, 08 Oct 2026 13:12:35 GMT"
+    "etag": "\"930781a92f5c274610d37a617aca93af\"",
+    "last_modified": "Thu, 08 Oct 2026 19:31:05 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
     "last_modified": "Thu, 3 Sep 2026 20:32:32 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"74a31a4478bd21b6c5f161c0cd1319c4\"",
-    "last_modified": "Thu, 08 Oct 2026 13:00:44 GMT"
+    "etag": "\"4328a5536f0827cddd8c6832a7d5bc44\"",
+    "last_modified": "Thu, 08 Oct 2026 18:07:15 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"8cece4b0009ea12f5553b97171de283e\"",
-    "last_modified": "Thu, 08 Oct 2026 13:12:28 GMT"
+    "etag": "\"1bd3e73741e4812c2b9ba842c31a74e6\"",
+    "last_modified": "Thu, 08 Oct 2026 19:42:49 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"8b7b351fd357a24044694bc12b4a760c\"",
-    "last_modified": "Thu, 06 Jun 2024 02:13:00 GMT"
+    "etag": "W/\"f2c6f168e420bb56fc73ebc119b811f7\"",
+    "last_modified": "Fri, 14 Aug 2026 23:10:53 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
@@ -82,6 +82,7 @@
     "https://www.anthropic.com/engineering/swe-bench-sonnet",
     "https://www.anthropic.com/engineering/writing-tools-for-agents",
     "https://www.anthropic.com/news/100k-context-windows",
+    "https://www.anthropic.com/news/2026-usage-policy-update",
     "https://www.anthropic.com/news/3-5-models-and-computer-use",
     "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
     "https://www.anthropic.com/news/Introducing-code-with-claude",
@@ -109,6 +110,7 @@
     "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
     "https://www.anthropic.com/news/anthropic-bcg",
     "https://www.anthropic.com/news/anthropic-codepath-partnership",
+    "https://www.anthropic.com/news/anthropic-cyber-mission",
     "https://www.anthropic.com/news/anthropic-economic-index-connector",
     "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
     "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
@@ -237,6 +239,7 @@
     "https://www.anthropic.com/news/frontier-model-security",
     "https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety",
     "https://www.anthropic.com/news/gates-foundation-partnership",
+    "https://www.anthropic.com/news/genesis-mission-commitment",
     "https://www.anthropic.com/news/genesis-mission-partnership",
     "https://www.anthropic.com/news/github-copilot",
     "https://www.anthropic.com/news/golden-gate-claude",
@@ -445,6 +448,7 @@
     "https://www.anthropic.com/research/introspection",
     "https://www.anthropic.com/research/labor-market-impacts",
     "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
+    "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
     "https://www.anthropic.com/research/long-running-Claude",
     "https://www.anthropic.com/research/making-claude-a-chemist",
     "https://www.anthropic.com/research/many-shot-jailbreaking",
