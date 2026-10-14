@@ -1,58 +1,58 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "last_modified": "Wed, 14 Oct 2026 02:00:14 GMT"
+    "etag": "\"8dyObg\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
     "etag": "W/\"3f227-ZnhwcS/n40VEzGl8IBH5umTV/3Q\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6acf1bd1-c0e3\"",
-    "last_modified": "Wed, 14 Oct 2026 06:06:09 GMT"
+    "etag": "\"6acf7469-c0e6\"",
+    "last_modified": "Wed, 14 Oct 2026 12:24:09 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"c66e366067f3826b01d688f92be5c697\"",
-    "last_modified": "Wed, 14 Oct 2026 06:04:30 GMT"
+    "etag": "W/\"0310561545c38353ce9df17054ea7bda\"",
+    "last_modified": "Wed, 14 Oct 2026 13:31:17 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"4a168aa7440de3102fb99616eb48d77d\""
+    "etag": "W/\"87d7d20e9fbe639d5d76db6707dc0933\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"54e13986a215197d3f84ea66c31bae61\"",
-    "last_modified": "Tue, 13 Oct 2026 17:41:10 GMT"
+    "etag": "W/\"f8ab68cd77e370d19ac368817cea89db\"",
+    "last_modified": "Wed, 14 Oct 2026 11:17:04 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "last_modified": "Tue, 13 Oct 2026 23:43:44 GMT"
+    "last_modified": "Wed, 14 Oct 2026 13:17:01 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Wed, 14 Oct 2026 07:27:44 GMT"
+    "last_modified": "Wed, 14 Oct 2026 13:36:44 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"d027d1eefae7b01a9161f7a5c6c818a7\"",
-    "last_modified": "Tue, 13 Oct 2026 18:52:05 GMT"
+    "etag": "\"fe73a80e1eb08bb3c6ca5f576cb13fa5\"",
+    "last_modified": "Wed, 14 Oct 2026 13:29:25 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
     "last_modified": "Thu, 3 Sep 2026 20:32:32 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"dab4d445da4da921c2b71e030f4a02f0\"",
-    "last_modified": "Wed, 14 Oct 2026 05:00:58 GMT"
+    "etag": "\"8ab279a6efc7e4dec681fe8313a7aef7\"",
+    "last_modified": "Wed, 14 Oct 2026 13:30:35 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"26d1a003e4687774115240bc1db25717\"",
-    "last_modified": "Wed, 14 Oct 2026 00:00:00 GMT"
+    "etag": "\"46713786a5fa38e3eae2e08983d0ae35\"",
+    "last_modified": "Wed, 14 Oct 2026 13:00:00 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"024193eb99b3fc3867e6a019fcec3ac5\"",
-    "last_modified": "Wed, 09 Aug 2023 02:00:00 GMT"
+    "etag": "W/\"55b940997d344322670e1e264379ea91\"",
+    "last_modified": "Sat, 22 Nov 2025 00:53:00 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
   "feed:https://semiengineering.com/feed/": {
-    "etag": "W/\"57c5162988dceaf382e0d54c01b44af0\"",
-    "last_modified": "Tue, 13 Oct 2026 20:20:40 GMT"
+    "etag": "W/\"7e84cfb6907ef79e6bccb32c90dc5531\"",
+    "last_modified": "Wed, 14 Oct 2026 07:04:19 GMT"
   },
   "anthropic:sitemap": {},
   "anthropic:seen": [
@@ -318,6 +318,7 @@
     "https://www.anthropic.com/news/series-h",
     "https://www.anthropic.com/news/servicenow-anthropic-claude",
     "https://www.anthropic.com/news/services-track-partner-hub",
+    "https://www.anthropic.com/news/singapore-office-opening",
     "https://www.anthropic.com/news/skills",
     "https://www.anthropic.com/news/skt-partnership-announcement",
     "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
