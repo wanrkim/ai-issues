@@ -1,52 +1,52 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "last_modified": "Thu, 15 Oct 2026 16:08:03 GMT"
+    "etag": "\"AoVpNQ\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
-    "etag": "W/\"3f461-dTd8mXlC/sGqh+kReBbiZ4lXZ3k\""
+    "etag": "W/\"3f6f0-FmuM9/Hpy+o231FBSwvcrzPdVF8\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6ad0eb72-f893\"",
-    "last_modified": "Thu, 15 Oct 2026 15:04:18 GMT"
+    "etag": "\"6ad11341-13dd1\"",
+    "last_modified": "Thu, 15 Oct 2026 17:54:09 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"27db468353d5ee466a31cacee4c31b53\"",
-    "last_modified": "Thu, 15 Oct 2026 16:42:05 GMT"
+    "etag": "W/\"8b9fbe7608f3177f4c422eff10099856\"",
+    "last_modified": "Thu, 15 Oct 2026 20:59:20 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"5e14f2af734a85cbb7a02043897d2282\""
+    "etag": "W/\"43eff8560a4d741d152d2cb6f7f1df80\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"eea64089ba8864126f1189ae1f10ebfd\"",
-    "last_modified": "Thu, 15 Oct 2026 12:59:12 GMT"
+    "etag": "W/\"524d3fa7a00b94c92241938797de3e03\"",
+    "last_modified": "Thu, 15 Oct 2026 17:11:45 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "last_modified": "Thu, 15 Oct 2026 15:35:59 GMT"
+    "last_modified": "Thu, 15 Oct 2026 21:03:12 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Thu, 15 Oct 2026 16:50:07 GMT"
+    "last_modified": "Thu, 15 Oct 2026 21:16:02 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"374db1542a37d7e5d2473c34b30e0c1a\"",
-    "last_modified": "Thu, 15 Oct 2026 16:43:35 GMT"
+    "etag": "\"44ef35380557728de8858ee7963c0fd8\"",
+    "last_modified": "Thu, 15 Oct 2026 18:35:43 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
     "last_modified": "Thu, 3 Sep 2026 20:32:32 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"a0ec8ca0970191e10dd8243eb050f579\"",
-    "last_modified": "Thu, 15 Oct 2026 16:35:13 GMT"
+    "etag": "\"873d9729a6ab06cbf79f8bda26b013df\"",
+    "last_modified": "Thu, 15 Oct 2026 20:31:09 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"fbed10e7628d8ec0dc1749ef7786d11b\"",
-    "last_modified": "Thu, 15 Oct 2026 16:30:00 GMT"
+    "etag": "\"49b3221c260e67435bcd5c71cc369034\"",
+    "last_modified": "Thu, 15 Oct 2026 20:15:05 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"dca52e7c6ee53a0f7bfc65f33fcb85c9\"",
-    "last_modified": "Thu, 15 Oct 2026 16:34:08 GMT"
+    "etag": "W/\"a9453d50843c8636c4477e07a6852b90\"",
+    "last_modified": "Thu, 15 Oct 2026 20:48:53 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
@@ -99,6 +99,7 @@
     "https://www.anthropic.com/news/ai-for-science-program",
     "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
     "https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist",
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators",
     "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
     "https://www.anthropic.com/news/anthropic-accenture-partnership",
     "https://www.anthropic.com/news/anthropic-achieves-iso-42001-certification-for-responsible-ai",
