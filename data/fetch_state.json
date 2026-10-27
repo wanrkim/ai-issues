@@ -1,58 +1,58 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "etag": "\"EZ_F3A\""
+    "etag": "\"Kjqqig\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
     "etag": "W/\"40442-ycNVfSDyokI3FDdhsQRoCyPpzGM\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6ae0d646-10980\"",
-    "last_modified": "Tue, 27 Oct 2026 16:50:14 GMT"
+    "etag": "\"6ae11421-10980\"",
+    "last_modified": "Tue, 27 Oct 2026 21:14:09 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"be8dac1fd5c3eabb57d05fae9e2e3717\"",
-    "last_modified": "Tue, 27 Oct 2026 17:52:05 GMT"
+    "etag": "W/\"f52c174099b4b71eb0cb88ce51a9b119\"",
+    "last_modified": "Tue, 27 Oct 2026 22:04:19 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"38a00de000cebb6b787f47faa67ebc76\""
+    "etag": "W/\"361abb12734521a1c7b9fd89d158d6f9\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"ad5a108681b8299bbbc7919123ef0c78\"",
-    "last_modified": "Tue, 27 Oct 2026 17:02:12 GMT"
+    "etag": "W/\"6c01df26be55f62a0071c5219d150f13\"",
+    "last_modified": "Tue, 27 Oct 2026 21:33:25 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "last_modified": "Tue, 27 Oct 2026 16:49:06 GMT"
+    "last_modified": "Tue, 27 Oct 2026 20:15:35 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Tue, 27 Oct 2026 17:53:32 GMT"
+    "last_modified": "Tue, 27 Oct 2026 22:05:37 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"34e278b734243f8beb6ecec3ee93f7fb\"",
-    "last_modified": "Tue, 27 Oct 2026 17:28:00 GMT"
+    "etag": "\"b21b733e98af6a7c0971c0c6ed95b5a9\"",
+    "last_modified": "Tue, 27 Oct 2026 19:46:29 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
     "last_modified": "Thu, 3 Sep 2026 20:32:32 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"b187e01d47c6f72414239adb23d52eb0\"",
-    "last_modified": "Tue, 27 Oct 2026 17:29:39 GMT"
+    "etag": "\"c5788e2896add84a2889015178873a0c\"",
+    "last_modified": "Tue, 27 Oct 2026 22:04:40 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"3415fba8f14422abfcb5f8c54037ba0a\"",
-    "last_modified": "Tue, 27 Oct 2026 16:57:44 GMT"
+    "etag": "\"458bc638b1773ebc5f536b566deba688\"",
+    "last_modified": "Tue, 27 Oct 2026 22:00:00 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"8150303fe22e503f785b9e9480144c6f\"",
-    "last_modified": "Fri, 26 Sep 2025 18:49:00 GMT"
+    "etag": "W/\"c2d1082902734d5454ecbb246ad6567e\"",
+    "last_modified": "Thu, 01 Oct 2026 14:44:57 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
   "feed:https://semiengineering.com/feed/": {
-    "etag": "W/\"058a18c8e6db8be6bb1c25fa5cdf310d\"",
-    "last_modified": "Tue, 27 Oct 2026 15:15:17 GMT"
+    "etag": "W/\"a0b316e7b07988420a16528aeaeaaf97\"",
+    "last_modified": "Tue, 27 Oct 2026 20:38:51 GMT"
   },
   "anthropic:sitemap": {},
   "anthropic:seen": [
@@ -387,6 +387,7 @@
     "https://www.anthropic.com/research/advanced-tool-use",
     "https://www.anthropic.com/research/agentic-misalignment",
     "https://www.anthropic.com/research/agents-in-biology",
+    "https://www.anthropic.com/research/agents-judgment-calls",
     "https://www.anthropic.com/research/ai-expectations-gap",
     "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
     "https://www.anthropic.com/research/alignment-assessment-ukaisi",
@@ -453,10 +454,12 @@
     "https://www.anthropic.com/research/diff-tool",
     "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
     "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
+    "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
     "https://www.anthropic.com/research/disempowerment-patterns",
     "https://www.anthropic.com/research/distillation-defenses",
     "https://www.anthropic.com/research/distributed-representations-composition-superposition",
     "https://www.anthropic.com/research/donating-open-source-petri",
+    "https://www.anthropic.com/research/early-progress-drug-development",
     "https://www.anthropic.com/research/ecdsa-curve-origins",
     "https://www.anthropic.com/research/economic-index-geography",
     "https://www.anthropic.com/research/economic-index-june-2026-report",
