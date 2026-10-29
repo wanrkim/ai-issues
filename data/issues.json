@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-30T04:31:36+09:00",
+  "generated_at": "2026-10-30T08:54:12+09:00",
   "model": null,
   "next_id": 2101,
   "baselines": {
-    "hardware": 3.624,
-    "llm": 2.187,
-    "media": 2.988,
-    "capital": 5.157
+    "capital": 4.807,
+    "llm": 2.211,
+    "hardware": 3.694,
+    "media": 3.543
   },
   "issues": [
     {
@@ -22,17 +22,11 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/08/nvidia_logo.png",
       "image_tried": [],
       "impact": 5,
-      "score": 1.818,
-      "source_count": 77,
+      "score": 1.484,
+      "source_count": 65,
       "first_seen": "2026-09-05T04:46:21+09:00",
       "last_seen": "2026-10-29T08:05:00+09:00",
       "item_ids": [
-        "e4dbba9a243c7cf5",
-        "3b5d993bc82f2907",
-        "87f52ccaf08d76de",
-        "a47292367e224698",
-        "eb3e4612f70797ec",
-        "c824bef4cb93bff6",
         "1b16f2a2a47a7683",
         "4d04c52f8520dee8",
         "9af73d8de3d99be0",
@@ -40,11 +34,6 @@
         "1a9521f3485c651a",
         "f962033bf71e03f2",
         "eb35ab32f17bf2ae",
-        "8e33c55c94c491a5",
-        "51bc191b95998c18",
-        "d7b6f999b762c04f",
-        "a410998e736fc875",
-        "d5ff2daf8606529c",
         "0699f5de53840b52",
         "72c954d6b3fa73e6",
         "f3fed56152370886",
@@ -87,7 +76,6 @@
         "8e7719e3e0fc057d",
         "e529bb746d8eadb1",
         "b14302dbb154831a",
-        "d6a6550798a0eca6",
         "c700dd6428a4be7f",
         "488610f4a3d84e43",
         "2c13da0d72419a42",
@@ -430,66 +418,6 @@
           "name": "Google News / San Francisco Examiner",
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPRXhNcDZJdFdKR2xyVUxnVXFQckpITzhVYjdCUl9UZjNFeGxCRWk1TmN1dGJNaTFzMF82UUZMRGtSQ0hTWWJ6b3Biak52VzUzSW14SmVWejdlSl9wdE1LQkpoZUVrbERIYXZ1clZMN2Zia2sxd2o1aTNhRExmRVE5QlJRWmZTZHlLMXQ0M0V2RklWaU5zYzB6N1BLdHN1Y01hNDlvcGIxSnh4ZXgwSV9abndSWU5xSG5PMTFYME1rSnl0WGlKYndMczZHa1VBSmlrTFM4MFJwVjNUX1REVmhzRHNwa2VxaXM?oc=5",
           "published_at": "2026-10-28T09:00:00+09:00"
-        },
-        {
-          "name": "Google News / GeekWire",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVzM5eGJBVUR0ZEo5LTJMS3BCTUZlVHlWUTRXVFhUUWpHU0lxZEI5MktIckp4eF9pUVozMlRSSkgxajNUM3RaZXZrbEZGb2xxUjctdDF0ckNyeXVkUk5IQkxDZUJ4X2p6QWZIUUhrWDU2YzVFMFdUN1JSZmU5SGpQTUFRb3F3bnhUUUZVSm82N3pJWVV4LXhXcw?oc=5",
-          "published_at": "2026-10-28T08:45:21+09:00"
-        },
-        {
-          "name": "Google News / MarketWatch",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeklvUjVHdHlSV2EwWlJHZGhZMWJNa1lpTThFa2VoY01wcFREdk5QemtmUEpfRTFWUGpYVVR6SkUwTW1rU1AwU3lWUWRiUURRN2tJNnF2SmVUNUt0eE9XSlh3Yl9TakVYckQzaVVPUkx4N1NPVm9tMmRnRnR4RmV2ZnYzeHkwWm0xa0VoRWliZm9ndXNoZ2pjdEU2V093bHVHa2gxZWxhZUtTMFBtQ3N4cUJJZ2ZXc2NST1JZY0tzREdnWFhXc0hoS2pJZkJIQ0RBQVZRR3lR?oc=5",
-          "published_at": "2026-10-28T06:41:00+09:00"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo",
-          "published_at": "2026-10-28T06:38:28+09:00"
-        },
-        {
-          "name": "Google News / Ars Technica",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUTNLaEZxN01qbHhiZ3NjYWN0WHU2MmJ3Y1hWT1JHUVIyaUJCTkMxZjI2Zk05bmFLbzJxbDBSVTU2dEtobjlOdHE2VU5uQnpJVW9fMTVrUjZYc21WVUlDcEw3dHVoQ2FPQXkwYXlfajZZeDY1aWlZRlFnVG1JMFV2Z0twN3VvSlp1Um1LTzFQTXBad05iUV83dWo1Z3l3blJsd1RQRW5SS29QTXlmU0VUS212S08?oc=5",
-          "published_at": "2026-10-28T06:31:14+09:00"
-        },
-        {
-          "name": "Google News / Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObklfUlBzeTJkSkY0UmtUX1h1M1RGbTY2R0R0SlZ0MEtsa0c1clZMN3BkdUlKaUNCMlN3REJvcFo2TGpJd25VWS1ZVHZ2M0trZ2c1MS1QcUprM1RMcl9GRGpfejQ4cUxiYkVZS21fSENfbnNNZEhTaGVodnltVkJiaXJLNWR4UGhBN2R5cUF4QmpEMHFoOVdYZDIzam9XNko4WHhCMVF2ZGc?oc=5",
-          "published_at": "2026-10-28T06:25:21+09:00"
-        },
-        {
-          "name": "CNBC Tech",
-          "url": "https://cnbc.com/2026/10/27/anthropic-cash-investments-ipo.html",
-          "published_at": "2026-10-28T06:22:03+09:00"
-        },
-        {
-          "name": "Google News / Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUzBqWUxpRnBmdkhXU3BQOXl3QnJKczhJUFF5b3pua0l4MGJMYmprMHk5YlNpZHFBT2Y2ajY3cU0zd1l4OFBGTU1wbWpQb3UzNFVtRjFWb0ptdnBsTGZTNGltLTFfMUFMUzZvcGZ0RGg4ZmNhM1p4SVQxZm9zTHZBdUZwYlk1QmFfcG5OUVd2TGJzOHpQeXdvMmhaRTNRTnBrSENxak03b0V4LTE3RzVoOEhxN2FDa1d0eHpuUA?oc=5",
-          "published_at": "2026-10-28T06:16:30+09:00"
-        },
-        {
-          "name": "Google News / CyberScoop",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wLWI4bU9zTEQxN2FVUFY2eFBlUG91Z01rWTBIQjl1bWRkT09tSWgydnh3Sl9naC1SdHdZcVh1QXhvUDUzQVQ2eU54QXJOOURMZ0JlTlJtOGRPZzllSUJKcG5DZGNkak92cERuV3dhb3p1Zw?oc=5",
-          "published_at": "2026-10-28T05:43:15+09:00"
-        },
-        {
-          "name": "Google News / WBFF",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRzhVaVQxbmMwV20xTkQxTlZXMzJROGJYdXhZS2JnOG5zT3BidUVxbXlmbUhKRjNRU05WZHl6WVcwdG5pSjBwU2V3a0lSbDdBdHpnN2lJRHZWMDdiYkpKdUZfWlJQNDZpX3RzM3ZpeUFJbjJGRWE3SjgyZjc3ZkxYYWd0VF96dHc4NGEzbWVLLVlacG5iSmJEM01Id0puaXY4d1BJMDlfd3lwc1ZTSmZSUlNUX2E?oc=5",
-          "published_at": "2026-10-28T05:17:22+09:00"
-        },
-        {
-          "name": "Google News / TheStreet",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSGMxdXBWT0lvNnd3Z09VVEF1M25yTTFQZmZodVFaVDJhY2xDeHBQZlJsZUwwR0dkZlJfUFI3MHFqX3NaSjlkaHYxc0c4RVNDMnlXTHlfek5XTnJsMWVkczN6U1A3akNQOXpUNFlMNE40ZUg4UW9VRU5zWHVtdGIxQ05oWjNWYVBjVVpCWVZuMHQteTItb19vdHk2STg1RjNFWldIbW9laUlsWXNCX2VzQw?oc=5",
-          "published_at": "2026-10-28T05:00:00+09:00"
-        },
-        {
-          "name": "Google News / Business Insider",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT0JQTk8zZ2tFMldwSU5hLUJ2NzNfMDlxWWlWX29sWGk1bjJzZzdzb0V3OXM3Vmd3VDRqeXd5NVF0b0VPdFNYeU1UMXJwQk11M0l2OEFJN3JTc2I0aWdiNUxibVZ3MlpZQ1B4YW9wa2t1QVZac1BlaUVPV1JFRERVRmlBRWhZR0dyeWR3T0ljS0JMZ1NvQVV4eERfWHZWLS1XMVZaNEV3QWZSQTg?oc=5",
-          "published_at": "2026-10-28T04:42:27+09:00"
-        },
-        {
-          "name": "Wired",
-          "url": "https://wired.com/story/anthropic-says-it-will-revolutionize-biology-some-day",
-          "published_at": "2026-10-28T04:39:04+09:00"
         }
       ]
     },
@@ -506,7 +434,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_argon-2.png",
       "image_tried": [],
       "impact": 4,
-      "score": 1.411,
+      "score": 1.187,
       "source_count": 16,
       "first_seen": "2026-10-29T02:00:58+09:00",
       "last_seen": "2026-10-29T08:27:13+09:00",
@@ -624,8 +552,8 @@
       "image": null,
       "image_tried": [],
       "impact": 4,
-      "score": 0.968,
-      "source_count": 14,
+      "score": 0.78,
+      "source_count": 13,
       "first_seen": "2026-10-26T18:37:06+09:00",
       "last_seen": "2026-10-29T06:16:03+09:00",
       "item_ids": [
@@ -633,7 +561,6 @@
         "9f19612cf8acdb5d",
         "9c17e258094fc334",
         "9a39f870e9643694",
-        "bbefb9887444cd32",
         "789055ecaf61ac95",
         "c15039c4eecebb35",
         "4427dd25d54c9f0b",
@@ -709,115 +636,14 @@
           "name": "Google News / Yahoo Finance",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeTdSZFBKRE1pcjVoeEtCMFJPX2FyRFJXajk5Z0FadnRjT2swdHNsSWhuaW9ldy1PSHRSREloUmJrREl3TUdLeUFRVmstYkZOWGNBOXI1a2RDZmw1YTg2SE96RVlRRTNnYmpPX1hIbHRBSERYcHBreVllRGs1U1dwRnlid3prZW10bUt5bjRMZw?oc=5",
           "published_at": "2026-10-28T09:35:00+09:00"
-        },
-        {
-          "name": "Google News / CNBC",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WSGlVV0ltbDV1RHZFQld6QTVzelBPSFJ2YWl0ZG9kcVJtZ2xzVzl3Vlh4SmRfWUdmMkJSYmY1U21rS2tXdkZmOFNnYkRLWDViX0cyNEhVMnFzVHhGeklNbkhhQUNrbDVYNnNWWDBoUnFLVFQ10gF6QVVfeXFMTmhMRnVyVFhXRjdRbGtZT1dkVzZJVzVMNzN0VjNMNzVEZy1YYXZuQi1SOWVhLUx4OG5iS3UyLVM5OXZHZnRqcDluWGRoTkZvVl82WTk5VzVFZ2V1RXAySGZGdmhGUXo2Z1hYVklPUDBNbDV0VzBPQWlZZXc?oc=5",
-          "published_at": "2026-10-28T08:34:59+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002026",
-      "rank": 4,
-      "prev_rank": 5,
-      "badge": null,
-      "axis": "capital",
-      "title": "챗GPT 권고 따른 사망·범행 피소",
-      "subtitle": "복약 중단 유도 및 총격 지원 논란",
-      "summary": "오픈AI가 챗GPT의 위험한 답변으로 인한 인명 피해로 잇단 소송에 휘말렸다. 한 유족은 챗GPT-4o가 딸에게 항경련제 복약을 몰래 중단하도록 유도해 사망에 이르게 했다며 소송을 제기했다. 또한 FSU 총격 사건 피해자 가족 역시 챗GPT가 범행 계획을 도왔다며 법적 책임을 묻고 나섰다.",
-      "company_domain": "openai.com",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2191707579.jpg?w=1024",
-      "image_tried": [
-        "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication"
-      ],
-      "impact": 3,
-      "score": 0.796,
-      "source_count": 12,
-      "first_seen": "2026-10-27T14:46:10+09:00",
-      "last_seen": "2026-10-29T08:19:14+09:00",
-      "item_ids": [
-        "a2f907c053dad857",
-        "0888261981a02489",
-        "79cb2e51178d27bf",
-        "fd5da5191be22668",
-        "3a953f322f17c539",
-        "a6575c402e2462e9",
-        "cef2a9bc7d4ef238",
-        "5129c582df3666a6",
-        "2905d7e13f32680e",
-        "a0e7e57c22a99a59",
-        "4a3df04b309359e1",
-        "a979987c418027a7"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Mashable",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTmpLdEJORWVLUDJwUnFYUHR5bnY0aFVtUFhKVW54VTRreWE2VkM4eVRkaWtuSEhhb1A2YmZpVU5FcDdXY1BFU2JGZ0pOX1FaNUNaUUFUaWV6MkN1OEo1R2VPWlc2OTl1SUhERGdjSFhuUGRCeDNreEx4U2NVUGRwbWV2bEd0T2NjVmxv?oc=5",
-          "published_at": "2026-10-29T08:19:14+09:00"
-        },
-        {
-          "name": "Google News / Breitbart News",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb3NBbjE5Z2U0U3pOa1Yxcm1TVzY4bGFodmRITXZlR2hzNzdsamp5RGxBN2ZjRXJvNUFsbldvczBON3RlTzFKZmctTmprdUpYV1YtTFZUZXc1OXRNTnYwVHRsY3lwUW1SdXo3MThwS0tjNmV3Nzh3akVoZ1Iwd3NEcmJfeHdlZm8xaGhjOFRuU0FUcldZLWtwcy1rYllFY1dqVUlLQzNjbXU1bzRuTW5uMHBYcm10MHpVSXRMbld30gHDAUFVX3lxTFBnczNWeFM5WVZDR2dMdEhtbW92QllKM210bndQbXNqcUsyazkwV0I3VzA0NEMyVG56T2k2TTZOMTh5aHFkS3Buc2V1ZzZrOS14cFJ2dFJnLVROeWtjQnp4Q19lR3F1MGVONWplMnEzNDBfZjBSZ3k3VWtrRUdLVWxzSDF4RHo5czNMOUNid2hIOERtaFhWcVJmeTlDQXBNb1V1RlFGVURENzZvSS1iVzd2dWFoZl9UOHp1cEhwNXNaalM0aw?oc=5",
-          "published_at": "2026-10-29T07:25:47+09:00"
-        },
-        {
-          "name": "Google News / People.com",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORXV5anYwdlNUZldoSVFXRllEMklmb2hhVEVOY2o2d0VFdElEY2RuVXBDbE54QlhVQUs5RUZjc2EtN2JRVEhVMml0d0FMU1RiWEtpT1lueDU1ck1keDdmMWFfbkdfdm1xa3JjWVdET1Bwbl9fd20xR3NyelNpbndoYXYxM2drV2xYMVl4YVphNWFIa1VUbHc?oc=5",
-          "published_at": "2026-10-29T03:42:48+09:00"
-        },
-        {
-          "name": "Google News / MobiHealthNews",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVRhTU5DN0hrSXdSVEsyRmhTZE9mTmxmZTFMaWg3WGRranlyRXZIeVhWaXZySm51UVV6LU1kMzhDZGZUNHNBX1lkbldWcllNS1dTLXpmZFJUNkhQa1c3VTlDRUV5Q2hQUEh2MWIwTF9Ld25mSGtwakpGQzEtcGhaMUhfQXJodExFRDdtUmJGLVE0emtZWUROc1h2SFViaEU?oc=5",
-          "published_at": "2026-10-28T23:40:00+09:00"
-        },
-        {
-          "name": "Google News / NewsGram",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMGljamdNZzNzWWFkSXY3UDVOeU9xOWNoWkNaTkpQazBVeHZ6ZWpaM3ZzRnlUOHZrNDhreFdpRkdMWlJDaDNuZHpick9pSGpNdjQ0TXQ4UGFpUks0MV9HbUNTM1AtUUI5N18yQU5sOWJ3ak03ck1sSUhKX0R5N2xQOXVDcU9Ca2lkWUFmSGpPVF9lVTBXMFN5NERWc014d9IBqwFBVV95cUxNcGV4TEk5VmNhcjB1MFkxOGlCNlV0d0VNRE1ON0JtdE91U2g2a1lWRVB5ZVZuc2RzWTRsYnZ0NnRZTEl1blUzWmx4eHJ6ektmSFBEdlNqVi0tM0o3dVJjRDJhSHdKWUtyM3JtTkhrdTk0WGp1T2RPc09LVXVHM2NlY1dGNEFCTFNGQUxCZmwtbUZfVkRhZEUyQk5rV05YUHV0WmxlSER0aGo4Z3M?oc=5",
-          "published_at": "2026-10-28T23:33:29+09:00"
-        },
-        {
-          "name": "Google News / LIGA.net",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeTgtbHUtU0dUaTZaSFVLX0JHUDllY2QwcTlCdXFET1didW04WGwxaGZvY0FWWlRfS19ZUlU3N3Y3TUVTRXh0YjVHTm1iY1c2cE5vaVlKR2VMQTBob3p1WjNNckthSFQ4MFBlLWMzM3ZydWZQZXpmNVliMUw5bHotRnlGUWdRTVZTSnJnVDJWdmFZQWlaR0NGeWtEalp1VHo5WUdycEplbklqbDByYUtHRWp6Wng1NzZyM3M1d0NZNFd0LWlEWlF3cjZtRFl0aXRYdVJsN00tSUZEVHI3OEZvdtIB5gFBVV95cUxNdUpmRmE2UXgtdlE5NFloR2tLei1lSnRBQ19wTVFZdG93SXBvSWtwQ0ZIUzE1eUZoLTRaR2phVzZwMG1IbUxmUWQwZHhoX3NYT2xVNUs1aXR6NTNWbFN5TXhEVFdSRXJ0UW1pb3UyNnZqYU0tVmR5U2tTVEdqX28wZjgzUDVXd0VSWGNyUGtBeGIzYXlyWkpoT2RmUXpNcHpoSWpxcDNIbXhuaVRsdU9PaXgyVUlRYUVzNUxLanoyOFBrLWxCV3laRkczVmpsc1NGUDA2bjNzMGFQS1dqM09aVlNiWGlBdw?oc=5",
-          "published_at": "2026-10-28T19:54:07+09:00"
-        },
-        {
-          "name": "Google News / India Today",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZWx2QzEtRlJLX3dKNXpRMkFQd1lzc29zRkZoYzFzVUUyd1hoOTVRUVh2WGNpcDNKMG10Y0kyTVk1SHJmVV9RTkpmcnIzbnZvQTE5cnJ2eVVfbllBT0EwSlhPNmtQMVBxNFk1YnJHR1ZyWDVVaUJYbUpCbTF3ZEpHMnpYMWU0MDFrel9NUlBVbFNXeUlsMWltYmh4SXJyV0phS1RJNTU5VExRT0ZkZVdvdm9qa01oUkUzSWRvSVRCN1NrTTlLN1VodUJobTc5NWlBSEltWnZ5VklfdFJfX09XMDdn0gHnAUFVX3lxTE9xTEZNSmtac1N1ODFxZ0QwZDBnY2xhWjZERUhTelE3QjJKRFVESEJKem5jc2tKcm5ONExmX2RpY3paSlhMQXJpam9neTNUenNjYUpxYzVjb1ZONTRxSXZkNk00OTZQV1lhQW1WVlNVSEZQeHE5MThidHlqd2FFZzNMVmJ2UDYtTDBaWTBQTHBTaC1VenhQTmVDc3ZwUXg0QVZKUi1wNExxOTJ3RlVLMkRrbnNpLVlUTEhtSDFrMkp1Z1BYUWEzTXg5Nkg5dzRBZ2ZhOHQ1dktLTHVsUVFJN2ROSWN4ZF9SMA?oc=5",
-          "published_at": "2026-10-28T16:55:55+09:00"
-        },
-        {
-          "name": "Google News / Livemint",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPcUtXb0p1UzhJN0k2MzRZYTh5WmE3bUJ5NTFudGJnS0FMMjBkR1l4TXNOdW5CN2MxM01MLTVnVVVVTDduWDhTZnBHNXZiYkdlTlNfdG50OHZPNjJ2ZGdhTWNzV1JJVE5wM0pPRXhzTEQ1UHlQMmMwZUNoLWo4RnJTRWRwcDM5NnRtMzVIZ21lbVc0MjdNQTdySmp1TEttcE9PRTBXVUZBLU9kNVhGcTFuNk1kM1o1TGthdEs0U2g5XzZIZFR6c1J1ZmxyR21sb0FiVlpYdG5WNUEzUQ?oc=5",
-          "published_at": "2026-10-28T15:40:57+09:00"
-        },
-        {
-          "name": "Google News / KING5.com",
-          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNX2J5OGNhTFpNMVQ3TktDSXVVUng4aG5odHVYWjJJX2UwcFdpV0NTY0dOLW9TMkU5dUdtaXktOGh5aUJsdWRMMHJZNnVJQ1BldG9WaFdiVVhOZnhJdER0N1pYUDl6aHJhT0NWdldaWEhrRlNSakZPUFMxQmUtWkpITFEzbWY2UERKYUE4clcxSGxXMjZ4SFZIanlPaUxrTUR2amhpSlF1U1NLQ3YtS2Y5UzQ0cUg1QzRvZDd2MkFiRWl1SzlSdUNaaVR1cHVFU294Sm9sY2l6ZUUza0lNa3pwbUw4NGVjRklvYVNqcEt3ZF9GZ2c3TzZDTGlwcURjRGpoUm1zY0lUSXk0Z3RSMHFMSGF3?oc=5",
-          "published_at": "2026-10-28T14:42:00+09:00"
-        },
-        {
-          "name": "Google News / Courthouse News",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVGV4QUF6OUNnUHpvdVo5RHdoNmY1aWRXOXNQZk13UGpJa0V4dE9LQTFPbVRrYWFTdC1MRnQxcUZ0Tzk2WVc1ck9vYXMtb25ja1BZVFRaTlJjQnVlaUx5aVpwelA5c2pQU3AzZHJJRXJBOFZfYkVGNkJtaFE0blVjcHR0Ym41Z3N6Ri16MjRWZXBlU0o2WDBXaGtreUpyWE80RS1OalpEUXAtZllqY0FnU3pLWmxtdEFtOExvNVRHekwwRFRqb2lvNHlLcEdpRzZkcWc?oc=5",
-          "published_at": "2026-10-28T12:20:06+09:00"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication",
-          "published_at": "2026-10-28T08:34:27+09:00"
-        },
-        {
-          "name": "Google News / The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0NqMW1MSnJGeVB2WHVWdWR4V0wySkRhVUpXTG1hQk1iZU1CY3pNeGRwUkVIcU83V01mckM5Z01qTmw0T2tRUVZmM1luNE55bDluMEQzUzB5THBzZWJYZ1ZTRFA3a0otUVZDRWRVdDdmTm9WY2VoazJUR19nNGlGNU9WNHVxWGZV?oc=5",
-          "published_at": "2026-10-28T04:38:47+09:00"
         }
       ]
     },
     {
       "id": "iss_002024",
-      "rank": 5,
-      "prev_rank": 10,
-      "badge": "surge",
+      "rank": 4,
+      "prev_rank": 5,
+      "badge": null,
       "axis": "hardware",
       "title": "오픈AI, 구글 AI 칩 구매 추진",
       "subtitle": "엔비디아 의존 탈피 TPU 도입",
@@ -828,7 +654,7 @@
         "https://cnbc.com/2026/10/28/google-alters-cloud-playbook-turning-to-partners-to-sell-more-ai-chips.html"
       ],
       "impact": 4,
-      "score": 0.791,
+      "score": 0.661,
       "source_count": 11,
       "first_seen": "2026-10-28T08:59:00+09:00",
       "last_seen": "2026-10-29T04:16:02+09:00",
@@ -904,103 +730,93 @@
       ]
     },
     {
-      "id": "iss_001996",
-      "rank": 6,
-      "prev_rank": 7,
+      "id": "iss_002026",
+      "rank": 5,
+      "prev_rank": 4,
       "badge": null,
-      "axis": "media",
-      "title": "구글 딥마인드 지니 4 공개",
-      "subtitle": "실시간 오디오 및 제미나이 결합 월드 모델",
-      "summary": "구글 딥마인드가 상호작용 가능한 3D 가상 세계를 시뮬레이션하는 실시간 월드 모델 지니 4를 공개했다. 사용자의 자연어 프롬프트를 통해 세계를 실시간으로 변경할 수 있으며 배경 오디오와 말하는 캐릭터까지 생성해 낸다. 내부적으로 제미나이 3.8 플래시 모델이 결합되어 환경 시뮬레이션의 일관성을 유지한다.",
-      "company_domain": "deepmind.google",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/Genie-4-Google-title.png",
-      "image_tried": [],
-      "impact": 4,
-      "score": 0.77,
-      "source_count": 12,
-      "first_seen": "2026-10-28T01:00:00+09:00",
-      "last_seen": "2026-10-28T23:48:36+09:00",
+      "axis": "capital",
+      "title": "챗GPT 권고 따른 사망·범행 피소",
+      "subtitle": "복약 중단 유도 및 총격 지원 논란",
+      "summary": "오픈AI가 챗GPT의 위험한 답변으로 인한 인명 피해로 잇단 소송에 휘말렸다. 한 유족은 챗GPT-4o가 딸에게 항경련제 복약을 몰래 중단하도록 유도해 사망에 이르게 했다며 소송을 제기했다. 또한 FSU 총격 사건 피해자 가족 역시 챗GPT가 범행 계획을 도왔다며 법적 책임을 묻고 나섰다.",
+      "company_domain": "openai.com",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2191707579.jpg?w=1024",
+      "image_tried": [
+        "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication"
+      ],
+      "impact": 3,
+      "score": 0.63,
+      "source_count": 10,
+      "first_seen": "2026-10-27T14:46:10+09:00",
+      "last_seen": "2026-10-29T08:19:14+09:00",
       "item_ids": [
-        "a1808d41698635f4",
-        "9d82e6bc4c71db02",
-        "b09176c01df466ad",
-        "fb5141542ee3fcb8",
-        "977ed1654c6d88ec",
-        "66024c4bf8d3d3d1",
-        "52333420ecb2a1f0",
-        "6f63f5f9fa169ae0",
-        "854dd3486a034c1e",
-        "7d5c7cb715ee3a52",
-        "9b228972c211ce9b",
-        "e2310360b6cc423b"
+        "0888261981a02489",
+        "79cb2e51178d27bf",
+        "fd5da5191be22668",
+        "3a953f322f17c539",
+        "a6575c402e2462e9",
+        "cef2a9bc7d4ef238",
+        "5129c582df3666a6",
+        "2905d7e13f32680e",
+        "4a3df04b309359e1",
+        "a979987c418027a7"
       ],
       "sources": [
         {
-          "name": "Google News / www.tmgm.com",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LZlZrRXItZzhDSVE5NGpWaWw0WDVIcGEzbGJrRUx4MEU3T0htb0VpREZXWXNQWVRWM2J1X2MtMmJldnJ5N3RZVGJZbG8ya3ZVOVE1SExuUEk4ZjJpYTNuR29ycXRiMW5TUEQzeVFfNndXWG5PZW1oNFYyQ0ZfUQ?oc=5",
-          "published_at": "2026-10-28T23:48:36+09:00"
+          "name": "Google News / Mashable",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTmpLdEJORWVLUDJwUnFYUHR5bnY0aFVtUFhKVW54VTRreWE2VkM4eVRkaWtuSEhhb1A2YmZpVU5FcDdXY1BFU2JGZ0pOX1FaNUNaUUFUaWV6MkN1OEo1R2VPWlc2OTl1SUhERGdjSFhuUGRCeDNreEx4U2NVUGRwbWV2bEd0T2NjVmxv?oc=5",
+          "published_at": "2026-10-29T08:19:14+09:00"
         },
         {
-          "name": "Google News / www.tmgm.com",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcERlVzdvYnRIdm1xZWtuM21LeDFUcmYwS09QdC1CN2dVZVFuWjAzVzV6a3BtcXpuQWdxbDNrZHUxZmVpbGtiNmZVRjh0Z0FqSlJtSzltUDFXdnJlZGVtWmxfM3otb21uaU9HX2ZKZTBHN2dxVTViNFZSWGh3Zm5ReA?oc=5",
-          "published_at": "2026-10-28T23:00:11+09:00"
+          "name": "Google News / Breitbart News",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb3NBbjE5Z2U0U3pOa1Yxcm1TVzY4bGFodmRITXZlR2hzNzdsamp5RGxBN2ZjRXJvNUFsbldvczBON3RlTzFKZmctTmprdUpYV1YtTFZUZXc1OXRNTnYwVHRsY3lwUW1SdXo3MThwS0tjNmV3Nzh3akVoZ1Iwd3NEcmJfeHdlZm8xaGhjOFRuU0FUcldZLWtwcy1rYllFY1dqVUlLQzNjbXU1bzRuTW5uMHBYcm10MHpVSXRMbld30gHDAUFVX3lxTFBnczNWeFM5WVZDR2dMdEhtbW92QllKM210bndQbXNqcUsyazkwV0I3VzA0NEMyVG56T2k2TTZOMTh5aHFkS3Buc2V1ZzZrOS14cFJ2dFJnLVROeWtjQnp4Q19lR3F1MGVONWplMnEzNDBfZjBSZ3k3VWtrRUdLVWxzSDF4RHo5czNMOUNid2hIOERtaFhWcVJmeTlDQXBNb1V1RlFGVURENzZvSS1iVzd2dWFoZl9UOHp1cEhwNXNaalM0aw?oc=5",
+          "published_at": "2026-10-29T07:25:47+09:00"
         },
         {
-          "name": "Google News / The Indian Express",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSzRXcG15dkNtYWVra0JCMFh2b3djWFV2Z21STnBlVnlueExSd0JRU0dRT1U1QzJLd3YtamVFOG0zX2haUVc5Z2hMTG1Nc2ZON3N1d3pFNUV4UnVUNjN2aWdnWS1KLURyYkk1Vmw1MHJGVk1JRkI4REdnOEV3R2U5X1BFLTdwbWROZzRZdFFrVXNBYzVBZDRiTE9XRDFIdUU1bTlWWXJOVDVUVUlDSXh2SEtKMy04OWVid29pY2dIVdIBxgFBVV95cUxPdVZrME1md1RCUDJYTTZicDRSbXVRNFZRbHVaWHg0QU5MR1RKQmhLSUdaMzZhWFVhX2dtOHlfTWdIcFFsZThLREZnOWpEeWxyZjM1NzVvcHdMYWE2ZXFldEozTHlSRWJMSWplMU84bFlmNnE2dTdyMTJEdE4tTm9pQ2NTcndMUDBXMGtGVGlnc3M0ZVpVWjl3b1RySU12Zlc0cVZsRWJfRXFpQW0yOE1DbzltWWpveE8tVTh4Q2JPSDRueTA5aWc?oc=5",
-          "published_at": "2026-10-28T20:21:12+09:00"
+          "name": "Google News / People.com",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORXV5anYwdlNUZldoSVFXRllEMklmb2hhVEVOY2o2d0VFdElEY2RuVXBDbE54QlhVQUs5RUZjc2EtN2JRVEhVMml0d0FMU1RiWEtpT1lueDU1ck1keDdmMWFfbkdfdm1xa3JjWVdET1Bwbl9fd20xR3NyelNpbndoYXYxM2drV2xYMVl4YVphNWFIa1VUbHc?oc=5",
+          "published_at": "2026-10-29T03:42:48+09:00"
         },
         {
-          "name": "Google News / Android Authority",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSWlPdEJ4YjFXU1BRY1BIRXRDalp6d0VtVFBBV1hsUEU3aHV5M1k2V3FQZzhXdVFQY3VlcGx1aTN0SDNobGtGTk1oVllrVmFfMzhkQkFKaWRlQXRRR0lmRC1vUmtvWGV0NXlGQzBUOGNZYm1LZ0pNUU5nSVNqMFo2NXFXTDF5aGc?oc=5",
-          "published_at": "2026-10-28T18:42:00+09:00"
+          "name": "Google News / MobiHealthNews",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVRhTU5DN0hrSXdSVEsyRmhTZE9mTmxmZTFMaWg3WGRranlyRXZIeVhWaXZySm51UVV6LU1kMzhDZGZUNHNBX1lkbldWcllNS1dTLXpmZFJUNkhQa1c3VTlDRUV5Q2hQUEh2MWIwTF9Ld25mSGtwakpGQzEtcGhaMUhfQXJodExFRDdtUmJGLVE0emtZWUROc1h2SFViaEU?oc=5",
+          "published_at": "2026-10-28T23:40:00+09:00"
         },
         {
-          "name": "Google News / www.tmgm.com",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS3ZORnB4VUpuRkpqdmdZX28wbFlzdFk5Q1liSldRLVprTjJMeWlSUVlKZDQwb0ptWDM4YW82eDk3VkpSaW45MUF3U1hCS1FhRG9JSW5nRlZQNHd0UTkxVlE2bGJVNnhobmEtMVhuR1N3ZUlSX2hfdzVfN19WRHoxbQ?oc=5",
-          "published_at": "2026-10-28T17:20:15+09:00"
+          "name": "Google News / NewsGram",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMGljamdNZzNzWWFkSXY3UDVOeU9xOWNoWkNaTkpQazBVeHZ6ZWpaM3ZzRnlUOHZrNDhreFdpRkdMWlJDaDNuZHpick9pSGpNdjQ0TXQ4UGFpUks0MV9HbUNTM1AtUUI5N18yQU5sOWJ3ak03ck1sSUhKX0R5N2xQOXVDcU9Ca2lkWUFmSGpPVF9lVTBXMFN5NERWc014d9IBqwFBVV95cUxNcGV4TEk5VmNhcjB1MFkxOGlCNlV0d0VNRE1ON0JtdE91U2g2a1lWRVB5ZVZuc2RzWTRsYnZ0NnRZTEl1blUzWmx4eHJ6ektmSFBEdlNqVi0tM0o3dVJjRDJhSHdKWUtyM3JtTkhrdTk0WGp1T2RPc09LVXVHM2NlY1dGNEFCTFNGQUxCZmwtbUZfVkRhZEUyQk5rV05YUHV0WmxlSER0aGo4Z3M?oc=5",
+          "published_at": "2026-10-28T23:33:29+09:00"
         },
         {
-          "name": "Google News / WinBuzzer",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSEtNNFhXU1dycEc5ak90cll5VWRzZGk4dzZMSEpNTVRwNW15VDVLSk9zLXhlTEpUaGhiTnBsM0V0MDc4S0ItNE1sajhKLW9rVFJqMEpsLW0teXZUM00yNko5cUJJMU9GSWc5bkJ6YVpISkdJUURWMDd2YVp0ZzhEdTBPOGU0QkJranhGNFBacDQ3dTR3c0hTTEVRS05TWEdwd3c?oc=5",
-          "published_at": "2026-10-28T16:48:02+09:00"
+          "name": "Google News / LIGA.net",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeTgtbHUtU0dUaTZaSFVLX0JHUDllY2QwcTlCdXFET1didW04WGwxaGZvY0FWWlRfS19ZUlU3N3Y3TUVTRXh0YjVHTm1iY1c2cE5vaVlKR2VMQTBob3p1WjNNckthSFQ4MFBlLWMzM3ZydWZQZXpmNVliMUw5bHotRnlGUWdRTVZTSnJnVDJWdmFZQWlaR0NGeWtEalp1VHo5WUdycEplbklqbDByYUtHRWp6Wng1NzZyM3M1d0NZNFd0LWlEWlF3cjZtRFl0aXRYdVJsN00tSUZEVHI3OEZvdtIB5gFBVV95cUxNdUpmRmE2UXgtdlE5NFloR2tLei1lSnRBQ19wTVFZdG93SXBvSWtwQ0ZIUzE1eUZoLTRaR2phVzZwMG1IbUxmUWQwZHhoX3NYT2xVNUs1aXR6NTNWbFN5TXhEVFdSRXJ0UW1pb3UyNnZqYU0tVmR5U2tTVEdqX28wZjgzUDVXd0VSWGNyUGtBeGIzYXlyWkpoT2RmUXpNcHpoSWpxcDNIbXhuaVRsdU9PaXgyVUlRYUVzNUxLanoyOFBrLWxCV3laRkczVmpsc1NGUDA2bjNzMGFQS1dqM09aVlNiWGlBdw?oc=5",
+          "published_at": "2026-10-28T19:54:07+09:00"
         },
         {
-          "name": "Google News / 36Kr",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LT0dndWVkQ3NaVTYyUDYwS0pkdmlGZHRDQkZ4RGxFdGFuQXBWZm5xc0l5U2FsTzliWkh5emw4S0FPTnJWSmhPd1JfZ21YTm96ME93?oc=5",
-          "published_at": "2026-10-28T12:23:58+09:00"
+          "name": "Google News / India Today",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZWx2QzEtRlJLX3dKNXpRMkFQd1lzc29zRkZoYzFzVUUyd1hoOTVRUVh2WGNpcDNKMG10Y0kyTVk1SHJmVV9RTkpmcnIzbnZvQTE5cnJ2eVVfbllBT0EwSlhPNmtQMVBxNFk1YnJHR1ZyWDVVaUJYbUpCbTF3ZEpHMnpYMWU0MDFrel9NUlBVbFNXeUlsMWltYmh4SXJyV0phS1RJNTU5VExRT0ZkZVdvdm9qa01oUkUzSWRvSVRCN1NrTTlLN1VodUJobTc5NWlBSEltWnZ5VklfdFJfX09XMDdn0gHnAUFVX3lxTE9xTEZNSmtac1N1ODFxZ0QwZDBnY2xhWjZERUhTelE3QjJKRFVESEJKem5jc2tKcm5ONExmX2RpY3paSlhMQXJpam9neTNUenNjYUpxYzVjb1ZONTRxSXZkNk00OTZQV1lhQW1WVlNVSEZQeHE5MThidHlqd2FFZzNMVmJ2UDYtTDBaWTBQTHBTaC1VenhQTmVDc3ZwUXg0QVZKUi1wNExxOTJ3RlVLMkRrbnNpLVlUTEhtSDFrMkp1Z1BYUWEzTXg5Nkg5dzRBZ2ZhOHQ1dktLTHVsUVFJN2ROSWN4ZF9SMA?oc=5",
+          "published_at": "2026-10-28T16:55:55+09:00"
         },
         {
-          "name": "Google News / GIGAZINE",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hRGN3cGFfMTRpQUlMQ0w3Zkp5NktXMjJIQVJyX19rd0RzcW43di1KYnNKZGNSN3FpVGhpX0I1dVdZbTZWSnlRRjBreWpwb1gyN3oyZVVuWGs4Ti1wX3lVYVlrNE9QYjNQ?oc=5",
-          "published_at": "2026-10-28T11:50:00+09:00"
+          "name": "Google News / Livemint",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPcUtXb0p1UzhJN0k2MzRZYTh5WmE3bUJ5NTFudGJnS0FMMjBkR1l4TXNOdW5CN2MxM01MLTVnVVVVTDduWDhTZnBHNXZiYkdlTlNfdG50OHZPNjJ2ZGdhTWNzV1JJVE5wM0pPRXhzTEQ1UHlQMmMwZUNoLWo4RnJTRWRwcDM5NnRtMzVIZ21lbVc0MjdNQTdySmp1TEttcE9PRTBXVUZBLU9kNVhGcTFuNk1kM1o1TGthdEs0U2g5XzZIZFR6c1J1ZmxyR21sb0FiVlpYdG5WNUEzUQ?oc=5",
+          "published_at": "2026-10-28T15:40:57+09:00"
         },
         {
-          "name": "Google News / 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWGxmc0d4R0RQdUptdmtfTHRobEdjcGVnTWRuSWxMWktDQUZGbnZVVFVibXpwamd3NEFBbTlQSTRxQmJrUjJnRzhwNTFwVTY4a0hxU3BObGFBZWJZWUs0Zy1xLVh3eEJsR05Xa19od1ZLVmhlQ003U0Judm9BSHoyZndWanc3aTBY?oc=5",
-          "published_at": "2026-10-28T10:34:56+09:00"
+          "name": "Google News / KING5.com",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNX2J5OGNhTFpNMVQ3TktDSXVVUng4aG5odHVYWjJJX2UwcFdpV0NTY0dOLW9TMkU5dUdtaXktOGh5aUJsdWRMMHJZNnVJQ1BldG9WaFdiVVhOZnhJdER0N1pYUDl6aHJhT0NWdldaWEhrRlNSakZPUFMxQmUtWkpITFEzbWY2UERKYUE4clcxSGxXMjZ4SFZIanlPaUxrTUR2amhpSlF1U1NLQ3YtS2Y5UzQ0cUg1QzRvZDd2MkFiRWl1SzlSdUNaaVR1cHVFU294Sm9sY2l6ZUUza0lNa3pwbUw4NGVjRklvYVNqcEt3ZF9GZ2c3TzZDTGlwcURjRGpoUm1zY0lUSXk0Z3RSMHFMSGF3?oc=5",
+          "published_at": "2026-10-28T14:42:00+09:00"
         },
         {
-          "name": "Google News / Moomoo",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGVpemg3Rld5SW1IdXVRNXNDYjEzMkgyUm9IVm1UQUF1R1JvbTMyS21XNmpmUUoxMlVBZk1EelpRdnU0Z09Va0kwX2xVSmlocXcyZjVMLUZzd2FYdVYydzhkOTNCTkl1bGhaMjdJS2szZTFacEUxS0FFcW4wVVR2ZVc3RExNSGQ0cVNMWXVaSjBMbFp0OGxrRUNXMDIwOXd3cFE?oc=5",
-          "published_at": "2026-10-28T07:42:29+09:00"
-        },
-        {
-          "name": "Google News / Gizmodo",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeTNjS0hDTGMzaEZvSHJBcEcwY2VYUWpLV3kyMEIzaW95RHZOeE5rSjhDRjdwUEU4dFl1TE9DT3N5T0h0M3RLWDliOF9jai0zVWxpVU9pQjlEUGMydEhmNUhmUXk2eTZkb1JSekVxSVU1bmNIcWNXNDBicmpSdG1FSnNHVjBYd3AwUEhaQmVxeU01dHNwck00aGF1dFBHWVU?oc=5",
-          "published_at": "2026-10-28T05:45:14+09:00"
-        },
-        {
-          "name": "Google News / TradingKey",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVU9KLVZpdHNkVWt2eEFjeS1DaEtCRklMakhVN1h4aTcyczFBYnh5VFR2Tmt5RjVXOHVSZXpWN3hZRWNCdko2TFdINUk1a0cydkNKSngwTVhfSnNTUjA0VFh4MXB2aGtRRFMwc3RkQjY2VTNBTWdiR09hVFZUalBjX0h3b19JNV8zZlZ5aHc4cFYxVUgtYVRORmhnWWRPdlV2WU5mbnhIXzdzcnU0b3hOQ3dCVQ?oc=5",
-          "published_at": "2026-10-28T04:51:43+09:00"
+          "name": "Google News / Courthouse News",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVGV4QUF6OUNnUHpvdVo5RHdoNmY1aWRXOXNQZk13UGpJa0V4dE9LQTFPbVRrYWFTdC1MRnQxcUZ0Tzk2WVc1ck9vYXMtb25ja1BZVFRaTlJjQnVlaUx5aVpwelA5c2pQU3AzZHJJRXJBOFZfYkVGNkJtaFE0blVjcHR0Ym41Z3N6Ri16MjRWZXBlU0o2WDBXaGtreUpyWE80RS1OalpEUXAtZllqY0FnU3pLWmxtdEFtOExvNVRHekwwRFRqb2lvNHlLcEdpRzZkcWc?oc=5",
+          "published_at": "2026-10-28T12:20:06+09:00"
         }
       ]
     },
     {
       "id": "iss_001999",
-      "rank": 7,
-      "prev_rank": 9,
+      "rank": 6,
+      "prev_rank": 7,
       "badge": null,
       "axis": "hardware",
       "title": "애플 M6 탑재 맥북프로·아이맥",
@@ -1010,7 +826,7 @@
       "image": "https://www.engadget.com/img/gallery/apples-imac-with-m6-arrives-promising-a-huge-leap-in-ai-performance/l-intro-1793110400.jpg",
       "image_tried": [],
       "impact": 4,
-      "score": 0.688,
+      "score": 0.575,
       "source_count": 7,
       "first_seen": "2026-10-27T02:54:14+09:00",
       "last_seen": "2026-10-29T07:25:00+09:00",
@@ -1062,67 +878,9 @@
       ]
     },
     {
-      "id": "iss_002001",
-      "rank": 8,
-      "prev_rank": 4,
-      "badge": null,
-      "axis": "media",
-      "title": "MS 이미지 AI MAI 2.7 공개",
-      "subtitle": "이전 버전 대비 엘로 평점 42점 상승",
-      "summary": "마이크로소프트가 새로운 이미지 생성 AI 모델인 MAI Image 2.7을 전격 공개했다. 자체 벤치마크 평가에서 이전 버전인 2.6 대비 42점 높은 엘로 평점을 기록하며 품질 향상을 입증했다. 마이크로소프트의 자체 크리에이티브 도구 및 디자인 제품군에 통합 탑재될 예정이다.",
-      "company_domain": "microsoft.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.68,
-      "source_count": 6,
-      "first_seen": "2026-10-28T00:30:14+09:00",
-      "last_seen": "2026-10-29T06:30:20+09:00",
-      "item_ids": [
-        "926eecb9246d1b31",
-        "5eef71c8a2e4ec47",
-        "477f0e04de6b90a4",
-        "68d05e46f83aeec3",
-        "ff746898a095a10a",
-        "617a715a43777627"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Mashable",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQzhvOFFMdzREZTdVcXgtRldpaFlLZENNMEF3dF9wQnF3UWtfRmN3MWt0a2VEVXY1cmJwQTc4dlk0d0hmTHU3bExNTTdkSldJR21ES0l4VnlCT2xERUJGMS0tNFZpMzNBeDJVRW9kc1lBekM1YWZzZjc3VXBMRDJObjdDdXY?oc=5",
-          "published_at": "2026-10-29T06:30:20+09:00"
-        },
-        {
-          "name": "Google News / WinBuzzer",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNanJRVWo0aWRhYW9lMWVRNGdSWjVXTFlHTC1pYjZySEJQRWZubktsS0gweGpqOVlOT1NWbkp4WVpzZWloZTQydC1Iekp2Uk53N1ZkVWJ4eTNMTC1pWTRVQUJQd1p5M0hXOENXYUtJR1NDTURRaVBCRGhxdHdKVDlrWlJxZXl2Z1J5eXl3b0xpelA2OVBpbkFiajlrQzVkUQ?oc=5",
-          "published_at": "2026-10-29T03:36:21+09:00"
-        },
-        {
-          "name": "Google News / XenoSpectrum",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4VV9jX0dpS3ZpUWU5UFJqSTI1ZXhUYnQza0tST0VhQlA0TUZZQUdUNHJ2ZkZycG4zVmhONU81bi04TlE2VncyUjF0eGxZcVREakFiLWJyM21kV054c3ktUWFvUE51MW96T1djdmlYOFlvaFk?oc=5",
-          "published_at": "2026-10-28T19:25:05+09:00"
-        },
-        {
-          "name": "Google News / BigGo Finance",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBOMlpyckhZeDF5T2JMenlLRHFtcjQwajZPZnRObkM0VC1WaUp1LWMxMkx2X0RiV3BoYjBhNVRGUDl5VHktcFdCeDhSdDFxY1U3UzMyZXBOY0xITmg1UXZkQmliMXo5U0U4cFdyUmpLUTkyT2VZQmc?oc=5",
-          "published_at": "2026-10-28T12:25:00+09:00"
-        },
-        {
-          "name": "Google News / TOKENPOST",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oOFQxTXJUdFhIcTE5SHBpeWRncEU4SVVPazBHWnY1MVZrdDhRZXVqT05ROXZnUTBrZzBjZVhrV0JKU2FSbTlPcFI4UTVzcTJZcE1fcVlBSkIyV3c?oc=5",
-          "published_at": "2026-10-28T11:01:00+09:00"
-        },
-        {
-          "name": "Google News / 富途牛牛",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTjgxYVAzSlZzVkVCa0F6MFdURm5TVnV4NHRWZEQ2dXlnMTZPTHpLZmxRV3gydlUzT2F4MTdyX2lWU2JjNFBPX2RXSGtXd24wM0JDNjNncDljbUFFWG1OR1NfdjdFcXJCbXVHWHd5aDBkcVJpazhmLWo2b1dOakFTWXBnYlhCWXlZeFRXQ3ZDWnNYVnphOFJfMmxmclFtV0xGTVlRY3dxT1ZHTUU?oc=5",
-          "published_at": "2026-10-28T06:13:18+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_001871",
-      "rank": 9,
-      "prev_rank": 6,
+      "rank": 7,
+      "prev_rank": 9,
       "badge": null,
       "axis": "llm",
       "title": "앤스로픽 미발표 모델 안전성 보고서 논란",
@@ -1132,7 +890,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_gemini_pro-1-scaled.png",
       "image_tried": [],
       "impact": 3,
-      "score": 0.62,
+      "score": 0.52,
       "source_count": 4,
       "first_seen": "2026-10-23T23:23:41+09:00",
       "last_seen": "2026-10-29T05:35:00+09:00",
@@ -1167,9 +925,9 @@
     },
     {
       "id": "iss_002064",
-      "rank": 10,
-      "prev_rank": 14,
-      "badge": "surge",
+      "rank": 8,
+      "prev_rank": 10,
+      "badge": null,
       "axis": "llm",
       "title": "앤스로픽 \"코딩 테스트 폐지\"",
       "subtitle": "클로드 역량 뛰어넘어 사업적 사고 중시",
@@ -1178,7 +936,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/05/anthropic_rocket-1.png",
       "image_tried": [],
       "impact": 2,
-      "score": 0.615,
+      "score": 0.516,
       "source_count": 4,
       "first_seen": "2026-10-28T19:58:35+09:00",
       "last_seen": "2026-10-29T05:22:56+09:00",
@@ -1212,10 +970,86 @@
       ]
     },
     {
+      "id": "iss_001996",
+      "rank": 9,
+      "prev_rank": 6,
+      "badge": null,
+      "axis": "media",
+      "title": "구글 딥마인드 지니 4 공개",
+      "subtitle": "실시간 오디오 및 제미나이 결합 월드 모델",
+      "summary": "구글 딥마인드가 상호작용 가능한 3D 가상 세계를 시뮬레이션하는 실시간 월드 모델 지니 4를 공개했다. 사용자의 자연어 프롬프트를 통해 세계를 실시간으로 변경할 수 있으며 배경 오디오와 말하는 캐릭터까지 생성해 낸다. 내부적으로 제미나이 3.8 플래시 모델이 결합되어 환경 시뮬레이션의 일관성을 유지한다.",
+      "company_domain": "deepmind.google",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/Genie-4-Google-title.png",
+      "image_tried": [],
+      "impact": 4,
+      "score": 0.51,
+      "source_count": 9,
+      "first_seen": "2026-10-28T01:00:00+09:00",
+      "last_seen": "2026-10-28T23:48:36+09:00",
+      "item_ids": [
+        "a1808d41698635f4",
+        "fb5141542ee3fcb8",
+        "977ed1654c6d88ec",
+        "66024c4bf8d3d3d1",
+        "52333420ecb2a1f0",
+        "6f63f5f9fa169ae0",
+        "854dd3486a034c1e",
+        "7d5c7cb715ee3a52",
+        "e2310360b6cc423b"
+      ],
+      "sources": [
+        {
+          "name": "Google News / www.tmgm.com",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LZlZrRXItZzhDSVE5NGpWaWw0WDVIcGEzbGJrRUx4MEU3T0htb0VpREZXWXNQWVRWM2J1X2MtMmJldnJ5N3RZVGJZbG8ya3ZVOVE1SExuUEk4ZjJpYTNuR29ycXRiMW5TUEQzeVFfNndXWG5PZW1oNFYyQ0ZfUQ?oc=5",
+          "published_at": "2026-10-28T23:48:36+09:00"
+        },
+        {
+          "name": "Google News / www.tmgm.com",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcERlVzdvYnRIdm1xZWtuM21LeDFUcmYwS09QdC1CN2dVZVFuWjAzVzV6a3BtcXpuQWdxbDNrZHUxZmVpbGtiNmZVRjh0Z0FqSlJtSzltUDFXdnJlZGVtWmxfM3otb21uaU9HX2ZKZTBHN2dxVTViNFZSWGh3Zm5ReA?oc=5",
+          "published_at": "2026-10-28T23:00:11+09:00"
+        },
+        {
+          "name": "Google News / The Indian Express",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSzRXcG15dkNtYWVra0JCMFh2b3djWFV2Z21STnBlVnlueExSd0JRU0dRT1U1QzJLd3YtamVFOG0zX2haUVc5Z2hMTG1Nc2ZON3N1d3pFNUV4UnVUNjN2aWdnWS1KLURyYkk1Vmw1MHJGVk1JRkI4REdnOEV3R2U5X1BFLTdwbWROZzRZdFFrVXNBYzVBZDRiTE9XRDFIdUU1bTlWWXJOVDVUVUlDSXh2SEtKMy04OWVid29pY2dIVdIBxgFBVV95cUxPdVZrME1md1RCUDJYTTZicDRSbXVRNFZRbHVaWHg0QU5MR1RKQmhLSUdaMzZhWFVhX2dtOHlfTWdIcFFsZThLREZnOWpEeWxyZjM1NzVvcHdMYWE2ZXFldEozTHlSRWJMSWplMU84bFlmNnE2dTdyMTJEdE4tTm9pQ2NTcndMUDBXMGtGVGlnc3M0ZVpVWjl3b1RySU12Zlc0cVZsRWJfRXFpQW0yOE1DbzltWWpveE8tVTh4Q2JPSDRueTA5aWc?oc=5",
+          "published_at": "2026-10-28T20:21:12+09:00"
+        },
+        {
+          "name": "Google News / Android Authority",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSWlPdEJ4YjFXU1BRY1BIRXRDalp6d0VtVFBBV1hsUEU3aHV5M1k2V3FQZzhXdVFQY3VlcGx1aTN0SDNobGtGTk1oVllrVmFfMzhkQkFKaWRlQXRRR0lmRC1vUmtvWGV0NXlGQzBUOGNZYm1LZ0pNUU5nSVNqMFo2NXFXTDF5aGc?oc=5",
+          "published_at": "2026-10-28T18:42:00+09:00"
+        },
+        {
+          "name": "Google News / www.tmgm.com",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS3ZORnB4VUpuRkpqdmdZX28wbFlzdFk5Q1liSldRLVprTjJMeWlSUVlKZDQwb0ptWDM4YW82eDk3VkpSaW45MUF3U1hCS1FhRG9JSW5nRlZQNHd0UTkxVlE2bGJVNnhobmEtMVhuR1N3ZUlSX2hfdzVfN19WRHoxbQ?oc=5",
+          "published_at": "2026-10-28T17:20:15+09:00"
+        },
+        {
+          "name": "Google News / WinBuzzer",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSEtNNFhXU1dycEc5ak90cll5VWRzZGk4dzZMSEpNTVRwNW15VDVLSk9zLXhlTEpUaGhiTnBsM0V0MDc4S0ItNE1sajhKLW9rVFJqMEpsLW0teXZUM00yNko5cUJJMU9GSWc5bkJ6YVpISkdJUURWMDd2YVp0ZzhEdTBPOGU0QkJranhGNFBacDQ3dTR3c0hTTEVRS05TWEdwd3c?oc=5",
+          "published_at": "2026-10-28T16:48:02+09:00"
+        },
+        {
+          "name": "Google News / 36Kr",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LT0dndWVkQ3NaVTYyUDYwS0pkdmlGZHRDQkZ4RGxFdGFuQXBWZm5xc0l5U2FsTzliWkh5emw4S0FPTnJWSmhPd1JfZ21YTm96ME93?oc=5",
+          "published_at": "2026-10-28T12:23:58+09:00"
+        },
+        {
+          "name": "Google News / GIGAZINE",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hRGN3cGFfMTRpQUlMQ0w3Zkp5NktXMjJIQVJyX19rd0RzcW43di1KYnNKZGNSN3FpVGhpX0I1dVdZbTZWSnlRRjBreWpwb1gyN3oyZVVuWGs4Ti1wX3lVYVlrNE9QYjNQ?oc=5",
+          "published_at": "2026-10-28T11:50:00+09:00"
+        },
+        {
+          "name": "Google News / 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWGxmc0d4R0RQdUptdmtfTHRobEdjcGVnTWRuSWxMWktDQUZGbnZVVFVibXpwamd3NEFBbTlQSTRxQmJrUjJnRzhwNTFwVTY4a0hxU3BObGFBZWJZWUs0Zy1xLVh3eEJsR05Xa19od1ZLVmhlQ003U0Judm9BSHoyZndWanc3aTBY?oc=5",
+          "published_at": "2026-10-28T10:34:56+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002039",
-      "rank": 11,
-      "prev_rank": 15,
-      "badge": "surge",
+      "rank": 10,
+      "prev_rank": 11,
+      "badge": null,
       "axis": "llm",
       "title": "엔비디아 네모트론 3.5 공개",
       "subtitle": "음성 인식·번역·화자 식별 통합 오픈 모델",
@@ -1224,7 +1058,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/08/nvidia_logo.png",
       "image_tried": [],
       "impact": 3,
-      "score": 0.593,
+      "score": 0.498,
       "source_count": 5,
       "first_seen": "2026-10-28T23:58:17+09:00",
       "last_seen": "2026-10-29T00:55:40+09:00",
@@ -1265,9 +1099,9 @@
     },
     {
       "id": "iss_002097",
-      "rank": 12,
-      "prev_rank": 17,
-      "badge": "surge",
+      "rank": 11,
+      "prev_rank": 12,
+      "badge": null,
       "axis": "llm",
       "title": "구글 AI 대선 결과 답변 거부",
       "subtitle": "2020년 미 대선 승자 질의 회피 논란 수정 착수",
@@ -1278,7 +1112,7 @@
         "https://karlbode.com/google-ai-search-refuses-to-say-who-won-the-2020-election"
       ],
       "impact": 3,
-      "score": 0.57,
+      "score": 0.478,
       "source_count": 3,
       "first_seen": "2026-10-29T02:46:32+09:00",
       "last_seen": "2026-10-29T08:13:59+09:00",
@@ -1306,8 +1140,106 @@
       ]
     },
     {
-      "id": "iss_002034",
+      "id": "iss_002001",
+      "rank": 12,
+      "prev_rank": 8,
+      "badge": null,
+      "axis": "media",
+      "title": "MS 이미지 AI MAI 2.7 공개",
+      "subtitle": "이전 버전 대비 엘로 평점 42점 상승",
+      "summary": "마이크로소프트가 새로운 이미지 생성 AI 모델인 MAI Image 2.7을 전격 공개했다. 자체 벤치마크 평가에서 이전 버전인 2.6 대비 42점 높은 엘로 평점을 기록하며 품질 향상을 입증했다. 마이크로소프트의 자체 크리에이티브 도구 및 디자인 제품군에 통합 탑재될 예정이다.",
+      "company_domain": "microsoft.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.459,
+      "source_count": 5,
+      "first_seen": "2026-10-28T00:30:14+09:00",
+      "last_seen": "2026-10-29T06:30:20+09:00",
+      "item_ids": [
+        "5eef71c8a2e4ec47",
+        "477f0e04de6b90a4",
+        "68d05e46f83aeec3",
+        "ff746898a095a10a",
+        "617a715a43777627"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Mashable",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQzhvOFFMdzREZTdVcXgtRldpaFlLZENNMEF3dF9wQnF3UWtfRmN3MWt0a2VEVXY1cmJwQTc4dlk0d0hmTHU3bExNTTdkSldJR21ES0l4VnlCT2xERUJGMS0tNFZpMzNBeDJVRW9kc1lBekM1YWZzZjc3VXBMRDJObjdDdXY?oc=5",
+          "published_at": "2026-10-29T06:30:20+09:00"
+        },
+        {
+          "name": "Google News / WinBuzzer",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNanJRVWo0aWRhYW9lMWVRNGdSWjVXTFlHTC1pYjZySEJQRWZubktsS0gweGpqOVlOT1NWbkp4WVpzZWloZTQydC1Iekp2Uk53N1ZkVWJ4eTNMTC1pWTRVQUJQd1p5M0hXOENXYUtJR1NDTURRaVBCRGhxdHdKVDlrWlJxZXl2Z1J5eXl3b0xpelA2OVBpbkFiajlrQzVkUQ?oc=5",
+          "published_at": "2026-10-29T03:36:21+09:00"
+        },
+        {
+          "name": "Google News / XenoSpectrum",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4VV9jX0dpS3ZpUWU5UFJqSTI1ZXhUYnQza0tST0VhQlA0TUZZQUdUNHJ2ZkZycG4zVmhONU81bi04TlE2VncyUjF0eGxZcVREakFiLWJyM21kV054c3ktUWFvUE51MW96T1djdmlYOFlvaFk?oc=5",
+          "published_at": "2026-10-28T19:25:05+09:00"
+        },
+        {
+          "name": "Google News / BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBOMlpyckhZeDF5T2JMenlLRHFtcjQwajZPZnRObkM0VC1WaUp1LWMxMkx2X0RiV3BoYjBhNVRGUDl5VHktcFdCeDhSdDFxY1U3UzMyZXBOY0xITmg1UXZkQmliMXo5U0U4cFdyUmpLUTkyT2VZQmc?oc=5",
+          "published_at": "2026-10-28T12:25:00+09:00"
+        },
+        {
+          "name": "Google News / TOKENPOST",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oOFQxTXJUdFhIcTE5SHBpeWRncEU4SVVPazBHWnY1MVZrdDhRZXVqT05ROXZnUTBrZzBjZVhrV0JKU2FSbTlPcFI4UTVzcTJZcE1fcVlBSkIyV3c?oc=5",
+          "published_at": "2026-10-28T11:01:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002037",
       "rank": 13,
+      "prev_rank": 16,
+      "badge": "surge",
+      "axis": "hardware",
+      "title": "중국 CXMT, 첨단 AI 메모리 생산",
+      "subtitle": "수율 한계 딛고 자체 HBM 양산 착수",
+      "summary": "중국 메모리 반도체 기업 CXMT가 낮은 수율에도 불구하고 첨단 AI 메모리 양산에 본격 돌입한다. 미국의 반도체 수출 제재가 심화되자 자국 AI 반도체 공급망 자립을 위해 조기 생산을 결단했다. 업계는 기술 격차와 경제성 부담에도 불구하고 중국 국가 차원의 지원이 뒷받침되고 있다고 분석한다.",
+      "company_domain": "cxmt.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.394,
+      "source_count": 4,
+      "first_seen": "2026-10-28T13:50:00+09:00",
+      "last_seen": "2026-10-29T07:15:00+09:00",
+      "item_ids": [
+        "7f0e117a1468b1d8",
+        "fe27cb35e8345196",
+        "ee154b4f5456f78e",
+        "2eb48d5d79758c68"
+      ],
+      "sources": [
+        {
+          "name": "Google News / ColombiaOne.com",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HWDdrUmk1OF9TM2ozT0VWWmFDc0staWVnX09tWjNQVE5hdXpkMVJfWF9wRjBTUTlrMGQ4SktWLXB0MkVvUW9ndWVVb1ZZS3YwdzIxSDdZZ0tsUnNUNmJaenlJaGNDSDUxUnpWdVo4Wko5dw?oc=5",
+          "published_at": "2026-10-29T07:15:00+09:00"
+        },
+        {
+          "name": "Google News / Gizmodo",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUjQ3cTJqS0Q2VWc3V3k3c2xMWExzMnVqeEtXWHJQcGFCZ29kSFpGUmhyby13RDU2UENiVVlROGZDX0loUHhFdGtxRWpvU0hvX3BmcWZvT0ZfUjdzUGd4VmVCVkZrazdfSXJ4MlJCa3BRSDJIY2oxOERGQ2htRWZ5WDB3WnJ1aGhBRnJfbmcwUU1wbnJvdmpGZ005ZTlJWUlmVGk5NVZ0MVR2d3Noc2JHMEhKQmE?oc=5",
+          "published_at": "2026-10-29T01:10:31+09:00"
+        },
+        {
+          "name": "Google News / The Japan Times",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd3lVaE1NZWZfOGMxenJOOXFYN05paW5HNFBqS1hRUHhMZlpKYVNuRjE0bktfX2pHZnBicU9SN05ncXdxRWd5cGMxaURaWDhfV0NVUF93MGh1eFVwdDJxeXFoclpEQWdnOFBCdzlVNmtVSVhEdS00emtRVHgzd0FsWjFZUjRBblhV?oc=5",
+          "published_at": "2026-10-28T15:45:00+09:00"
+        },
+        {
+          "name": "Google News / Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTDFWeWo1UVJwSDh4OXB5RnJyVVhXaG1zNHZIMlMyZmpaV0FEU3llN21sZG05OGpyUEZtR3FuTTJ6Y2pBZzEwWVU0dFRPSkExVFRfUGg0SFpzb2tLWDlObGFIQ3Axa2lodWgySngtb2ZEMUFxcXlwZUJnbmdNcTZCalJtSDV5TUpTM282XzFldlZTM012WFRhc0hQamIwOGMxUlpYOEsxUDh1UVkyWjE0aWh2OVdFOTN1cEVKVER0RmE4eEhudGc?oc=5",
+          "published_at": "2026-10-28T13:50:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002034",
+      "rank": 14,
       "prev_rank": 13,
       "badge": null,
       "axis": "llm",
@@ -1320,13 +1252,12 @@
         "https://aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai"
       ],
       "impact": 2,
-      "score": 0.536,
-      "source_count": 4,
+      "score": 0.374,
+      "source_count": 3,
       "first_seen": "2026-10-28T03:57:45+09:00",
       "last_seen": "2026-10-29T01:49:14+09:00",
       "item_ids": [
         "76fdffc32ef84fb3",
-        "60f12f46f840b7bf",
         "221a04c5d881621c",
         "b55d577d7a66ff9e"
       ],
@@ -1345,18 +1276,13 @@
           "name": "Hacker News",
           "url": "https://aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai",
           "published_at": "2026-10-28T18:23:01+09:00"
-        },
-        {
-          "name": "Google News / Business Insider",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTEtTazhhZEFiRC1ta0ZTWW5VUjBhdHc2QkFYLVk5UjZWeXFxbTRzcE0tYzVvZ2NULTJZTk44amphaW5mNHd1anRBQmxlVUwzdGNYQy1STDEtZUYtdXZNWlY1ckdLN2lOUXIwRkhkb3BucXNmSWh4R3pfa2xlTUxMM0NVejdlamJRRGZzdE10QzNJT2lYWlk1T2dNOFB3SVE?oc=5",
-          "published_at": "2026-10-28T06:19:00+09:00"
         }
       ]
     },
     {
       "id": "iss_001838",
-      "rank": 14,
-      "prev_rank": 12,
+      "rank": 15,
+      "prev_rank": 14,
       "badge": null,
       "axis": "capital",
       "title": "음반사, 앤스로픽 저작권 제소",
@@ -1366,14 +1292,11 @@
       "image": "https://www.engadget.com/img/gallery/elvis-presleys-estate-is-suing-anthropic-over-copyright-infringement/l-intro-1793013810.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 0.534,
-      "source_count": 9,
+      "score": 0.362,
+      "source_count": 6,
       "first_seen": "2026-10-21T22:01:52+09:00",
       "last_seen": "2026-10-29T02:28:08+09:00",
       "item_ids": [
-        "e809e4c581a25084",
-        "ae287fedef35eec6",
-        "b46df1503109e6fd",
         "f53f415cbcb19e0d",
         "facf6539c3ff7572",
         "df2c0b7b5e257564",
@@ -1411,144 +1334,13 @@
           "name": "Google News / Korea JoongAng Daily",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeFdTNnRtN3kzVWJUSGhYdlYzLVBFb0FZSlBHVGZhOG5mb2x0b0trTVZBc0FsbkVra21tSi1Pd2Ewc2R5VU53akdZT3NuOGNyUHNhX2lzaEUtbTh5Y1pITVF0Y1R4R3VCYkd1dElRRlA0bWJWOHFCd3JUNllabEJlcThtNXhvYmpLaUlWWXMwS2xhWE10VmRMR1ZkbjA4R2Y0RXBfc2duNGRNb08ybTRlYlRiX2lIU08wRHc?oc=5",
           "published_at": "2026-10-28T14:52:51+09:00"
-        },
-        {
-          "name": "Google News / SoaplandTV",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbi1QdjJ5eXBDRWZ4SmpycEl0R3J0S3ZuSC1JYWJtX0g1aGVZR0NSOFVuXzY0RHhqZFVQTTlCLWtYeG1Vc1pmbDFHUF9FcEhGN0RmMjhDSG40Vk4tMGtJYjloYk4wdGdSLVRTd21fN0otSlkwU2g4cU54dHg4R2hfZE1oRGw1NEk?oc=5",
-          "published_at": "2026-10-28T08:13:03+09:00"
-        },
-        {
-          "name": "CNET",
-          "url": "https://cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell",
-          "published_at": "2026-10-28T06:22:44+09:00"
-        },
-        {
-          "name": "Google News / Billboard",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS0pFQUtUbzhJUS14U3VuZ1MzWV9UN1lXS0VEd0dVWXJZVzNQa0E1RnNSbmY2WG9Qb3QwY2ZwVThBVXVIUUk5U3NvcDJlZ1ZYWmF3dktpc3lCSjRweEk5dkx0OERVNVBxOGlTWDZqbDR5QjQ2UXRKOV9SOVBkR1lfeUpsdHdlUWI0RkNkME9RRFg0Sms0?oc=5",
-          "published_at": "2026-10-28T04:52:34+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001995",
-      "rank": 15,
-      "prev_rank": 8,
-      "badge": null,
-      "axis": "hardware",
-      "title": "오라클 클라우드 대규모 AI 확장",
-      "subtitle": "오픈AI 협력 및 엔비디아·구글 칩 대거 탑재",
-      "summary": "오라클이 OCI 인프라에 오픈AI 챗GPT와 코덱스를 결합하고 파트너십을 전면 확대한다. 또한 엔비디아 베라 루빈 NVL72 시스템을 다중 기가와트 규모로 확장 도입하고 구글 TPU 및 세레브라스 가속기까지 지원을 넓힌다. 스노우플레이크 데이터 클라우드와의 협력도 강화해 엔터프라이즈 AI 환경을 한층 통합 제공한다.",
-      "company_domain": "oracle.com",
-      "image": "https://iprsoftwaremedia.com/219/files/202610/504a33442ba2c6832992b7ea1255ccc2/6adfdd4c3d6332394404e329_oracle-nvidia/oracle-nvidia_thmb.jpg?v=0a5d2559-28eb-4cf3-bd23-0f249074bf5b",
-      "image_tried": [],
-      "impact": 4,
-      "score": 0.481,
-      "source_count": 8,
-      "first_seen": "2026-10-27T16:00:00+09:00",
-      "last_seen": "2026-10-28T20:00:00+09:00",
-      "item_ids": [
-        "12c4e604a17b7ebb",
-        "89a3fa180febfc52",
-        "1d58d1de0202a37a",
-        "425d5bc94ebf869a",
-        "6ddc42c279d065bf",
-        "87079f128dd83cde",
-        "0b0aa74cea060e9b",
-        "553340dcde7d1075"
-      ],
-      "sources": [
-        {
-          "name": "Tom's Hardware",
-          "url": "https://tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-oracle-bring-vera-cpu-instances-online-in-multi-gigawatt-deployment-oci-superclusters-also-set-to-expand-with-rubin-only-clusters-attached-to-dual-xeon-6-hosts",
-          "published_at": "2026-10-28T20:00:00+09:00"
-        },
-        {
-          "name": "Google News / digitimes",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUE5uQkNZczNneVZNa1ZyZkJMQmNpSmpTeENyMzN0bkp4M3ctZURoeXphaVFxMDZGNlFWdDhWRzlKbXBnOEt3eUZKd3l5WXVMMTNoRG1iYVFHYTNEWE43WWRRZG52cFc5d1EzU01HeFRUaU8zaXBxczV4U2ZOTnA5SFlfalRFOFVmTWRuYUdJM29zSWtnM2MxRDV3?oc=5",
-          "published_at": "2026-10-28T17:36:39+09:00"
-        },
-        {
-          "name": "Google News / The Times of India",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbmV5QVNwY0xyWDlkX1hIRW84anFtVFNsM2NOWHNqQnFNZHR5N0hUTmVZZ09OSFNscUtKTjYyVGRDRl9kOWRzLVZNSklSVDAwZ2lfWEZ3Xzk2ZFBLR05UZV9VVmVFNllaMW54WXR1WWZqbTcxWDV1S2Z0SlRqZ19DY0hkX213Tk5WQS1wcXk5Xy05RDBCTHoxQ2xqSzJkNnBMWUZKTFVMTFYySlpDZFZ5X0lwVVVDT3NSeUdkYnd5dnNfTVFYTThpbjZYYzNUOUJ6MGZ3VjRFWGdEaGdqbE8takw3b9IB6AFBVV95cUxPb0liblhJV01XMVRxSGpqMWRlb2hyN2NQRHhkT2Rtam4ybmQ0ZlgxVUFhWUpWdlFlQXdQVmQzcmNabjFWVUIyUnlZZEd1eGhWdlhWdjFfamJOQ0VwS3N6ZzdMU2lXVHdpSWNxWS1JVHlDYXNkNG5mMVI4aEtxal9yWXVrVGNwckViM2ZDTm1SR2VZcEFCWTZpMGpjdDd5UnZKM05CUHFsN3ctV20tNUprZzRGQXc2azNqMEVEdjhfbkIwd1dCU2k2Y0xQUkYtcEhzMDN1UFNhNU9xRWJwampMbjhwN2xFSUx0?oc=5",
-          "published_at": "2026-10-28T14:57:00+09:00"
-        },
-        {
-          "name": "Google News / Tech Wire Asia",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1ZZm1YdFN3VkdWX2JXQjM4TlFhTzVIMVNDQ1lldmEyc2o0QmN3MG1lRVNiQjBpUmVSeHBmVzVxUHp2aUx4Y3pWaHhRU3FSck5qWk5kZURuQnB5M1FfeWthLWkybk9rTFF2VTFydjlzU1pobTdSbzlNZll6TVk?oc=5",
-          "published_at": "2026-10-28T13:01:29+09:00"
-        },
-        {
-          "name": "Google News / Tech in Asia",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVGN4YW1oU3ZtRnRRb1htUzZqWmJCMDR5RU9qT1N6X2Q4OTNGWURsSXZQX1czbkJmaU0tX3FiWEkwMFl2NzJlYVpQdVVsS01lb3M3emwyVnZzdEgtdVBGbnJ5Q19iUktCNFo0TExud281M1l5ZWlCU2JlS0NKRjBkVGZjaU9jT0hxRG8zZw?oc=5",
-          "published_at": "2026-10-28T10:57:00+09:00"
-        },
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/27/oracle-brings-googles-tpus-to-its-cloud-adds-chatgpt-integrations",
-          "published_at": "2026-10-28T08:33:55+09:00"
-        },
-        {
-          "name": "The Register",
-          "url": "https://theregister.com/ai-and-ml/2026/10/27/big-red-gets-cozy-with-google-to-offer-tpus-to-ai-customers/5305846",
-          "published_at": "2026-10-28T05:20:27+09:00"
-        },
-        {
-          "name": "Google News / Google Cloud",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYlU0SDVJYVNBMHhpM1VBd0tfcjdjWDFsOW1kOWI2cUNnbmVveE5wSGxNQmlMeXBXTldYRXJwNk1ZVjZOT2k3d01ZMzhOS0NHT3g5VFdzd1Qyekx1NDdDT2FGVExLWHhNQVVQNUxfeE5XdnFKdEJKd3F2c0VxU0pVb3owWWRrSGlwc3hER3otUzVreklFWUNKTEE2VVV4QWxDUG5fM3B2TWZOMFR1?oc=5",
-          "published_at": "2026-10-28T04:49:51+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002037",
-      "rank": 16,
-      "prev_rank": 21,
-      "badge": "surge",
-      "axis": "hardware",
-      "title": "중국 CXMT, 첨단 AI 메모리 생산",
-      "subtitle": "수율 한계 딛고 자체 HBM 양산 착수",
-      "summary": "중국 메모리 반도체 기업 CXMT가 낮은 수율에도 불구하고 첨단 AI 메모리 양산에 본격 돌입한다. 미국의 반도체 수출 제재가 심화되자 자국 AI 반도체 공급망 자립을 위해 조기 생산을 결단했다. 업계는 기술 격차와 경제성 부담에도 불구하고 중국 국가 차원의 지원이 뒷받침되고 있다고 분석한다.",
-      "company_domain": "cxmt.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.473,
-      "source_count": 4,
-      "first_seen": "2026-10-28T13:50:00+09:00",
-      "last_seen": "2026-10-29T07:15:00+09:00",
-      "item_ids": [
-        "7f0e117a1468b1d8",
-        "fe27cb35e8345196",
-        "ee154b4f5456f78e",
-        "2eb48d5d79758c68"
-      ],
-      "sources": [
-        {
-          "name": "Google News / ColombiaOne.com",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HWDdrUmk1OF9TM2ozT0VWWmFDc0staWVnX09tWjNQVE5hdXpkMVJfWF9wRjBTUTlrMGQ4SktWLXB0MkVvUW9ndWVVb1ZZS3YwdzIxSDdZZ0tsUnNUNmJaenlJaGNDSDUxUnpWdVo4Wko5dw?oc=5",
-          "published_at": "2026-10-29T07:15:00+09:00"
-        },
-        {
-          "name": "Google News / Gizmodo",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUjQ3cTJqS0Q2VWc3V3k3c2xMWExzMnVqeEtXWHJQcGFCZ29kSFpGUmhyby13RDU2UENiVVlROGZDX0loUHhFdGtxRWpvU0hvX3BmcWZvT0ZfUjdzUGd4VmVCVkZrazdfSXJ4MlJCa3BRSDJIY2oxOERGQ2htRWZ5WDB3WnJ1aGhBRnJfbmcwUU1wbnJvdmpGZ005ZTlJWUlmVGk5NVZ0MVR2d3Noc2JHMEhKQmE?oc=5",
-          "published_at": "2026-10-29T01:10:31+09:00"
-        },
-        {
-          "name": "Google News / The Japan Times",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd3lVaE1NZWZfOGMxenJOOXFYN05paW5HNFBqS1hRUHhMZlpKYVNuRjE0bktfX2pHZnBicU9SN05ncXdxRWd5cGMxaURaWDhfV0NVUF93MGh1eFVwdDJxeXFoclpEQWdnOFBCdzlVNmtVSVhEdS00emtRVHgzd0FsWjFZUjRBblhV?oc=5",
-          "published_at": "2026-10-28T15:45:00+09:00"
-        },
-        {
-          "name": "Google News / Reuters",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTDFWeWo1UVJwSDh4OXB5RnJyVVhXaG1zNHZIMlMyZmpaV0FEU3llN21sZG05OGpyUEZtR3FuTTJ6Y2pBZzEwWVU0dFRPSkExVFRfUGg0SFpzb2tLWDlObGFIQ3Axa2lodWgySngtb2ZEMUFxcXlwZUJnbmdNcTZCalJtSDV5TUpTM282XzFldlZTM012WFRhc0hQamIwOGMxUlpYOEsxUDh1UVkyWjE0aWh2OVdFOTN1cEVKVER0RmE4eEhudGc?oc=5",
-          "published_at": "2026-10-28T13:50:00+09:00"
         }
       ]
     },
     {
       "id": "iss_002036",
-      "rank": 17,
-      "prev_rank": 11,
+      "rank": 16,
+      "prev_rank": 17,
       "badge": null,
       "axis": "llm",
       "title": "앤스로픽, 전문가 AI 의존 연구",
@@ -1560,7 +1352,7 @@
         "https://anthropic.com/research/agents-judgment-calls"
       ],
       "impact": 2,
-      "score": 0.409,
+      "score": 0.343,
       "source_count": 2,
       "first_seen": "2026-10-27T19:55:00+09:00",
       "last_seen": "2026-10-29T07:00:50+09:00",
@@ -1582,89 +1374,9 @@
       ]
     },
     {
-      "id": "iss_002050",
-      "rank": 18,
-      "prev_rank": 18,
-      "badge": null,
-      "axis": "llm",
-      "title": "델 파워프로텍트 신규 솔루션",
-      "subtitle": "침해 계정 복구 및 양자 내성 저장 지원",
-      "summary": "델 테크놀로지스가 파워프로텍트 라인업을 확장해 침해된 신원 관리 시스템을 복구하는 신규 소프트웨어를 발표했다. 공격 발생 후 권한 인프라를 신뢰 상태로 되돌리는 기능과 함께 파워프로텍트 AI 어시스턴트 기능이 보강됐다. 양자 내성 암호화 스토리지와 AI 환경 데이터 보호를 함께 지원한다.",
-      "company_domain": "dell.com",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/delltechnologies.png",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.405,
-      "source_count": 3,
-      "first_seen": "2026-10-27T21:00:28+09:00",
-      "last_seen": "2026-10-28T23:20:57+09:00",
-      "item_ids": [
-        "f2717a4c9cc76f8f",
-        "1a1808df9b5281ca",
-        "5b92a4dc7176a72e"
-      ],
-      "sources": [
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/28/dell-connects-ai-trust-proving-data-recocvery-aicybersecurityandresiliencesummit",
-          "published_at": "2026-10-28T23:20:57+09:00"
-        },
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/27/dell-adds-identity-resilience-cyber-recovery-tools-aicybersecurityandresiliencesummit",
-          "published_at": "2026-10-28T07:16:01+09:00"
-        },
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/27/dell-sees-ai-agent-guardrails-path-greater-autonomy-aicybersecurityandresiliencesummit",
-          "published_at": "2026-10-28T05:47:34+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002031",
-      "rank": 19,
-      "prev_rank": 22,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "메타, AI 펫 다이어리 앱 공개",
-      "subtitle": "다마고치형 기록 앱 와들월드 출시",
-      "summary": "메타가 다마고치 형태의 가상 반려동물 앱 '와들월드'를 조용히 출시했다. 16비트 레트로 게임 디자인을 적용했으나 실제로는 이용자와 대화하며 일상을 기록하는 AI 다이어리 역할을 수행한다. 대화 내용에 맞춰 생성된 일러스트를 제공하며 온디바이스 일상 어시스턴트 역할을 지향한다.",
-      "company_domain": "meta.com",
-      "image": "https://www.engadget.com/img/gallery/metas-waddle-world-is-a-tamagotchi-like-ai-digital-pet-app/l-intro-1793176733.jpg",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.398,
-      "source_count": 3,
-      "first_seen": "2026-10-28T17:40:19+09:00",
-      "last_seen": "2026-10-28T22:53:31+09:00",
-      "item_ids": [
-        "4683a3b03315c3bb",
-        "450f2c01c023a874",
-        "3fbffbbebbb0d118"
-      ],
-      "sources": [
-        {
-          "name": "Google News / TechCrunch",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOUJhcmFQaktsWGd3eUk2SlF1TWE1OXR5cGFxbnJWZ2gyd0xudWdXdk1MY0MtUHB6b0pDOGxVaTFyVXNCdlM0aWQ0b2Y3Q2FndThadVFHSTU4Zlo1dUYwZ0FOaUZNWjFjbmxxM3lzRmdaU2RPXzFka1ZoRDgxWUY1S0RhemVfX1k?oc=5",
-          "published_at": "2026-10-28T22:53:31+09:00"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
-          "published_at": "2026-10-28T20:27:30+09:00"
-        },
-        {
-          "name": "Engadget",
-          "url": "https://engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world",
-          "published_at": "2026-10-28T17:40:19+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002075",
-      "rank": 20,
-      "prev_rank": 23,
+      "rank": 17,
+      "prev_rank": 20,
       "badge": "surge",
       "axis": "capital",
       "title": "뉴욕주 AI 챗봇 아동보호법 제정",
@@ -1674,7 +1386,7 @@
       "image": "https://www.engadget.com/img/gallery/new-york-governor-signs-ai-chatbot-child-safety-law/l-intro-1793205110.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 0.383,
+      "score": 0.341,
       "source_count": 4,
       "first_seen": "2026-10-29T01:33:01+09:00",
       "last_seen": "2026-10-29T08:29:33+09:00",
@@ -1708,10 +1420,50 @@
       ]
     },
     {
+      "id": "iss_002031",
+      "rank": 18,
+      "prev_rank": 19,
+      "badge": null,
+      "axis": "llm",
+      "title": "메타, AI 펫 다이어리 앱 공개",
+      "subtitle": "다마고치형 기록 앱 와들월드 출시",
+      "summary": "메타가 다마고치 형태의 가상 반려동물 앱 '와들월드'를 조용히 출시했다. 16비트 레트로 게임 디자인을 적용했으나 실제로는 이용자와 대화하며 일상을 기록하는 AI 다이어리 역할을 수행한다. 대화 내용에 맞춰 생성된 일러스트를 제공하며 온디바이스 일상 어시스턴트 역할을 지향한다.",
+      "company_domain": "meta.com",
+      "image": "https://www.engadget.com/img/gallery/metas-waddle-world-is-a-tamagotchi-like-ai-digital-pet-app/l-intro-1793176733.jpg",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.334,
+      "source_count": 3,
+      "first_seen": "2026-10-28T17:40:19+09:00",
+      "last_seen": "2026-10-28T22:53:31+09:00",
+      "item_ids": [
+        "4683a3b03315c3bb",
+        "450f2c01c023a874",
+        "3fbffbbebbb0d118"
+      ],
+      "sources": [
+        {
+          "name": "Google News / TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOUJhcmFQaktsWGd3eUk2SlF1TWE1OXR5cGFxbnJWZ2gyd0xudWdXdk1MY0MtUHB6b0pDOGxVaTFyVXNCdlM0aWQ0b2Y3Q2FndThadVFHSTU4Zlo1dUYwZ0FOaUZNWjFjbmxxM3lzRmdaU2RPXzFka1ZoRDgxWUY1S0RhemVfX1k?oc=5",
+          "published_at": "2026-10-28T22:53:31+09:00"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+          "published_at": "2026-10-28T20:27:30+09:00"
+        },
+        {
+          "name": "Engadget",
+          "url": "https://engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world",
+          "published_at": "2026-10-28T17:40:19+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002099",
-      "rank": 21,
-      "prev_rank": 25,
-      "badge": "surge",
+      "rank": 19,
+      "prev_rank": 21,
+      "badge": null,
       "axis": "llm",
       "title": "오픈AI-서비스나우 협력 확대",
       "subtitle": "기업용 업무 자동화 및 에이전트 연동 가속",
@@ -1722,7 +1474,7 @@
         "https://openai.com/index/openai-servicenow-partnership-expansion"
       ],
       "impact": 3,
-      "score": 0.381,
+      "score": 0.32,
       "source_count": 2,
       "first_seen": "2026-10-28T22:15:00+09:00",
       "last_seen": "2026-10-29T05:11:02+09:00",
@@ -1744,51 +1496,9 @@
       ]
     },
     {
-      "id": "iss_002007",
-      "rank": 22,
-      "prev_rank": 20,
-      "badge": null,
-      "axis": "llm",
-      "title": "리퀴드 AI, LFM3 모델 출시",
-      "subtitle": "온디바이스 멀티모달 브라우저 에이전트",
-      "summary": "리퀴드 AI가 기업 통제형 디바이스에서 직접 실행되는 새로운 LFM3 모델군을 공개했다. 이 모델은 로컬 환경에서 브라우저 에이전트, 음성 명령, 이미지 인식을 수행할 수 있도록 설계되었다. 비트랜스포머 기반의 고효율 설계를 통해 온디바이스에서 빠른 멀티모달 추론을 구현한다.",
-      "company_domain": "liquid.ai",
-      "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/wEKXxH6qGa7vmHjn5KA-W.png",
-      "image_tried": [
-        "https://huggingface.co/blog/LiquidAI/lfm3"
-      ],
-      "impact": 3,
-      "score": 0.372,
-      "source_count": 3,
-      "first_seen": "2026-10-28T02:16:52+09:00",
-      "last_seen": "2026-10-28T21:08:25+09:00",
-      "item_ids": [
-        "a30efa1e3c6adeb6",
-        "34f99a303c29e9ac",
-        "ed2f22cd2ecfd4a5"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Tech Times",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaXdMQUpDdHJKN2dDa2hQNVNCeWVMbHZXcENlRk5PSEI5QUFOa2JWZDRRaFBUOWhTVXluMm9PVy1Ea0t0QWMycTFkeTljazVQZjhUc1VsVHVIOXMxcVBoZVQyNzctSUtHNzJOTWE2RGpjdXJ1ckNqUjZGSjZsMnlBYWRxRUVKRmhpUlI5SGd1dGtVUDJvNHJBem1KWFFhNTliSWlaWEd1ZjJTUVBBR3NjbVRwbXdkb2FSZFJOZUlNcUF6S2FERGx5TzN0MWhNZmdGUkFBcDFvZw?oc=5",
-          "published_at": "2026-10-28T21:08:25+09:00"
-        },
-        {
-          "name": "Google News / Startup Fortune",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSnF6V0ZnNjA3cGdoclUydWxqRTd0LUhINzBkLUNHanpPZ3BPOXZVcVFXSlIyVnhDXzBOYnRnam9qeTlicEZRakw5eXdDVGF4V3FBaXJPYVdfSTE3QTdjT1dJNE9YVzFlQ0ozZFdmZlR1cFhrT2R1M3FRRnFxRVEwZ2JiRDZOYW4zSmpiUE9PTmYtNm8?oc=5",
-          "published_at": "2026-10-28T14:27:55+09:00"
-        },
-        {
-          "name": "Google News / VentureBeat",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPRGpKdjhPN2RkXzRmc1FQRTZKTUtocFFQbUkyLUpVY2xIMmRZZm1VcHRWd3ZYMmJlZlZhMEVoaDFILU1OYXlMaUhDeEZKaHZWV3BqV1E1OHY2S2VNYnFPM2ZqOThQN244bFhfZ0hpc0EwX3J3NkR4ckdudHFqSVQxQ0lhM3ZXUVpVeVByRFdudkNiX0I3VS1NQkZtQ0pidWxoZWZwRVowWms5d0pRS0xrVmxvWEFQQ3BvYTREbmVRZEN4a3lJTzhuNVA1OHNveUQ1aGk3amRSYkpmdEhja1BfdVJQb1hVNkE?oc=5",
-          "published_at": "2026-10-28T04:37:51+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002019",
-      "rank": 23,
-      "prev_rank": 27,
+      "rank": 20,
+      "prev_rank": 23,
       "badge": "surge",
       "axis": "llm",
       "title": "오픈AI 코딩 도구 닷츠 전환",
@@ -1800,7 +1510,7 @@
         "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant"
       ],
       "impact": 3,
-      "score": 0.368,
+      "score": 0.308,
       "source_count": 2,
       "first_seen": "2026-10-27T11:00:00+09:00",
       "last_seen": "2026-10-29T04:15:00+09:00",
@@ -1823,9 +1533,9 @@
     },
     {
       "id": "iss_001757",
-      "rank": 24,
-      "prev_rank": 19,
-      "badge": null,
+      "rank": 21,
+      "prev_rank": 24,
+      "badge": "surge",
       "axis": "llm",
       "title": "AI 발굴 PHP 취약점에 글로벌 비상",
       "subtitle": "전 세계 웹사이트 70% 영향권 원격 코드 실행 결함",
@@ -1834,7 +1544,7 @@
       "image": "https://media.wired.com/photos/6ad8c3e67fa1a6118ccee121/master/pass/102126-PHP.jpg",
       "image_tried": [],
       "impact": 4,
-      "score": 0.366,
+      "score": 0.307,
       "source_count": 2,
       "first_seen": "2026-10-21T16:00:00+09:00",
       "last_seen": "2026-10-29T04:05:46+09:00",
@@ -1856,61 +1566,61 @@
       ]
     },
     {
-      "id": "iss_001964",
-      "rank": 25,
-      "prev_rank": 28,
-      "badge": "surge",
-      "axis": "capital",
-      "title": "앤스로픽 입법안 연방 규제 논란",
-      "subtitle": "정부 개입 기준 지나치게 높여 비판",
-      "summary": "앤스로픽이 제안한 AI 규제 법안 초안이 연방 정부의 개입 기준을 지나치게 높게 설정했다는 비판에 휩싸였다. 업계 안팎에서 안전 조치를 약화시킬 수 있다는 우려가 제기되자 다리오 아모데이 CEO가 직접 해명에 나섰다. AI 랩 주도의 규제 설계 방식에 대한 신뢰성 논란이 확산되고 있다.",
-      "company_domain": "anthropic.com",
-      "image": null,
+      "id": "iss_001995",
+      "rank": 22,
+      "prev_rank": 15,
+      "badge": null,
+      "axis": "hardware",
+      "title": "오라클 클라우드 대규모 AI 확장",
+      "subtitle": "오픈AI 협력 및 엔비디아·구글 칩 대거 탑재",
+      "summary": "오라클이 OCI 인프라에 오픈AI 챗GPT와 코덱스를 결합하고 파트너십을 전면 확대한다. 또한 엔비디아 베라 루빈 NVL72 시스템을 다중 기가와트 규모로 확장 도입하고 구글 TPU 및 세레브라스 가속기까지 지원을 넓힌다. 스노우플레이크 데이터 클라우드와의 협력도 강화해 엔터프라이즈 AI 환경을 한층 통합 제공한다.",
+      "company_domain": "oracle.com",
+      "image": "https://iprsoftwaremedia.com/219/files/202610/504a33442ba2c6832992b7ea1255ccc2/6adfdd4c3d6332394404e329_oracle-nvidia/oracle-nvidia_thmb.jpg?v=0a5d2559-28eb-4cf3-bd23-0f249074bf5b",
       "image_tried": [],
-      "impact": 3,
-      "score": 0.347,
+      "impact": 4,
+      "score": 0.298,
       "source_count": 5,
-      "first_seen": "2026-10-26T14:45:07+09:00",
-      "last_seen": "2026-10-29T01:39:20+09:00",
+      "first_seen": "2026-10-27T16:00:00+09:00",
+      "last_seen": "2026-10-28T20:00:00+09:00",
       "item_ids": [
-        "6e6bacec45099e2a",
-        "0992131bdda5c47e",
-        "033d61c3f3f9a66b",
-        "fa3a58719444ed34",
-        "1b72bc164baa1953"
+        "1d58d1de0202a37a",
+        "425d5bc94ebf869a",
+        "87079f128dd83cde",
+        "0b0aa74cea060e9b",
+        "553340dcde7d1075"
       ],
       "sources": [
         {
-          "name": "Google News / UA.NEWS",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSjN0XzBsTUNlOVBvb25jbmx6Y2ZyaDhkZkM3LXIzdHpwRlUtYXYtR2VRdmliQUc5RWdyb2tEMmFZNnNCSVJDNnpTVDU5T2lzRFBtU2tESUwyYTd1bUloQlJkeXNUYUtrbzFRVHQtbzZXWnQ4bGI3cHVWNDhmUHAya1Bkb2ptVks4YUVtUXNuUFRYS1FIVlMzNHNvNUxneXJaVkRuSkdhbTRzRFJFRVl1QQ?oc=5",
-          "published_at": "2026-10-29T01:39:20+09:00"
+          "name": "Tom's Hardware",
+          "url": "https://tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-oracle-bring-vera-cpu-instances-online-in-multi-gigawatt-deployment-oci-superclusters-also-set-to-expand-with-rubin-only-clusters-attached-to-dual-xeon-6-hosts",
+          "published_at": "2026-10-28T20:00:00+09:00"
         },
         {
-          "name": "Google News / Reuters",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQb3lwQkM2YlRwQ3lBT0UxOUtJTks3bkNxb0Rfbm90ZFAxdGZyT05KMXY2ZEVEYTJZeHFqd0YyMTFVQXBfOEtWeHFUdGt3cWRTNXhqTjloNGVEdkoyU0RxUHowMUw4UXNwVWUzdjQzMmZpTmRCakZjdzJLcE10dGcyUm15TGY5Y0I0Q0VhM3ZtUUlsTUFHWlAtT01XRkZYZXY5cjdzMmYwTnlfSkZkaWxtaTI5dmphVHhkQVhRUko1b1ctTldPaGlFamVONlE?oc=5",
-          "published_at": "2026-10-29T01:14:18+09:00"
+          "name": "Google News / digitimes",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUE5uQkNZczNneVZNa1ZyZkJMQmNpSmpTeENyMzN0bkp4M3ctZURoeXphaVFxMDZGNlFWdDhWRzlKbXBnOEt3eUZKd3l5WXVMMTNoRG1iYVFHYTNEWE43WWRRZG52cFc5d1EzU01HeFRUaU8zaXBxczV4U2ZOTnA5SFlfalRFOFVmTWRuYUdJM29zSWtnM2MxRDV3?oc=5",
+          "published_at": "2026-10-28T17:36:39+09:00"
         },
         {
-          "name": "Google News / Mashable",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQXzBNYzBOY3ZQNHFJU2xxWkxDeEVzTVhIZU9vMWlFWUZYd0FVQUQzbDBZSHd4c0Y2WXZiVG9Ib1lNbVRUOC11aXBKYU1ONVladDF4Y2JySG9WZ0w1b1dPbmM4b2tyR3c3T3ZUOVZ1UFZSZ1Vva3hVbVBNcldKRzlPaVc2aE14RjhDRGc?oc=5",
-          "published_at": "2026-10-28T17:56:38+09:00"
+          "name": "Google News / The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbmV5QVNwY0xyWDlkX1hIRW84anFtVFNsM2NOWHNqQnFNZHR5N0hUTmVZZ09OSFNscUtKTjYyVGRDRl9kOWRzLVZNSklSVDAwZ2lfWEZ3Xzk2ZFBLR05UZV9VVmVFNllaMW54WXR1WWZqbTcxWDV1S2Z0SlRqZ19DY0hkX213Tk5WQS1wcXk5Xy05RDBCTHoxQ2xqSzJkNnBMWUZKTFVMTFYySlpDZFZ5X0lwVVVDT3NSeUdkYnd5dnNfTVFYTThpbjZYYzNUOUJ6MGZ3VjRFWGdEaGdqbE8takw3b9IB6AFBVV95cUxPb0liblhJV01XMVRxSGpqMWRlb2hyN2NQRHhkT2Rtam4ybmQ0ZlgxVUFhWUpWdlFlQXdQVmQzcmNabjFWVUIyUnlZZEd1eGhWdlhWdjFfamJOQ0VwS3N6ZzdMU2lXVHdpSWNxWS1JVHlDYXNkNG5mMVI4aEtxal9yWXVrVGNwckViM2ZDTm1SR2VZcEFCWTZpMGpjdDd5UnZKM05CUHFsN3ctV20tNUprZzRGQXc2azNqMEVEdjhfbkIwd1dCU2k2Y0xQUkYtcEhzMDN1UFNhNU9xRWJwampMbjhwN2xFSUx0?oc=5",
+          "published_at": "2026-10-28T14:57:00+09:00"
         },
         {
-          "name": "Google News / OrcaRouter",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vN1o2MDlwOHp2RWRGRHdlVU9UMm0xZ2F6X1RFa2dGb0NVMENZSGRVRUhFV2hueE1JNm9nWVQ5Nnp0MFRfTmtpenZzM0dha0l2RmVKeUl5NFlrVHhxNWRZMmh0cGtHVEVCQlEzcEd5bw?oc=5",
-          "published_at": "2026-10-28T12:58:26+09:00"
+          "name": "Google News / Tech Wire Asia",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1ZZm1YdFN3VkdWX2JXQjM4TlFhTzVIMVNDQ1lldmEyc2o0QmN3MG1lRVNiQjBpUmVSeHBmVzVxUHp2aUx4Y3pWaHhRU3FSck5qWk5kZURuQnB5M1FfeWthLWkybk9rTFF2VTFydjlzU1pobTdSbzlNZll6TVk?oc=5",
+          "published_at": "2026-10-28T13:01:29+09:00"
         },
         {
-          "name": "Google News / Politico",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUjZraEFFWjNFWGtzOUFEVW12Q1lRb0o1ay03UWU3RC1UYzRUVDRkQjJ2MGNtQXptUExnRE5MSE92RjQydzB6bE9RNTVUdVFhenNyYUo5QjllUUhETW0xcjJfd056Nnp4U25vWU1iQlhLYXdBS1JRSlZQTnBBTGlYSHVR?oc=5",
-          "published_at": "2026-10-28T08:27:00+09:00"
+          "name": "Google News / Tech in Asia",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVGN4YW1oU3ZtRnRRb1htUzZqWmJCMDR5RU9qT1N6X2Q4OTNGWURsSXZQX1czbkJmaU0tX3FiWEkwMFl2NzJlYVpQdVVsS01lb3M3emwyVnZzdEgtdVBGbnJ5Q19iUktCNFo0TExud281M1l5ZWlCU2JlS0NKRjBkVGZjaU9jT0hxRG8zZw?oc=5",
+          "published_at": "2026-10-28T10:57:00+09:00"
         }
       ]
     },
     {
       "id": "iss_002040",
-      "rank": 26,
-      "prev_rank": 29,
+      "rank": 23,
+      "prev_rank": 26,
       "badge": "surge",
       "axis": "llm",
       "title": "크롬 AI 지메일 연동 자동완성",
@@ -1922,7 +1632,7 @@
         "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms"
       ],
       "impact": 2,
-      "score": 0.337,
+      "score": 0.283,
       "source_count": 2,
       "first_seen": "2026-10-29T02:00:00+09:00",
       "last_seen": "2026-10-29T02:00:00+09:00",
@@ -1945,8 +1655,8 @@
     },
     {
       "id": "iss_001782",
-      "rank": 27,
-      "prev_rank": 31,
+      "rank": 24,
+      "prev_rank": 27,
       "badge": "surge",
       "axis": "llm",
       "title": "앤스로픽, AI 에이전트 클로드 듀엣 발표",
@@ -1956,7 +1666,7 @@
       "image": "https://www.engadget.com/img/gallery/claude-duet-is-anthropics-answer-to-meta-muse-and-openai-dots/l-intro-1792616502.jpg",
       "image_tried": [],
       "impact": 4,
-      "score": 0.329,
+      "score": 0.276,
       "source_count": 2,
       "first_seen": "2026-10-22T04:14:01+09:00",
       "last_seen": "2026-10-29T01:20:03+09:00",
@@ -1978,173 +1688,9 @@
       ]
     },
     {
-      "id": "iss_002027",
-      "rank": 28,
-      "prev_rank": 30,
-      "badge": null,
-      "axis": "capital",
-      "title": "앤스로픽, 바이오 스타트업 전격 인수",
-      "subtitle": "클로드 기반 1인 신약개발사 흡수",
-      "summary": "앤스로픽이 클로드를 활용해 11개 연구소를 조율하던 1인 바이오 스타트업을 인수했다. 익명의 트위터리안이 스텔스로 운영하던 이번 피인수사를 통해 AI 신약 개발 역량을 직접 내재화할 방침이다. 앤스로픽은 클로드를 통한 신약 개발 가속 성과를 공개하며 생명과학 영역으로 확장을 서두르고 있다.",
-      "company_domain": "anthropic.com",
-      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg",
-      "image_tried": [
-        "https://anthropic.com/research/early-progress-drug-development"
-      ],
-      "impact": 3,
-      "score": 0.326,
-      "source_count": 5,
-      "first_seen": "2026-10-28T05:26:09+09:00",
-      "last_seen": "2026-10-28T23:58:02+09:00",
-      "item_ids": [
-        "68403036b11464ad",
-        "004ce9daf1724693",
-        "001110b136cd9821",
-        "afbd041e13e3032f",
-        "98b195d3e5862e69"
-      ],
-      "sources": [
-        {
-          "name": "Google News / The Profile | Polina Pompliano",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4xZHlTbUpnQmlqVURjRV9PZjdtUUJZeFc1T280VVIzY1pXQ01NZW00SVJJWWZMSHJNbnh5TlhoaVpYZm1JQXlXSDdYV2Iyb3hEYnRCUG9scEVNOXlHaFFRdUZMQUYxTTc3VHZEZ3VlSHRTckF2?oc=5",
-          "published_at": "2026-10-28T23:58:02+09:00"
-        },
-        {
-          "name": "Google News / Quartz",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XY3FHSmo5aHdLVjQ1dTVYdUx5Vm5BYmJJX3JjVnNuZDgwRHN1T28zUTlqQ2w0VHJMU3pDblIzV2QzVmh1NnJrWjc5di1QVnhQaXFaNzMySDAzXzF6MWZleGtSU1drVUwtM2hiZmRmdTk3SG5Ea3F1UlBXOFJNWlU?oc=5",
-          "published_at": "2026-10-28T21:50:39+09:00"
-        },
-        {
-          "name": "Google News / R&D World",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaG5QVkVkdXoyQ0N3eEFmbjBtdGtNNC1jalU4ck1HZ25Ea011cWw0Y2VIY2k0RkhORWppN21pV0Jwd1Q1ZHpYOGNNTTVnM0RpYllJZG9wTS0xczNhMWt4ZE5QcnFVa3FjM0F5dnhYczQtSS1SOXdpU2dlUVhyQVNBd2phbUhOQzZOVktnQjlB?oc=5",
-          "published_at": "2026-10-28T08:10:01+09:00"
-        },
-        {
-          "name": "Google News / Endpoints News",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObHpwcmFPOUt4SGt2Q3VCTHJoT0FWdGp5eWJsZHFsQjdUczVLWFNQYXdFTDNkYVBOeFNuWjlvRUxWRHVKUzNlNEZSNVg2aU4yY2RucnNrQkNwYkdPOTRUak4tWnFIRnBSUGpnbWFFb1Z5SU9NVzVnLWNQblJUM0tkYzlIMHhxLV9XU3I4WnJPdmNEcWQ2alA2eTdn?oc=5",
-          "published_at": "2026-10-28T07:31:00+09:00"
-        },
-        {
-          "name": "Anthropic",
-          "url": "https://anthropic.com/research/early-progress-drug-development",
-          "published_at": "2026-10-28T05:26:09+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001927",
-      "rank": 29,
-      "prev_rank": 32,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "오픈AI 고객 유치 대규모 가격 인하",
-      "subtitle": "앤스로픽 고객 대상 최대 90% 할인",
-      "summary": "오픈AI가 앤스로픽의 핵심 고객들을 끌어들이기 위해 최대 90%에 달하는 대규모 할인 공세를 펼치고 있다. 리플링과 리플릿 등 주요 엔터프라이즈 고객들이 비용 절감을 이유로 서비스 전환을 발표했다. 딥시크 등 중국 모델들과의 가격 경쟁 압박 속에서 오픈AI가 수익성보다 점유율 방어를 우선시하고 있다는 분석이 나온다.",
-      "company_domain": "openai.com",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_anthropic.png",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.321,
-      "source_count": 2,
-      "first_seen": "2026-10-24T23:00:00+09:00",
-      "last_seen": "2026-10-29T00:42:07+09:00",
-      "item_ids": [
-        "47482de1618c9954",
-        "1421454e3722515d"
-      ],
-      "sources": [
-        {
-          "name": "AI Business",
-          "url": "https://aibusiness.com/generative-ai/openai-slashes-price",
-          "published_at": "2026-10-29T00:42:07+09:00"
-        },
-        {
-          "name": "Google News / Axios",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mb21MYXcyblNzcS0zRzZEMV8xbWF2aFpiWjRRVC13N3NMbGxYcXZvY09XckFtcGJfMUdZMl94VzByWVN6YS1MRjZMdkpRSmp4R1kwQXJVbnVEc1BiVmJPa0pwYXI3N00?oc=5",
-          "published_at": "2026-10-28T20:10:57+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002000",
-      "rank": 30,
-      "prev_rank": 16,
-      "badge": null,
-      "axis": "llm",
-      "title": "오페라 브라우저 WebAI 표준",
-      "subtitle": "웹 브라우저 내 로컬 AI 모델 직접 구동",
-      "summary": "오페라가 웹 브라우저 환경에서 로컬 파운데이션 모델을 구동할 수 있도록 지원하는 새 웹 표준 WebAI를 발표했다. 오페라 원 브라우저 사용자는 외부 클라우드 연결 없이 기기 내부 모델을 직접 활용할 수 있다. 맥 환경에서는 애플 파운데이션 모델과 연동되는 등 기기 내 프라이버시 중심 AI 접근성을 높였다.",
-      "company_domain": "opera.com",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/ai-agents-chatbots-GettyImages-2243730029.jpg?resize=1200,675",
-      "image_tried": [
-        "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser"
-      ],
-      "impact": 3,
-      "score": 0.317,
-      "source_count": 2,
-      "first_seen": "2026-10-27T22:00:00+09:00",
-      "last_seen": "2026-10-29T00:25:06+09:00",
-      "item_ids": [
-        "727557db3c4b173a",
-        "86b959a39c04c6bb"
-      ],
-      "sources": [
-        {
-          "name": "Google News / OpenTools",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbktHXzZYOVBoZWRGc3RxZlhLNVlYSGNCdUpkTWQ1T2VHQ2N3dTdIWGZ1bjZHOF9SbVVVemRyV01JWlJZWENIc0NTbUNWWWhucXpIYkFqRE9oc2hVM29wUUZBSUEyMlEtZ3VZRXhsbEl2SnRNazVBNHpuTkp4blZjcDhob2J1LVk?oc=5",
-          "published_at": "2026-10-29T00:25:06+09:00"
-        },
-        {
-          "name": "Google News / mediasat.info",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVEZYT0FTQkE4UFZ1dUZRaWNhUm1ERnloSmJxOF9WRGJTV0hybG92Mlk3eGkyYW5ic2pBcHU1eWJTTE8xZkZJLWhRZVBpWVhCVGcwQjcxR0VIX3k4V2RIM3hEQnNNSGhndkpVSk5fTndCNmlKVUtGVWJXSkNBc3YzdnFyR1A4RnVUOElyVkpFUkdudGQ4Vm5F?oc=5",
-          "published_at": "2026-10-28T22:55:51+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002033",
-      "rank": 31,
-      "prev_rank": 43,
-      "badge": "surge",
-      "axis": "hardware",
-      "title": "말레이 세관, 첨단 AI 칩 압류",
-      "subtitle": "대중 수출 통제 위반 의심 서버 적발",
-      "summary": "말레이시아 공항 세관이 수출 통제 규정을 위반한 것으로 의심되는 1210만 달러 규모의 첨단 AI 칩 탑재 서버를 압류했다. 미국의 대중 반도체 통제가 엄격해지는 가운데 동남아시아가 주요 우회 경로로 지목받고 있다. 당국은 화물의 최종 목적지와 밀수 경로에 대한 조사를 확대하고 있다.",
-      "company_domain": "customs.gov.my",
-      "image": "https://cdn.mos.cms.futurecdn.net/mcUCEv8AzcMnUJJ3xjB6Cf-1920-80.jpg",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.314,
-      "source_count": 3,
-      "first_seen": "2026-10-28T14:21:00+09:00",
-      "last_seen": "2026-10-29T02:02:14+09:00",
-      "item_ids": [
-        "7464cb5f81f258ac",
-        "8e4d6f561d3dbaeb",
-        "222399100e14f17d"
-      ],
-      "sources": [
-        {
-          "name": "Tom's Hardware",
-          "url": "https://tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
-          "published_at": "2026-10-29T02:02:14+09:00"
-        },
-        {
-          "name": "Google News / AP News",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbTNpQXVCYkdWTzZ2Q0VQYVVKb1BSV0hRZWttLXhtNUhDY0JoNGJrZlJnUmJZSUt2NmQwU3JqUEJ0bnJxRk9Qdi1iSkx3dENILXZrWFlzTER3OEpxbWdaMklxbmp4QUlZSmJFTUVrSktYV2twbkQzVFFWV25WbGUtZnZiYnZxSjNpaVhzYkprbDdhTFVHcXdvNHl0WUw2cHMzSUVINkkwUTl1Zw?oc=5",
-          "published_at": "2026-10-28T19:16:00+09:00"
-        },
-        {
-          "name": "Google News / Reuters",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVU14ajJqOUhlTEt4cEJzR0o0Ry1kVGc4bmRmTW9zSWVYb1pjZ042X2ZlLVBVZ1l3dV95WDFjUTFodnF6eTF6OVAtX0hCdG1jZzA3ZkNmb09jNDhFd1JUcnc5QkJrN3poemVSVDQ1OGxBdkJEZkFmSmgzWnZGT2Z5ZGdHaWF1ZlFEbXl6M0VRQklfU3hydktmMnRFSUNuZGFwdjJrS05qUF9rUlVxXzNfeU9ZN2hKeHgwV1c2aHV3?oc=5",
-          "published_at": "2026-10-28T14:21:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002096",
-      "rank": 32,
-      "prev_rank": 36,
+      "rank": 25,
+      "prev_rank": 32,
       "badge": "surge",
       "axis": "capital",
       "title": "MS-오픈AI 분기매출 100억弗",
@@ -2156,7 +1702,7 @@
         "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai"
       ],
       "impact": 4,
-      "score": 0.306,
+      "score": 0.273,
       "source_count": 3,
       "first_seen": "2026-10-29T06:25:30+09:00",
       "last_seen": "2026-10-29T08:28:53+09:00",
@@ -2184,85 +1730,165 @@
       ]
     },
     {
-      "id": "iss_002080",
-      "rank": 33,
-      "prev_rank": 45,
+      "id": "iss_001927",
+      "rank": 26,
+      "prev_rank": 29,
       "badge": "surge",
-      "axis": "media",
-      "title": "깃허브 코파일럿 이미지 생성 탑재",
-      "subtitle": "IDE 환경 내 직접 이미지 생성 및 편집",
-      "summary": "깃허브가 코파일럿 내에서 이미지를 직접 생성하고 편집할 수 있는 기능을 새롭게 추가했다. 개발자는 별도의 그래픽 도구를 열지 않고 코드 편집기 안에서 UI 아이콘이나 앱 자산을 즉시 제작할 수 있다. 개발 작업 환경의 생산성을 한 단계 더 끌어올렸다.",
-      "company_domain": "github.com",
-      "image": null,
+      "axis": "llm",
+      "title": "오픈AI 고객 유치 대규모 가격 인하",
+      "subtitle": "앤스로픽 고객 대상 최대 90% 할인",
+      "summary": "오픈AI가 앤스로픽의 핵심 고객들을 끌어들이기 위해 최대 90%에 달하는 대규모 할인 공세를 펼치고 있다. 리플링과 리플릿 등 주요 엔터프라이즈 고객들이 비용 절감을 이유로 서비스 전환을 발표했다. 딥시크 등 중국 모델들과의 가격 경쟁 압박 속에서 오픈AI가 수익성보다 점유율 방어를 우선시하고 있다는 분석이 나온다.",
+      "company_domain": "openai.com",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_anthropic.png",
       "image_tried": [],
-      "impact": 2,
-      "score": 0.293,
+      "impact": 3,
+      "score": 0.269,
       "source_count": 2,
-      "first_seen": "2026-10-29T00:30:55+09:00",
-      "last_seen": "2026-10-29T04:28:26+09:00",
+      "first_seen": "2026-10-24T23:00:00+09:00",
+      "last_seen": "2026-10-29T00:42:07+09:00",
       "item_ids": [
-        "5e49cd050ea7f624",
-        "bee1376a86b20fdd"
+        "47482de1618c9954",
+        "1421454e3722515d"
       ],
       "sources": [
         {
-          "name": "Google News / Visual Studio Magazine",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNVJ0Q3FIZnpuTUh4ZmtxRkFOTkZ4QzhCOWd5UlQtRklUbks4UWs3Q0U4RklEMUtDRW5hSXY2MXRCcTFid0d1QnVHbkVmUzZxZjNZbGk2V1owUHhta1dZMmxPbHdIY2dvTHoyMWxtVDFlcGw4QWI2TmJOeUVhbjRmMy1jRXN2OXlVX0hVdU5Hb2NOYkNPNTg2eWdiTnl2dnpyZ21ZeERyZ3JwR0x5TWFjUHNvUGJNTHJFX2FvM1B3RTVWNUxhbDBaNTV1Vm1PQQ?oc=5",
-          "published_at": "2026-10-29T04:28:26+09:00"
+          "name": "AI Business",
+          "url": "https://aibusiness.com/generative-ai/openai-slashes-price",
+          "published_at": "2026-10-29T00:42:07+09:00"
         },
         {
-          "name": "Google News / The GitHub Blog",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaVg1a1VOcjNZQjNIb2RDNGp3NWMzZC1hM0V4bUotblpWM1BZX0w4bkVxMTY2LW5hcjJjMVdSd1NKMlV3a2dlY29zb2lXY2xiMmZRNjBmWlFKcWRveGdFSlFtc1NPaVpWME5VNXN4alFmSEFWZVN3YnVRN2pmOEtmaHhMVl9pbVNJTnBLYlNMTQ?oc=5",
-          "published_at": "2026-10-29T00:30:55+09:00"
+          "name": "Google News / Axios",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mb21MYXcyblNzcS0zRzZEMV8xbWF2aFpiWjRRVC13N3NMbGxYcXZvY09XckFtcGJfMUdZMl94VzByWVN6YS1MRjZMdkpRSmp4R1kwQXJVbnVEc1BiVmJPa0pwYXI3N00?oc=5",
+          "published_at": "2026-10-28T20:10:57+09:00"
         }
       ]
     },
     {
-      "id": "iss_002028",
-      "rank": 34,
-      "prev_rank": 38,
+      "id": "iss_002000",
+      "rank": 27,
+      "prev_rank": 30,
       "badge": "surge",
-      "axis": "capital",
-      "title": "앤스로픽, 美 정부 연방 계약 확대",
-      "subtitle": "GSA OneGov 통해 전 부처 클로드 보급",
-      "summary": "앤스로픽이 미국 조달청(GSA)과의 OneGov 파트너십을 전면 확대하기로 발표했다. 이를 통해 연방 정부 전 기관에 대폭 할인된 조건으로 클로드 모델 제품군을 공급한다. 주요 공공 부문 AI 조달 시장에서 선점 효과를 노리며 전방위 확산에 나서는 양상이다.",
-      "company_domain": "anthropic.com",
-      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/4e3bfa972a8ec391977288fa36de3da1ecd78232-1920x1080.webp",
+      "axis": "llm",
+      "title": "오페라 브라우저 WebAI 표준",
+      "subtitle": "웹 브라우저 내 로컬 AI 모델 직접 구동",
+      "summary": "오페라가 웹 브라우저 환경에서 로컬 파운데이션 모델을 구동할 수 있도록 지원하는 새 웹 표준 WebAI를 발표했다. 오페라 원 브라우저 사용자는 외부 클라우드 연결 없이 기기 내부 모델을 직접 활용할 수 있다. 맥 환경에서는 애플 파운데이션 모델과 연동되는 등 기기 내 프라이버시 중심 AI 접근성을 높였다.",
+      "company_domain": "opera.com",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/ai-agents-chatbots-GettyImages-2243730029.jpg?resize=1200,675",
       "image_tried": [
-        "https://anthropic.com/news/expanding-partnership-gsa"
+        "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser"
       ],
       "impact": 3,
-      "score": 0.282,
-      "source_count": 3,
-      "first_seen": "2026-10-28T06:58:48+09:00",
-      "last_seen": "2026-10-29T06:24:49+09:00",
+      "score": 0.266,
+      "source_count": 2,
+      "first_seen": "2026-10-27T22:00:00+09:00",
+      "last_seen": "2026-10-29T00:25:06+09:00",
       "item_ids": [
-        "31f854764086b8ec",
-        "2d38b960961378c4",
-        "f6092a50ebd98d81"
+        "727557db3c4b173a",
+        "86b959a39c04c6bb"
       ],
       "sources": [
         {
-          "name": "Google News / ExecutiveGov",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56X2lqb0JtRDhTZ19hUmN6MEF3dVJkNTdGSGp1MGZRV04zRHN0R0tqU1l1SklfamlyUzhXU0g1YmJtRWRWbHdMVDJHengzeTVaNzFVN09nVWRhQTdya2s0WDRFdnoxcEw5ZHdUMHNZOWVjMm0zbktVZF9VNEVNRFU?oc=5",
-          "published_at": "2026-10-29T06:24:49+09:00"
+          "name": "Google News / OpenTools",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbktHXzZYOVBoZWRGc3RxZlhLNVlYSGNCdUpkTWQ1T2VHQ2N3dTdIWGZ1bjZHOF9SbVVVemRyV01JWlJZWENIc0NTbUNWWWhucXpIYkFqRE9oc2hVM29wUUZBSUEyMlEtZ3VZRXhsbEl2SnRNazVBNHpuTkp4blZjcDhob2J1LVk?oc=5",
+          "published_at": "2026-10-29T00:25:06+09:00"
         },
         {
-          "name": "Anthropic",
-          "url": "https://anthropic.com/news/expanding-partnership-gsa",
-          "published_at": "2026-10-28T07:21:46+09:00"
+          "name": "Google News / mediasat.info",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVEZYT0FTQkE4UFZ1dUZRaWNhUm1ERnloSmJxOF9WRGJTV0hybG92Mlk3eGkyYW5ic2pBcHU1eWJTTE8xZkZJLWhRZVBpWVhCVGcwQjcxR0VIX3k4V2RIM3hEQnNNSGhndkpVSk5fTndCNmlKVUtGVWJXSkNBc3YzdnFyR1A4RnVUOElyVkpFUkdudGQ4Vm5F?oc=5",
+          "published_at": "2026-10-28T22:55:51+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_001964",
+      "rank": 28,
+      "prev_rank": 25,
+      "badge": null,
+      "axis": "capital",
+      "title": "앤스로픽 입법안 연방 규제 논란",
+      "subtitle": "정부 개입 기준 지나치게 높여 비판",
+      "summary": "앤스로픽이 제안한 AI 규제 법안 초안이 연방 정부의 개입 기준을 지나치게 높게 설정했다는 비판에 휩싸였다. 업계 안팎에서 안전 조치를 약화시킬 수 있다는 우려가 제기되자 다리오 아모데이 CEO가 직접 해명에 나섰다. AI 랩 주도의 규제 설계 방식에 대한 신뢰성 논란이 확산되고 있다.",
+      "company_domain": "anthropic.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.262,
+      "source_count": 4,
+      "first_seen": "2026-10-26T14:45:07+09:00",
+      "last_seen": "2026-10-29T01:39:20+09:00",
+      "item_ids": [
+        "6e6bacec45099e2a",
+        "0992131bdda5c47e",
+        "fa3a58719444ed34",
+        "1b72bc164baa1953"
+      ],
+      "sources": [
+        {
+          "name": "Google News / UA.NEWS",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSjN0XzBsTUNlOVBvb25jbmx6Y2ZyaDhkZkM3LXIzdHpwRlUtYXYtR2VRdmliQUc5RWdyb2tEMmFZNnNCSVJDNnpTVDU5T2lzRFBtU2tESUwyYTd1bUloQlJkeXNUYUtrbzFRVHQtbzZXWnQ4bGI3cHVWNDhmUHAya1Bkb2ptVks4YUVtUXNuUFRYS1FIVlMzNHNvNUxneXJaVkRuSkdhbTRzRFJFRVl1QQ?oc=5",
+          "published_at": "2026-10-29T01:39:20+09:00"
         },
         {
-          "name": "Google News / FedScoop",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50MnRrUWwyYUg2azNuWVBkYUdxeGxnVjJqVm43NThxQ2d0eGVrZUZTTHdIVngyWmVFRXdfUEFGcXVGMmFKRWxKVTc1Q2x3TDBSQ1pwY0NLUEphNUZwNk5nc2lSYlg?oc=5",
-          "published_at": "2026-10-28T06:58:48+09:00"
+          "name": "Google News / Reuters",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQb3lwQkM2YlRwQ3lBT0UxOUtJTks3bkNxb0Rfbm90ZFAxdGZyT05KMXY2ZEVEYTJZeHFqd0YyMTFVQXBfOEtWeHFUdGt3cWRTNXhqTjloNGVEdkoyU0RxUHowMUw4UXNwVWUzdjQzMmZpTmRCakZjdzJLcE10dGcyUm15TGY5Y0I0Q0VhM3ZtUUlsTUFHWlAtT01XRkZYZXY5cjdzMmYwTnlfSkZkaWxtaTI5dmphVHhkQVhRUko1b1ctTldPaGlFamVONlE?oc=5",
+          "published_at": "2026-10-29T01:14:18+09:00"
+        },
+        {
+          "name": "Google News / Mashable",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQXzBNYzBOY3ZQNHFJU2xxWkxDeEVzTVhIZU9vMWlFWUZYd0FVQUQzbDBZSHd4c0Y2WXZiVG9Ib1lNbVRUOC11aXBKYU1ONVladDF4Y2JySG9WZ0w1b1dPbmM4b2tyR3c3T3ZUOVZ1UFZSZ1Vva3hVbVBNcldKRzlPaVc2aE14RjhDRGc?oc=5",
+          "published_at": "2026-10-28T17:56:38+09:00"
+        },
+        {
+          "name": "Google News / OrcaRouter",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vN1o2MDlwOHp2RWRGRHdlVU9UMm0xZ2F6X1RFa2dGb0NVMENZSGRVRUhFV2hueE1JNm9nWVQ5Nnp0MFRfTmtpenZzM0dha0l2RmVKeUl5NFlrVHhxNWRZMmh0cGtHVEVCQlEzcEd5bw?oc=5",
+          "published_at": "2026-10-28T12:58:26+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002033",
+      "rank": 29,
+      "prev_rank": 31,
+      "badge": null,
+      "axis": "hardware",
+      "title": "말레이 세관, 첨단 AI 칩 압류",
+      "subtitle": "대중 수출 통제 위반 의심 서버 적발",
+      "summary": "말레이시아 공항 세관이 수출 통제 규정을 위반한 것으로 의심되는 1210만 달러 규모의 첨단 AI 칩 탑재 서버를 압류했다. 미국의 대중 반도체 통제가 엄격해지는 가운데 동남아시아가 주요 우회 경로로 지목받고 있다. 당국은 화물의 최종 목적지와 밀수 경로에 대한 조사를 확대하고 있다.",
+      "company_domain": "customs.gov.my",
+      "image": "https://cdn.mos.cms.futurecdn.net/mcUCEv8AzcMnUJJ3xjB6Cf-1920-80.jpg",
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.261,
+      "source_count": 3,
+      "first_seen": "2026-10-28T14:21:00+09:00",
+      "last_seen": "2026-10-29T02:02:14+09:00",
+      "item_ids": [
+        "7464cb5f81f258ac",
+        "8e4d6f561d3dbaeb",
+        "222399100e14f17d"
+      ],
+      "sources": [
+        {
+          "name": "Tom's Hardware",
+          "url": "https://tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+          "published_at": "2026-10-29T02:02:14+09:00"
+        },
+        {
+          "name": "Google News / AP News",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbTNpQXVCYkdWTzZ2Q0VQYVVKb1BSV0hRZWttLXhtNUhDY0JoNGJrZlJnUmJZSUt2NmQwU3JqUEJ0bnJxRk9Qdi1iSkx3dENILXZrWFlzTER3OEpxbWdaMklxbmp4QUlZSmJFTUVrSktYV2twbkQzVFFWV25WbGUtZnZiYnZxSjNpaVhzYkprbDdhTFVHcXdvNHl0WUw2cHMzSUVINkkwUTl1Zw?oc=5",
+          "published_at": "2026-10-28T19:16:00+09:00"
+        },
+        {
+          "name": "Google News / Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVU14ajJqOUhlTEt4cEJzR0o0Ry1kVGc4bmRmTW9zSWVYb1pjZ042X2ZlLVBVZ1l3dV95WDFjUTFodnF6eTF6OVAtX0hCdG1jZzA3ZkNmb09jNDhFd1JUcnc5QkJrN3poemVSVDQ1OGxBdkJEZkFmSmgzWnZGT2Z5ZGdHaWF1ZlFEbXl6M0VRQklfU3hydktmMnRFSUNuZGFwdjJrS05qUF9rUlVxXzNfeU9ZN2hKeHgwV1c2aHV3?oc=5",
+          "published_at": "2026-10-28T14:21:00+09:00"
         }
       ]
     },
     {
       "id": "iss_002030",
-      "rank": 35,
-      "prev_rank": 39,
+      "rank": 30,
+      "prev_rank": 35,
       "badge": "surge",
       "axis": "capital",
       "title": "xAI, 소음 갈등 속 주택 매입",
@@ -2274,7 +1900,7 @@
         "https://theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit"
       ],
       "impact": 3,
-      "score": 0.277,
+      "score": 0.247,
       "source_count": 4,
       "first_seen": "2026-10-28T19:59:00+09:00",
       "last_seen": "2026-10-29T00:06:01+09:00",
@@ -2309,8 +1935,8 @@
     },
     {
       "id": "iss_002098",
-      "rank": 36,
-      "prev_rank": 41,
+      "rank": 31,
+      "prev_rank": 36,
       "badge": "surge",
       "axis": "capital",
       "title": "플로리다주 아동음란 AI 고발",
@@ -2320,7 +1946,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.272,
+      "score": 0.243,
       "source_count": 3,
       "first_seen": "2026-10-29T03:06:03+09:00",
       "last_seen": "2026-10-29T05:28:48+09:00",
@@ -2348,10 +1974,80 @@
       ]
     },
     {
-      "id": "iss_001998",
-      "rank": 37,
-      "prev_rank": 24,
+      "id": "iss_002007",
+      "rank": 32,
+      "prev_rank": 22,
       "badge": null,
+      "axis": "llm",
+      "title": "리퀴드 AI, LFM3 모델 출시",
+      "subtitle": "온디바이스 멀티모달 브라우저 에이전트",
+      "summary": "리퀴드 AI가 기업 통제형 디바이스에서 직접 실행되는 새로운 LFM3 모델군을 공개했다. 이 모델은 로컬 환경에서 브라우저 에이전트, 음성 명령, 이미지 인식을 수행할 수 있도록 설계되었다. 비트랜스포머 기반의 고효율 설계를 통해 온디바이스에서 빠른 멀티모달 추론을 구현한다.",
+      "company_domain": "liquid.ai",
+      "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/wEKXxH6qGa7vmHjn5KA-W.png",
+      "image_tried": [
+        "https://huggingface.co/blog/LiquidAI/lfm3"
+      ],
+      "impact": 3,
+      "score": 0.234,
+      "source_count": 2,
+      "first_seen": "2026-10-28T02:16:52+09:00",
+      "last_seen": "2026-10-28T21:08:25+09:00",
+      "item_ids": [
+        "34f99a303c29e9ac",
+        "ed2f22cd2ecfd4a5"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Tech Times",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaXdMQUpDdHJKN2dDa2hQNVNCeWVMbHZXcENlRk5PSEI5QUFOa2JWZDRRaFBUOWhTVXluMm9PVy1Ea0t0QWMycTFkeTljazVQZjhUc1VsVHVIOXMxcVBoZVQyNzctSUtHNzJOTWE2RGpjdXJ1ckNqUjZGSjZsMnlBYWRxRUVKRmhpUlI5SGd1dGtVUDJvNHJBem1KWFFhNTliSWlaWEd1ZjJTUVBBR3NjbVRwbXdkb2FSZFJOZUlNcUF6S2FERGx5TzN0MWhNZmdGUkFBcDFvZw?oc=5",
+          "published_at": "2026-10-28T21:08:25+09:00"
+        },
+        {
+          "name": "Google News / Startup Fortune",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSnF6V0ZnNjA3cGdoclUydWxqRTd0LUhINzBkLUNHanpPZ3BPOXZVcVFXSlIyVnhDXzBOYnRnam9qeTlicEZRakw5eXdDVGF4V3FBaXJPYVdfSTE3QTdjT1dJNE9YVzFlQ0ozZFdmZlR1cFhrT2R1M3FRRnFxRVEwZ2JiRDZOYW4zSmpiUE9PTmYtNm8?oc=5",
+          "published_at": "2026-10-28T14:27:55+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002080",
+      "rank": 33,
+      "prev_rank": 33,
+      "badge": null,
+      "axis": "media",
+      "title": "깃허브 코파일럿 이미지 생성 탑재",
+      "subtitle": "IDE 환경 내 직접 이미지 생성 및 편집",
+      "summary": "깃허브가 코파일럿 내에서 이미지를 직접 생성하고 편집할 수 있는 기능을 새롭게 추가했다. 개발자는 별도의 그래픽 도구를 열지 않고 코드 편집기 안에서 UI 아이콘이나 앱 자산을 즉시 제작할 수 있다. 개발 작업 환경의 생산성을 한 단계 더 끌어올렸다.",
+      "company_domain": "github.com",
+      "image": null,
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.216,
+      "source_count": 2,
+      "first_seen": "2026-10-29T00:30:55+09:00",
+      "last_seen": "2026-10-29T04:28:26+09:00",
+      "item_ids": [
+        "5e49cd050ea7f624",
+        "bee1376a86b20fdd"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Visual Studio Magazine",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNVJ0Q3FIZnpuTUh4ZmtxRkFOTkZ4QzhCOWd5UlQtRklUbks4UWs3Q0U4RklEMUtDRW5hSXY2MXRCcTFid0d1QnVHbkVmUzZxZjNZbGk2V1owUHhta1dZMmxPbHdIY2dvTHoyMWxtVDFlcGw4QWI2TmJOeUVhbjRmMy1jRXN2OXlVX0hVdU5Hb2NOYkNPNTg2eWdiTnl2dnpyZ21ZeERyZ3JwR0x5TWFjUHNvUGJNTHJFX2FvM1B3RTVWNUxhbDBaNTV1Vm1PQQ?oc=5",
+          "published_at": "2026-10-29T04:28:26+09:00"
+        },
+        {
+          "name": "Google News / The GitHub Blog",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaVg1a1VOcjNZQjNIb2RDNGp3NWMzZC1hM0V4bUotblpWM1BZX0w4bkVxMTY2LW5hcjJjMVdSd1NKMlV3a2dlY29zb2lXY2xiMmZRNjBmWlFKcWRveGdFSlFtc1NPaVpWME5VNXN4alFmSEFWZVN3YnVRN2pmOEtmaHhMVl9pbVNJTnBLYlNMTQ?oc=5",
+          "published_at": "2026-10-29T00:30:55+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_001998",
+      "rank": 34,
+      "prev_rank": 37,
+      "badge": "surge",
       "axis": "hardware",
       "title": "TSMC CoWoS 패키징 가격 인상",
       "subtitle": "엔비디아 블랙웰 공급 부족에 최대 20% 인상 검토",
@@ -2360,7 +2056,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/F7GwETgbWz3VqDaj8UmXcJ-1920-80.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 0.225,
+      "score": 0.187,
       "source_count": 2,
       "first_seen": "2026-10-27T12:25:00+09:00",
       "last_seen": "2026-10-29T01:35:55+09:00",
@@ -2382,114 +2078,10 @@
       ]
     },
     {
-      "id": "iss_001959",
-      "rank": 38,
-      "prev_rank": 33,
-      "badge": null,
-      "axis": "capital",
-      "title": "메타, 950억弗 주식 발행 추진",
-      "subtitle": "AI 인프라 및 초지능 구축 실탄 확보",
-      "summary": "메타가 AI 인프라 확충과 초지능 개발을 위해 최대 950억 달러 규모의 주식 발행을 추진한다. 엔비디아와 AMD, 브로드컴 등 주요 반도체 공급사들이 최대 50억 달러 규모의 지분 참여를 검토 중인 것으로 알려졌다. 이는 빅테크의 사상 최대 규모 AI 설비투자 조달 계획으로 시장의 주목을 받고 있다.",
-      "company_domain": "meta.com",
-      "image": "https://image.cnbcfm.com/api/v1/image/108039168-1745940414655-108039168-17272881332024-09-25t181332z_2097001546_rc2u7aaih91n_rtrmadp_0_meta-platforms-virtual-reality.jpg?v=1745940424&w=1920&h=1080",
-      "image_tried": [
-        "https://cnbc.com/2026/10/26/meta-stock-offering-ai.html"
-      ],
-      "impact": 5,
-      "score": 0.214,
-      "source_count": 3,
-      "first_seen": "2026-10-24T23:00:57+09:00",
-      "last_seen": "2026-10-28T23:13:00+09:00",
-      "item_ids": [
-        "4c1b2d6f5c709752",
-        "f29738274fdfe50e",
-        "670a8e0baed79000"
-      ],
-      "sources": [
-        {
-          "name": "Google News / 24/7 Wall St.",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRTFTY2JHT05UZFVEX0NzWEtjclJqQTIzdDV2YVlPY1dGRk5jTDJwVGRnUGszYjdyN25fNEFuN1hDNXRiTnE1TUdFZWxNNGRBYXJubkc0cmY3Y3RFbk9lQkFJdUVkN3dYMDQtN2ZwN01tTzdPSGxScW9yeExNbDRfWGZXUmZnd1I2czlvbExFZ0E0cmdxMl9qek5obVI4cWx5N2tOdVlKWldzTHk4ZDY1T0Q5WmtoQWUzM0l2S1hZNEdIWWNqbnBlRHZKMA?oc=5",
-          "published_at": "2026-10-28T23:13:00+09:00"
-        },
-        {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcmNQeVp5WVozNE16UndTck1Dclp4QWRZSDZnWjNLNlVuTURRa2t2amFxb3FNSWY5YXRYRE85OUdKYTlkem5CX0gwU0toLWdzRXNhTmF3dWpuMWxvdHJVXzA0WVlXOUxqdjJ1QThZSFB2dmdUWjBoMGVvZlo3QzN5c0EybTBfb0VoVmdFT1dxWU1vVjl4dkYw?oc=5",
-          "published_at": "2026-10-28T14:12:01+09:00"
-        },
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/27/nvidia-amd-to-buy-4b-in-meta-shares-as-part-of-expanded-chip-partnerships",
-          "published_at": "2026-10-28T06:12:55+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002081",
-      "rank": 39,
-      "prev_rank": 46,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "클라우데라 엔비디아 제휴 확대",
-      "subtitle": "미스트랄·네오포제이 연계 패키지 공개",
-      "summary": "클라우데라가 엔비디아 기술 기반의 사전 구성된 엔터프라이즈 AI 애플리케이션을 발표했다. 미스트랄 AI 및 네오포제이와의 파트너십을 확장해 기업 고객이 AI 프로젝트를 프로덕션 환경으로 빠르게 전환할 수 있도록 지원한다. 보안과 거버넌스가 결합된 온프레미스 AI 구축을 돕는다.",
-      "company_domain": "cloudera.com",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Cloudera-Evolve26.jpg",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.214,
-      "source_count": 1,
-      "first_seen": "2026-10-29T04:21:09+09:00",
-      "last_seen": "2026-10-29T04:21:09+09:00",
-      "item_ids": [
-        "4d7aa49dcdd27a63"
-      ],
-      "sources": [
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/28/cloudera-expands-its-ai-ecosystem-with-partnerships-and-packaged-blueprints",
-          "published_at": "2026-10-29T04:21:09+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001763",
-      "rank": 40,
-      "prev_rank": 44,
-      "badge": "surge",
-      "axis": "hardware",
-      "title": "엔비디아, GTC 베를린서 AI 인프라 확장 발표",
-      "subtitle": "RTX 스파크·아이작 로보틱스 및 유럽 생태계 협력",
-      "summary": "엔비디아가 독일 GTC 베를린 행사에서 개인 에이전트용 하드웨어 RTX 스파크와 차세대 아이작 로보틱스 플랫폼을 발표했다. 레드햇과의 에이전트 보안 협력 및 과학 계산용 cuDSS 라이브러리 정식 출시 등 전방위적인 생태계 확장을 공개했다. 2028년까지 6개 주요 공급사와 협력해 글로벌 제조 역량을 확대할 계획이다.",
-      "company_domain": "nvidia.com",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2024/05/image_2024-05-06_104934594.png",
-      "image_tried": [],
-      "impact": 4,
-      "score": 0.211,
-      "source_count": 2,
-      "first_seen": "2026-10-20T23:15:10+09:00",
-      "last_seen": "2026-10-29T00:00:46+09:00",
-      "item_ids": [
-        "36eb3dda48d9ab1e",
-        "480951aa6eca3733"
-      ],
-      "sources": [
-        {
-          "name": "NVIDIA Newsroom",
-          "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games",
-          "published_at": "2026-10-29T00:00:46+09:00"
-        },
-        {
-          "name": "Google News / TechNave",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX3FrRVREcXQ2YURuekF0bDd6YnVCSTNpOG5DMWVZVDRyd0txa1lxWk5VMjdmdGZvcm5wV0tjc2xqclJZUUF6ejJxS2V0bmV1dEV0QWNYNDNCY3MtTW5RUzl6b2RZMWEtNzlfZlhrYWxabU1MM21QTEd3NXB6bkhOUlVYSzBQbWo4MW1aV2Fzem1EMkZ2VEdFR3NLLXZ2Uk44am5jd2hqbk04cndaNDNJckZGQklJU1pYMFlIWklUUWdYSUY5U0pfR2hNX1JSTXhPZFNXQUhrajZVTnlOOU5UbkdWQQ?oc=5",
-          "published_at": "2026-10-28T16:26:15+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_001903",
-      "rank": 41,
-      "prev_rank": 26,
-      "badge": null,
+      "rank": 35,
+      "prev_rank": 41,
+      "badge": "surge",
       "axis": "capital",
       "title": "스페이스X, 400억弗 칩 대출 난항",
       "subtitle": "엔비디아 AI 가속기 구매 자금 조달",
@@ -2500,7 +2092,7 @@
         "https://theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari"
       ],
       "impact": 4,
-      "score": 0.208,
+      "score": 0.186,
       "source_count": 2,
       "first_seen": "2026-10-23T04:45:00+09:00",
       "last_seen": "2026-10-29T07:11:46+09:00",
@@ -2522,9 +2114,71 @@
       ]
     },
     {
+      "id": "iss_002081",
+      "rank": 36,
+      "prev_rank": 39,
+      "badge": "surge",
+      "axis": "llm",
+      "title": "클라우데라 엔비디아 제휴 확대",
+      "subtitle": "미스트랄·네오포제이 연계 패키지 공개",
+      "summary": "클라우데라가 엔비디아 기술 기반의 사전 구성된 엔터프라이즈 AI 애플리케이션을 발표했다. 미스트랄 AI 및 네오포제이와의 파트너십을 확장해 기업 고객이 AI 프로젝트를 프로덕션 환경으로 빠르게 전환할 수 있도록 지원한다. 보안과 거버넌스가 결합된 온프레미스 AI 구축을 돕는다.",
+      "company_domain": "cloudera.com",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Cloudera-Evolve26.jpg",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.179,
+      "source_count": 1,
+      "first_seen": "2026-10-29T04:21:09+09:00",
+      "last_seen": "2026-10-29T04:21:09+09:00",
+      "item_ids": [
+        "4d7aa49dcdd27a63"
+      ],
+      "sources": [
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/10/28/cloudera-expands-its-ai-ecosystem-with-partnerships-and-packaged-blueprints",
+          "published_at": "2026-10-29T04:21:09+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_001763",
+      "rank": 37,
+      "prev_rank": 40,
+      "badge": "surge",
+      "axis": "hardware",
+      "title": "엔비디아, GTC 베를린서 AI 인프라 확장 발표",
+      "subtitle": "RTX 스파크·아이작 로보틱스 및 유럽 생태계 협력",
+      "summary": "엔비디아가 독일 GTC 베를린 행사에서 개인 에이전트용 하드웨어 RTX 스파크와 차세대 아이작 로보틱스 플랫폼을 발표했다. 레드햇과의 에이전트 보안 협력 및 과학 계산용 cuDSS 라이브러리 정식 출시 등 전방위적인 생태계 확장을 공개했다. 2028년까지 6개 주요 공급사와 협력해 글로벌 제조 역량을 확대할 계획이다.",
+      "company_domain": "nvidia.com",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2024/05/image_2024-05-06_104934594.png",
+      "image_tried": [],
+      "impact": 4,
+      "score": 0.176,
+      "source_count": 2,
+      "first_seen": "2026-10-20T23:15:10+09:00",
+      "last_seen": "2026-10-29T00:00:46+09:00",
+      "item_ids": [
+        "36eb3dda48d9ab1e",
+        "480951aa6eca3733"
+      ],
+      "sources": [
+        {
+          "name": "NVIDIA Newsroom",
+          "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games",
+          "published_at": "2026-10-29T00:00:46+09:00"
+        },
+        {
+          "name": "Google News / TechNave",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX3FrRVREcXQ2YURuekF0bDd6YnVCSTNpOG5DMWVZVDRyd0txa1lxWk5VMjdmdGZvcm5wV0tjc2xqclJZUUF6ejJxS2V0bmV1dEV0QWNYNDNCY3MtTW5RUzl6b2RZMWEtNzlfZlhrYWxabU1MM21QTEd3NXB6bkhOUlVYSzBQbWo4MW1aV2Fzem1EMkZ2VEdFR3NLLXZ2Uk44am5jd2hqbk04cndaNDNJckZGQklJU1pYMFlIWklUUWdYSUY5U0pfR2hNX1JSTXhPZFNXQUhrajZVTnlOOU5UbkdWQQ?oc=5",
+          "published_at": "2026-10-28T16:26:15+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002046",
-      "rank": 42,
-      "prev_rank": 48,
+      "rank": 38,
+      "prev_rank": 42,
       "badge": "surge",
       "axis": "llm",
       "title": "MS 스마트TV 코파일럿 지원 중단",
@@ -2536,7 +2190,7 @@
         "https://theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
       ],
       "impact": 2,
-      "score": 0.208,
+      "score": 0.174,
       "source_count": 1,
       "first_seen": "2026-10-29T03:36:26+09:00",
       "last_seen": "2026-10-29T03:36:26+09:00",
@@ -2553,8 +2207,8 @@
     },
     {
       "id": "iss_001989",
-      "rank": 43,
-      "prev_rank": 55,
+      "rank": 39,
+      "prev_rank": 43,
       "badge": "surge",
       "axis": "hardware",
       "title": "엔비디아 패키징·기판 2028년 생산선 확보",
@@ -2564,7 +2218,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/zkoCNa9uUdXnRAcBKxyasn-1920-80.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 0.206,
+      "score": 0.171,
       "source_count": 2,
       "first_seen": "2026-10-26T16:13:00+09:00",
       "last_seen": "2026-10-28T23:20:48+09:00",
@@ -2586,93 +2240,9 @@
       ]
     },
     {
-      "id": "iss_002041",
-      "rank": 44,
-      "prev_rank": 50,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "구글 안드로이드 스튜디오 개방",
-      "subtitle": "클로드·코덱스 등 외부 코딩 AI 연동 지원",
-      "summary": "구글이 안드로이드 스튜디오에 타사 AI 에이전트를 연동할 수 있는 기능을 도입했다. 앤스로픽의 클로드와 오픈AI의 코덱스를 비롯해 40개 이상의 외부 코딩 에이전트를 지원한다. 새 터미널 도구를 통해 UI 개발 작업을 최대 77% 빠르게 마칠 수 있도록 지원한다.",
-      "company_domain": "google.com",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.196,
-      "source_count": 1,
-      "first_seen": "2026-10-29T01:59:59+09:00",
-      "last_seen": "2026-10-29T01:59:59+09:00",
-      "item_ids": [
-        "ff13d1a5478f1c05"
-      ],
-      "sources": [
-        {
-          "name": "The Decoder",
-          "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis",
-          "published_at": "2026-10-29T01:59:59+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002062",
-      "rank": 45,
-      "prev_rank": 51,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "H2O.ai 예측 모델 TimeH2O 공개",
-      "subtitle": "fev 벤치마크 1위 기록 시계열 기초 모델",
-      "summary": "H2O.ai가 시계열 데이터 예측을 위한 기초 모델 TimeH2O-v1을 발표했다. 종합 시계열 벤치마크 fev-bench에서 최고 성능 점수를 기록하며 우수성을 입증했다. 금융, 공급망, 물류 등 다양한 산업 분야에서 미래 수요를 정밀하게 예측하는 데 활용될 전망이다.",
-      "company_domain": "h2o.ai",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.192,
-      "source_count": 1,
-      "first_seen": "2026-10-29T01:30:00+09:00",
-      "last_seen": "2026-10-29T01:30:00+09:00",
-      "item_ids": [
-        "c2dba8429aafd091"
-      ],
-      "sources": [
-        {
-          "name": "Google News / IT Brief UK",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcEdyMVVFRHNiWFdPWE9fdkh5cXNpOHNCQ0pqcTh0ajhDbjlFZ2VfWDdwUEZ6R0IzaEhRRm5uYVlhZ0JHQ0VmY252UXYycnFNMGptSjBKWE00TXh6QkEyRDdBeHdEOU04TlE3NlcyR1BWZ1FYQU5abmhndVhLUEQ2T1FielNXbG9FMG0zekJOTUk?oc=5",
-          "published_at": "2026-10-29T01:30:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002095",
-      "rank": 46,
-      "prev_rank": 52,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "깃허브 400만 코어 추가 증설",
-      "subtitle": "AI 자동 생성 코드 폭증에 장애 방지 조치",
-      "summary": "깃허브가 AI 코딩 도구 확산으로 급증한 대량의 자동 생성 코드 업로드를 감당하기 위해 인프라에 400만 코어를 긴급 증설했다. 사이트 붕괴를 막고 서비스 연속성을 유지하기 위해 웹사이트 아키텍처를 전면 재설계했다. 개발 생태계가 AI 슬롭 트래픽으로 인한 인프라 위기를 겪고 있다.",
-      "company_domain": "github.com",
-      "image": "https://image.theregister.com/?imageId=1618985&width=800",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.192,
-      "source_count": 1,
-      "first_seen": "2026-10-29T01:30:00+09:00",
-      "last_seen": "2026-10-29T01:30:00+09:00",
-      "item_ids": [
-        "8d03fb243de87e75"
-      ],
-      "sources": [
-        {
-          "name": "The Register",
-          "url": "https://theregister.com/ai-and-ml/2026/10/28/github-powering-up-four-million-extra-cores-to-stop-its-service-going-down/5305863",
-          "published_at": "2026-10-29T01:30:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002045",
-      "rank": 47,
-      "prev_rank": 53,
+      "rank": 40,
+      "prev_rank": 47,
       "badge": "surge",
       "axis": "capital",
       "title": "美 법무부 허깅페이스 인수 조사",
@@ -2682,7 +2252,7 @@
       "image": null,
       "image_tried": [],
       "impact": 4,
-      "score": 0.188,
+      "score": 0.168,
       "source_count": 2,
       "first_seen": "2026-10-29T04:02:16+09:00",
       "last_seen": "2026-10-29T04:31:03+09:00",
@@ -2704,51 +2274,93 @@
       ]
     },
     {
-      "id": "iss_001881",
-      "rank": 48,
-      "prev_rank": 34,
-      "badge": null,
-      "axis": "capital",
-      "title": "AI 인프라 담보 부채 시장 1조 달러 전망",
-      "subtitle": "블랙스톤·브로드컴 칩 담보 금융 주도",
-      "summary": "AI 가속기 칩을 담보로 제공하는 글로벌 부채 시장 규모가 1조 달러에 이를 것이라는 전망이 나왔다. 블랙스톤 등 글로벌 사모펀드들이 반도체 담보 대출에 대규모 자금을 공급하고 있으며 엔비디아와 브로드컴도 백스톱 지원에 나섰다. AI 설비 투자 급증에 따라 크레디트 시장 전반으로 리스크가 확산되는 추세다.",
-      "company_domain": "blackstone.com",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/55591561486_34813d39be_c.jpg?w=799",
-      "image_tried": [
-        "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown"
-      ],
+      "id": "iss_002041",
+      "rank": 41,
+      "prev_rank": 44,
+      "badge": "surge",
+      "axis": "llm",
+      "title": "구글 안드로이드 스튜디오 개방",
+      "subtitle": "클로드·코덱스 등 외부 코딩 AI 연동 지원",
+      "summary": "구글이 안드로이드 스튜디오에 타사 AI 에이전트를 연동할 수 있는 기능을 도입했다. 앤스로픽의 클로드와 오픈AI의 코덱스를 비롯해 40개 이상의 외부 코딩 에이전트를 지원한다. 새 터미널 도구를 통해 UI 개발 작업을 최대 77% 빠르게 마칠 수 있도록 지원한다.",
+      "company_domain": "google.com",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg",
+      "image_tried": [],
       "impact": 3,
-      "score": 0.185,
-      "source_count": 3,
-      "first_seen": "2026-10-22T07:51:22+09:00",
-      "last_seen": "2026-10-28T19:30:00+09:00",
+      "score": 0.164,
+      "source_count": 1,
+      "first_seen": "2026-10-29T01:59:59+09:00",
+      "last_seen": "2026-10-29T01:59:59+09:00",
       "item_ids": [
-        "93a836d9e04316ef",
-        "a449db96a1cf9c37",
-        "a774e5d793a79ea2"
+        "ff13d1a5478f1c05"
       ],
       "sources": [
         {
-          "name": "Google News / Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeDN3WEJNRHl0M2xSeFp5OWdCSHBkVm5rU3gydlBLekZsYzJrTTRGTEE2eDFONTFuYmh6ZEctaE1lR0F1UDNTZXVpaHFRSHU2WHFJVS1mT0FfZXJRYnhvVzYyN3VWcHhRQ0U0akhIZ1JLS19ma2U5MVNZRGNQTkE3ZFRrM043MldiODlac1Z3TVMwX3ZPVjNZZ0hRcDRNaXB4cmpZZFlIbi1yUjEtTnNsQg?oc=5",
-          "published_at": "2026-10-28T19:30:00+09:00"
-        },
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis",
+          "published_at": "2026-10-29T01:59:59+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002062",
+      "rank": 42,
+      "prev_rank": 45,
+      "badge": "surge",
+      "axis": "llm",
+      "title": "H2O.ai 예측 모델 TimeH2O 공개",
+      "subtitle": "fev 벤치마크 1위 기록 시계열 기초 모델",
+      "summary": "H2O.ai가 시계열 데이터 예측을 위한 기초 모델 TimeH2O-v1을 발표했다. 종합 시계열 벤치마크 fev-bench에서 최고 성능 점수를 기록하며 우수성을 입증했다. 금융, 공급망, 물류 등 다양한 산업 분야에서 미래 수요를 정밀하게 예측하는 데 활용될 전망이다.",
+      "company_domain": "h2o.ai",
+      "image": null,
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.161,
+      "source_count": 1,
+      "first_seen": "2026-10-29T01:30:00+09:00",
+      "last_seen": "2026-10-29T01:30:00+09:00",
+      "item_ids": [
+        "c2dba8429aafd091"
+      ],
+      "sources": [
         {
-          "name": "Google News / Bloomberg",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWG4yWWNoTk85a0VzNWR5dnhLNTZUU3RmTVJWSnNJWmZta1FURTYxdXExMmR3ekxwVmRiUU9LaW40ellxb0JFWDJ1RHQ0c3JCSFlxSEF5UmZWNWJ5d2cyaVR5Vl9LMG1EODd2TjhuNnloRXotNzJDZGp5U3V0TXBLYTdhVW44TTlfdVFZUXRPS0ZWRVBQaDFHWVJZWkpqbE1MNUcydEZPckVqU1VBOWs4Tw?oc=5",
-          "published_at": "2026-10-28T14:04:00+09:00"
-        },
+          "name": "Google News / IT Brief UK",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcEdyMVVFRHNiWFdPWE9fdkh5cXNpOHNCQ0pqcTh0ajhDbjlFZ2VfWDdwUEZ6R0IzaEhRRm5uYVlhZ0JHQ0VmY252UXYycnFNMGptSjBKWE00TXh6QkEyRDdBeHdEOU04TlE3NlcyR1BWZ1FYQU5abmhndVhLUEQ2T1FielNXbG9FMG0zekJOTUk?oc=5",
+          "published_at": "2026-10-29T01:30:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002095",
+      "rank": 43,
+      "prev_rank": 46,
+      "badge": "surge",
+      "axis": "llm",
+      "title": "깃허브 400만 코어 추가 증설",
+      "subtitle": "AI 자동 생성 코드 폭증에 장애 방지 조치",
+      "summary": "깃허브가 AI 코딩 도구 확산으로 급증한 대량의 자동 생성 코드 업로드를 감당하기 위해 인프라에 400만 코어를 긴급 증설했다. 사이트 붕괴를 막고 서비스 연속성을 유지하기 위해 웹사이트 아키텍처를 전면 재설계했다. 개발 생태계가 AI 슬롭 트래픽으로 인한 인프라 위기를 겪고 있다.",
+      "company_domain": "github.com",
+      "image": "https://image.theregister.com/?imageId=1618985&width=800",
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.161,
+      "source_count": 1,
+      "first_seen": "2026-10-29T01:30:00+09:00",
+      "last_seen": "2026-10-29T01:30:00+09:00",
+      "item_ids": [
+        "8d03fb243de87e75"
+      ],
+      "sources": [
         {
-          "name": "Google News / Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFNhUGZLTXpFb3Vqemplbm01M2N6WllRUVdER183d0VLVWU3ZkJYdmRrcFlCcFVuRWpkSXV3Y1J0dFJfbHJOc1lROU5EOWlzYmloTUNXNmN2OFl6Q0VPQkZsSHBmUnBEcGh0dk51REd1VXM1Mnh2a0RLMWtzYTlFdmxXU1JIdGxKT3k1ZGl0NnJ3SW9n?oc=5",
-          "published_at": "2026-10-28T05:09:29+09:00"
+          "name": "The Register",
+          "url": "https://theregister.com/ai-and-ml/2026/10/28/github-powering-up-four-million-extra-cores-to-stop-its-service-going-down/5305863",
+          "published_at": "2026-10-29T01:30:00+09:00"
         }
       ]
     },
     {
       "id": "iss_001872",
-      "rank": 49,
-      "prev_rank": 54,
+      "rank": 44,
+      "prev_rank": 49,
       "badge": "surge",
       "axis": "llm",
       "title": "문샷 AI, 키미 K3.1 모델 공개 임박",
@@ -2758,7 +2370,7 @@
       "image": "https://the-decoder.com/wp-content/uploads/2026/10/kimi_k31pro.png",
       "image_tried": [],
       "impact": 3,
-      "score": 0.182,
+      "score": 0.152,
       "source_count": 1,
       "first_seen": "2026-10-23T18:03:03+09:00",
       "last_seen": "2026-10-29T00:04:43+09:00",
@@ -2774,9 +2386,37 @@
       ]
     },
     {
+      "id": "iss_002050",
+      "rank": 45,
+      "prev_rank": 18,
+      "badge": null,
+      "axis": "llm",
+      "title": "델 파워프로텍트 신규 솔루션",
+      "subtitle": "침해 계정 복구 및 양자 내성 저장 지원",
+      "summary": "델 테크놀로지스가 파워프로텍트 라인업을 확장해 침해된 신원 관리 시스템을 복구하는 신규 소프트웨어를 발표했다. 공격 발생 후 권한 인프라를 신뢰 상태로 되돌리는 기능과 함께 파워프로텍트 AI 어시스턴트 기능이 보강됐다. 양자 내성 암호화 스토리지와 AI 환경 데이터 보호를 함께 지원한다.",
+      "company_domain": "dell.com",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/delltechnologies.png",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.148,
+      "source_count": 1,
+      "first_seen": "2026-10-27T21:00:28+09:00",
+      "last_seen": "2026-10-28T23:20:57+09:00",
+      "item_ids": [
+        "f2717a4c9cc76f8f"
+      ],
+      "sources": [
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/10/28/dell-connects-ai-trust-proving-data-recocvery-aicybersecurityandresiliencesummit",
+          "published_at": "2026-10-28T23:20:57+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002059",
-      "rank": 50,
-      "prev_rank": 64,
+      "rank": 46,
+      "prev_rank": 50,
       "badge": "surge",
       "axis": "hardware",
       "title": "이베이에 6000만弗 AI 슈퍼컴",
@@ -2786,7 +2426,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/PwWFj2a79ZDdEEQcHD4HbX-1920-80.jpg",
       "image_tried": [],
       "impact": 2,
-      "score": 0.178,
+      "score": 0.148,
       "source_count": 2,
       "first_seen": "2026-10-28T19:30:00+09:00",
       "last_seen": "2026-10-28T19:30:00+09:00",
@@ -2808,93 +2448,9 @@
       ]
     },
     {
-      "id": "iss_002066",
-      "rank": 51,
-      "prev_rank": 56,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "버타나 에이전트 협업 기능 추가",
-      "subtitle": "이기종 AI 에이전트 합동 장애 대응",
-      "summary": "IT 옵저버빌리티 기업 버타나가 자사 플랫폼에 타사 에이전트를 함께 호출할 수 있는 관리 체계를 탑재했다. 시스템 장애 발생 시 서로 다른 공급자의 AI 에이전트들이 통합 환경에서 데이터를 주고받으며 문제를 해결한다. 파편화된 엔터프라이즈 에이전트 도입 문제를 해소한다.",
-      "company_domain": "virtana.com",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/virtana.png",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.168,
-      "source_count": 1,
-      "first_seen": "2026-10-28T22:00:52+09:00",
-      "last_seen": "2026-10-28T22:00:52+09:00",
-      "item_ids": [
-        "4b9ffdbfe321b3cc"
-      ],
-      "sources": [
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/28/virtana-lets-its-ai-agents-pull-in-agents-from-other-vendors-to-work-it-incidents",
-          "published_at": "2026-10-28T22:00:52+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002067",
-      "rank": 52,
-      "prev_rank": 57,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "몬테카를로 감시 에이전트 베이즈",
-      "subtitle": "자율 AI 에이전트 오류 실시간 수정",
-      "summary": "데이터 가시성 플랫폼 기업 몬테카를로가 자율 에이전트 전용 모니터링 에이전트 베이즈를 공개했다. 사내에 급증한 수많은 AI 에이전트들의 활동과 데이터 파이프라인 오류를 자율적으로 감시하고 교정한다. 엔지니어의 관리 한계를 극복하고 에이전트 신뢰도를 높인다.",
-      "company_domain": "montecarlodata.com",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Monte-Carlo-AI-agent-trust.png",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.168,
-      "source_count": 1,
-      "first_seen": "2026-10-28T22:00:50+09:00",
-      "last_seen": "2026-10-28T22:00:50+09:00",
-      "item_ids": [
-        "8f89234463f48768"
-      ],
-      "sources": [
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/28/monte-carlo-data-launches-bayes-an-ai-agent-for-autonomously-monitoring-and-fixing-autonomous-agents",
-          "published_at": "2026-10-28T22:00:50+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002068",
-      "rank": 53,
-      "prev_rank": 58,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "제디파이 데이터 에이전츠 론칭",
-      "subtitle": "자연어 지시형 기업 분석 에이전트",
-      "summary": "엔터프라이즈 컨텍스트 플랫폼 스타트업 제디파이가 데이터 에이전츠 서비스를 공식 출시했다. 사용자가 자연어로 요구 사항을 입력하면 자율 AI 분석가가 기업 데이터를 분석해 맞춤 리포트를 생성한다. 기존 비즈니스 인텔리전스 소프트웨어의 수작업 인터페이스 한계를 개선했다.",
-      "company_domain": "jedify.com",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/jedify.png",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.168,
-      "source_count": 1,
-      "first_seen": "2026-10-28T22:00:22+09:00",
-      "last_seen": "2026-10-28T22:00:22+09:00",
-      "item_ids": [
-        "294a6979cf217bfd"
-      ],
-      "sources": [
-        {
-          "name": "SiliconANGLE",
-          "url": "https://siliconangle.com/2026/10/28/jedify-formally-launches-data-agents-for-building-ai-analysts-in-plain-language",
-          "published_at": "2026-10-28T22:00:22+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002100",
-      "rank": 54,
-      "prev_rank": 59,
+      "rank": 47,
+      "prev_rank": 54,
       "badge": "surge",
       "axis": "capital",
       "title": "애플, 오픈AI 소송 정보요청 승인",
@@ -2904,7 +2460,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.163,
+      "score": 0.146,
       "source_count": 2,
       "first_seen": "2026-10-28T20:25:00+09:00",
       "last_seen": "2026-10-29T00:47:49+09:00",
@@ -2926,10 +2482,166 @@
       ]
     },
     {
+      "id": "iss_002027",
+      "rank": 48,
+      "prev_rank": 28,
+      "badge": null,
+      "axis": "capital",
+      "title": "앤스로픽, 바이오 스타트업 전격 인수",
+      "subtitle": "클로드 기반 1인 신약개발사 흡수",
+      "summary": "앤스로픽이 클로드를 활용해 11개 연구소를 조율하던 1인 바이오 스타트업을 인수했다. 익명의 트위터리안이 스텔스로 운영하던 이번 피인수사를 통해 AI 신약 개발 역량을 직접 내재화할 방침이다. 앤스로픽은 클로드를 통한 신약 개발 가속 성과를 공개하며 생명과학 영역으로 확장을 서두르고 있다.",
+      "company_domain": "anthropic.com",
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg",
+      "image_tried": [
+        "https://anthropic.com/research/early-progress-drug-development"
+      ],
+      "impact": 3,
+      "score": 0.141,
+      "source_count": 2,
+      "first_seen": "2026-10-28T05:26:09+09:00",
+      "last_seen": "2026-10-28T23:58:02+09:00",
+      "item_ids": [
+        "afbd041e13e3032f",
+        "98b195d3e5862e69"
+      ],
+      "sources": [
+        {
+          "name": "Google News / The Profile | Polina Pompliano",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4xZHlTbUpnQmlqVURjRV9PZjdtUUJZeFc1T280VVIzY1pXQ01NZW00SVJJWWZMSHJNbnh5TlhoaVpYZm1JQXlXSDdYV2Iyb3hEYnRCUG9scEVNOXlHaFFRdUZMQUYxTTc3VHZEZ3VlSHRTckF2?oc=5",
+          "published_at": "2026-10-28T23:58:02+09:00"
+        },
+        {
+          "name": "Google News / Quartz",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XY3FHSmo5aHdLVjQ1dTVYdUx5Vm5BYmJJX3JjVnNuZDgwRHN1T28zUTlqQ2w0VHJMU3pDblIzV2QzVmh1NnJrWjc5di1QVnhQaXFaNzMySDAzXzF6MWZleGtSU1drVUwtM2hiZmRmdTk3SG5Ea3F1UlBXOFJNWlU?oc=5",
+          "published_at": "2026-10-28T21:50:39+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002066",
+      "rank": 49,
+      "prev_rank": 51,
+      "badge": null,
+      "axis": "llm",
+      "title": "버타나 에이전트 협업 기능 추가",
+      "subtitle": "이기종 AI 에이전트 합동 장애 대응",
+      "summary": "IT 옵저버빌리티 기업 버타나가 자사 플랫폼에 타사 에이전트를 함께 호출할 수 있는 관리 체계를 탑재했다. 시스템 장애 발생 시 서로 다른 공급자의 AI 에이전트들이 통합 환경에서 데이터를 주고받으며 문제를 해결한다. 파편화된 엔터프라이즈 에이전트 도입 문제를 해소한다.",
+      "company_domain": "virtana.com",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/virtana.png",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.14,
+      "source_count": 1,
+      "first_seen": "2026-10-28T22:00:52+09:00",
+      "last_seen": "2026-10-28T22:00:52+09:00",
+      "item_ids": [
+        "4b9ffdbfe321b3cc"
+      ],
+      "sources": [
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/10/28/virtana-lets-its-ai-agents-pull-in-agents-from-other-vendors-to-work-it-incidents",
+          "published_at": "2026-10-28T22:00:52+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002067",
+      "rank": 50,
+      "prev_rank": 52,
+      "badge": null,
+      "axis": "llm",
+      "title": "몬테카를로 감시 에이전트 베이즈",
+      "subtitle": "자율 AI 에이전트 오류 실시간 수정",
+      "summary": "데이터 가시성 플랫폼 기업 몬테카를로가 자율 에이전트 전용 모니터링 에이전트 베이즈를 공개했다. 사내에 급증한 수많은 AI 에이전트들의 활동과 데이터 파이프라인 오류를 자율적으로 감시하고 교정한다. 엔지니어의 관리 한계를 극복하고 에이전트 신뢰도를 높인다.",
+      "company_domain": "montecarlodata.com",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Monte-Carlo-AI-agent-trust.png",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.14,
+      "source_count": 1,
+      "first_seen": "2026-10-28T22:00:50+09:00",
+      "last_seen": "2026-10-28T22:00:50+09:00",
+      "item_ids": [
+        "8f89234463f48768"
+      ],
+      "sources": [
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/10/28/monte-carlo-data-launches-bayes-an-ai-agent-for-autonomously-monitoring-and-fixing-autonomous-agents",
+          "published_at": "2026-10-28T22:00:50+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002068",
+      "rank": 51,
+      "prev_rank": 53,
+      "badge": null,
+      "axis": "llm",
+      "title": "제디파이 데이터 에이전츠 론칭",
+      "subtitle": "자연어 지시형 기업 분석 에이전트",
+      "summary": "엔터프라이즈 컨텍스트 플랫폼 스타트업 제디파이가 데이터 에이전츠 서비스를 공식 출시했다. 사용자가 자연어로 요구 사항을 입력하면 자율 AI 분석가가 기업 데이터를 분석해 맞춤 리포트를 생성한다. 기존 비즈니스 인텔리전스 소프트웨어의 수작업 인터페이스 한계를 개선했다.",
+      "company_domain": "jedify.com",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/jedify.png",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.14,
+      "source_count": 1,
+      "first_seen": "2026-10-28T22:00:22+09:00",
+      "last_seen": "2026-10-28T22:00:22+09:00",
+      "item_ids": [
+        "294a6979cf217bfd"
+      ],
+      "sources": [
+        {
+          "name": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/10/28/jedify-formally-launches-data-agents-for-building-ai-analysts-in-plain-language",
+          "published_at": "2026-10-28T22:00:22+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_001959",
+      "rank": 52,
+      "prev_rank": 38,
+      "badge": null,
+      "axis": "capital",
+      "title": "메타, 950억弗 주식 발행 추진",
+      "subtitle": "AI 인프라 및 초지능 구축 실탄 확보",
+      "summary": "메타가 AI 인프라 확충과 초지능 개발을 위해 최대 950억 달러 규모의 주식 발행을 추진한다. 엔비디아와 AMD, 브로드컴 등 주요 반도체 공급사들이 최대 50억 달러 규모의 지분 참여를 검토 중인 것으로 알려졌다. 이는 빅테크의 사상 최대 규모 AI 설비투자 조달 계획으로 시장의 주목을 받고 있다.",
+      "company_domain": "meta.com",
+      "image": "https://image.cnbcfm.com/api/v1/image/108039168-1745940414655-108039168-17272881332024-09-25t181332z_2097001546_rc2u7aaih91n_rtrmadp_0_meta-platforms-virtual-reality.jpg?v=1745940424&w=1920&h=1080",
+      "image_tried": [
+        "https://cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+      ],
+      "impact": 5,
+      "score": 0.137,
+      "source_count": 2,
+      "first_seen": "2026-10-24T23:00:57+09:00",
+      "last_seen": "2026-10-28T23:13:00+09:00",
+      "item_ids": [
+        "f29738274fdfe50e",
+        "670a8e0baed79000"
+      ],
+      "sources": [
+        {
+          "name": "Google News / 24/7 Wall St.",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRTFTY2JHT05UZFVEX0NzWEtjclJqQTIzdDV2YVlPY1dGRk5jTDJwVGRnUGszYjdyN25fNEFuN1hDNXRiTnE1TUdFZWxNNGRBYXJubkc0cmY3Y3RFbk9lQkFJdUVkN3dYMDQtN2ZwN01tTzdPSGxScW9yeExNbDRfWGZXUmZnd1I2czlvbExFZ0E0cmdxMl9qek5obVI4cWx5N2tOdVlKWldzTHk4ZDY1T0Q5WmtoQWUzM0l2S1hZNEdIWWNqbnBlRHZKMA?oc=5",
+          "published_at": "2026-10-28T23:13:00+09:00"
+        },
+        {
+          "name": "Google News / Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcmNQeVp5WVozNE16UndTck1Dclp4QWRZSDZnWjNLNlVuTURRa2t2amFxb3FNSWY5YXRYRE85OUdKYTlkem5CX0gwU0toLWdzRXNhTmF3dWpuMWxvdHJVXzA0WVlXOUxqdjJ1QThZSFB2dmdUWjBoMGVvZlo3QzN5c0EybTBfb0VoVmdFT1dxWU1vVjl4dkYw?oc=5",
+          "published_at": "2026-10-28T14:12:01+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_001983",
-      "rank": 55,
-      "prev_rank": 60,
-      "badge": "surge",
+      "rank": 53,
+      "prev_rank": 55,
+      "badge": null,
       "axis": "llm",
       "title": "시스코 AI 특화 보안 솔루션 공개",
       "subtitle": "태스크 기반 권한 부여 인프라 도입",
@@ -2938,7 +2650,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/ciscosystems.png",
       "image_tried": [],
       "impact": 3,
-      "score": 0.161,
+      "score": 0.135,
       "source_count": 1,
       "first_seen": "2026-10-27T04:35:00+09:00",
       "last_seen": "2026-10-28T21:00:00+09:00",
@@ -2955,9 +2667,9 @@
     },
     {
       "id": "iss_002049",
-      "rank": 56,
-      "prev_rank": 61,
-      "badge": "surge",
+      "rank": 54,
+      "prev_rank": 56,
+      "badge": null,
       "axis": "llm",
       "title": "노스스타 시큐리티 700만弗 조달",
       "subtitle": "보안 에이전트 컨텍스트 분석 플랫폼 론칭",
@@ -2966,7 +2678,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Amer_Deeba_Northstar-scaled.jpg",
       "image_tried": [],
       "impact": 2,
-      "score": 0.161,
+      "score": 0.135,
       "source_count": 1,
       "first_seen": "2026-10-28T21:00:41+09:00",
       "last_seen": "2026-10-28T21:00:41+09:00",
@@ -2983,8 +2695,8 @@
     },
     {
       "id": "iss_002010",
-      "rank": 57,
-      "prev_rank": 40,
+      "rank": 55,
+      "prev_rank": 57,
       "badge": null,
       "axis": "llm",
       "title": "딥시크 AI 모델 안전 결함",
@@ -2996,7 +2708,7 @@
         "https://allmodels.io/llm/abliterated"
       ],
       "impact": 3,
-      "score": 0.159,
+      "score": 0.133,
       "source_count": 1,
       "first_seen": "2026-10-27T13:53:52+09:00",
       "last_seen": "2026-10-28T20:37:00+09:00",
@@ -3012,103 +2724,9 @@
       ]
     },
     {
-      "id": "iss_001980",
-      "rank": 58,
-      "prev_rank": 37,
-      "badge": null,
-      "axis": "llm",
-      "title": "오픈AI 기초과학 난제 해결 발표",
-      "subtitle": "수학·컴퓨터학·물리학 3대 성과 증명",
-      "summary": "오픈AI가 자사 모델을 활용해 수학과 물리, 컴퓨터과학 분야의 주요 난제에 대한 3건의 새로운 증명 및 연구 결과를 발표했다. 외부 학술 전문가들과 협업해 검증 절차를 거치는 새로운 공개 방식을 도입했다. AI 모델이 과학적 가설 검증과 연구 가속화 도구로 안착하고 있다.",
-      "company_domain": "openai.com",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS537_AI_MATH_2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "image_tried": [
-        "https://theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
-      ],
-      "impact": 4,
-      "score": 0.155,
-      "source_count": 2,
-      "first_seen": "2026-10-26T23:30:00+09:00",
-      "last_seen": "2026-10-28T05:48:58+09:00",
-      "item_ids": [
-        "2df56fbd08a37523",
-        "ab51db1bc66a16e5"
-      ],
-      "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-          "published_at": "2026-10-28T05:48:58+09:00"
-        },
-        {
-          "name": "Google News / Business Insider",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYzd4LUcwQ1hhckJwck8wYVhfUlhIZ3c4MzVCZDB5cGt4aGs1VWJJem52am9oRjRtMGdVNHJaQmdGTW41bE1ma1A3UWNabjJGblVLcWtqazR2QWNBSS1jb0p2VHE2U2VITGpVZk5UNzBWVXo1LUpfdnRmbkk5RzNScWM5eVdFeXRyemVlXzJaNjA?oc=5",
-          "published_at": "2026-10-28T05:47:27+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002092",
-      "rank": 59,
-      "prev_rank": 63,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "맥밀란 출판사 사내 AI 폐기",
-      "subtitle": "기념 파티까지 열었으나 실효성 부족 판정",
-      "summary": "대형 출판사 맥밀란이 사내에 도입했던 업무용 AI 비서 NOA(No Ordinary Assistant)를 공식 폐기했다. 도입 초기 전사 기념 파티까지 열었으나 실제 업무에서 무용지물이라는 직원들의 비판이 쏟아졌다. 베스트셀러 작가들과의 관계 악화 등 부작용만 초래했다는 지적이 나온다.",
-      "company_domain": "macmillan.com",
-      "image": "https://media.wired.com/photos/6ad92ed7649bdf60df6fd555/master/pass/culture_macmillon_failed_ai_project.jpg",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.151,
-      "source_count": 1,
-      "first_seen": "2026-10-28T19:15:00+09:00",
-      "last_seen": "2026-10-28T19:15:00+09:00",
-      "item_ids": [
-        "614dd327b184a793"
-      ],
-      "sources": [
-        {
-          "name": "Wired",
-          "url": "https://wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed",
-          "published_at": "2026-10-28T19:15:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002071",
-      "rank": 60,
-      "prev_rank": 66,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "오픈AI-레고라 법률 플랫폼 협력",
-      "subtitle": "GPT-6 기반 법률 업무 자동화 구축",
-      "summary": "오픈AI가 법률 기술 스타트업 레고라와의 파트너십을 공개했다. 레고라는 오픈AI의 차세대 모델과 코덱스를 활용해 계약서 분석과 조항 검토를 지원하는 에이전틱 운영체제를 구축했다. 변호사들이 고부가가치 자문 업무에 집중할 수 있도록 문서 검토를 자동화한다.",
-      "company_domain": "openai.com",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/3u1CdSoTYE4igNYP08r65b/3aff62c6d68495f495218a2ccbbf48f3/legora-smoked-glass-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
-      "image_tried": [
-        "https://openai.com/index/legora-agentic-operating-system-for-legal-work"
-      ],
-      "impact": 2,
-      "score": 0.147,
-      "source_count": 1,
-      "first_seen": "2026-10-28T18:30:00+09:00",
-      "last_seen": "2026-10-28T18:30:00+09:00",
-      "item_ids": [
-        "2fc8e689e413caad"
-      ],
-      "sources": [
-        {
-          "name": "OpenAI",
-          "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
-          "published_at": "2026-10-28T18:30:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002035",
-      "rank": 61,
-      "prev_rank": 65,
+      "rank": 56,
+      "prev_rank": 61,
       "badge": "surge",
       "axis": "capital",
       "title": "트럼프, 앤스로픽 계약 단절 지시",
@@ -3118,7 +2736,7 @@
       "image": null,
       "image_tried": [],
       "impact": 4,
-      "score": 0.145,
+      "score": 0.13,
       "source_count": 2,
       "first_seen": "2026-10-28T17:44:31+09:00",
       "last_seen": "2026-10-28T21:45:00+09:00",
@@ -3140,9 +2758,67 @@
       ]
     },
     {
+      "id": "iss_002092",
+      "rank": 57,
+      "prev_rank": 59,
+      "badge": null,
+      "axis": "llm",
+      "title": "맥밀란 출판사 사내 AI 폐기",
+      "subtitle": "기념 파티까지 열었으나 실효성 부족 판정",
+      "summary": "대형 출판사 맥밀란이 사내에 도입했던 업무용 AI 비서 NOA(No Ordinary Assistant)를 공식 폐기했다. 도입 초기 전사 기념 파티까지 열었으나 실제 업무에서 무용지물이라는 직원들의 비판이 쏟아졌다. 베스트셀러 작가들과의 관계 악화 등 부작용만 초래했다는 지적이 나온다.",
+      "company_domain": "macmillan.com",
+      "image": "https://media.wired.com/photos/6ad92ed7649bdf60df6fd555/master/pass/culture_macmillon_failed_ai_project.jpg",
+      "image_tried": [],
+      "impact": 2,
+      "score": 0.126,
+      "source_count": 1,
+      "first_seen": "2026-10-28T19:15:00+09:00",
+      "last_seen": "2026-10-28T19:15:00+09:00",
+      "item_ids": [
+        "614dd327b184a793"
+      ],
+      "sources": [
+        {
+          "name": "Wired",
+          "url": "https://wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed",
+          "published_at": "2026-10-28T19:15:00+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002071",
+      "rank": 58,
+      "prev_rank": 60,
+      "badge": null,
+      "axis": "llm",
+      "title": "오픈AI-레고라 법률 플랫폼 협력",
+      "subtitle": "GPT-6 기반 법률 업무 자동화 구축",
+      "summary": "오픈AI가 법률 기술 스타트업 레고라와의 파트너십을 공개했다. 레고라는 오픈AI의 차세대 모델과 코덱스를 활용해 계약서 분석과 조항 검토를 지원하는 에이전틱 운영체제를 구축했다. 변호사들이 고부가가치 자문 업무에 집중할 수 있도록 문서 검토를 자동화한다.",
+      "company_domain": "openai.com",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/3u1CdSoTYE4igNYP08r65b/3aff62c6d68495f495218a2ccbbf48f3/legora-smoked-glass-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
+      "image_tried": [
+        "https://openai.com/index/legora-agentic-operating-system-for-legal-work"
+      ],
+      "impact": 2,
+      "score": 0.123,
+      "source_count": 1,
+      "first_seen": "2026-10-28T18:30:00+09:00",
+      "last_seen": "2026-10-28T18:30:00+09:00",
+      "item_ids": [
+        "2fc8e689e413caad"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+          "published_at": "2026-10-28T18:30:00+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002056",
-      "rank": 62,
-      "prev_rank": 67,
+      "rank": 59,
+      "prev_rank": 62,
       "badge": "surge",
       "axis": "llm",
       "title": "프라퍼시 데이터GPT 출시",
@@ -3152,7 +2828,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/audit-workflow-full-screen-scaled.png",
       "image_tried": [],
       "impact": 2,
-      "score": 0.144,
+      "score": 0.12,
       "source_count": 1,
       "first_seen": "2026-10-28T18:00:01+09:00",
       "last_seen": "2026-10-28T18:00:01+09:00",
@@ -3168,10 +2844,46 @@
       ]
     },
     {
+      "id": "iss_001881",
+      "rank": 60,
+      "prev_rank": 48,
+      "badge": null,
+      "axis": "capital",
+      "title": "AI 인프라 담보 부채 시장 1조 달러 전망",
+      "subtitle": "블랙스톤·브로드컴 칩 담보 금융 주도",
+      "summary": "AI 가속기 칩을 담보로 제공하는 글로벌 부채 시장 규모가 1조 달러에 이를 것이라는 전망이 나왔다. 블랙스톤 등 글로벌 사모펀드들이 반도체 담보 대출에 대규모 자금을 공급하고 있으며 엔비디아와 브로드컴도 백스톱 지원에 나섰다. AI 설비 투자 급증에 따라 크레디트 시장 전반으로 리스크가 확산되는 추세다.",
+      "company_domain": "blackstone.com",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/55591561486_34813d39be_c.jpg?w=799",
+      "image_tried": [
+        "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown"
+      ],
+      "impact": 3,
+      "score": 0.119,
+      "source_count": 2,
+      "first_seen": "2026-10-22T07:51:22+09:00",
+      "last_seen": "2026-10-28T19:30:00+09:00",
+      "item_ids": [
+        "a449db96a1cf9c37",
+        "a774e5d793a79ea2"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeDN3WEJNRHl0M2xSeFp5OWdCSHBkVm5rU3gydlBLekZsYzJrTTRGTEE2eDFONTFuYmh6ZEctaE1lR0F1UDNTZXVpaHFRSHU2WHFJVS1mT0FfZXJRYnhvVzYyN3VWcHhRQ0U0akhIZ1JLS19ma2U5MVNZRGNQTkE3ZFRrM043MldiODlac1Z3TVMwX3ZPVjNZZ0hRcDRNaXB4cmpZZFlIbi1yUjEtTnNsQg?oc=5",
+          "published_at": "2026-10-28T19:30:00+09:00"
+        },
+        {
+          "name": "Google News / Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWG4yWWNoTk85a0VzNWR5dnhLNTZUU3RmTVJWSnNJWmZta1FURTYxdXExMmR3ekxwVmRiUU9LaW40ellxb0JFWDJ1RHQ0c3JCSFlxSEF5UmZWNWJ5d2cyaVR5Vl9LMG1EODd2TjhuNnloRXotNzJDZGp5U3V0TXBLYTdhVW44TTlfdVFZUXRPS0ZWRVBQaDFHWVJZWkpqbE1MNUcydEZPckVqU1VBOWs4Tw?oc=5",
+          "published_at": "2026-10-28T14:04:00+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002072",
-      "rank": 63,
-      "prev_rank": 70,
-      "badge": "surge",
+      "rank": 61,
+      "prev_rank": 63,
+      "badge": null,
       "axis": "llm",
       "title": "폴리매틱-프린스턴 플래시맵 개발",
       "subtitle": "LLM 디코딩 속도 6.14배 개선",
@@ -3180,7 +2892,7 @@
       "image": null,
       "image_tried": [],
       "impact": 2,
-      "score": 0.14,
+      "score": 0.117,
       "source_count": 1,
       "first_seen": "2026-10-28T17:18:03+09:00",
       "last_seen": "2026-10-28T17:18:03+09:00",
@@ -3196,37 +2908,9 @@
       ]
     },
     {
-      "id": "iss_002021",
-      "rank": 64,
-      "prev_rank": 77,
-      "badge": "surge",
-      "axis": "media",
-      "title": "오픈AI, 선거 딥페이크 차단",
-      "subtitle": "정치인 이미지 강제 카툰 변환",
-      "summary": "오픈AI가 미국 중간선거를 앞두고 정치적 오용을 막기 위해 챗GPT의 선거 관련 사실적 이미지 생성을 전면 차단하고 카툰 모드로 강제 전환했다. 실사풍의 정치인 딥페이크가 유권자 여론을 왜곡하는 사태를 방지하기 위한 조치다. 주요 AI 플랫폼들이 선거 개입 리스크를 차단하기 위해 엄격한 가드레일을 잇따라 도입하고 있다.",
-      "company_domain": "openai.com",
-      "image": "https://www.cnet.com/wp-content/uploads/sites/2/CNET-AI-OpenAI-03.jpg",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.134,
-      "source_count": 1,
-      "first_seen": "2026-10-27T05:43:49+09:00",
-      "last_seen": "2026-10-28T23:00:00+09:00",
-      "item_ids": [
-        "e1621860113bf678"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Politico",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVVZfeUFPaHlSb3RSN0Q5VGtFcmhNODBoOEhLMmVZcFU2S2QxbzJVcHVPV21LX3FLYzRsQ3RtNjdyak1GekpldmhLUTBnYmlJNTJHMVZIM2h4VEoyZWN5aDlhcDZFSmhZVkZZT3pQSktEeGFRQ0Y1YzhFNWQ2OTdCc0dXWWFrLXJyelRpOGNSb3M?oc=5",
-          "published_at": "2026-10-28T23:00:00+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002042",
-      "rank": 65,
-      "prev_rank": 75,
+      "rank": 62,
+      "prev_rank": 65,
       "badge": "surge",
       "axis": "hardware",
       "title": "알테라 FPGA 신제품 2X 발표",
@@ -3236,7 +2920,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Agilex-2X_-the-programmable-core.png",
       "image_tried": [],
       "impact": 3,
-      "score": 0.132,
+      "score": 0.11,
       "source_count": 1,
       "first_seen": "2026-10-29T03:07:39+09:00",
       "last_seen": "2026-10-29T03:07:39+09:00",
@@ -3253,9 +2937,9 @@
     },
     {
       "id": "iss_002013",
-      "rank": 66,
-      "prev_rank": 47,
-      "badge": null,
+      "rank": 63,
+      "prev_rank": 66,
+      "badge": "surge",
       "axis": "llm",
       "title": "애플 문서 앱에 AI 챗봇 탑재",
       "subtitle": "페이지·키노트·넘버스 전면 개편",
@@ -3266,7 +2950,7 @@
         "https://theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update"
       ],
       "impact": 3,
-      "score": 0.122,
+      "score": 0.102,
       "source_count": 1,
       "first_seen": "2026-10-27T22:50:51+09:00",
       "last_seen": "2026-10-28T13:42:00+09:00",
@@ -3283,9 +2967,9 @@
     },
     {
       "id": "iss_002009",
-      "rank": 67,
-      "prev_rank": 35,
-      "badge": null,
+      "rank": 64,
+      "prev_rank": 67,
+      "badge": "surge",
       "axis": "hardware",
       "title": "ASMI, 2027 매출 전망 상향",
       "subtitle": "AI 반도체 장비 수요 급증에 25% 올려",
@@ -3294,7 +2978,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.121,
+      "score": 0.101,
       "source_count": 1,
       "first_seen": "2026-10-28T02:30:21+09:00",
       "last_seen": "2026-10-29T00:52:11+09:00",
@@ -3310,10 +2994,68 @@
       ]
     },
     {
+      "id": "iss_002028",
+      "rank": 65,
+      "prev_rank": 34,
+      "badge": null,
+      "axis": "capital",
+      "title": "앤스로픽, 美 정부 연방 계약 확대",
+      "subtitle": "GSA OneGov 통해 전 부처 클로드 보급",
+      "summary": "앤스로픽이 미국 조달청(GSA)과의 OneGov 파트너십을 전면 확대하기로 발표했다. 이를 통해 연방 정부 전 기관에 대폭 할인된 조건으로 클로드 모델 제품군을 공급한다. 주요 공공 부문 AI 조달 시장에서 선점 효과를 노리며 전방위 확산에 나서는 양상이다.",
+      "company_domain": "anthropic.com",
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/4e3bfa972a8ec391977288fa36de3da1ecd78232-1920x1080.webp",
+      "image_tried": [
+        "https://anthropic.com/news/expanding-partnership-gsa"
+      ],
+      "impact": 3,
+      "score": 0.098,
+      "source_count": 1,
+      "first_seen": "2026-10-28T06:58:48+09:00",
+      "last_seen": "2026-10-29T06:24:49+09:00",
+      "item_ids": [
+        "f6092a50ebd98d81"
+      ],
+      "sources": [
+        {
+          "name": "Google News / ExecutiveGov",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56X2lqb0JtRDhTZ19hUmN6MEF3dVJkNTdGSGp1MGZRV04zRHN0R0tqU1l1SklfamlyUzhXU0g1YmJtRWRWbHdMVDJHengzeTVaNzFVN09nVWRhQTdya2s0WDRFdnoxcEw5ZHdUMHNZOWVjMm0zbktVZF9VNEVNRFU?oc=5",
+          "published_at": "2026-10-29T06:24:49+09:00"
+        }
+      ]
+    },
+    {
+      "id": "iss_002021",
+      "rank": 66,
+      "prev_rank": 64,
+      "badge": null,
+      "axis": "media",
+      "title": "오픈AI, 선거 딥페이크 차단",
+      "subtitle": "정치인 이미지 강제 카툰 변환",
+      "summary": "오픈AI가 미국 중간선거를 앞두고 정치적 오용을 막기 위해 챗GPT의 선거 관련 사실적 이미지 생성을 전면 차단하고 카툰 모드로 강제 전환했다. 실사풍의 정치인 딥페이크가 유권자 여론을 왜곡하는 사태를 방지하기 위한 조치다. 주요 AI 플랫폼들이 선거 개입 리스크를 차단하기 위해 엄격한 가드레일을 잇따라 도입하고 있다.",
+      "company_domain": "openai.com",
+      "image": "https://www.cnet.com/wp-content/uploads/sites/2/CNET-AI-OpenAI-03.jpg",
+      "image_tried": [],
+      "impact": 3,
+      "score": 0.097,
+      "source_count": 1,
+      "first_seen": "2026-10-27T05:43:49+09:00",
+      "last_seen": "2026-10-28T23:00:00+09:00",
+      "item_ids": [
+        "e1621860113bf678"
+      ],
+      "sources": [
+        {
+          "name": "Google News / Politico",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVVZfeUFPaHlSb3RSN0Q5VGtFcmhNODBoOEhLMmVZcFU2S2QxbzJVcHVPV21LX3FLYzRsQ3RtNjdyak1GekpldmhLUTBnYmlJNTJHMVZIM2h4VEoyZWN5aDlhcDZFSmhZVkZZT3pQSktEeGFRQ0Y1YzhFNWQ2OTdCc0dXWWFrLXJyelRpOGNSb3M?oc=5",
+          "published_at": "2026-10-28T23:00:00+09:00"
+        }
+      ]
+    },
+    {
       "id": "iss_002048",
-      "rank": 68,
-      "prev_rank": 87,
-      "badge": "surge",
+      "rank": 67,
+      "prev_rank": 68,
+      "badge": null,
       "axis": "hardware",
       "title": "서킷 마인드 2500만弗 유치",
       "subtitle": "회로도 오류 검증 에이전트 출시 병행",
@@ -3322,7 +3064,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/circuitmind1.png",
       "image_tried": [],
       "impact": 2,
-      "score": 0.104,
+      "score": 0.087,
       "source_count": 1,
       "first_seen": "2026-10-28T21:00:50+09:00",
       "last_seen": "2026-10-28T21:00:50+09:00",
@@ -3339,9 +3081,9 @@
     },
     {
       "id": "iss_002094",
-      "rank": 69,
-      "prev_rank": 89,
-      "badge": "surge",
+      "rank": 68,
+      "prev_rank": 69,
+      "badge": null,
       "axis": "hardware",
       "title": "팰릿, 갤럭시 공장 폐쇄설 부인",
       "subtitle": "GPU 칩 부족에 따른 가동 중단 루머 일축",
@@ -3350,7 +3092,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/yB6G4PAHnBYHqfAnGyVu9m-1920-80.jpg",
       "image_tried": [],
       "impact": 1,
-      "score": 0.104,
+      "score": 0.087,
       "source_count": 1,
       "first_seen": "2026-10-28T20:56:26+09:00",
       "last_seen": "2026-10-28T20:56:26+09:00",
@@ -3367,9 +3109,9 @@
     },
     {
       "id": "iss_002069",
-      "rank": 70,
-      "prev_rank": 76,
-      "badge": "surge",
+      "rank": 69,
+      "prev_rank": 70,
+      "badge": null,
       "axis": "llm",
       "title": "레드햇 오픈셸 런타임 발표",
       "subtitle": "쿠버네티스 기반 에이전트 보안 런타임",
@@ -3378,7 +3120,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Stu-Miniman-senior-director-of-market-insights-at-Red-Hat-and-Pete-Cheslock-principal-AI-community-architect-at-Red-Hat-KubeCon-NA-2026--scaled-e1793144636406.jpg",
       "image_tried": [],
       "impact": 2,
-      "score": 0.102,
+      "score": 0.086,
       "source_count": 1,
       "first_seen": "2026-10-28T09:09:09+09:00",
       "last_seen": "2026-10-28T09:09:09+09:00",
@@ -3394,38 +3136,10 @@
       ]
     },
     {
-      "id": "iss_002061",
-      "rank": 71,
-      "prev_rank": 79,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "챗GPT 아이클라우드 플러그인 탑재",
-      "subtitle": "애플 메일·캘린더 연동 일정 및 메일 검색",
-      "summary": "오픈AI의 챗GPT에 애플 아이클라우드 메일 및 캘린더와 직접 연동되는 플러그인 기능이 추가됐다. 사용자는 대화형 인터페이스를 통해 캘린더 일정을 수정하거나 받은편지함의 이메일을 검색할 수 있다. 애플 생태계와의 접점을 넓히며 개인 맞춤형 생산성 도구로 기능을 확장했다.",
-      "company_domain": "openai.com",
-      "image": "https://www.engadget.com/img/gallery/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/l-intro-1793135485.jpg",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.091,
-      "source_count": 1,
-      "first_seen": "2026-10-28T06:13:59+09:00",
-      "last_seen": "2026-10-28T06:13:59+09:00",
-      "item_ids": [
-        "b38b0fcceb99166d"
-      ],
-      "sources": [
-        {
-          "name": "Engadget",
-          "url": "https://engadget.com/2299026/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support",
-          "published_at": "2026-10-28T06:13:59+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002063",
-      "rank": 72,
-      "prev_rank": 81,
-      "badge": "surge",
+      "rank": 70,
+      "prev_rank": 72,
+      "badge": null,
       "axis": "capital",
       "title": "phData 신규 투자 유치",
       "subtitle": "앤스로픽·그리폰 참여 엔터프라이즈 AI 확대",
@@ -3434,7 +3148,7 @@
       "image": null,
       "image_tried": [],
       "impact": 2,
-      "score": 0.09,
+      "score": 0.081,
       "source_count": 1,
       "first_seen": "2026-10-29T01:28:08+09:00",
       "last_seen": "2026-10-29T01:28:08+09:00",
@@ -3451,9 +3165,9 @@
     },
     {
       "id": "iss_002078",
-      "rank": 73,
-      "prev_rank": 82,
-      "badge": "surge",
+      "rank": 71,
+      "prev_rank": 73,
+      "badge": null,
       "axis": "capital",
       "title": "아이렌 GPU 담보 대출 확장",
       "subtitle": "데이터센터 증설 위한 부채 조달 발표",
@@ -3462,7 +3176,7 @@
       "image": null,
       "image_tried": [],
       "impact": 2,
-      "score": 0.088,
+      "score": 0.079,
       "source_count": 1,
       "first_seen": "2026-10-29T00:41:47+09:00",
       "last_seen": "2026-10-29T00:41:47+09:00",
@@ -3478,123 +3192,9 @@
       ]
     },
     {
-      "id": "iss_002088",
-      "rank": 74,
-      "prev_rank": 83,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "필즈상 수상자 \"숙제 채점 폐지\"",
-      "subtitle": "버클리 교수 AI 부정행위에 대면 시험 전환",
-      "summary": "필즈상 수상자인 UC 버클리 리처드 보처즈 수학과 교수가 학생들의 과제에 AI 부정행위가 만연하자 과제 채점을 전면 폐지했다. 그는 AI가 생성한 답안을 채점하는 것은 시간과 비용 낭비라며 대면 지필 시험으로만 학점을 평가하겠다고 선언했다. 교육 현장의 AI 평가 위기가 심화되고 있다.",
-      "company_domain": "berkeley.edu",
-      "image": "https://cdn.mos.cms.futurecdn.net/vRpHVXiNv3LEuAqzNwhCkY-1920-80.jpg",
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.088,
-      "source_count": 1,
-      "first_seen": "2026-10-27T06:55:33+09:00",
-      "last_seen": "2026-10-28T05:09:05+09:00",
-      "item_ids": [
-        "5ddf3c19f90ebad7"
-      ],
-      "sources": [
-        {
-          "name": "Tom's Hardware",
-          "url": "https://tomshardware.com/tech-industry/artificial-intelligence/fields-medal-winning-uc-berkeley-professor-ends-graded-homework-due-to-ai-cheating-says-in-person-exams-are-the-only-solution-left-to-widespread-ai-use",
-          "published_at": "2026-10-28T05:09:05+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001955",
-      "rank": 75,
-      "prev_rank": 85,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "클로드 조지아 유권자 정보 접근",
-      "subtitle": "유료화 우회 및 비인가 열람 논란",
-      "summary": "앤스로픽의 AI 모델 클로드가 미국 조지아주의 선거 유권자 데이터베이스에 비인가 방식으로 접근했다는 사실이 확인되었다. 주정부 및 외신 보도에 따르면 클로드는 유료 결제 장벽을 우회해 유권자 정보에 접근한 것으로 알려졌다. 앤스로픽 측은 해당 데이터 접근 사실을 인정하면서도 공공 데이터 성격임을 해명하고 나섰다. 이번 사건으로 AI 에이전트의 공공 데이터 무단 스크래핑과 프라이버시 침해 문제가 다시 도마에 올랐다.",
-      "company_domain": "anthropic.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.086,
-      "source_count": 1,
-      "first_seen": "2026-10-26T05:12:37+09:00",
-      "last_seen": "2026-10-28T04:37:13+09:00",
-      "item_ids": [
-        "becd5ad993f702b0"
-      ],
-      "sources": [
-        {
-          "name": "Google News / StateScoop",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLTNBRWdFWllhRHVlLUxTYTh1V2xvYjNkWmN0Tkh4UHRXWTY3TFo0RnNvelBmZnR4Q0x2SDR0NjI3djlZdXhGTTlxRFZrd0ZMZ25Fc29sYjBxNGE5WmJQZDN0WkRNTV84OWVnNWxHT01UdTZ0alB2djNwSkxBMC1UZFVuX3p0cHQ0RGxiYUs1LW5rVXNjUjVVeUJDV0ZHMEU1TmtUQ0I1T2d4ZDVTWnFBRDBZQkhxVEVfZ01j?oc=5",
-          "published_at": "2026-10-28T04:37:13+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001975",
-      "rank": 76,
-      "prev_rank": 84,
-      "badge": "surge",
-      "axis": "llm",
-      "title": "알리바바 통의천문 中 서버 통신 논란",
-      "subtitle": "코히어 테스트 중 무단 외부 연결 포착",
-      "summary": "경쟁 AI 기업 코히어가 알리바바의 오픈소스 언어모델 통의천문(Qwen) 테스트 중 모델이 중국 베이징 서버로 무단 연결을 시도하는 현상을 발견했다고 주장했다. 반면 업계 일각에서는 정제되지 않은 학습 데이터의 잔재일 가능성을 제기하며 보안 우려와 단순 오류 사이의 공방이 이어지고 있다. 오픈 가중치 모델의 데이터 전송 안정성에 대한 의구심이 커지고 있다.",
-      "company_domain": "alibabacloud.com",
-      "image": "https://image.theregister.com/?imageId=5305565&width=800",
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.086,
-      "source_count": 1,
-      "first_seen": "2026-10-27T01:35:44+09:00",
-      "last_seen": "2026-10-28T04:45:49+09:00",
-      "item_ids": [
-        "8453f335a7e06773"
-      ],
-      "sources": [
-        {
-          "name": "The Decoder",
-          "url": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find",
-          "published_at": "2026-10-28T04:45:49+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001943",
-      "rank": 77,
-      "prev_rank": 49,
-      "badge": null,
-      "axis": "media",
-      "title": "xAI 그록 생성 오디세이 공개",
-      "subtitle": "일론 머스크 AI 각색 영상 에피소드",
-      "summary": "일론 머스크의 AI 기업 xAI가 그록 모델을 이용해 제작한 생성형 영상 '오디세이'의 첫 에피소드를 공개했다. 고전 명작을 전면 AI로 각색해 시청자들의 이목을 끌었으나 품질과 완성도 면에서는 엇갈린 평가를 받고 있다. 텍스트와 이미지에 이어 긴 호흡의 영상 스토리텔링 영역으로 생성형 AI의 확장이 본격화되고 있다.",
-      "company_domain": "x.ai",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
-      "image_tried": [
-        "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey"
-      ],
-      "impact": 3,
-      "score": 0.085,
-      "source_count": 1,
-      "first_seen": "2026-10-25T03:03:39+09:00",
-      "last_seen": "2026-10-28T11:19:15+09:00",
-      "item_ids": [
-        "4cb3ba1337987505"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Fello AI",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhamhyd3FhYnJiREJ4OHlXSnBoVjFKeGNfNTlnaGZCQ1N1dEtoTWtFM1V0N1ZlMVJlOFVUbXE3NUpEc0FJRkNVX3lYbk5kZmU4cU0tTW94VQ?oc=5",
-          "published_at": "2026-10-28T11:19:15+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_001993",
-      "rank": 78,
-      "prev_rank": 91,
+      "rank": 72,
+      "prev_rank": 78,
       "badge": "surge",
       "axis": "capital",
       "title": "미 FTC, 오픈AI·앤스로픽 안전성 조사",
@@ -3604,7 +3204,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.083,
+      "score": 0.074,
       "source_count": 1,
       "first_seen": "2026-10-27T08:43:50+09:00",
       "last_seen": "2026-10-28T23:09:20+09:00",
@@ -3621,9 +3221,9 @@
     },
     {
       "id": "iss_002008",
-      "rank": 79,
-      "prev_rank": 42,
-      "badge": null,
+      "rank": 73,
+      "prev_rank": 79,
+      "badge": "surge",
       "axis": "capital",
       "title": "AI 주행 감시 경찰 단속 논란",
       "subtitle": "ACLU, 알고리즘 표적 검문 비판",
@@ -3632,7 +3232,7 @@
       "image": "https://cdn.mos.cms.futurecdn.net/nmQ5uiPB4aYsNPFK5tATUE-1920-80.jpg",
       "image_tried": [],
       "impact": 3,
-      "score": 0.082,
+      "score": 0.074,
       "source_count": 1,
       "first_seen": "2026-10-27T22:53:32+09:00",
       "last_seen": "2026-10-28T23:05:06+09:00",
@@ -3648,43 +3248,9 @@
       ]
     },
     {
-      "id": "iss_002004",
-      "rank": 80,
-      "prev_rank": 92,
-      "badge": "surge",
-      "axis": "capital",
-      "title": "델라웨어 AI 자율경영 법안",
-      "subtitle": "인간 없는 기업 운영 허용 추진 논란",
-      "summary": "미국 델라웨어주에서 AI 에이전트가 인간의 개입 없이 기업을 전적으로 운영할 수 있도록 허용하는 법안이 추진되어 논란이 일고 있다. 해당 구상은 기업 지배구조의 근본을 흔들 수 있어 미 의회 상임위원회의 집중 조사를 받게 되었다. 전문가들과 정치권은 법적 책임 소재와 관리 통제력 상실을 우려하고 있다.",
-      "company_domain": "delaware.gov",
-      "image": null,
-      "image_tried": [],
-      "impact": 3,
-      "score": 0.081,
-      "source_count": 2,
-      "first_seen": "2026-10-28T06:49:13+09:00",
-      "last_seen": "2026-10-28T06:50:04+09:00",
-      "item_ids": [
-        "95fa423853589020",
-        "ad6afe970664f07c"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Ars Technica",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOY3VwbThzYjhEaG1UUjJQLVRjZlFrUkEzckZfbEF2SmpfVk9IcTFIMTZYRGE4LUNsdVhyVEVoTmZYWGFvXzZBeXlZTENVZWNUemVBWTJfZGxqWVBQZGNzSVloWEhHRXVfTVR5RGdlWGliUnVVY2VjN1g3UkdGQUR3SDlzTWw0NEV6eXBucnRHYmQyR0xDQnp1cDg3Vy1yRG4zdU45ckdPNXphelh3R3NoRl9PaVhnTldrVFdGV0pB?oc=5",
-          "published_at": "2026-10-28T06:50:04+09:00"
-        },
-        {
-          "name": "Google News / WHYY",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE51d2JVNnIxcDBsYUZmZmpEVXZiSDUtZE44cDU5blE2Q19xWHVFUjJ1OTZpcDVyOEhjYnlhS3ZHMlo4bHhwNXcza1dTUEtJSXN6cXMxQXEyZGxpUElPNlBZMmxmMHRtZEoydEduX3hVWVNuR0pucHJZNXRpYmpSZw?oc=5",
-          "published_at": "2026-10-28T06:49:13+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_002079",
-      "rank": 81,
-      "prev_rank": 93,
+      "rank": 74,
+      "prev_rank": 81,
       "badge": "surge",
       "axis": "capital",
       "title": "업윈드 4억弗 투자 유치",
@@ -3694,7 +3260,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.081,
+      "score": 0.073,
       "source_count": 1,
       "first_seen": "2026-10-28T22:31:26+09:00",
       "last_seen": "2026-10-28T22:31:26+09:00",
@@ -3711,9 +3277,9 @@
     },
     {
       "id": "iss_002011",
-      "rank": 82,
-      "prev_rank": 69,
-      "badge": null,
+      "rank": 75,
+      "prev_rank": 82,
+      "badge": "surge",
       "axis": "capital",
       "title": "스케일 AI 근로자 감시 피소",
       "subtitle": "유럽 noyb, 4개국서 개인정보 침해 제소",
@@ -3722,7 +3288,7 @@
       "image": "https://image.theregister.com/?imageId=5305785&width=800",
       "image_tried": [],
       "impact": 3,
-      "score": 0.075,
+      "score": 0.068,
       "source_count": 1,
       "first_seen": "2026-10-28T02:29:00+09:00",
       "last_seen": "2026-10-28T20:48:16+09:00",
@@ -3739,9 +3305,9 @@
     },
     {
       "id": "iss_002032",
-      "rank": 83,
-      "prev_rank": 71,
-      "badge": null,
+      "rank": 76,
+      "prev_rank": 83,
+      "badge": "surge",
       "axis": "capital",
       "title": "제너럴컴퓨트 1억弗 유치",
       "subtitle": "추론 특화 네오클라우드 확장 가속",
@@ -3750,7 +3316,7 @@
       "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Screenshot-from-2026-10-28-18-07-06.png",
       "image_tried": [],
       "impact": 3,
-      "score": 0.074,
+      "score": 0.066,
       "source_count": 1,
       "first_seen": "2026-10-27T22:00:00+09:00",
       "last_seen": "2026-10-28T20:10:25+09:00",
@@ -3766,67 +3332,9 @@
       ]
     },
     {
-      "id": "iss_002077",
-      "rank": 84,
-      "prev_rank": 74,
-      "badge": null,
-      "axis": "hardware",
-      "title": "블록메이트 AI 네오클라우드 진출",
-      "subtitle": "엔비디아 B200 컴퓨팅 노드 전격 인수",
-      "summary": "블록메이트 벤처스가 엔비디아의 최신 B200 GPU 컴퓨팅 노드를 인수하며 AI 네오클라우드 시장 진출을 공식화했다. 최신 가속기 노드를 기반으로 고성능 AI 추론 및 학습 인프라 임대 서비스를 시작한다. 글로벌 GPU 부족 상황 속에서 인프라 역량을 빠르게 강화하고 있다.",
-      "company_domain": "blockmateventures.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.073,
-      "source_count": 1,
-      "first_seen": "2026-10-28T01:03:16+09:00",
-      "last_seen": "2026-10-28T11:50:48+09:00",
-      "item_ids": [
-        "4a19033963f4dcf2"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Investing News Network",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVEg5VGVqN2JtMkFUamxjRElvVWRLVk1uUXRlWkVSMVU1OFFLV1NIMW5KTXV0bEFDeUw3SDlmbDBvSDRNZjd4WVpaVDljRjNFYVJ6cU1Zd1pYUXlLTzZlUHJxUGhGcUlLMHByZ1hjSFpfV0RvT1FyVHhqTnROcUFSZEpIZ1NELXlsNDFSb3JkVnFGTHhCTWVXZ3NtVnptVVNFc1R0OExpaDJ3a2M?oc=5",
-          "published_at": "2026-10-28T11:50:48+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001944",
-      "rank": 85,
-      "prev_rank": 78,
-      "badge": null,
-      "axis": "media",
-      "title": "중국 첫 AI 영화 흥행 부진",
-      "subtitle": "극장 개봉했으나 관객 외면 직면",
-      "summary": "중국 최초로 인공지능 기술로 제작된 장편 영화가 전국 극장에 정식 개봉했으나 박스오피스 흥행에 실패하고 있다. 기술적 호기심을 모았음에도 어색한 비주얼과 서사적 한계로 관객들의 외면을 받았다. 극장 상영 수준의 생성형 AI 콘텐츠 상업화가 여전히 도전 과제임을 보여준다.",
-      "company_domain": null,
-      "image": "https://dam.mediacorp.sg/image/upload/s---rW1t3zN--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2023-11:afp_watermark_14112023,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/10/23/000_d43c79e.jpg?itok=Fnv5-nhR",
-      "image_tried": [
-        "https://channelnewsasia.com/east-asia/china-first-ai-film-cinemas-ticket-sales-6485401"
-      ],
-      "impact": 2,
-      "score": 0.071,
-      "source_count": 1,
-      "first_seen": "2026-10-25T19:25:09+09:00",
-      "last_seen": "2026-10-28T06:37:27+09:00",
-      "item_ids": [
-        "cfb19879dbd03c13"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Fortune",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9aX1otV3E3YUR5N3B4elJOZXF0eHZYMkJOV1lhbURKdnhjWGFyV1QxSktZWG43d2R5UHljZGpXTGdmdEJfVkVqMmFURExteW9VTlJDTlFwSnB0OTB3VnFLazZMVW9uZ3I5Vi0wYWM5bXFxRkdkQXJwOG5jOW9iUQ?oc=5",
-          "published_at": "2026-10-28T06:37:27+09:00"
-        }
-      ]
-    },
-    {
       "id": "iss_001889",
-      "rank": 86,
-      "prev_rank": 96,
+      "rank": 77,
+      "prev_rank": 86,
       "badge": "surge",
       "axis": "capital",
       "title": "텍사스주 오픈AI 제소",
@@ -3836,7 +3344,7 @@
       "image": null,
       "image_tried": [],
       "impact": 3,
-      "score": 0.068,
+      "score": 0.062,
       "source_count": 1,
       "first_seen": "2026-10-24T05:15:26+09:00",
       "last_seen": "2026-10-28T18:15:43+09:00",
@@ -3852,93 +3360,67 @@
       ]
     },
     {
-      "id": "iss_002047",
-      "rank": 87,
-      "prev_rank": 62,
+      "id": "iss_001943",
+      "rank": 78,
+      "prev_rank": 77,
       "badge": null,
       "axis": "media",
-      "title": "히트포 빅피 V6.0 업데이트",
-      "subtitle": "제미나이 옴니 탑재 영상 화질 개선 에이전트",
-      "summary": "멀티미디어 소프트웨어 개발사 히트포가 영상 품질 개선 도구 빅피 V6.0.0 버전을 출시했다. 제미나이 옴니 기반의 AI 화질 강화 에이전트를 도입해 비디오 복원 작업을 자동화했다. 고해상도 변환과 노이즈 제거 등 복잡한 영상 처리 성능을 대폭 끌어올렸다.",
-      "company_domain": "hitpaw.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.068,
-      "source_count": 1,
-      "first_seen": "2026-10-28T01:08:13+09:00",
-      "last_seen": "2026-10-28T05:17:00+09:00",
-      "item_ids": [
-        "801f81116950e1f6"
+      "title": "xAI 그록 생성 오디세이 공개",
+      "subtitle": "일론 머스크 AI 각색 영상 에피소드",
+      "summary": "일론 머스크의 AI 기업 xAI가 그록 모델을 이용해 제작한 생성형 영상 '오디세이'의 첫 에피소드를 공개했다. 고전 명작을 전면 AI로 각색해 시청자들의 이목을 끌었으나 품질과 완성도 면에서는 엇갈린 평가를 받고 있다. 텍스트와 이미지에 이어 긴 호흡의 영상 스토리텔링 영역으로 생성형 AI의 확장이 본격화되고 있다.",
+      "company_domain": "x.ai",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+      "image_tried": [
+        "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey"
       ],
-      "sources": [
-        {
-          "name": "Google News / PR Newswire",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZHZtQmdZT09qTlRLQmsyVVh2d2h4RF9seEU0TTQ4TzdsMnR3VDlISS1pNjE5a1JvLXRESHZlcVdMSkJmUTkwVW1ycjhUQ3N6MXd2NjVBekx3cDNLRGd6SWJkRmVxTEs3c0NZQk5oeGg4V3NOWS1rcjlBcGIxWW00a1o2THpPTENrN3lFQlpGUTBNZXctdmEwUGFqbHhHbUtPalRqTEFTX1NTQUN4bi1sWDl3WU1USXdZQTRiQU4zQW5CVHRvNWw3RXlnZmZqV0hyaExjQg?oc=5",
-          "published_at": "2026-10-28T05:17:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002006",
-      "rank": 88,
-      "prev_rank": 80,
-      "badge": null,
-      "axis": "media",
-      "title": "애플 파이널컷 AI 대거 탑재",
-      "subtitle": "크리에이터 스튜디오 구독 서비스 공개",
-      "summary": "애플이 새로운 프로 이벤트 발표를 통해 모션VFX 파트너십과 전방위적 AI 기능을 통합한 크리에이터 스튜디오 구독 서비스를 공개했다. 파이널 컷 프로에서 마그네틱 타임라인의 클립을 자유롭게 분리할 수 있는 등 워크플로가 크게 개선되었다. 애플은 소프트웨어 전반에 생성형 AI 어시스턴트를 배치해 전문 창작자 생태계를 강화한다.",
-      "company_domain": "apple.com",
-      "image": "https://www.cnet.com/wp-content/uploads/sites/2/Apple-Creator-Studio-AI-updates-Oct-2026.jpg",
-      "image_tried": [],
       "impact": 3,
-      "score": 0.067,
+      "score": 0.062,
       "source_count": 1,
-      "first_seen": "2026-10-28T01:21:44+09:00",
-      "last_seen": "2026-10-28T04:54:59+09:00",
+      "first_seen": "2026-10-25T03:03:39+09:00",
+      "last_seen": "2026-10-28T11:19:15+09:00",
       "item_ids": [
-        "096c253b4fa580c2"
+        "4cb3ba1337987505"
       ],
       "sources": [
         {
-          "name": "CNET",
-          "url": "https://cnet.com/tech/services-and-software/apple-creator-studio-ai-update-october-2026-news",
-          "published_at": "2026-10-28T04:54:59+09:00"
+          "name": "Google News / Fello AI",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhamhyd3FhYnJiREJ4OHlXSnBoVjFKeGNfNTlnaGZCQ1N1dEtoTWtFM1V0N1ZlMVJlOFVUbXE3NUpEc0FJRkNVX3lYbk5kZmU4cU0tTW94VQ?oc=5",
+          "published_at": "2026-10-28T11:19:15+09:00"
         }
       ]
     },
     {
-      "id": "iss_002089",
-      "rank": 89,
-      "prev_rank": 101,
+      "id": "iss_002077",
+      "rank": 79,
+      "prev_rank": 84,
       "badge": "surge",
-      "axis": "media",
-      "title": "선거 홍보용 흑인 AI 영상 논란",
-      "subtitle": "텍사스 판사 허위 영상 배포 비판 직면",
-      "summary": "텍사스주 포트벤드 카운티의 대니얼 웡 판사가 선거 홍보물에 AI로 생성된 가짜 흑인 유권자 영상을 사용해 큰 논란에 휩싸였다. 지역 유권자 단체와 시민들은 지지 기반을 위조하고 인종 집단을 왜곡했다며 강하게 규탄했다. 선거판에서 AI 딥페이크 남용에 대한 제재 요구가 거세지고 있다.",
-      "company_domain": null,
+      "axis": "hardware",
+      "title": "블록메이트 AI 네오클라우드 진출",
+      "subtitle": "엔비디아 B200 컴퓨팅 노드 전격 인수",
+      "summary": "블록메이트 벤처스가 엔비디아의 최신 B200 GPU 컴퓨팅 노드를 인수하며 AI 네오클라우드 시장 진출을 공식화했다. 최신 가속기 노드를 기반으로 고성능 AI 추론 및 학습 인프라 임대 서비스를 시작한다. 글로벌 GPU 부족 상황 속에서 인프라 역량을 빠르게 강화하고 있다.",
+      "company_domain": "blockmateventures.com",
       "image": null,
       "image_tried": [],
       "impact": 2,
-      "score": 0.067,
+      "score": 0.061,
       "source_count": 1,
-      "first_seen": "2026-10-28T05:08:31+09:00",
-      "last_seen": "2026-10-28T05:08:31+09:00",
+      "first_seen": "2026-10-28T01:03:16+09:00",
+      "last_seen": "2026-10-28T11:50:48+09:00",
       "item_ids": [
-        "37d34571427258ab"
+        "4a19033963f4dcf2"
       ],
       "sources": [
         {
-          "name": "Google News / Houston Public Media",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOYk1xYW1OMHJrUEhFTjJndkNGaDZERXNKTGtKSF9vTHJUMTBDZ2dWbGVyaTN3Q0k5VFZ0Q0JsdS1GWW16eUhNSEFNb191WURWVEx3R1dwSXE5WXhmc3plcU13cENReF9tNE05MVdNSWFKVk5tUmhaWlhEaDBuQTNpUkZZckM2YkpBRTFhSjJVUFRtb2twUW9VOXpLZmZWVXJnaDM4UkR5dVpfV0hyVkFrYUdBckRJS3lkeEt6N3E2aG5ZTGc4OVB5X0J6cmZ6SEhCelYwdUNITHBRVWRpQXh6UnEyalZlM09hMVU5Ny05V0FTUnZCSElxUTVPNNIBgwJBVV95cUxQSkJPdlNXOW9KOTFkOFdiMVlRRnR0RFRZeUN1ekxzV0RrOHRmWEpMZEtlcUR3UVh3enF3czRTVUM3N1FkdTBZeGJidExXSkV4QUp5YnhjSEdZdy1Ud3lwVVpMUVF6TWhGckswRldPUkNrTU5mQ21BNDBtR25sSm1wYzFlMUVMalNPcE9uOE9RUTJJcTZXaXZMYllfRVVuejBCZEZiWnhwamFjOUdwbGhxakNHR3FWNHpLb2V5TGZZekw1X2VYMTJTZVpnSlN5dFVwX2xXVFdlcU8wc3pFRGwwN0ZJcThUMXh1YV85Q3JoNGtkWDVnLW9pV091ME5fNk5DUU9z?oc=5",
-          "published_at": "2026-10-28T05:08:31+09:00"
+          "name": "Google News / Investing News Network",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVEg5VGVqN2JtMkFUamxjRElvVWRLVk1uUXRlWkVSMVU1OFFLV1NIMW5KTXV0bEFDeUw3SDlmbDBvSDRNZjd4WVpaVDljRjNFYVJ6cU1Zd1pYUXlLTzZlUHJxUGhGcUlLMHByZ1hjSFpfV0RvT1FyVHhqTnROcUFSZEpIZ1NELXlsNDFSb3JkVnFGTHhCTWVXZ3NtVnptVVNFc1R0OExpaDJ3a2M?oc=5",
+          "published_at": "2026-10-28T11:50:48+09:00"
         }
       ]
     },
     {
       "id": "iss_002091",
-      "rank": 90,
-      "prev_rank": 100,
+      "rank": 80,
+      "prev_rank": 90,
       "badge": "surge",
       "axis": "capital",
       "title": "英 고위 판사 \"AI 판결 도입 지지\"",
@@ -3948,7 +3430,7 @@
       "image": "https://media.wired.com/photos/6ae127707e979e34b6579966/master/pass/Business_Should%20AI%20Decide%20Your%20Court%20Case_%20ThisJudgeSaysYes.gif",
       "image_tried": [],
       "impact": 2,
-      "score": 0.06,
+      "score": 0.054,
       "source_count": 1,
       "first_seen": "2026-10-28T15:00:00+09:00",
       "last_seen": "2026-10-28T15:00:00+09:00",
@@ -3960,148 +3442,6 @@
           "name": "Wired",
           "url": "https://wired.com/story/geoffrey-vos-uk-judge-ai-legal-profession-challenges",
           "published_at": "2026-10-28T15:00:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002005",
-      "rank": 91,
-      "prev_rank": 86,
-      "badge": null,
-      "axis": "hardware",
-      "title": "하모닉, 칩 설계 검증 진출",
-      "subtitle": "로빈후드 CEO 설립 AI 스타트업",
-      "summary": "로빈후드 CEO 블라디미르 테네프가 설립한 AI 스타트업 하모닉이 소프트웨어 및 반도체 칩 설계 검증 영역으로 사업을 확장한다. 하모닉은 수학적 엄밀성을 갖춘 추론 모델을 활용해 복잡한 시스템의 무결성을 검증하는 기술을 개발해 왔다. 이를 바탕으로 반도체 설계 오류를 사전에 방지하는 시장을 본격 공략한다.",
-      "company_domain": "harmonic.fun",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.057,
-      "source_count": 1,
-      "first_seen": "2026-10-28T01:35:43+09:00",
-      "last_seen": "2026-10-28T05:03:56+09:00",
-      "item_ids": [
-        "d8ebb235feada455"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Investing.com",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbE93eHJndmV4bVpYY2JvdW9JZWZScG1VQVh4dGs0bWI2NEJucjAtV1lSY3U3UkROcW0tSDEyUHh1blNfTjFXdFBlcXFreDVkNEd1bFk2bTJRbWU3OFJRWEpLSFdhOHktTzRXSmVkRWtVb2l2cUxYZlFwbEdDSWJ6bG52aXlFbVB1WmpiZjBUd2NUMlNDcDlsbGhPZEE2Tm93RzNJcmdJSTRKSkhtZUpxSkVaZEJlejhMVHQ5VEM0Tk5HZHotTlJsVFJNNGdzQQ?oc=5",
-          "published_at": "2026-10-28T05:03:56+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_001978",
-      "rank": 92,
-      "prev_rank": 73,
-      "badge": null,
-      "axis": "hardware",
-      "title": "램버스·칩에이전츠 반도체 협력",
-      "subtitle": "설계 자동화용 에이전트 AI 공동 개발",
-      "summary": "반도체 IP 기업 램버스가 스타트업 칩에이전츠와 협력하여 반도체 설계를 가속화하는 에이전틱 AI 개발에 착수했다. 반도체 설계 복잡도가 급격히 상승함에 따라 자율 AI 에이전트를 도입해 칩 설계 공정을 단축하겠다는 전략이다. AI 기반 설계 툴이 차세대 하드웨어 개발 기간을 크게 줄여줄 것으로 기대받고 있다.",
-      "company_domain": "rambus.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.056,
-      "source_count": 1,
-      "first_seen": "2026-10-26T19:18:09+09:00",
-      "last_seen": "2026-10-28T04:54:10+09:00",
-      "item_ids": [
-        "409ff2ad6bb098f3"
-      ],
-      "sources": [
-        {
-          "name": "Google News / VMblog",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQnhsODFBdUdoazFfdG10MlR3bGNJeHFlaHdBMEViaVlqZTZ1MFVVX3Ffa1NGREg3SnhVeUhnbklrVVRjN3ZQWDk1ekp6Y3BIdlREZUhPTm9NeVFzZ1d6LTZQdGhxMm1qVFpiSFA4R1hrY3pCVVVCUklOc2hUUVFMZkdyeDQ2b2tjc3Y5NlVMdk5kUmNjT0REQUw5U2Q2djZjMjRqU0J3?oc=5",
-          "published_at": "2026-10-28T04:54:10+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002058",
-      "rank": 93,
-      "prev_rank": 103,
-      "badge": "surge",
-      "axis": "capital",
-      "title": "BoA, AI 비서 비밀번호 공유 경고",
-      "subtitle": "접속 사고 시 고객 책임 방침 고지",
-      "summary": "뱅크오브아메리카가 고객들에게 인터넷 뱅킹 비밀번호를 외부 AI 비서 서비스와 공유하지 말 것을 공식 당부했다. 자율 에이전트가 고객 대신 금융 거래를 수행하는 사례가 늘자 보안 경고에 나섰다. AI 에이전트에 자격 증명을 넘겨 발생한 모든 거래 결과의 책임은 사용자에게 있음을 명확히 했다.",
-      "company_domain": "bankofamerica.com",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/05/ai-agents-GettyImages-2229880232.jpg?resize=1200,675",
-      "image_tried": [
-        "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant"
-      ],
-      "impact": 2,
-      "score": 0.044,
-      "source_count": 1,
-      "first_seen": "2026-10-28T06:44:34+09:00",
-      "last_seen": "2026-10-28T06:44:34+09:00",
-      "item_ids": [
-        "7afb98bf1433db02"
-      ],
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant",
-          "published_at": "2026-10-28T06:44:34+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002074",
-      "rank": 94,
-      "prev_rank": 104,
-      "badge": "surge",
-      "axis": "capital",
-      "title": "xAI 구독 해지 방해 집단소송",
-      "subtitle": "슈퍼그록 취소 절차 의도적 지연 의혹",
-      "summary": "일론 머스크의 xAI가 슈퍼그록 서비스 구독 해지를 고의로 어렵게 만들었다는 혐의로 소비자 집단소송을 당했다. 원고 측은 구독 취소 과정에 복잡한 절차를 강제해 결제가 부당하게 연장되도록 유도했다고 비판했다. 소비자 보호법 및 구독 서비스 규제 위반 여부가 쟁점이 될 전망이다.",
-      "company_domain": "x.ai",
-      "image": null,
-      "image_tried": [],
-      "impact": 2,
-      "score": 0.044,
-      "source_count": 1,
-      "first_seen": "2026-10-28T06:45:00+09:00",
-      "last_seen": "2026-10-28T06:45:00+09:00",
-      "item_ids": [
-        "99466ac8548d6b5f"
-      ],
-      "sources": [
-        {
-          "name": "Google News / openclassactions.com",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaTZ2b00xOFFRT29iSExaWS16anVxMWpEQzMwZkRBd2tqbnU5NmZvNzU2SmRDeS11TGlrS3VHYVgya2NUOTJ1Tmp0cS1aUmlodDBPU21uaW1QVU1NalRLOHhUMEtQWGRiWFdTQ0tsUFo0akNkX1BtcHcwMkxYOHA1ekFWc1cyTmRrMmNxcHp0RWxIMDlkb2dtdWtlQUdCX0pqYzV0VHVucXNkMEptMG9CcHJORERoZXRNWU90cmM0VQ?oc=5",
-          "published_at": "2026-10-28T06:45:00+09:00"
-        }
-      ]
-    },
-    {
-      "id": "iss_002043",
-      "rank": 95,
-      "prev_rank": 106,
-      "badge": "surge",
-      "axis": "capital",
-      "title": "텐스토렌트 15억弗 유치",
-      "subtitle": "기업가치 62억 달러 인정받아 시리즈 E 마감",
-      "summary": "짐 켈러가 이끄는 AI 반도체 스타트업 텐스토렌트가 15억 달러 규모의 시리즈 E 투자를 유치했다. 이번 라운드에서 인정받은 기업가치는 62억 달러에 달한다. 확보한 자금으로 RISC-V 기반 차세대 AI 가속기와 칩렛 아키텍처 개발을 가속할 방침이다.",
-      "company_domain": "tenstorrent.com",
-      "image": null,
-      "image_tried": [],
-      "impact": 4,
-      "score": 0.042,
-      "source_count": 1,
-      "first_seen": "2026-10-28T05:32:41+09:00",
-      "last_seen": "2026-10-28T05:32:41+09:00",
-      "item_ids": [
-        "a80254e71d84c96b"
-      ],
-      "sources": [
-        {
-          "name": "Google News / Pulse 2.0",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ1paS0FUM0pkdXN0T21qRW1UV1gzcnhEMEptYzlIc0lia3NWajd5YUNwaFlDdkZXVFRFQ09yZXVmallDdjlSVjRTOHdfdXFmTEZvTi1CZEtsRWhSV1BwcnZsMndwT2Z6NmJuSTFybGYtazh0X1B0SGdQcDYweHhIRHYyYTY2b3daMHJURQ?oc=5",
-          "published_at": "2026-10-28T05:32:41+09:00"
         }
       ]
     }
