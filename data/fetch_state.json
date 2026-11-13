@@ -1,59 +1,59 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "last_modified": "Thu, 12 Nov 2026 18:00:50 GMT"
+    "etag": "\"Vp6KZw\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
-    "etag": "W/\"41648-f223y9lT6XftGVEj2wA5PHKiiYc\""
+    "etag": "W/\"41746-IOspSet654+zr0endw6VcUO2nxI\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6af6bcf9-b5e5\"",
-    "last_modified": "Fri, 13 Nov 2026 07:32:09 GMT"
+    "etag": "\"6af76271-b647\"",
+    "last_modified": "Fri, 13 Nov 2026 19:18:09 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"1115c1660f3c918f9ed5b6912d5a43f9\"",
-    "last_modified": "Fri, 13 Nov 2026 00:21:11 GMT"
+    "etag": "W/\"a595d05fdcdf000826f6f78cc70b517f\"",
+    "last_modified": "Fri, 13 Nov 2026 19:32:08 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"8f175311667e904d34f1845e078238a5\""
+    "etag": "W/\"f64cf036814507ecb4beeedcd059b37a\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"6468f710251a251f8137dae8b92ffe60\"",
-    "last_modified": "Fri, 13 Nov 2026 10:26:42 GMT"
+    "etag": "W/\"bf9de80d7620c5639a0b43368220de65\"",
+    "last_modified": "Fri, 13 Nov 2026 19:04:16 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "etag": "\"ef8f467436b38a84a59fa3855157461a\"",
-    "last_modified": "Fri, 13 Nov 2026 11:50:38 GMT"
+    "etag": "\"7c5fe76f98ae1a2014e242612698f10e\"",
+    "last_modified": "Fri, 13 Nov 2026 19:16:50 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Fri, 13 Nov 2026 12:03:50 GMT"
+    "last_modified": "Fri, 13 Nov 2026 19:35:16 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"1186548b7e196509b8c21958a06391ff\"",
-    "last_modified": "Thu, 12 Nov 2026 21:46:18 GMT"
+    "etag": "\"d5266464c2c0f48c1bd13a264f51b23c\"",
+    "last_modified": "Fri, 13 Nov 2026 18:56:19 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
     "last_modified": "Thu, 3 Sep 2026 20:32:32 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"5da3cb64dd7c4ef35e575ebc2f8b8050\"",
-    "last_modified": "Fri, 13 Nov 2026 07:42:29 GMT"
+    "etag": "\"3046fbbfb57b84ee609e526804b78bf4\"",
+    "last_modified": "Fri, 13 Nov 2026 19:34:37 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"5e8a6e2ca352802dcad3d15281bff565\"",
-    "last_modified": "Fri, 13 Nov 2026 10:39:44 GMT"
+    "etag": "\"02b002f6c7495024f3bc54676c45351f\"",
+    "last_modified": "Fri, 13 Nov 2026 19:15:32 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"8737f6af00445ee13100f93e63b573e6\"",
-    "last_modified": "Fri, 13 Nov 2026 11:39:38 GMT"
+    "etag": "W/\"0fe7f8c5c87facec596bdc425b3b3968\"",
+    "last_modified": "Mon, 02 Nov 2026 16:25:21 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
   "feed:https://semiengineering.com/feed/": {
-    "etag": "W/\"349fcb308d446ffaaa45296924c2c381\"",
-    "last_modified": "Fri, 13 Nov 2026 08:01:34 GMT"
+    "etag": "W/\"765975beaf4b305080905e6a8d23260a\"",
+    "last_modified": "Fri, 13 Nov 2026 17:04:33 GMT"
   },
   "anthropic:sitemap": {},
   "anthropic:seen": [
@@ -416,6 +416,7 @@
     "https://www.anthropic.com/research/building-ai-cyber-defenders",
     "https://www.anthropic.com/research/building-c-compiler",
     "https://www.anthropic.com/research/building-effective-agents",
+    "https://www.anthropic.com/research/building-strong-safety-evaluations",
     "https://www.anthropic.com/research/circuits-updates-april-2024",
     "https://www.anthropic.com/research/circuits-updates-august-2024",
     "https://www.anthropic.com/research/circuits-updates-july-2024",
