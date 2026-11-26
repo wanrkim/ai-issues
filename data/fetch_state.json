@@ -1,59 +1,59 @@
 {
   "feed:https://openai.com/news/rss.xml": {},
   "feed:https://deepmind.google/blog/feed/basic/": {
-    "etag": "\"gXiNfQ\""
+    "etag": "\"wmG81w\""
   },
   "feed:https://huggingface.co/blog/feed.xml": {
-    "etag": "W/\"42270-nBN9iWdlDnwd4w3GFi9PEhpuLOE\""
+    "etag": "W/\"423e7-FgEpTr0GADOjZC0u+WdnKI0aJ0U\""
   },
   "feed:https://nvidianews.nvidia.com/releases.xml": {
-    "etag": "\"6b066906-6966a\"",
-    "last_modified": "Wed, 25 Nov 2026 04:50:14 GMT"
+    "etag": "\"6b07501a-69661\"",
+    "last_modified": "Wed, 25 Nov 2026 21:16:10 GMT"
   },
   "feed:https://techcrunch.com/category/artificial-intelligence/feed/": {
-    "etag": "W/\"c61f36826ff528dd7be541f39ddfc750\"",
-    "last_modified": "Wed, 25 Nov 2026 13:10:53 GMT"
+    "etag": "W/\"bf94ec2abf8c58aba04d2f6ff1fb64e6\"",
+    "last_modified": "Wed, 25 Nov 2026 23:03:31 GMT"
   },
   "feed:https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-    "etag": "W/\"767e6e2282aa376542cf33a8ae0ae1ec\""
+    "etag": "W/\"522a17b9538d825ff253561fe5df1fa9\""
   },
   "feed:https://www.wired.com/feed/tag/ai/latest/rss": {},
   "feed:https://www.technologyreview.com/feed/": {
-    "etag": "W/\"9758a6dc4de262c6a9c976f2a49b35e6\"",
-    "last_modified": "Wed, 25 Nov 2026 13:10:12 GMT"
+    "etag": "W/\"251bc07e1295823985d776a4e498ed70\"",
+    "last_modified": "Wed, 25 Nov 2026 17:09:21 GMT"
   },
   "feed:https://feeds.arstechnica.com/arstechnica/technology-lab": {
-    "etag": "\"c2735d55014234e5fd98fb9b71049e88\"",
-    "last_modified": "Wed, 25 Nov 2026 13:49:50 GMT"
+    "etag": "\"4a4d26060e25de166ab0b6c344f4a701\"",
+    "last_modified": "Wed, 25 Nov 2026 22:47:21 GMT"
   },
   "feed:https://www.tomshardware.com/feeds/all": {},
   "feed:https://aibusiness.com/rss.xml": {
-    "last_modified": "Wed, 25 Nov 2026 14:08:09 GMT"
+    "last_modified": "Thu, 26 Nov 2026 00:10:38 GMT"
   },
   "feed:https://the-decoder.com/feed/": {
-    "etag": "\"c14a9a9a7c14b1e637cf66860d5d83a2\"",
-    "last_modified": "Wed, 25 Nov 2026 13:23:36 GMT"
+    "etag": "\"5c42dc30667eb55b53ac67beb052b98b\"",
+    "last_modified": "Wed, 25 Nov 2026 20:52:47 GMT"
   },
   "feed:https://feeds.feedburner.com/venturebeat/SZYF": {
-    "last_modified": "Wed, 25 Nov 2026 13:33:29 GMT"
+    "last_modified": "Wed, 25 Nov 2026 23:51:12 GMT"
   },
   "feed:https://siliconangle.com/feed/": {
-    "etag": "\"dc0dc820e505fe7895bb412db9846b29\"",
-    "last_modified": "Wed, 25 Nov 2026 07:00:19 GMT"
+    "etag": "\"f0c201bd94c1853d4b57639eb0ab16b1\"",
+    "last_modified": "Wed, 25 Nov 2026 23:53:55 GMT"
   },
   "feed:https://www.engadget.com/rss.xml": {
-    "etag": "\"3c8ca06f42e1193a45c2833cee8355e5\"",
-    "last_modified": "Wed, 25 Nov 2026 13:00:00 GMT"
+    "etag": "\"188c3e051ad5d6d9ec85348afdaf7bab\"",
+    "last_modified": "Wed, 25 Nov 2026 23:36:46 GMT"
   },
   "feed:https://www.cnet.com/rss/news/": {
-    "etag": "W/\"191b8fc0165e47642a7012c252586e00\"",
-    "last_modified": "Wed, 25 Nov 2026 13:44:34 GMT"
+    "etag": "W/\"e32b021e59b0fddd0d06270221902ca4\"",
+    "last_modified": "Wed, 25 Nov 2026 23:59:02 GMT"
   },
   "feed:https://www.theregister.com/headlines.atom": {},
   "feed:https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910": {},
   "feed:https://semiengineering.com/feed/": {
-    "etag": "W/\"abffb4525da9726a7c53460c8591aaf7\"",
-    "last_modified": "Wed, 25 Nov 2026 08:01:39 GMT"
+    "etag": "W/\"263790dce93259402df72b11f1718feb\"",
+    "last_modified": "Wed, 25 Nov 2026 17:54:27 GMT"
   },
   "anthropic:sitemap": {},
   "anthropic:seen": [
@@ -535,6 +535,7 @@
     "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
     "https://www.anthropic.com/research/measuring-model-persuasiveness",
     "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
+    "https://www.anthropic.com/research/migrating-api-to-rust",
     "https://www.anthropic.com/research/multi-agent-research-system",
     "https://www.anthropic.com/research/multiagent-systems",
     "https://www.anthropic.com/research/mythos-preview",
